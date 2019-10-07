@@ -1,0 +1,11 @@
+mixin input(id, label_text, placeholder_text, input, type)
+  if input === 'textarea'
+    .form__label
+      label.label(for="desc") !{label_text}
+    textarea.input.input--textarea(id="desc",
+    maxlength="1000",
+    placeholder=placeholder_text)
+  else
+    .form__label
+      label.label(for=id, type=type) !{label_text}
+    input.input(id=id, placeholder=placeholder_text, type=type)

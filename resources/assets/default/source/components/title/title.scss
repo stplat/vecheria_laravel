@@ -1,0 +1,10 @@
+/* Переменные */
+@import '../_defaults/variables';
+
+.title,
+.title h1 {
+  color: $text-color;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+}

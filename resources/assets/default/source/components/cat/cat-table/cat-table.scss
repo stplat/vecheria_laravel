@@ -1,0 +1,55 @@
+/* Переменные */
+@import '../../_defaults/variables';
+
+.cat-table {
+  width: 100%;
+  font-size: 13px;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+.cat-table-tr {
+  width: 100%;
+  
+  .no-touch &:hover {
+    //background-color: rgba(255, 88, 43, 0.05);
+  }
+  
+  &:nth-child(odd) {
+    background-color: rgba(236, 241, 245, 1);
+  }
+}
+
+.cat-table-th,
+.cat-table-td {
+  flex: 1 1 auto;
+  padding: 12px 20px;
+  vertical-align: middle;
+  max-width: 200px;
+  color: $text-color;
+  
+  p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 1px 0;
+  }
+}
+
+.cat-table-th {
+  background: #586776;
+  color: #FFFFFF;
+  font-weight: 500;
+  height: 48px;
+}
+
+.cat-table-link {
+  color: #2273CF;
+  border-bottom: 1px solid #2273CF;
+  transition: border-color 0.08s;
+  
+  &:hover {
+    border-color: transparent;
+  }
+}
+

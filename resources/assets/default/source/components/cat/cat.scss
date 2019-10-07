@@ -1,0 +1,40 @@
+/* Переменные */
+@import '../_defaults/variables';
+@import 'cat-table/cat-table';
+
+.cat {
+
+}
+
+.cat__header {
+  display: flex;
+  align-items: center;
+  margin: 0 0 15px;
+}
+
+.cat__pager,
+.cat__number,
+.cat__sort {
+  flex: 0 0 auto;
+  width: calc(100% / 3);
+}
+
+.cat__number {
+  p {
+    font-size: 13px;
+    color: $text-color;
+    text-align: center;
+  }
+}
+
+.cat__sort {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  
+  p {
+    font-size: 13px;
+    color: $text-color;
+    margin: 0 13px 0 0;
+  }
+}

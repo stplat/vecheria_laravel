@@ -1,0 +1,44 @@
+/* Переменные */
+@import '../_defaults/variables';
+@import './auto-search-select/auto-search-select';
+@import './input/input';
+@import './checkbox/checkbox';
+@import './select/select';
+
+/* Общие стили */
+* {
+  vertical-align: baseline;
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box !important;
+}
+
+html {
+  touch-action: manipulation;
+}
+
+body {
+  font-family: $font-family;
+  color: $text-color;
+  background: #2C3F51;
+  min-width: 280px;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  border: none;
+  
+  &:active, &:focus, &:hover {
+    outline: none;
+    text-decoration: none;
+  }
+}

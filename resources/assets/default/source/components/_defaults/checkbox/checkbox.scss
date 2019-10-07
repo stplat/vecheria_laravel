@@ -1,0 +1,57 @@
+/* Переменные */
+@import '../../_defaults/variables';
+
+.checkbox {
+  display: flex;
+  align-items: flex-end;
+}
+
+.checkbox__input {
+  width: 22px;
+  height: 22px;
+  border: 1px solid rgba(44, 63, 81, 0.15);
+  background: #FFFFFF;
+  flex: 0 0 auto;
+  margin: 0 11px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: border-color 0.08s;
+  appearance: none;
+
+  &:before {
+    content: '\E80F';
+    font-family: $font-icons;
+    font-size: 12px;
+  }
+
+  &:checked {
+    &:before {
+      content: '';
+      color: $text-color-opacity;
+    }
+  }
+
+  .no-touch &:hover {
+    border-color: rgba(44, 63, 81, 0.4);
+  }
+}
+
+.checkbox__label {
+  font-size: 15px;
+  color: $text-color-opacity;
+  order: 2;
+
+  .no-touch &:hover + .checkbox__input:checked {
+    border-color: rgba(44, 63, 81, 0.4);
+  }
+
+  a {
+    color: #2273CF;
+    text-decoration: underline;
+
+    .no-touch &:hover {
+      text-decoration: none;
+    }
+  }
+}
