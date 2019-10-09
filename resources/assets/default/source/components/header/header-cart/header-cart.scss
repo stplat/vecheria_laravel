@@ -1,0 +1,60 @@
+/* Переменные */
+@import '../../_defaults/variables';
+
+.header-cart {
+  display: flex;
+  background: $orange-color;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.header-cart__body,
+.header-cart__btn {
+  transition: background-color 0.15s;
+
+  .no-touch &:hover,
+  &:active,
+  &.is-active {
+    background-color: $orange-color-hover;
+  }
+
+  &:active,
+  &.is-active {
+    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.header-cart__body {
+  padding: 16px 12px 16px 60px;
+  position: relative;
+  font-size: 16px;
+  display: block;
+  color: #FFFFFF;
+  //font-weight: 500;
+
+  &:before {
+    content: "\E81B";
+    font-family: $font-icons;
+    position: absolute;
+    font-size: 24px;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-55%);
+  }
+}
+
+.header-cart__btn {
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+
+  &:before {
+    content: '\F004';
+    font-family: $font-icons;
+    font-size: 14px;
+    padding: 0 10px
+  }
+}

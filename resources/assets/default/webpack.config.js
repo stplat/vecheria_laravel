@@ -28,14 +28,14 @@ const config = merge([
     },
     watch: true,
     plugins: [
-      /*new webpack.ProvidePlugin({
+      new webpack.ProvidePlugin({
         $: 'jquery',
         jQuery: 'jquery',
-      }),*/
-      new HtmlWebpackPlugin({
+      }),
+      /*new HtmlWebpackPlugin({
         filename: '../resources/views/layout.blade.php',
         template: PATHS.source + '/views/_layout.pug',
-      }),
+      }),*/
       new HtmlWebpackPlugin({
         filename: '../resources/views/index.blade.php',
         template: PATHS.source + '/views/index.pug',

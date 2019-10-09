@@ -1,2 +1,29 @@
 footer.footer
-  .footer__copy © 2019 smena24.com <br/> All right reserved.
+  .footer__top
+    .container.container--flex
+      .footer__logo
+        include ../logo/logo
+        +logo('white')
+        .footer__props
+          p ИП: Никитин Б.В.<br>ОГРНИП: 313774628200454
+      ul.footer__nav
+        li
+          a(href="") Главная
+        li
+          a(href="") Доставка
+        li
+          a(href="") Оплата
+        li
+          a(href="") Контакты
+        li
+          a(href="") Корзина
+      .footer__feedback
+        .footer__phone
+          a(href="tel:+74952039696") +7 (495) 203-96-96
+        .footer__text
+          p Приём заказов по телефону:<br> пн-пт c 10:00 до 19:00 (МСК)
+          p Заказы через интернет – круглосуточно
+</p>
+  .footer__copyright
+    .container
+      p Интернет-магазин ювелирных изделий vecheria.ru. All rights reserved ©2018-2019г.

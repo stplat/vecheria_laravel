@@ -1,0 +1,23 @@
+/* Переменные */
+@import '../_defaults/variables';
+
+.aboutus {
+
+  p {
+    font-size: 15px;
+    line-height: 26px;
+    color: $text-color;
+    text-indent: 30px;
+    font-weight: 300;
+    margin: 3px 0;
+
+    a {
+      color: blue;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

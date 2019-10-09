@@ -1,25 +1,23 @@
 /* Общие стили */
-@import 'components/_defaults/style';
+@import 'components/_defaults/defaults';
+@import '~swiper/css/swiper.min.css';
 
 /* Пользовательские Шрифты */
 @import 'fonts/fontello/fontello';
-@import 'fonts/Roboto/Roboto';
+@import 'fonts/FiraSans/FiraSans';
 
 /* Компоненты */
 @import 'components/header/header';
 @import 'components/logo/logo';
-@import 'components/nav/nav';
-@import 'components/main/main';
-@import 'components/info/info';
-@import 'components/role/role';
-@import 'components/tech/tech';
-@import 'components/form/form';
+@import 'components/menu/menu';
+@import 'components/slider/slider';
 @import 'components/button/button';
-@import 'components/footer/footer';
-@import 'components/breadcrumb/breadcrumb';
 @import 'components/title/title';
-@import 'components/pager/pager';
-@import 'components/cat/cat';
+@import 'components/item/item';
+@import 'components/aboutus/aboutus';
+@import 'components/footer/footer';
+
+
 
 
 

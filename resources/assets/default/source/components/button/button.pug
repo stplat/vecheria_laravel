@@ -1,5 +1,3 @@
-mixin button(text, modificator)
-  if modificator
-    button.button(class=`button--${modificator}`) !{text}
-  else
-    button.button !{text}
+mixin button(text, className)
+  - var mod = !className ? '' : ' ' + className;
+  a(href="", class="button" + mod) #{text}

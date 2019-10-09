@@ -1,0 +1,21 @@
+/* Переменные */
+@import '../_defaults/variables';
+
+.menu {
+  background: $orange-color;
+}
+
+.menu__link {
+  color: #FFFFFF;
+  font-size: 16px;
+  flex-grow: 1;
+  text-align: center;
+  padding: 18px 0;
+  background: transparent;
+  transition: background-color 0.15s;
+  //font-weight: 500;
+
+  .no-touch &:hover {
+    background-color: $orange-color-hover;
+  }
+}

@@ -1,132 +1,178 @@
 <!DOCTYPE html>
 <html>
-  <head><meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="stack"><link rel="apple-touch-icon" sizes="57x57" href="icons-9b224c9884c2bb081d4ac92b23675c2e/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="icons-9b224c9884c2bb081d4ac92b23675c2e/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="icons-9b224c9884c2bb081d4ac92b23675c2e/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="icons-9b224c9884c2bb081d4ac92b23675c2e/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="icons-9b224c9884c2bb081d4ac92b23675c2e/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="icons-9b224c9884c2bb081d4ac92b23675c2e/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="icons-9b224c9884c2bb081d4ac92b23675c2e/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="icons-9b224c9884c2bb081d4ac92b23675c2e/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="icons-9b224c9884c2bb081d4ac92b23675c2e/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="stack"><link rel="icon" type="image/png" sizes="32x32" href="icons-9b224c9884c2bb081d4ac92b23675c2e/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="icons-9b224c9884c2bb081d4ac92b23675c2e/favicon-16x16.png"><link rel="shortcut icon" href="icons-9b224c9884c2bb081d4ac92b23675c2e/favicon.ico"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="icons-9b224c9884c2bb081d4ac92b23675c2e/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="icons-9b224c9884c2bb081d4ac92b23675c2e/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="icons-9b224c9884c2bb081d4ac92b23675c2e/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="icons-9b224c9884c2bb081d4ac92b23675c2e/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="icons-9b224c9884c2bb081d4ac92b23675c2e/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="icons-9b224c9884c2bb081d4ac92b23675c2e/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="icons-9b224c9884c2bb081d4ac92b23675c2e/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="icons-9b224c9884c2bb081d4ac92b23675c2e/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="icons-9b224c9884c2bb081d4ac92b23675c2e/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="icons-9b224c9884c2bb081d4ac92b23675c2e/apple-touch-startup-image-1536x2008.png"><link href="../../public//css/style.css" rel="stylesheet"></head>
+  <head><link href="../../public//css/style.css" rel="stylesheet"></head>
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1.0,width=device-width">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="robots" content="">
+  <meta name="yandex-verification" content="2ff68d0f217a770e">
   <title>Webpack1 app</title>
 </html>
-<body><script type="text/javascript" src="../../public/js/main.js"></script></body>
-<div class="main">
-  <div class="main__container">
-<div class="info">
-  <div class="info__title">Информация о портале</div>
-  <div class="info__text">
-    <p>
-      Полную информацию об условиях работы нашей компании,
-      касаемо Аренды спецтехники и оказания Услуг спецтехники,
-      Вы можете получить позвонив по телефону указанному на сайте
-      (звонки принимаются круглосуточно). Все работы производимые
-      силами нашей компании осуществляются в строгом соответствии
-      требованиями, установленными законодательством Российской Федерации.
-      Мы работаем на территории Москвы и Московской области. Транспортировка
-      строительной спецтехники за пределы МКАД оплачивается отдельно.
-      После принятия окончательного решения о взаимодействии с
-      нашей компанией, составляется Договор оказания
-    </p>
-  </div>
-</div>
-  </div>
-  <div class="main__container">
-<div class="role">
-  <div class="role__col">
-    <div class="role__box">
-      <div class="role__title">Исполнитель</div>
-      <div class="role__desc">
-        <p>
-          Прежде всего, экономическая повестка сегодняшнего дня обеспечивает
-          широкому кругу (специалистов) участие в формировании соответствующих
-          условий активизации! Лишь некоторые особенности внутренней политики
-          лишь добавляют фракционных разногласий и объективно рассмотрены
-          соответствующими инстанциями.
-        </p>
-      </div><a class="role__link" href="">Подробнее</a>
-    </div>
-  </div>
-  <div class="role__col">
-    <div class="role__box role__box--home">
-      <div class="role__title">Заказчик</div>
-      <div class="role__desc">
-        <p>
-          Ясность нашей позиции очевидна: сплочённость команды профессионалов
-          не даёт нам иного выбора, кроме определения системы обучения кадров,
-          соответствующей насущным потребностям. Но предприниматели в сети интернет
-          функционально разнесены на независимые элементы! Мы вынуждены отталкиваться
-          от того, что высококачественный прототип будущего проекта создаёт
-          необходимость включения в производственный план целого ряда внеочередных
-          мероприятий с учётом комплекса форм воздействия.
-        </p>
-      </div><a class="role__link" href="">Подробнее</a>
-    </div>
-  </div>
-</div>
-  </div>
-  <div class="main__container">
-<div class="tech__wrapper"><a class="tech" href="">
-    <div class="tech__ico"></div>
-    <div class="tech__name">Автовышки</div></a><a class="tech" href="">
-    <div class="tech__ico tech__ico--cran"></div>
-    <div class="tech__name">Автокраны</div></a><a class="tech" href="">
-    <div class="tech__ico tech__ico--dozer"></div>
-    <div class="tech__name">Бульдозеры</div></a><a class="tech" href="">
-    <div class="tech__ico tech__ico--gus-eksk"></div>
-    <div class="tech__name">Гусеничные экскаваторы</div></a><a class="tech" href="">
-    <div class="tech__ico tech__ico--dlinn"></div>
-    <div class="tech__name">Длинномеры</div></a><a class="tech" href="">
-    <div class="tech__ico tech__ico--koles-eksk"></div>
-    <div class="tech__name">Колесные экскаваторы</div></a><a class="tech" href="">
-    <div class="tech__ico tech__ico--manip"></div>
-    <div class="tech__name">Манипуляторы</div></a><a class="tech" href="">
-    <div class="tech__ico tech__ico--mini"></div>
-    <div class="tech__name">Минипогрузчики</div></a><a class="tech" href="">
-    <div class="tech__ico tech__ico--nizko"></div>
-    <div class="tech__name">Низкорамные платформы</div></a><a class="tech" href="">
-    <div class="tech__ico tech__ico--sam"></div>
-    <div class="tech__name">Самосвалы</div></a><a class="tech" href="">
-    <div class="tech__ico tech__ico--front"></div>
-    <div class="tech__name">Фронтальные погрузчики</div></a><a class="tech" href="">
-    <div class="tech__ico tech__ico--eksk"></div>
-    <div class="tech__name">Экскаваторы</div></a></div>
-  </div>
-  <div class="main__container">
-    <div class="form form--with-tip">
-      <div class="form__header">
-        <div class="form__title">Быстрый поиск спецтехники</div>
-        <div class="form__subtitle">Разместите заявку и мы бесплатно поможем подобрать Вам спецтехнику для выполнения работ любой сложности</div>
+<body>
+  <header class="header">
+    <div class="header__cap">
+      <div class="container container--flex">
+        <div class="header__nav">
+<div class="header-nav"><a class="header-nav__link" href="/">Главная</a><a class="header-nav__link" href="/">Доставка</a><a class="header-nav__link" href="/">Оплата</a><a class="header-nav__link" href="/">Контакты</a></div>
+        </div>
+        <div class="header__search">
+          <div class="header-search"></div>
+        </div>
       </div>
-      <div class="form__body">
-        <div class="form__row form__row--two">
-          <div class="form__col">
-            <div class="form__label">
-              <label class="label" for="name">Контактное лицо:</label>
+    </div>
+    <div class="header__body">
+      <div class="container container--flex">
+        <div class="header__props">
+<div class="header-props">
+  <div class="header-props__phone"><a href="tel:+74952039696">+7 (495) 203-96-96</a></div>
+  <ul class="header-props__ul">
+    <li>Пн-пт 10:00 - 18:00 (МСК)</li>
+    <li><a class="header-props__callback" href="">Заказать обратный звонок</a></li>
+  </ul>
+</div>
+        </div>
+        <div class="header__logo"><a class="logo" href=""><img src="/images/logo.svg" alt="Интернет-магазин ювелирных православных изделий" title="Интернет-магазин ювелирных православных изделий"></a>
+        </div>
+        <div class="header__cart">
+<div class="header-cart"><a class="header-cart__body" href=""><span> Корзина [<span>0</span>]</span></a><a class="header-cart__btn" href=""></a></div>
+        </div>
+      </div>
+    </div>
+  </header>
+<div class="menu">
+  <div class="container container--flex"><a class="menu__link" href="">Кресты</a><a class="menu__link" href="">Образки</a><a class="menu__link" href="">Браслеты</a><a class="menu__link" href="">Кольца</a><a class="menu__link" href="">Крещение</a><a class="menu__link" href="">Цепи и шнурки</a><a class="menu__link" href="">Подарки</a><a class="menu__link" href="">Бусины</a><a class="menu__link" href="">Аксессуары</a><a class="menu__link" href="">Иконы</a></div>
+</div>
+  <div class="container">
+    <div class="slider">
+      <div class="swiper-container js-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slider__content">
+              <div class="slider__offer">
+                <div class="slider__title">
+                  <p>Бусина в подарок</p>
+                </div>
+                <div class="slider__text">
+                  <p>При покупке трёх правосланых бусин -<br><strong>четвертая</strong> в подарок</p>
+                </div>
+                <div class="slider__button"><a class="button button--pink" href="">Подробнее</a>
+                </div>
+              </div>
             </div>
-            <input class="input" id="name" placeholder="Введите имя">
           </div>
-          <div class="form__col">
-            <div class="form__label">
-              <label class="label" for="phone">Телефон:</label>
-            </div>
-            <input class="input" id="phone" placeholder="Введите телефон">
-          </div>
-        </div>
-        <div class="form__row">
-          <div class="form__label">
-            <label class="label" for="desc">Описание к заказу:</label>
-          </div>
-          <textarea class="input input--textarea" id="desc" maxlength="1000" placeholder="Введите описание к заказу (город, тип техники, услугу и т.д.)"></textarea>
-        </div>
-        <div class="form__row">
-          <div class="checkbox">
-            <label class="checkbox__label" for="1">Я принимаю условия <a href="">пользовательского соглашения</a></label>
-            <input class="checkbox__input" id="1" type="checkbox">
-          </div>
-        </div>
-      </div>
-      <div class="form__footer">
-        <div class="form__after-word">Ваша заявка будет опубликована и видна всем пользователям сайта</div>
-        <div class="form__button">
-          <button class="button button--large">Опубликовать заявку</button>
         </div>
       </div>
     </div>
-  </div>
+        <div class="title">
+          <div class="title__wrap">
+            <p>Популярные изделия</p>
+          </div>
+        </div>
+    <div class="item__container">
+      <div class="item">
+        <div class="item__sign">
+          <p>Акимов</p>
+        </div>
+        <div class="item__article">8455123</div>
+        <div class="item__image"><img src="/images/item41211540324878.jpg" alt="Интернет-магазин ювелирных православных изделий" title="Интернет-магазин ювелирных православных изделий"></div>
+        <div class="item__name"><a href="">Распятие Христово. Деисус. Икона Божией Матери «Умиление». Апостол Петр. Свт. Николай Чудотворец.</a></div>
+        <div class="item__price">
+          <p>10000</p>
+        </div>
+        <div class="item__button"><a class="button button--small" href="">Подробнее</a>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item__sign">
+          <p>Акимов</p>
+        </div>
+        <div class="item__article">8455123</div>
+        <div class="item__image"><img src="/images/item41211540324878.jpg" alt="Интернет-магазин ювелирных православных изделий" title="Интернет-магазин ювелирных православных изделий"></div>
+        <div class="item__name"><a href="">Распятие Христово. Деисус. Икона Божией Матери «Умиление». Апостол Петр. Свт. Николай Чудотворец.</a></div>
+        <div class="item__price">
+          <p>10000</p>
+        </div>
+        <div class="item__button"><a class="button button--small" href="">Подробнее</a>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item__sign">
+          <p>Акимов</p>
+        </div>
+        <div class="item__article">8455123</div>
+        <div class="item__image"><img src="/images/item41211540324878.jpg" alt="Интернет-магазин ювелирных православных изделий" title="Интернет-магазин ювелирных православных изделий"></div>
+        <div class="item__name"><a href="">Распятие Христово. Деисус. Икона Божией Матери «Умиление». Апостол Петр. Свт. Николай Чудотворец.</a></div>
+        <div class="item__price">
+          <p>10000</p>
+        </div>
+        <div class="item__button"><a class="button button--small" href="">Подробнее</a>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item__sign">
+          <p>Акимов</p>
+        </div>
+        <div class="item__article">8455123</div>
+        <div class="item__image"><img src="/images/item41211540324878.jpg" alt="Интернет-магазин ювелирных православных изделий" title="Интернет-магазин ювелирных православных изделий"></div>
+        <div class="item__name"><a href="">Распятие Христово. Деисус. Икона Божией Матери «Умиление». Апостол Петр. Свт. Николай Чудотворец.</a></div>
+        <div class="item__price">
+          <p>10000</p>
+        </div>
+        <div class="item__button"><a class="button button--small" href="">Подробнее</a>
+        </div>
+      </div>
+    </div>
+        <div class="title">
+          <div class="title__wrap">
+            <p>Интернет-магазин православных ювелирных изделий «ВЕЧЕРИЯ»</p>
+          </div>
+        </div>
+<div class="aboutus">
+  <p>Здравствуйте, рады приветствовать Вас в нашем <strong>интернет-магазине православных изделий Вечерия!</strong></p>
+  <p>
+    У нас Вы сможете по низким ценам приобрести продукцию высочайшего качества от зарекомендовавших себямастерских со всей страны, которые специализируются на производстве различных <i>православных изделий</i> и
+    <i>ювелирных украшений</i>. В ассортименте представлены нательные кресты, образки, кольца, браслеты, цепи,
+    шнурки и другие изделия, изготовленные из золота, серебра, серебра с позолотой из натуральных и
+    искусственных драгоценные камней, кожи и прочего.
+  </p>
+  <p>Каждый найдет то что-то по душе или выберет в подарок для своих близких!</br></p>
+  <p>Интернет-магазин осуществляет доставку по всей России.</p>
+  <p>
+    На товары предоставляется гарантия от производителя в соответствии с действующим законодательствомРоссийской Федерации.</p>
+  <p>Наш коллектив благодарит Вас за оказанное доверие.</p>
+  <p>Вечерия станет Вашим другом и партнером на долгие годы!</p>
 </div>
+  </div>
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="container container--flex">
+        <div class="footer__logo"><a class="logo" href=""><img src="/images/logo-white.svg" alt="Интернет-магазин ювелирных православных изделий" title="Интернет-магазин ювелирных православных изделий"></a>
+          <div class="footer__props">
+            <p>ИП: Никитин Б.В.<br>ОГРНИП: 313774628200454</p>
+          </div>
+        </div>
+        <ul class="footer__nav">
+          <li><a href="">Главная</a></li>
+          <li><a href="">Доставка</a></li>
+          <li><a href="">Оплата</a></li>
+          <li><a href="">Контакты</a></li>
+          <li><a href="">Корзина</a></li>
+        </ul>
+        <div class="footer__feedback">
+          <div class="footer__phone"><a href="tel:+74952039696">+7 (495) 203-96-96</a></div>
+          <div class="footer__text">
+            <p>Приём заказов по телефону:<br> пн-пт c 10:00 до 19:00 (МСК)</p>
+            <p>Заказы через интернет – круглосуточно</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer></p>
+  <div class="footer__copyright">
+    <div class="container">
+      <p>Интернет-магазин ювелирных изделий vecheria.ru. All rights reserved ©2018-2019г.</p>
+    </div>
+  </div>
+<script type="text/javascript" src="../../public/js/main.js"></script></body>

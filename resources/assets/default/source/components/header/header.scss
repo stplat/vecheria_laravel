@@ -1,25 +1,19 @@
 /* Переменные */
 @import '../_defaults/variables';
-/* Композиция */
-@import 'header-sign/header-sign';
+@import 'header-nav/header-nav';
+@import 'header-props/header-props';
+@import 'header-cart/header-cart';
 
 .header {
-  display: flex;
-  height: 100px;
-  align-items: center;
-  flex: 0 0 auto;
+  //filter: blur(0.5px);
 }
 
-.header__logo {
-  padding: 0 67px 0 0;
+.header__cap {
+  padding: 12px 0;
+  border-bottom: 1px solid #EAEAEA;
 }
 
-.header__desc p {
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 14px;
-  line-height: 16px;
-}
-
-.header__sign-in-up {
-  margin: 0 0 0 auto;
+.header__body {
+  padding: 30px 0;
+  border-bottom: 1px solid transparent;
 }

@@ -14,7 +14,7 @@ class Welcome extends Controller
      */
     public function index()
     {
-        return view('welcome', ['name' => 'Victoria']);
+        //return view('welcome', ['name' => 'Victoria']);
     }
 
     /**

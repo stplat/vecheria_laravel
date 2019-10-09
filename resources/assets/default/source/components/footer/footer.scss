@@ -2,12 +2,70 @@
 @import '../_defaults/variables';
 
 .footer {
-  text-align: center;
-  padding: 30px 0 20px;
+  background: #5D5D5D;
+  margin: 40px 0 0;
 }
 
-.footer__copy {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 14px;
-  line-height: 18px;
+.footer__top {
+  padding: 30px 0;
+}
+
+.footer__props {
+  font-size: 12px;
+  color: #FFFFFF;
+  padding-top: 14px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.footer__nav {
+  list-style-type: none;
+  display: flex;
+
+  li {
+    padding: 0 15px;
+  }
+
+  a {
+    color: #BFBFBF;
+    transition: color 0.08s;
+    font-size: 16px;
+    //font-weight: 300;
+
+    .no-touch &:hover {
+      color: #FFFFFF;
+    }
+  }
+}
+
+.footer__phone {
+  margin: 0 0 15px;
+  text-align: center;
+
+  a {
+    font-size: 26px;
+    color: #FFFFFF;
+  }
+}
+
+.footer__text {
+  text-align: center;
+
+  p {
+    font-size: 13px;
+    color: #FFFFFF;
+    margin: 10px 0 0;
+    font-weight: 300;
+  }
+}
+
+.footer__copyright {
+  background: #545454;
+
+  p {
+    text-align: center;
+    padding: 8px 0;
+    color: #BFBFBF;
+    font-size: 11px;
+  }
 }

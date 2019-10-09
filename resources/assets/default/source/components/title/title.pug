@@ -1,2 +1,6 @@
-mixin title(text)
-  .title !{text}
+mixin title (type, text, className)
+  - var mod = !className ? '' : ' ' + className;
+  div(class="title" + mod)
+    .title__wrap
+      #{type} #{text}
+

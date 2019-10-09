@@ -1,7 +1,16 @@
 header.header
-  .header__logo
-    include ../logo/logo
-  .header__desc
-    p Единая площадка<br>поставщиков спецтехники<br> и транспорта
-  .header__sign-in-up
-    include ./header-sign/header-sign
+  .header__cap
+    .container.container--flex
+      .header__nav
+        include header-nav/header-nav
+      .header__search
+        .header-search
+  .header__body
+    .container.container--flex
+      .header__props
+        include header-props/header-props
+      .header__logo
+        include ../logo/logo
+        +logo()
+      .header__cart
+        include header-cart/header-cart

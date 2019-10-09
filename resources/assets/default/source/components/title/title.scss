@@ -1,10 +1,57 @@
 /* Переменные */
 @import '../_defaults/variables';
 
-.title,
-.title h1 {
-  color: $text-color;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 16px;
+.title {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 30px;
+  color: $text-color-opacity;
+
+  & .title__wrap p,
+  & .title__wrap h1,
+  & .title__wrap h2,
+  & .title__wrap h3,
+  & .title__wrap h4,
+  & .title__wrap h5 {
+    font-size: 21px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.title__wrap {
+  position: relative;
+
+  &:before,
+  &:after {
+    content: "";
+    display: inline-block;
+    width: 45px;
+    height: 1px;
+    background: $text-color-opacity;
+    position: absolute;
+    top: 50%;
+  }
+
+  &:before {
+    left: -70px;
+  }
+
+  &:after {
+    right: -70px;
+  }
+}
+
+.title--orange {
+  color: $orange-color;
+
+  .title__wrap {
+
+    &:before,
+    &:after {
+      background: $orange-color;
+    }
+  }
 }

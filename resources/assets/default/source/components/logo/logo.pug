@@ -1,4 +1,11 @@
-a.logo(href="")
-  img(src=require('./logo.svg'),
-  alt="СМЕНА24, аренда строительной спецтехники",
-  title="Перейти на главную страницу")
+mixin logo(color)
+  if !color
+    a.logo(href="")
+      img(src=require('../components/logo/logo.svg'),
+      alt="Интернет-магазин ювелирных православных изделий",
+      title="Интернет-магазин ювелирных православных изделий")
+  else
+    a.logo(href="")
+      img(src=require('../components/logo/logo-white.svg'),
+      alt="Интернет-магазин ювелирных православных изделий",
+      title="Интернет-магазин ювелирных православных изделий")

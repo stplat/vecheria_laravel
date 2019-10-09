@@ -1,0 +1,18 @@
+include ../button/button
+
+.item__container
+  - for (var i = 0; i < 4; i++)
+    .item
+      .item__sign
+        p Акимов
+      .item__article 8455123
+      .item__image
+        img(src=require("../components/item/item41211540324878.jpg"),
+        alt="Интернет-магазин ювелирных православных изделий",
+        title="Интернет-магазин ювелирных православных изделий")
+      .item__name
+        a(href="") Распятие Христово. Деисус. Икона Божией Матери «Умиление». Апостол Петр. Свт. Николай Чудотворец.
+      .item__price
+        p 10000
+      .item__button
+        +button('Подробнее', 'button--small')
