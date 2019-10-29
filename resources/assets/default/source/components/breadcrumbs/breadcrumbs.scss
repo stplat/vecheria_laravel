@@ -1,0 +1,41 @@
+/* Переменные */
+@import '../_defaults/variables';
+
+.breadcrumb {
+  list-style-type: none;
+  margin: 20px 0 50px;
+  word-spacing: -.36em;
+  display: table;
+
+  li {
+    padding-right: 10px;
+    color: $text-color-opacity;
+    font-size: 15px;
+    margin: 3px 0;
+    display: inline;
+    word-spacing: normal;
+
+    &:after {
+      content: '/';
+      color: $text-color-opacity;
+      padding-left: 10px;
+    }
+
+    &:last-child:after {
+      content: '';
+      display: none;
+    }
+  }
+}
+
+.breadcrumb__link {
+  color: $orange-color-hover;
+  font-size: 15px;
+  border-bottom: 1px solid rgba(202, 169, 113, .7);
+  line-height: 18px;
+  transition: border-color 0.08s;
+
+  .no-touch &:hover {
+    border-color: transparent;
+  }
+}

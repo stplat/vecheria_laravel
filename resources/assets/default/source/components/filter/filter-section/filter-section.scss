@@ -1,0 +1,38 @@
+/* Переменные */
+@import '../../_defaults/variables';
+
+.filter-section {
+  border-bottom: 1px solid #E6E6E6;
+
+  &:last-child {
+    border: none;
+  }
+}
+
+.filter-section__title {
+  padding: 10px 15px;
+  position: relative;
+  display: block;
+  color: #FFFFFF;
+  background: #73787F;
+}
+
+.filter-section__list {
+  //background-color: #F9F9FA;
+  padding: 2px 0;
+}
+
+.filter-section__link {
+  padding: 10px 15px;
+  display: block;
+  color: $text-color-opacity;
+  font-size: 13px;
+  transition: background-color 0.08s, color 0.08s;
+  background-color: #FFFFFF;
+
+  .no-touch &:hover,
+  &.is-active {
+    background-color: $orange-color;
+    color: #FFFFFF;
+  }
+}

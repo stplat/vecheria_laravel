@@ -1,0 +1,69 @@
+/* Переменные */
+@import '../_defaults/variables';
+@import './filter-switch/filter-switch';
+@import './filter-section/filter-section';
+
+.filter {
+  font-size: 14px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+  background: #FFFFFF;
+}
+
+.filter__head {
+  line-height: 38px;
+  border: 1px solid $orange-color;
+  background: $orange-color;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.filter__part {
+  border: 1px solid #E6E6E6;
+  border-top: none;
+}
+
+.filter__title {
+  color: $text-color-opacity;
+  padding: 12px 15px 12px 45px;
+  background: #F9F9FA;
+  position: relative;
+
+  &:before {
+    content: "\E803";
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: $font-icons;
+    position: absolute;
+    left: 15px;
+    color: #666b72;
+  }
+
+  &--sort:before {
+    content: "\F160";
+  }
+}
+
+.filter__reset {
+  display: none;
+
+  button {
+    width: 100%;
+    font-family: $font-family;
+    color: #FFFFFF;
+    background-color: #73787F ;
+    padding: 11px 0;
+    font-size: 12px;
+    transition: background-color 0.08s;
+    cursor: pointer;
+
+    .no-touch &:hover {
+      background-color: #666B72;
+    }
+
+    &:active {
+      box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.25);
+    }
+  }
+}

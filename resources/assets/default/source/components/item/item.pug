@@ -1,18 +1,21 @@
 include ../button/button
 
-.item__container
-  - for (var i = 0; i < 4; i++)
-    .item
+mixin items(quantity)
+  .item__container
+    | @foreach ($items as $key => $item)
+    .item(class="item--" + quantity)
       .item__sign
-        p Акимов
-      .item__article 8455123
+        p {{$item->manufactured}}
+      .item__article {{$item->article}}
       .item__image
-        img(src=require("../components/item/item41211540324878.jpg"),
-        alt="Интернет-магазин ювелирных православных изделий",
-        title="Интернет-магазин ювелирных православных изделий")
+        img(src!="/images/items/{{$item->image_path}}",
+        alt!="{{$item->name}}",
+        title!="{{$item->name}}")
       .item__name
-        a(href="") Распятие Христово. Деисус. Икона Божией Матери «Умиление». Апостол Петр. Свт. Николай Чудотворец.
+        a(href!="/catalog/{{$item->subcategory_plug}}/{{$item->plug}}/") {{$item->name}}
       .item__price
-        p 10000
+        p {{$item->price}}
       .item__button
-        +button('Подробнее', 'button--small')
+        +button('Подробнее', 'button--small', '/catalog/{{$item->subcategory_plug}}/{{$item->plug}}/')
+    | @endforeach
+

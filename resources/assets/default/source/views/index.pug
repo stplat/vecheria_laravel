@@ -1,14 +1,13 @@
-extends _layout
-block body
-  include ../components/header/header
-  include ../components/menu/menu
-  .container
-    include ../components/slider/slider
-    include ../components/title/title
-    +title('p', 'Популярные изделия')
-    include ../components/item/item
-    +title('p', 'Интернет-магазин православных ювелирных изделий «ВЕЧЕРИЯ»')
-    include ../components/aboutus/aboutus
-  include ../components/footer/footer
+| @extends ('layout')
+| @section('content')
+.container
+  include ../components/slider/slider
+  include ../components/title/title
+  +title('p', 'Популярные изделия')
+  include ../components/item/item
+  +items('4')
+  +title('p', 'Интернет-магазин православных ювелирных изделий «ВЕЧЕРИЯ»')
+  include ../components/aboutus/aboutus
+| @endsection
 
 

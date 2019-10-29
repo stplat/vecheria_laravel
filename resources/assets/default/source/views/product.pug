@@ -1,0 +1,6 @@
+| @extends ('layout')
+| @section('content')
+.container
+  include ../components/breadcrumbs/breadcrumbs
+  +breadcrumbs('{{$subcategory}}', '{{$items->name}}')
+| @endsection

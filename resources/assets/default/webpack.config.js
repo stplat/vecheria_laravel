@@ -32,14 +32,29 @@ const config = merge([
         $: 'jquery',
         jQuery: 'jquery',
       }),
-      /*new HtmlWebpackPlugin({
+      new HtmlWebpackPlugin({
         filename: '../resources/views/layout.blade.php',
         template: PATHS.source + '/views/_layout.pug',
-      }),*/
+        inject: false,
+        templateParameters: {
+          'cssPath': '/css/style.css',
+          'jsPath': '/js/main.js'
+        }
+      }),
       new HtmlWebpackPlugin({
         filename: '../resources/views/index.blade.php',
         template: PATHS.source + '/views/index.pug',
-        //inject: false,
+        inject: false,
+      }),
+      new HtmlWebpackPlugin({
+        filename: '../resources/views/catalog.blade.php',
+        template: PATHS.source + '/views/catalog.pug',
+        inject: false,
+      }),
+      new HtmlWebpackPlugin({
+        filename: '../resources/views/product.blade.php',
+        template: PATHS.source + '/views/product.pug',
+        inject: false,
       }),
     ],
   },

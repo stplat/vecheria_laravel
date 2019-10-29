@@ -21,6 +21,7 @@
 
 html {
   touch-action: manipulation;
+  height: 100%;
 }
 
 body {
@@ -32,6 +33,7 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
+  height: 100%;
 }
 
 a {
@@ -52,6 +54,7 @@ a {
 
   body > & {
     flex-grow: 1;
+    width: 100%;
   }
 
   &--flex {
@@ -60,3 +63,4 @@ a {
     align-items: center;
   }
 }
+

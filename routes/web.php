@@ -13,4 +13,6 @@
 
 Route::get('/', 'IndexController@index');
 
+Route::get('/catalog/{category_plug}', 'CatalogController@index');
+Route::get('/catalog/{category_plug}/{item_plug}', 'ProductController@index');
 

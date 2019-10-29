@@ -1,0 +1,28 @@
+/* Переменные */
+@import '../../_defaults/variables';
+
+.filter-switch {
+  list-style-type: none;
+  display: flex;
+}
+
+.filter-switch__btn {
+  flex-grow: 1;
+
+  label {
+    width: 100%;
+    color: $text-color-opacity;
+    padding: 8px 0;
+    text-align: center;
+    display: block;
+    background-color: transparent;
+    transition: background-color 0.08s, color 0.08s;
+    cursor: pointer;
+    font-size: 13px;
+  }
+
+  input:checked + label {
+    background-color: $orange-color;
+    color: #FFFFFF;
+  }
+}

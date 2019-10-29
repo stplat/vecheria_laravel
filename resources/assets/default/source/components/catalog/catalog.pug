@@ -1,0 +1,19 @@
+.catalog
+  .catalog__title
+    h1 {{$subcategory}}
+  .catalog__container
+    .catalog__aside
+      .catalog__filter
+        include ../filter/filter
+    .catalog__content
+      .catalog__top-panel
+        .catalog__total
+          p показано товаров: {{count($items)}} из {{count($items_quantity)}} ед.
+        .catalog__select
+          select(name="per_page")
+            option(value="24", selected="selected") показывать по 24
+            option(value="36") показывать по 36
+            option(value="42") показывать по 42
+      include ../item/item
+      +items('3')
+      | {{$items->render()}}

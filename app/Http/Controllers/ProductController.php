@@ -3,22 +3,28 @@
 namespace App\Http\Controllers;
 
 use DB;
+use Illuminate\Http\Request;
 
-//use App\Http\Controllers\Controller;
-
-
-class IndexController extends Controller {
+class ProductController extends Controller {
   /**
    * Display a listing of the resource.
    *
    * @return \Illuminate\Http\Response
    */
-  public function index() {
+
+  public function index($category_plug, $item_plug, Request $request) {
     $categories = DB::table('categories')->where('available', '1')->get();
-    $items = DB::table('items')->join('categories', 'items.subcategory_id', '=', 'categories.id')
-      ->select('items.*', 'categories.plug as subcategory_plug')->inRandomOrder()->limit(4)->get();
+    $subcategories = DB::table('categories')->select('subcategory')->where('plug', $category_plug)->get();
+
+    $itemsQuery = DB::table('items')->where('plug', $item_plug)->get();
+    $items = '';
+
+    foreach ($itemsQuery as $obj) {
+      $items = $obj;
+    }
 
     $menu = [];
+    $subcategory = '';
 
     function inArray($array, $needle) {
       $result = 0;
@@ -50,10 +56,24 @@ class IndexController extends Controller {
       }
     }
 
+    foreach ($subcategories as $subcategory_name) {
+      $subcategory = $subcategory_name->subcategory;
+    }
+
     $keywords = 'православная, лавка, изделия, крестики, бухвицы, браслеты, ручная работа, освещенные';
     $description = 'Покупка недорогих освещенных православных ювелирных изделий ручной работы по низким ценам';
     $title = 'Интернет-магазин православных изделий "Вечерия"';
 
-    return view('index', compact('menu', 'items', 'keywords', 'description', 'title'));
+    if ($request->ajax()) {
+
+
+    } else {
+      if (count($itemsQuery)) {
+        return view('product', compact('menu', 'items', 'category_plug', 'subcategory', 'keywords', 'description', 'title'));
+      } else {
+        abort('404');
+      }
+    }
   }
+
 }

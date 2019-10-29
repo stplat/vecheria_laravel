@@ -1,0 +1,13 @@
+.filter-section
+  .filter-section
+    .filter-section__title Категории
+    .filter-section__list
+      | @foreach ($menu as $menu_items)
+      | @foreach ($menu_items['subcategory'] as $plug => $subcategory_name)
+      | @if ($subcategory_name == $subcategory)
+      a.filter-section__link(href!="/catalog/{{$plug}}", class!="is-active") {{$subcategory_name}}
+      | @else
+      a.filter-section__link(href!="/catalog/{{$plug}}") {{$subcategory_name}}
+      | @endif
+      | @endforeach
+      | @endforeach
