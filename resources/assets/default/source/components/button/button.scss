@@ -33,6 +33,15 @@
   }
 }
 
+.button--red {
+  background: $red-color;
+
+  .no-touch &:hover,
+  &:active {
+    background-color: $red-color-hover;
+  }
+}
+
 .button--small {
   font-size: 14px;
   font-weight: 400;

@@ -1,0 +1,50 @@
+/* Переменные */
+@import '../../_defaults/variables';
+
+.product-image {
+
+}
+
+.product-image__showcase {
+  text-align: center;
+  margin: 20px 0;
+  padding: 30px 0;
+  border: 1px dashed #EAEAEA;
+  height: 380px;
+
+  img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+}
+
+.product-image__preview {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin: 0 -5px;
+
+  li {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid #EAEAEA;
+    padding: 5px;
+    margin: 0 5px;
+    transition: border-color 0.08s;
+    border-radius: 4px;
+    overflow: hidden;
+
+    .no-touch &:hover {
+      border-color: $orange-color;
+    }
+  }
+
+  img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+}

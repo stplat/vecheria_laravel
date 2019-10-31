@@ -1,0 +1,47 @@
+.product
+  .product__wrapper
+    .product__col.product__col--left
+      .product__name
+        h1 {{$items->name}}
+      .product__article {{$items->article}}
+      .product__image
+        include product-image/product-image
+    .product__col
+      .product__price
+        p {{$items->price}}
+      .product__row
+        .product__button
+          include ../button/button
+          +button('В корзину', 'button--red')
+        .product__buy
+          a(href="") Быстрая покупка
+      .product__holy
+        p Изделие освящено
+      .product__row
+        ul.product__params
+          | @if ($items->manufactured)
+          li
+            span Производитель:
+            span {{$items->manufactured}}
+          | @endif
+          | @if ($items->weight)
+          li
+            span Вес:
+            span {{$items->weight}}
+          | @endif
+          | @if ($items->material)
+          li
+            span Материал::
+            span {{$items->material}}
+          | @endif
+          | @if ($items->technic)
+          li
+            span Техника:
+            span {{$items->technic}}
+          | @endif
+  .product__description
+    .product-desc
+      ul.product-desc__tab
+        li Описание
+      .product_desc__body
+        p {{$items->description}}

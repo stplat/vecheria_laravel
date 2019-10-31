@@ -1,0 +1,50 @@
+/* Переменные */
+@import '../../_defaults/variables';
+
+.product-desc {
+
+}
+
+.product-desc__tab {
+  list-style-type: none;
+  display: flex;
+  position: relative;
+
+  li {
+    background: #FFFFFF;
+    color: $text-color;
+    font-weight: 600;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+    position: relative;
+    border-bottom: 1px solid transparent;
+    padding: 12px 20px;
+    border-radius: 4px 4px 0 0;
+    font-size: 14px;
+    text-transform: uppercase;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      left: 0;
+      bottom: -2px;
+      background: #FFFFFF;
+      z-index: 3;
+    }
+  }
+}
+
+.product_desc__body {
+  background: #FFFFFF;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+  border-radius: 4px;
+  padding: 20px 30px;
+  position: relative;
+
+  p {
+    color: $text-color-opacity;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}

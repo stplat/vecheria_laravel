@@ -1,0 +1,132 @@
+/* Переменные */
+@import '../_defaults/variables';
+@import 'product-image/product-image';
+@import 'product-desc/product-desc';
+
+.product {
+
+}
+
+.product__wrapper {
+  display: flex;
+  background: #FFFFFF;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+  border-radius: 4px;
+}
+
+.product__col {
+  flex: 0 0 310px;
+  padding: 20px 30px;
+}
+
+.product__col--left {
+  flex: 1 0 auto;
+  border-right: 1px solid #EAEAEA;
+}
+
+.product__row {
+  padding: 20px 0;
+  border-bottom: 1px solid #EAEAEA;
+  text-align: center;
+
+  &:last-child {
+    border: none;
+  }
+}
+
+.product__name {
+  h1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: $text-color;
+    margin: 0;
+  }
+}
+
+.product__buy {
+  padding: 10px 0 0;
+
+  a {
+    color: $text-color;
+    border-bottom: 1px dotted $text-color-opacity;
+    display: inline-block;
+    transition: border-color .08s;
+    font-size: 15px;
+    padding: 0 0 2px 0;
+
+    .no-touch &:hover {
+      border-color: transparent;
+    }
+  }
+}
+
+.product__article {
+  color: $text-color-opacity;
+  font-size: 12px;
+  margin-top: 10px;
+
+  &:before {
+    content: 'Артикул: '
+  }
+}
+
+.product__price {
+  padding: 0 0 15px 0;
+  border-bottom: 1px solid #EAEAEA;
+
+  p {
+    font-size: 30px;
+    font-weight: 600;
+    color: $text-color;
+    text-align: center;
+
+    &:after {
+      content: "руб.";
+      display: inline;
+      margin-left: 4px;
+      font-size: 15px;
+    }
+  }
+}
+
+.product__holy {
+  padding: 20px 0;
+  border-bottom: 1px solid #EAEAEA;
+
+  p {
+    background: #EAEAEA;
+    text-align: center;
+    padding: 7px 0;
+    font-size: 13px;
+    color: $text-color;
+    border-radius: 4px;
+  }
+}
+
+.product__params {
+  list-style-type: none;
+  text-align: left;
+  margin: -14px 0;
+
+  li {
+    display: flex;
+    font-size: 13px;
+    margin: 14px 0;
+  }
+
+  span {
+    flex: 1 0 50%;
+    color: $text-color-opacity;
+    font-weight: bold;
+    display: block;
+
+    &:nth-child(2) {
+      color: $text-color-opacity;
+      font-weight: normal;
+    }
+  }
+}
+
+.product__description {
+  margin: 15px 0 0;
+}
