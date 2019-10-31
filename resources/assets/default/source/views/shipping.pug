@@ -1,0 +1,12 @@
+| @extends ('layout')
+| @section('content')
+.container
+  include ../components/breadcrumbs/breadcrumbs
+  +breadcrumbs('Доставка')
+  include ../components/title/title
+  +title('h1', 'Доставка православных изделий')
+  include ../components/text/text
+  +shipping
+| @endsection
+
+

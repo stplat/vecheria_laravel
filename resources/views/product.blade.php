@@ -30,35 +30,36 @@
           <p>{{$items->price}}</p>
         </div>
         <div class="product__row">
-          <div class="product__button"><a class="button button--red">В корзину</a>
-          </div>
-          <div class="product__buy"><a href="">Быстрая покупка</a></div>
+          <ul class="product__params">@if ($items->manufactured)
+            <li><span>Производитель:</span><span>{{$items->manufactured}}</span></li>@endif
+            @if ($items->weight)
+            <li><span>Средний вес:</span><span>{{$items->weight}}</span></li>@endif
+            @if ($items->material)
+            <li><span>Материал::</span><span>{{$items->material}}</span></li>@endif
+            @if ($items->technic)
+            <li><span>Техника:</span><span>{{$items->technic}}</span></li>@endif
+            <li><span>Наличие:</span><span class="green">На складе</span></li>
+          </ul>
         </div>
         <div class="product__holy">
           <p>Изделие освящено</p>
         </div>
         <div class="product__row">
-          <ul class="product__params">@if ($items->manufactured)
-            <li><span>Производитель:</span><span>{{$items->manufactured}}</span></li>@endif
-            @if ($items->weight)
-            <li><span>Вес:</span><span>{{$items->weight}}</span></li>@endif
-            @if ($items->material)
-            <li><span>Материал::</span><span>{{$items->material}}</span></li>@endif
-            @if ($items->technic)
-            <li><span>Техника:</span><span>{{$items->technic}}</span></li>@endif
-          </ul>
+          <div class="product__button"><a class="button button--red">В корзину</a>
+          </div>
+          <div class="product__buy"><a href="">Быстрая покупка</a></div>
         </div>
       </div>
     </div>
     <div class="product__description">
-      <div class="product-desc">
-        <ul class="product-desc__tab">
-          <li>Описание</li>
-        </ul>
-        <div class="product_desc__body">
-          <p>{{$items->description}}</p>
-        </div>
-      </div>
+<div class="product-desc">
+  <ul class="product-desc__tab">
+    <li>Описание</li>
+  </ul>
+  <div class="product_desc__body">
+    <p>{{$items->description}}</p>
+  </div>
+</div>
     </div>
   </div>
 </div>@endsection

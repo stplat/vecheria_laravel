@@ -20,7 +20,7 @@
 }
 
 .product__col--left {
-  flex: 1 0 auto;
+  flex: 1 1 auto;
   border-right: 1px solid #EAEAEA;
 }
 
@@ -37,7 +37,7 @@
 .product__name {
   h1 {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 400;
     color: $text-color;
     margin: 0;
   }
@@ -76,7 +76,7 @@
 
   p {
     font-size: 30px;
-    font-weight: 600;
+    font-weight: bolder;
     color: $text-color;
     text-align: center;
 
@@ -110,20 +110,23 @@
 
   li {
     display: flex;
-    font-size: 13px;
+    font-size: 14px;
     margin: 14px 0;
   }
 
   span {
     flex: 1 0 50%;
-    color: $text-color-opacity;
-    font-weight: bold;
+    color: $text-color;
     display: block;
 
     &:nth-child(2) {
       color: $text-color-opacity;
       font-weight: normal;
     }
+  }
+
+  .green {
+    color: $green-text!important;
   }
 }
 

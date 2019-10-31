@@ -80,7 +80,7 @@ class CatalogController extends Controller {
       ]);
 
     } else {
-      if (count($subcategories)) {
+      if (count($items)) {
         return view('catalog', compact('menu', 'items_quantity', 'items', 'subcategory', 'keywords', 'description', 'title'));
       } else {
         abort('404');

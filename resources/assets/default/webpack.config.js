@@ -56,6 +56,21 @@ const config = merge([
         template: PATHS.source + '/views/product.pug',
         inject: false,
       }),
+      new HtmlWebpackPlugin({
+        filename: '../resources/views/shipping.blade.php',
+        template: PATHS.source + '/views/shipping.pug',
+        inject: false,
+      }),
+      new HtmlWebpackPlugin({
+        filename: '../resources/views/payment.blade.php',
+        template: PATHS.source + '/views/payment.pug',
+        inject: false,
+      }),
+      new HtmlWebpackPlugin({
+        filename: '../resources/views/contacts.blade.php',
+        template: PATHS.source + '/views/contacts.pug',
+        inject: false,
+      }),
     ],
   },
   images(),

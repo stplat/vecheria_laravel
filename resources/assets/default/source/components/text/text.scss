@@ -1,0 +1,63 @@
+/* Переменные */
+@import '../_defaults/variables';
+
+.text {
+  position: relative;
+
+  div, p, h1, h2 {
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    color: $text-color;
+    font-weight: 300;
+    margin: 20px 0;
+    line-height: 24px;
+  }
+
+  a {
+    color: $orange-color-hover;
+    border-bottom: 1px dotted $orange-color-hover;
+    font-weight: normal;
+    transition: border-color 0.08s;
+
+    .no-touch &:hover {
+      border-color: transparent;
+    }
+  }
+
+  .red {
+    color: $red-color;
+    font-weight: 400;
+  }
+}
+
+.text--white-bg {
+  background: #FFFFFF;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+  padding: 30px;
+  border-radius: 4px;
+}
+
+.text__title {
+  margin: 40px 0 0;
+
+  h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: $orange-color-hover;
+    font-weight: bolder;
+  }
+}
+
+.text__signature {
+  color: $orange-color-hover;
+  text-align: right;
+}

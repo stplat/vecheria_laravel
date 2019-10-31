@@ -1,0 +1,10 @@
+| @extends ('layout')
+| @section('content')
+.container
+  include ../components/breadcrumbs/breadcrumbs
+  +breadcrumbs('Оплата')
+  include ../components/title/title
+  +title('h1', 'Способы оплаты')
+  include ../components/text/text
+  +payment
+| @endsection

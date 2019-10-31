@@ -16,7 +16,7 @@
     <div class="header__cap">
       <div class="container container--flex">
         <div class="header__nav">
-<div class="header-nav"><a class="header-nav__link" href="/">Главная</a><a class="header-nav__link" href="/">Доставка</a><a class="header-nav__link" href="/">Оплата</a><a class="header-nav__link" href="/">Контакты</a></div>
+<div class="header-nav"><a class="header-nav__link" href="/">Главная</a><a class="header-nav__link" href="/shipping">Доставка</a><a class="header-nav__link" href="/payment">Оплата</a><a class="header-nav__link" href="/contacts">Контакты</a></div>
         </div>
         <div class="header__search">
           <div class="header-search"></div>
@@ -62,11 +62,11 @@
           </div>
         </div>
         <ul class="footer__nav">
-          <li><a href="">Главная</a></li>
-          <li><a href="">Доставка</a></li>
-          <li><a href="">Оплата</a></li>
-          <li><a href="">Контакты</a></li>
-          <li><a href="">Корзина</a></li>
+          <li><a href="/">Главная</a></li>
+          <li><a href="/shipping">Доставка</a></li>
+          <li><a href="/payment">Оплата</a></li>
+          <li><a href="/contacts">Контакты</a></li>
+          <li><a href="/cart">Корзина</a></li>
         </ul>
         <div class="footer__feedback">
           <div class="footer__phone"><a href="tel:+74952039696">+7 (495) 203-96-96</a></div>
