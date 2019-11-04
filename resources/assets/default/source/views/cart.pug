@@ -1,0 +1,9 @@
+| @extends ('layout')
+| @section('content')
+.container
+  include ../components/breadcrumbs/breadcrumbs
+  +breadcrumbs('Корзина')
+  include ../components/title/title
+  +title('h1', 'Корзина покупок')
+  #cart-root
+| @endsection

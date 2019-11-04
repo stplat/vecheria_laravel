@@ -19,4 +19,5 @@ Route::get('/catalog/{category_plug}/{item_plug}', 'ProductController@index');
 Route::get('/payment', 'PaymentController@index');
 Route::get('/shipping', 'ShippingController@index');
 Route::get('/contacts', 'ContactsController@index');
+Route::get('/cart', 'CartController@index');
 

@@ -71,6 +71,11 @@ const config = merge([
         template: PATHS.source + '/views/contacts.pug',
         inject: false,
       }),
+      new HtmlWebpackPlugin({
+        filename: '../resources/views/cart.blade.php',
+        template: PATHS.source + '/views/cart.pug',
+        inject: false,
+      }),
     ],
   },
   images(),
