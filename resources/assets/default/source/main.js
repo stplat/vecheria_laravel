@@ -8,11 +8,9 @@ import './components/item/item';
 import './components/catalog/catalog';
 
 /* React */
-import React from 'react';
-import {render} from 'react-dom';
 
-//import App from './components/cart/Cart';
+import './components/cart/Cart';
 
-render(<h1>Привет, мир!</h1>, document.querySelector('#cart-root'));
+
 
 

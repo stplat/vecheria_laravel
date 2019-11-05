@@ -1,13 +1,19 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const names = document.querySelectorAll('.item__name a');
+  let names = '';
+
+  if (document.querySelectorAll('.item__name a').length) {
+    names = document.querySelectorAll('.item__name a');
+  } else {
+    names = document.querySelectorAll('.cart-item__name a');
+  }
 
   [...names].forEach((el) => {
     el.addEventListener('mouseenter', (e) => {
-      e.target.closest('.item__name').style.overflow = 'visible';
+      e.target.closest('div').style.overflow = 'visible';
     });
 
     el.addEventListener('mouseleave', (e) => {
-      e.target.closest('.item__name').style.overflow = 'hidden';
+      e.target.closest('div').style.overflow = 'hidden';
     });
   });
 });

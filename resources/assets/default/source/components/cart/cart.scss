@@ -1,0 +1,23 @@
+/* Переменные */
+@import '../_defaults/variables';
+@import '/cart-item/cart-item';
+@import '/cart-nav/cart-nav';
+
+.cart {
+  display: flex;
+  margin: 0 -7.5px;
+}
+
+.cart__content,
+.cart__aside {
+  margin: 0 7.5px;
+}
+
+.cart__content {
+  flex-grow: 1;
+  margin: -15px 7.5px;
+}
+
+.cart__aside {
+  width: 280px;
+}
