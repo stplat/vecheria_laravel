@@ -7,7 +7,7 @@
       <li><a class="breadcrumb__link" href="/catalog/{{$category_plug}}">{{$subcategory}}</a></li>
       <li>{{$items->name}}</li>
     </ul>
-  <div class="product">
+  <div class="product" id="{{$items->id}}">
     <div class="product__wrapper">
       <div class="product__col product__col--left">
         <div class="product__name">
@@ -45,7 +45,7 @@
           <p>Изделие освящено</p>
         </div>
         <div class="product__row">
-          <div class="product__button"><a class="button button--red">В корзину</a>
+          <div class="product__button"><a class="button button--red" href="#">В корзину</a>
           </div>
           <div class="product__buy"><a href="">Быстрая покупка</a></div>
         </div>

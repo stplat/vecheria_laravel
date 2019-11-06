@@ -16,8 +16,6 @@ class CartController extends Controller {
 
     $categories = DB::table('categories')->where('available', '1')->get();
 
-    $this->show('1');
-
     $menu = [];
 
     function inArray($array, $needle) {
@@ -54,7 +52,9 @@ class CartController extends Controller {
     $description = 'Покупка недорогих освещенных православных ювелирных изделий ручной работы по низким ценам';
     $title = 'Интернет-магазин православных изделий "Вечерия"';
 
-    Session::put('id', '3');
+    echo $this->show('2');
+
+
 
     return view('cart', compact('menu', 'keywords', 'description', 'title'));
   }
@@ -66,6 +66,23 @@ class CartController extends Controller {
    */
   public function create() {
     //
+  }
+
+  /**
+   * Show the form for creating a new resource.
+   *
+   * @return \Illuminate\Http\Response
+   */
+  public function addSession($id) {
+    return 'asd';
+    /*$items_id = [];
+
+    if (!in_array($id, $items_id)) {
+      array_push($items_id, $id);
+    }
+
+    return $items_id;*/
+    //Session::put('id', ['3', '4']);
   }
 
   /**

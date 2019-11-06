@@ -69,7 +69,6 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('.catalog__total p').innerHTML = `показано товаров: ${itemsCount} из ${itemCountAll} ед.`;
         document.querySelector('.pagination') ? document.querySelector('.pagination').innerHTML = pagination : '';
 
-
       }).catch(
         error => console.log(error));
     }

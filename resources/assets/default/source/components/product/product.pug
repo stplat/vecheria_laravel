@@ -1,4 +1,4 @@
-.product
+.product(id!='{{$items->id}}')
   .product__wrapper
     .product__col.product__col--left
       .product__name
@@ -39,7 +39,7 @@
       .product__row
         .product__button
           include ../button/button
-          +button('В корзину', 'button--red')
+          +button('В корзину', 'button--red', '#')
         .product__buy
           a(href="") Быстрая покупка
 
