@@ -21,4 +21,5 @@ Route::get('/shipping', 'ShippingController@index');
 Route::get('/contacts', 'ContactsController@index');
 
 Route::resource('/cart', 'CartController');
+Route::post('/cart/addSession', 'CartController@addSession');
 

@@ -54,8 +54,6 @@ class CartController extends Controller {
 
     echo $this->show('2');
 
-
-
     return view('cart', compact('menu', 'keywords', 'description', 'title'));
   }
 
@@ -73,15 +71,14 @@ class CartController extends Controller {
    *
    * @return \Illuminate\Http\Response
    */
-  public function addSession($id) {
-    return 'asd';
-    /*$items_id = [];
+  public function addSession(Request $request) {
+    $items_id = [];
 
-    if (!in_array($id, $items_id)) {
-      array_push($items_id, $id);
+    if (!in_array($request->input('id'), $items_id)) {
+      array_push($items_id, $request->input('id'));
     }
 
-    return $items_id;*/
+    return $items_id;
     //Session::put('id', ['3', '4']);
   }
 

@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const token = document.head.querySelector('meta[name="csrf-token"]');
 
     button.addEventListener('click', function (e) {
-      axios.get('/cart/addSession?id=' + id, {
+      axios.post('/cart/addSession?id=5', {
         headers: {
           'Content-Type': 'application/json',
           'X-Requested-With': 'XMLHttpRequest',
