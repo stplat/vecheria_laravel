@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use DB;
 use Illuminate\Http\Request;
+use Session;
 
 class ProductController extends Controller {
   /**
@@ -59,13 +60,13 @@ class ProductController extends Controller {
     foreach ($subcategories as $subcategory_name) {
       $subcategory = $subcategory_name->subcategory;
     }
+    echo Session::get('id');
 
     $keywords = 'православная, лавка, изделия, крестики, бухвицы, браслеты, ручная работа, освещенные';
     $description = 'Покупка недорогих освещенных православных ювелирных изделий ручной работы по низким ценам';
     $title = 'Интернет-магазин православных изделий "Вечерия"';
 
     if ($request->ajax()) {
-
 
     } else {
       if (count($itemsQuery)) {

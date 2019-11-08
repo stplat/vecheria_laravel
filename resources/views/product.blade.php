@@ -16,12 +16,15 @@
         <div class="product__article">{{$items->article}}</div>
         <div class="product__image">
 <div class="product-image">
-  <div class="product-image__showcase"><img src="/images/items/angel_hranitely_golgofa_gospody_vsederghitely_tolgskaya_ikona_boghiey_materi_2.jpg"></div>
-  <ul class="product-image__preview">
-    <li><img src="/images/items/angel_hranitely_golgofa_gospody_vsederghitely_tolgskaya_ikona_boghiey_materi_2.jpg"></li>
-    <li><img src="/images/items/angel_hranitely_golgofa_gospody_vsederghitely_tolgskaya_ikona_boghiey_materi_2.jpg"></li>
-    <li><img src="/images/items/chasy_dve_stihii_a1100301_5.jpg"></li>
-  </ul>
+  <div class="product-image__showcase"><img src="/images/items/{{$items->image_path}}"></div>
+  <!--ul.product-image__preview
+  li
+    img(src!="/images/items/angel_hranitely_golgofa_gospody_vsederghitely_tolgskaya_ikona_boghiey_materi_2.jpg")
+  li
+    img(src!="/images/items/angel_hranitely_golgofa_gospody_vsederghitely_tolgskaya_ikona_boghiey_materi_2.jpg")
+  li
+    img(src!="/images/items/chasy_dve_stihii_a1100301_5.jpg")
+  -->
 </div>
         </div>
       </div>
@@ -56,9 +59,7 @@
   <ul class="product-desc__tab">
     <li>Описание</li>
   </ul>
-  <div class="product_desc__body">
-    <p>{{$items->description}}</p>
-  </div>
+  <div class="product_desc__body"><noindex> <p> {{$items->description}}</p></noindex></div>
 </div>
     </div>
   </div>

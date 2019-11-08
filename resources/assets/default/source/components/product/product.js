@@ -1,3 +1,4 @@
+import './product-image/product-image';
 import axios from 'axios';
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -8,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const token = document.head.querySelector('meta[name="csrf-token"]');
 
     button.addEventListener('click', function (e) {
-      axios.post('/cart/addSession?id=5', {
+      axios.post('/cart/addSession?id=' + id, {
         headers: {
           'Content-Type': 'application/json',
           'X-Requested-With': 'XMLHttpRequest',
@@ -20,7 +21,6 @@ document.addEventListener('DOMContentLoaded', function () {
         error => console.log(error));
       e.preventDefault();
     });
-
-    console.log(button)
   }
 });
+

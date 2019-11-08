@@ -72,14 +72,13 @@ class CartController extends Controller {
    * @return \Illuminate\Http\Response
    */
   public function addSession(Request $request) {
-    $items_id = [];
+    $items_id = Session::get('id') ? Session::get('id') : [];
 
     if (!in_array($request->input('id'), $items_id)) {
       array_push($items_id, $request->input('id'));
-    }
 
-    return $items_id;
-    //Session::put('id', ['3', '4']);
+      Session::put('id', $items_id);
+    }
   }
 
   /**
