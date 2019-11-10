@@ -37,7 +37,7 @@
         <div class="header__logo"><a class="logo" href="/"><img src="/images/logo.svg" alt="Интернет-магазин ювелирных православных изделий" title="Интернет-магазин ювелирных православных изделий"></a>
         </div>
         <div class="header__cart">
-<div class="header-cart"><a class="header-cart__body" href=""><span> Корзина [<span>0</span>]</span></a><a class="header-cart__btn" href=""></a></div>
+<div class="header-cart"><a class="header-cart__body" href=""><span>Корзина [<span>{{$cart_count}}</span>]</span></a><a class="header-cart__btn" href=""></a></div>
         </div>
       </div>
     </div>

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
 use DB;
+use Session;
 
 class CatalogController extends Controller {
   /**
@@ -63,6 +64,8 @@ class CatalogController extends Controller {
     foreach ($subcategories as $subcategory_name) {
       $subcategory = $subcategory_name->subcategory;
     }
+  
+    $cart_count = count(Session::get('id'));
 
     $keywords = 'православная, лавка, изделия, крестики, бухвицы, браслеты, ручная работа, освещенные';
     $description = 'Покупка недорогих освещенных православных ювелирных изделий ручной работы по низким ценам';
@@ -81,7 +84,7 @@ class CatalogController extends Controller {
 
     } else {
       if (count($items)) {
-        return view('catalog', compact('menu', 'items_quantity', 'items', 'subcategory', 'keywords', 'description', 'title'));
+        return view('catalog', compact('menu', 'items_quantity', 'items', 'subcategory', 'keywords', 'description', 'title', 'cart_count'));
       } else {
         abort('404');
       }

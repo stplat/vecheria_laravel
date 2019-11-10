@@ -8,9 +8,10 @@ mixin items(quantity)
         p {{$item->manufactured}}
       .item__article {{$item->article}}
       .item__image
-        img(src!="/images/items/{{$item->image_path}}",
-        alt!="{{$item->name}}",
-        title!="{{$item->name}}")
+        a(href!="/catalog/{{$item->subcategory_plug}}/{{$item->plug}}/")
+          img(src!="/images/items/{{$item->image_path}}",
+          alt!="{{$item->name}}",
+          title!="{{$item->name}}")
       .item__name
         a(href!="/catalog/{{$item->subcategory_plug}}/{{$item->plug}}/") {{$item->name}}
       .item__price

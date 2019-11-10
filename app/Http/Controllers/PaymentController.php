@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
 use DB;
+use Session;
 
 class PaymentController extends Controller {
   /**
@@ -48,11 +49,13 @@ class PaymentController extends Controller {
         }
       }
     }
+  
+    $cart_count = count(Session::get('id'));
     
     $keywords = 'православная, лавка, изделия, крестики, бухвицы, браслеты, ручная работа, освещенные';
     $description = 'Покупка недорогих освещенных православных ювелирных изделий ручной работы по низким ценам';
     $title = 'Интернет-магазин православных изделий "Вечерия"';
     
-    return view('payment', compact('menu', 'keywords', 'description', 'title'));
+    return view('payment', compact('menu', 'keywords', 'description', 'title', 'cart_count'));
   }
 }

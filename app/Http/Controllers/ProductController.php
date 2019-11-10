@@ -60,7 +60,8 @@ class ProductController extends Controller {
     foreach ($subcategories as $subcategory_name) {
       $subcategory = $subcategory_name->subcategory;
     }
-    echo Session::get('id');
+  
+    $cart_count = Session::get('id') ? count(Session::get('id')) : 0;
 
     $keywords = 'православная, лавка, изделия, крестики, бухвицы, браслеты, ручная работа, освещенные';
     $description = 'Покупка недорогих освещенных православных ювелирных изделий ручной работы по низким ценам';
@@ -70,7 +71,7 @@ class ProductController extends Controller {
 
     } else {
       if (count($itemsQuery)) {
-        return view('product', compact('menu', 'items', 'category_plug', 'subcategory', 'keywords', 'description', 'title'));
+        return view('product', compact('menu', 'items', 'category_plug', 'subcategory', 'keywords', 'description', 'title', 'cart_count'));
       } else {
         abort('404');
       }

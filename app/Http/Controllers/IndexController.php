@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use DB;
+use Session;
 
 //use App\Http\Controllers\Controller;
 
@@ -49,11 +50,13 @@ class IndexController extends Controller {
         }
       }
     }
+  
+    $cart_count = count(Session::get('id'));
 
     $keywords = 'православная, лавка, изделия, крестики, бухвицы, браслеты, ручная работа, освещенные';
     $description = 'Покупка недорогих освещенных православных ювелирных изделий ручной работы по низким ценам';
     $title = 'Интернет-магазин православных изделий "Вечерия"';
 
-    return view('index', compact('menu', 'items', 'keywords', 'description', 'title'));
+    return view('index', compact('menu', 'items', 'keywords', 'description', 'title', 'cart_count'));
   }
 }

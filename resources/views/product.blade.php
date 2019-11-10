@@ -38,10 +38,10 @@
             @if ($items->weight)
             <li><span>Средний вес:</span><span>{{$items->weight}}</span></li>@endif
             @if ($items->material)
-            <li><span>Материал::</span><span>{{$items->material}}</span></li>@endif
+            <li><span>Материал:</span><span>{{$items->material}}</span></li>@endif
             @if ($items->technic)
             <li><span>Техника:</span><span>{{$items->technic}}</span></li>@endif
-            <li><span>Наличие:</span><span class="green">На складе</span></li>
+            <li><span>Наличие:</span><span class="green">на складе</span></li>
           </ul>
         </div>
         <div class="product__holy">
