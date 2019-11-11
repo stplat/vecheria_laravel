@@ -50,8 +50,14 @@ class IndexController extends Controller {
         }
       }
     }
-  
-    $cart_count = count(Session::get('id'));
+
+    $cart_count = 0;
+
+    if (is_array(Session::get('items'))) {
+      foreach (Session::get('items') as $item) {
+        $cart_count += $item['count'];
+      }
+    }
 
     $keywords = 'православная, лавка, изделия, крестики, бухвицы, браслеты, ручная работа, освещенные';
     $description = 'Покупка недорогих освещенных православных ювелирных изделий ручной работы по низким ценам';

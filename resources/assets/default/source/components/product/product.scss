@@ -126,10 +126,22 @@
   }
 
   .green {
-    color: $green-text!important;
+    color: $green-text !important;
   }
 }
 
 .product__description {
   margin: 15px 0 0;
+}
+
+.product__alert {
+  display: block;
+  color: $green-color;
+  text-transform: uppercase;
+  border: 1px dotted $green-color;
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 11px 24px;
+  text-align: center;
+  font-weight: 500;
 }

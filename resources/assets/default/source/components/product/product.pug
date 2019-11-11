@@ -39,7 +39,11 @@
       .product__row
         .product__button
           include ../button/button
+          | @if (!$in_cart)
           +button('В корзину', 'button--red', '#')
+          | @else
+          .product__alert Товар в корзине
+          | @endif
         .product__buy
           a(href="") Быстрая покупка
   .product__description

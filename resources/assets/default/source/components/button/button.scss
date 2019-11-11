@@ -42,6 +42,15 @@
   }
 }
 
+.button--green {
+  background: $green-color;
+
+  .no-touch &:hover,
+  &:active {
+    background-color: $green-color-hover;
+  }
+}
+
 .button--small {
   font-size: 14px;
   font-weight: 400;

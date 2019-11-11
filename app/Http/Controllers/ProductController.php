@@ -60,8 +60,19 @@ class ProductController extends Controller {
     foreach ($subcategories as $subcategory_name) {
       $subcategory = $subcategory_name->subcategory;
     }
-  
-    $cart_count = Session::get('id') ? count(Session::get('id')) : 0;
+
+    $cart_count = 0;
+    $in_cart = false;
+
+    if (is_array(Session::get('items'))) {
+      foreach (Session::get('items') as $item) {
+        $cart_count += $item['count'];
+      }
+
+      if (inArray(Session::get('items'), $items->id)) {
+        $in_cart = true;
+      }
+    }
 
     $keywords = 'православная, лавка, изделия, крестики, бухвицы, браслеты, ручная работа, освещенные';
     $description = 'Покупка недорогих освещенных православных ювелирных изделий ручной работы по низким ценам';
@@ -71,7 +82,7 @@ class ProductController extends Controller {
 
     } else {
       if (count($itemsQuery)) {
-        return view('product', compact('menu', 'items', 'category_plug', 'subcategory', 'keywords', 'description', 'title', 'cart_count'));
+        return view('product', compact('menu', 'items', 'category_plug', 'subcategory', 'keywords', 'description', 'title', 'cart_count', 'in_cart'));
       } else {
         abort('404');
       }

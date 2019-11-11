@@ -48,7 +48,8 @@
           <p>Изделие освящено</p>
         </div>
         <div class="product__row">
-          <div class="product__button"><a class="button button--red" href="#">В корзину</a>
+          <div class="product__button">@if (!$in_cart)<a class="button button--red" href="#">В корзину</a>@else
+            <div class="product__alert">Товар в корзине</div>@endif
           </div>
           <div class="product__buy"><a href="">Быстрая покупка</a></div>
         </div>

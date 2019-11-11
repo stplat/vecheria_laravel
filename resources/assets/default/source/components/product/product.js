@@ -8,6 +8,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const button = product.querySelector('.button');
     const token = document.querySelector('meta[name="csrf-token"]');
 
+    const alert = document.createElement('div');
+    alert.className = 'product__alert';
+    alert.innerText = 'Товар в корзине';
+
     button.addEventListener('click', function (e) {
       axios.post('/cart/addSession?id=' + id, {
         headers: {
@@ -19,6 +23,10 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log(res);
         const cart = document.querySelector('.header-cart__body span span');
         cart.innerText = res.data;
+
+        document.querySelector('.product__button').append(alert);
+        button.remove();
+
       }).catch(
         error => console.log(error));
       e.preventDefault();
