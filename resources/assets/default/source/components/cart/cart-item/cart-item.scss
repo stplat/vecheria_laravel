@@ -112,6 +112,25 @@
     padding: 7px 15px;
     width: 100%;
   }
+
+  select {
+    color: $text-color-opacity;
+    position: relative;
+    border: 1px solid rgba(102, 107, 114, .3);
+    padding: 5px 15px 5px 10px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    overflow: hidden;
+  }
+
+  option {
+    background-color: #FFFFFF;
+    color: $text-color-opacity;
+    padding: 5px 0 5px 10px;
+    border: 1px solid transparent;
+  }
 }
 
 .cart-item__total {

@@ -21,3 +21,20 @@
 .cart__aside {
   width: 280px;
 }
+
+.cart__empty {
+  font-size: 16px;
+  font-weight: 300;
+  color: $text-color-opacity;
+
+  a {
+    color: $orange-color-hover;
+    border-bottom: 1px dotted $orange-color-hover;
+    font-weight: normal;
+    transition: border-color 0.08s;
+
+    .no-touch &:hover {
+      border-color: transparent;
+    }
+  }
+}
