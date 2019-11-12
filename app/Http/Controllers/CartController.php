@@ -60,9 +60,29 @@ class CartController extends Controller {
     $description = 'Покупка недорогих освещенных православных ювелирных изделий ручной работы по низким ценам';
     $title = 'Интернет-магазин православных изделий "Вечерия"';
 
-    echo $this->show('2');
+    $id = [];
+    $items = [];
 
-    return view('cart', compact('menu', 'keywords', 'description', 'title', 'cart_count'));
+    if (is_array(Session::get('items'))) {
+      foreach (Session::get('items') as $array) {
+        array_push($id, $array['id']);
+      }
+
+      $items_query = $this->show($id);
+
+      foreach ($items_query as $obj) {
+        $item = $obj;
+        foreach (Session::get('items') as $array) {
+          if ($array['id'] == $obj->id) {
+            $item->count = $array['count'];
+            $item->total = $array['count'] * $obj->price;
+          }
+        }
+        array_push($items, $item);
+      }
+    }
+
+    return view('cart', compact('menu', 'keywords', 'description', 'title', 'cart_count', 'items'));
   }
 
   /**
@@ -102,12 +122,23 @@ class CartController extends Controller {
       return $result;
     }
 
-    if (!inArray($items, $request->input('id'))) {
-      array_push($items, ['id' => $request->input('id'), 'count' => 1]);
+    $id = $request->input('id');
+    $count = $request->input('count');
+    $price = $request->input('price');
+    $total = (int)$request->input('count') * (int)$request->input('price');
+
+    if (!inArray($items, $id)) {
+      array_push($items, [
+        'id' => $id,
+        'count' => $count,
+        'price' => $price,
+        'total' => $total,
+      ]);
     } else {
       foreach ($items as $key => $value) {
-        if ($value['id'] == $request->input('id')) {
-          $items[$key]['count'] += 1;
+        if ($value['id'] == $id) {
+          $items[$key]['count'] = $count;
+          $items[$key]['total'] = (int)$request->input('count') * (int)$value['price'];
         }
       }
     }
@@ -115,12 +146,43 @@ class CartController extends Controller {
     Session::put('items', $items);
 
     $cart_count = 0;
+    $cart_total = 0;
 
     foreach (Session::get('items') as $item) {
       $cart_count += $item['count'];
     }
 
-    return $cart_count;
+    foreach (Session::get('items') as $item) {
+      $cart_total += $item['total'];
+    }
+
+    return compact('cart_count', 'cart_total', 'items');
+  }
+
+  public function removeSession(Request $request) {
+    $array = Session::get('items');
+    $id = $request->input('id');
+
+    $items = array_filter($array, function ($i) use ($id) {
+      return $i['id'] !== $id;
+    });
+
+    $items = array_values($items);
+
+    Session::put('items', $items);
+
+    $cart_count = 0;
+    $cart_total = 0;
+
+    foreach (Session::get('items') as $item) {
+      $cart_count += $item['count'];
+    }
+
+    foreach (Session::get('items') as $item) {
+      $cart_total += $item['total'];
+    }
+
+    return compact('cart_count', 'cart_total', 'items');
   }
 
   /**
@@ -139,8 +201,11 @@ class CartController extends Controller {
    * @param  int $id
    * @return \Illuminate\Http\Response
    */
-  public function show($id) {
-    return DB::table('items')->where('id', $id)->get();
+  public function show(array $id) {
+    return DB::table('items')->join('categories', 'items.subcategory_id', '=', 'categories.id')
+      ->select('items.*', 'categories.plug as subcategory_plug')
+      ->whereIn('items.id', $id)
+      ->get();
   }
 
   /**
