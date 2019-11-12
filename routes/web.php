@@ -22,4 +22,5 @@ Route::get('/contacts', 'ContactsController@index');
 
 Route::resource('/cart', 'CartController');
 Route::post('/cart/addSession', 'CartController@addSession');
+Route::post('/cart/removeSession', 'CartController@removeSession');
 

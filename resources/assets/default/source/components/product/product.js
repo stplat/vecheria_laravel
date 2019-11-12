@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', function () {
   if (document.querySelector('.product')) {
     const product = document.querySelector('.product');
     const id = product.id;
+    const price = product.querySelector('.product__price p').innerText;
+    const count = 1;
     const button = product.querySelector('.button');
     const token = document.querySelector('meta[name="csrf-token"]');
 
@@ -12,25 +14,25 @@ document.addEventListener('DOMContentLoaded', function () {
     alert.className = 'product__alert';
     alert.innerText = 'Товар в корзине';
 
-    button.addEventListener('click', function (e) {
-      axios.post('/cart/addSession?id=' + id, {
-        headers: {
-          'Content-Type': 'application/json',
-          'X-Requested-With': 'XMLHttpRequest',
-          'X-CSRF-TOKEN': token.content
-        }
-      }).then(res => {
-        console.log(res);
-        const cart = document.querySelector('.header-cart__body span span');
-        cart.innerText = res.data;
+    if (button)
+      button.addEventListener('click', function (e) {
+        axios.post('/cart/addSession?id=' + id + '&price=' + price + '&count=' + count, {
+          headers: {
+            'Content-Type': 'application/json',
+            'X-Requested-With': 'XMLHttpRequest',
+            'X-CSRF-TOKEN': token.content,
+          },
+        }).then(res => {
+          const cart = document.querySelector('.header-cart__body span span');
+          cart.innerText = res.data.cart_count;
 
-        document.querySelector('.product__button').append(alert);
-        button.remove();
+          document.querySelector('.product__button').append(alert);
+          button.remove();
 
-      }).catch(
-        error => console.log(error));
-      e.preventDefault();
-    });
+        }).catch(
+          error => console.log(error));
+        e.preventDefault();
+      });
   }
 });
 
