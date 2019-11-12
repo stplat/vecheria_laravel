@@ -56,7 +56,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (!document.querySelector('.cart-item')) {
           document.querySelector('.cart').innerHTML = '<div class="cart__empty">Ваша корзина покупок пуста.</div>';
-          console.log('asd')
         }
 
       }).catch(
