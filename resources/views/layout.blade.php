@@ -30,7 +30,9 @@
   <div class="header-props__phone"><a href="tel:+74952039696">+7 (495) 203-96-96</a></div>
   <ul class="header-props__ul">
     <li>Пн-пт 10:00 - 18:00 (МСК)</li>
-    <li><a class="header-props__callback" href="">Заказать обратный звонок</a></li>
+    <li>
+      <div class="header-props__callback js-button-callback">Заказать обратный звонок</div>
+    </li>
   </ul>
 </div>
         </div>
@@ -83,12 +85,15 @@
       </div>
     </div>
   </footer>
-<div class="popup">
+<div class="popup js-popup-callback">
   <div class="popup__container">
     <div class="popup__header"><span class="popup__close"></span>
       <div class="popup__title">Заявка на обратный звонок</div>
       <p class="popup__desc">Оставьте свои контактные данные и мы свяжемся с Вами в самое ближайшее время!</p>
-    </div>
+    </div>@if ($callback == 'sent')
+    <div class="popup__body is-success">
+      <div class="popup__success">Заявка успешно отправлена!</div>
+    </div>@else
     <div class="popup__body">
       <form class="popup__form" id="callback">
         <div class="popup__field">
@@ -106,13 +111,13 @@
           </div>
         </div>
         <div class="popup__button">
-          <button class="button" type="submit">Отправить заявку</button>
+          <button class="button">Отправить заявку</button>
         </div>
       </form>
       <div class="popup__offer">
         <p>Отправляя заявку, Вы соглашаетесь на обработку персональных данных</p>
       </div>
-    </div>
+    </div>@endif
   </div>
 </div>
   <script src="/js/main.js" type="text/javascript"></script>

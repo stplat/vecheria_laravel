@@ -43,6 +43,8 @@
   color: $orange-color-hover;
   border-bottom: 1px dotted $orange-color-hover;
   transition: border-color 0.05s;
+  cursor: pointer;
+  display: inline;
 
   .no-touch &:hover {
     border-bottom: transparent;

@@ -45,10 +45,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }).then(res => {
         const items = res.data.items.data;
-        const itemsCount = items.length;
-        const itemCountAll = res.data.items_quantity.length;
+        const itemsCount = res.data.items_quantity;
+        const itemCountAll = res.data.items_quantity_all;
         const pagination = res.data.pagination;
-
         let item = '';
 
         items.forEach((el) => {
@@ -56,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="item item--3">
               <div class="item__sign"><p>${el.manufactured}</p></div>
               <div class="item__article">${el.article}</div>
-              <div class="item__image"><img src="/images/items/${el.image_path}" alt="${el.name}" title="${el.name}"></div>
+              <div class="item__image"><a href="/catalog/${el.subcategory_plug}/${el.plug}"><img src="/images/items/${el.image_path}" alt="${el.name}" title="${el.name}"></a></div>
               <div class="item__name"><a href="/catalog/${el.subcategory_plug}/${el.plug}">${el.name}</a></div>
               <div class="item__price"><p>${el.price}</p></div>
               <div class="item__button"><a class="button button--small" href="/catalog/${el.subcategory_plug}/${el.plug}">Подробнее</a>
