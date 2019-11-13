@@ -20,7 +20,24 @@ Route::get('/payment', 'PaymentController@index');
 Route::get('/shipping', 'ShippingController@index');
 Route::get('/contacts', 'ContactsController@index');
 
-Route::resource('/cart', 'CartController');
+Route::get('/cart', 'CartController@index');
+
+Route::get('/cart/addSession',  function () {
+  abort('404');
+});
+
+Route::post('/cart/removeSession',  function () {
+  abort('404');
+});
+
 Route::post('/cart/addSession', 'CartController@addSession');
 Route::post('/cart/removeSession', 'CartController@removeSession');
+
+Route::get('/callback',  function () {
+  abort('404');
+});
+
+Route::post('/callback',  function () {
+  return 'asd';
+});
 

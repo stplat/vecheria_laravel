@@ -83,5 +83,37 @@
       </div>
     </div>
   </footer>
+<div class="popup">
+  <div class="popup__container">
+    <div class="popup__header"><span class="popup__close"></span>
+      <div class="popup__title">Заявка на обратный звонок</div>
+      <p class="popup__desc">Оставьте свои контактные данные и мы свяжемся с Вами в самое ближайшее время!</p>
+    </div>
+    <div class="popup__body">
+      <form class="popup__form" id="callback">
+        <div class="popup__field">
+          <label for="name">Имя:</label>
+          <div class="popup__input">
+            <input id="name" name="name" placeholder="Иванов Иван Иванович">
+            <label for="name"></label>
+          </div>
+        </div>
+        <div class="popup__field">
+          <label for="phone">Телефон:</label>
+          <div class="popup__input">
+            <input type="tel" id="phone" name="phone" placeholder="Пример: 8 (495) 000-00-00">
+            <label class="phone" for="phone"></label>
+          </div>
+        </div>
+        <div class="popup__button">
+          <button class="button" type="submit">Отправить заявку</button>
+        </div>
+      </form>
+      <div class="popup__offer">
+        <p>Отправляя заявку, Вы соглашаетесь на обработку персональных данных</p>
+      </div>
+    </div>
+  </div>
+</div>
   <script src="/js/main.js" type="text/javascript"></script>
 </body>

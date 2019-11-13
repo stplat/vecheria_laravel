@@ -1,0 +1,22 @@
+.popup
+  .popup__container
+    .popup__header
+      span.popup__close
+      .popup__title Заявка на обратный звонок
+      p.popup__desc Оставьте свои контактные данные и мы свяжемся с Вами в самое ближайшее время!
+    .popup__body
+      form.popup__form(id="callback")
+        .popup__field
+          label(for="name") Имя:
+          .popup__input
+            input(id="name", name="name", placeholder="Иванов Иван Иванович")
+            label(for="name")
+        .popup__field
+          label(for="phone") Телефон:
+          .popup__input
+            input(type="tel", id="phone", name="phone", placeholder="Пример: 8 (495) 000-00-00")
+            label.phone(for="phone")
+        .popup__button
+          button.button(type="submit") Отправить заявку
+      .popup__offer
+        p Отправляя заявку, Вы соглашаетесь на обработку персональных данных

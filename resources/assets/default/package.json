@@ -43,8 +43,8 @@
   },
   "dependencies": {
     "blowup": "^1.0.1",
+    "inputmask": "^4.0.9",
     "jquery": "^2.1.4",
-    "jquery-zoom": "^1.7.21",
     "normalize.css": "^8.0.0",
     "swiper": "^5.2.0"
   },

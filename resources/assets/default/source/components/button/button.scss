@@ -13,6 +13,7 @@
   text-align: center;
   transition: background-color 0.15s;
   font-weight: 500;
+  cursor: pointer;
 
   .no-touch &:hover,
   &:active {
