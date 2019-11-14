@@ -6,8 +6,8 @@ use Session;
 use DB;
 use Illuminate\Http\Request;
 
-class CallbackController extends Controller {
-
+class CallbackController {
+  
   /**
    * Display a listing of the resource.
    *
@@ -22,11 +22,11 @@ class CallbackController extends Controller {
     $headers = 'From: vecheria.ru' . "\r\n" .
       'Reply-To: info@vecheria.ru' . "\r\n" .
       'X-Mailer: PHP/' . phpversion();
-
+    
     mail($to, $subject, $message, $headers);
-
+    
     Session::put('callback', 'sent');
-
+    
     return Session::get('callback');
   }
 }
