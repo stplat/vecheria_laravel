@@ -56,7 +56,7 @@
       <div class="catalog__content">
         <div class="catalog__top-panel">
           <div class="catalog__total">
-            <p>показано товаров: {{$items_quantity}} из {{$items_quantity_all}} ед.</p>
+            <p>показано товаров: {{$items->count()}} из {{$items->total()}} ед.</p>
           </div>
           <div class="catalog__select">
             <select name="per_page">

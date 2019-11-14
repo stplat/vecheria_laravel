@@ -4,7 +4,7 @@ mixin breadcrumbs(current, link)
       a.breadcrumb__link(href!="/") Главная
     if link
       li
-        a.breadcrumb__link(href!='/catalog/{{$category_plug}}') !{current}
+        a.breadcrumb__link(href!='/catalog/{{$subcategory_plug}}') !{current}
       li !{link}
     else
       li #{current}

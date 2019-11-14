@@ -145,3 +145,23 @@
   text-align: center;
   font-weight: 500;
 }
+
+.product__button {
+
+  &.is-deactive {
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #FFFFFF;
+      opacity: 0.3;
+      left: 0;
+      top: 0;
+    }
+  }
+
+
+}

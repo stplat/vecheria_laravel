@@ -45,10 +45,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }).then(res => {
         const items = res.data.items.data;
-        const itemsCount = res.data.items_quantity;
-        const itemCountAll = res.data.items_quantity_all;
+        const itemsCount = res.data.items.to;
+        const itemCountAll = res.data.items.total;
         const pagination = res.data.pagination;
         let item = '';
+
+        console.log(res);
 
         items.forEach((el) => {
           item += `

@@ -12,46 +12,34 @@ use Session;
 
 class Controller extends BaseController {
   public $menu;
-  public $itemsQuery;
-  public $cart_count;
-  public $callback;
+  public $categoryQuery;
   
   public function __construct() {
-    $items = DB::table('items')->join('categories', 'items.subcategory_id', '=', 'categories.id')
+    $categories = DB::table('items')->join('categories', 'items.subcategory_id', '=', 'categories.id')
       ->select('*', 'categories.plug as subcategory_plug')->get();
   
     $menu = [];
     
-    foreach ($items as $item) {
+    foreach ($categories as $category) {
       $menu_item['category'] = '';
       $menu_item['subcategory'] = [];
       
-      if (!$this::inArray($menu, $item->category)) {
-        $menu_item['category'] = $item->category;
-        $menu_item['subcategory'][$item->plug] = $item->subcategory;
+      if (!$this::inArray($menu, $category->category)) {
+        $menu_item['category'] = $category->category;
+        $menu_item['subcategory'][$category->plug] = $category->subcategory;
         
         array_push($menu, $menu_item);
       } else {
         foreach ($menu as $key => $value) {
-          if ($value['category'] == $item->category) {
-            $menu[$key]['subcategory'][$item->plug] = $item->subcategory;
+          if ($value['category'] == $category->category) {
+            $menu[$key]['subcategory'][$category->plug] = $category->subcategory;
           }
         }
       }
     }
-    
-    $cart_count = 0;
-    
-    if (is_array(Session::get('items'))) {
-      foreach (Session::get('items') as $item) {
-        $cart_count += $item['count'];
-      }
-    }
   
-    $this->itemsQuery = $items;
+    $this->categoryQuery = $categories;
     $this->menu = $menu;
-    $this->cart_count = $cart_count;
-    $this->callback = Session::get('callback') ?: Session::get('callback');
   }
   
   public static function inArray($array, $needle) {

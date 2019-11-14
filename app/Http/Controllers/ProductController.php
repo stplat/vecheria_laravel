@@ -13,80 +13,55 @@ class ProductController extends Controller {
    * @return \Illuminate\Http\Response
    */
 
-  public function index($category_plug, $item_plug, Request $request) {
-    $categories = DB::table('categories')->where('available', '1')->get();
-    $subcategories = DB::table('categories')->select('subcategory')->where('plug', $category_plug)->get();
+  public function index($category_plug, $item_plug) {
+    global $flag;
+    $flag = false;
 
-    $itemsQuery = DB::table('items')->where('plug', $item_plug)->get();
-    $items = '';
-
-    foreach ($itemsQuery as $obj) {
-      $items = $obj;
+    foreach ($this->categoryQuery->toArray() as $category) {
+      if ($category->subcategory_plug == $category_plug) {
+        $flag = true;
+      }
     }
 
-    $menu = [];
-    $subcategory = '';
+    $items = DB::table('items')->join('categories', 'items.subcategory_id', '=', 'categories.id')
+      ->select('items.*', 'categories.plug as subcategory_plug', 'category', 'subcategory')
+      ->where('categories.plug', $category_plug)
+      ->where('items.plug', $item_plug)
+      ->get();
 
-    function inArray($array, $needle) {
-      $result = 0;
+    if (!count($items)) {
+      $flag = false;
+    }
 
-      foreach ($array as $key => $value) {
-        if (is_array($value) && in_array($needle, $value)) {
-          $result = in_array($needle, $value);
+    if ($flag) {
+      $items = $items[0];
+
+      $subcategory_plug = $items->subcategory_plug;
+      $subcategory = $items->subcategory;
+
+      $menu = $this->menu;
+      $keywords = 'православная, лавка, изделия, крестики, бухвицы, браслеты, ручная работа, освещенные';
+      $description = 'Покупка недорогих освещенных православных ювелирных изделий ручной работы по низким ценам';
+      $title = 'Интернет-магазин православных изделий "Вечерия"';
+      $callback = Session::get('callback') ?: Session::get('callback');
+      $cart_count = 0;
+
+      $in_cart = false;
+
+      if (is_array(Session::get('items'))) {
+        foreach (Session::get('items') as $item) {
+          $cart_count += $item['count'];
+        }
+
+        if (parent::inArray(Session::get('items'), $items->id)) {
+          $in_cart = true;
         }
       }
 
-      return $result;
-    }
-
-    foreach ($categories as $row) {
-      $menu_item['category'] = '';
-      $menu_item['subcategory'] = [];
-
-      if (!inArray($menu, $row->category)) {
-        $menu_item['category'] = $row->category;
-        $menu_item['subcategory'][$row->plug] = $row->subcategory;
-
-        array_push($menu, $menu_item);
-      } else {
-        foreach ($menu as $key => $value) {
-          if ($value['category'] == $row->category) {
-            $menu[$key]['subcategory'][$row->plug] = $row->subcategory;
-          }
-        }
-      }
-    }
-
-    foreach ($subcategories as $subcategory_name) {
-      $subcategory = $subcategory_name->subcategory;
-    }
-
-    $cart_count = 0;
-    $in_cart = false;
-
-    if (is_array(Session::get('items'))) {
-      foreach (Session::get('items') as $item) {
-        $cart_count += $item['count'];
-      }
-
-      if (inArray(Session::get('items'), $items->id)) {
-        $in_cart = true;
-      }
-    }
-
-    $keywords = 'православная, лавка, изделия, крестики, бухвицы, браслеты, ручная работа, освещенные';
-    $description = 'Покупка недорогих освещенных православных ювелирных изделий ручной работы по низким ценам';
-    $title = 'Интернет-магазин православных изделий "Вечерия"';
-
-    if ($request->ajax()) {
-
+      return view('product', compact('menu', 'items', 'subcategory', 'subcategory_plug', 'keywords', 'description', 'title', 'cart_count', 'in_cart', 'callback'));
     } else {
-      if (count($itemsQuery)) {
-        return view('product', compact('menu', 'items', 'category_plug', 'subcategory', 'keywords', 'description', 'title', 'cart_count', 'in_cart'));
-      } else {
-        abort('404');
-      }
+      abort('404');
     }
-  }
 
+  }
 }

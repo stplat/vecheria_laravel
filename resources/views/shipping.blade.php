@@ -8,7 +8,7 @@
     </ul>
     <div class="title">
       <div class="title__wrap">
-        <h1>Доставка православных изделий</h1>
+        <h1>Доставка</h1>
       </div>
     </div>
     <div class="text text--white-bg">

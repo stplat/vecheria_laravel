@@ -14,11 +14,19 @@ class CartController extends Controller {
    */
   public function index() {
     $menu = $this->menu;
-    $cart_count = $this->cart_count;
     $keywords = 'православная, лавка, изделия, крестики, бухвицы, браслеты, ручная работа, освещенные';
     $description = 'Покупка недорогих освещенных православных ювелирных изделий ручной работы по низким ценам';
     $title = 'Интернет-магазин православных изделий "Вечерия"';
     $callback = Session::get('callback') ?: Session::get('callback');
+    $cart_count = 0;
+    $id = [];
+    $items = [];
+
+    if (is_array(Session::get('items'))) {
+      foreach (Session::get('items') as $category) {
+        $cart_count += $category['count'];
+      }
+    }
 
     if (is_array(Session::get('items'))) {
       foreach (Session::get('items') as $array) {
@@ -58,24 +66,12 @@ class CartController extends Controller {
       $items = $array;
     }
 
-    function inArray($array, $needle) {
-      $result = 0;
-
-      foreach ($array as $key => $value) {
-        if (is_array($value) && in_array($needle, $value)) {
-          $result = in_array($needle, $value);
-        }
-      }
-
-      return $result;
-    }
-
     $id = $request->input('id');
     $count = $request->input('count');
     $price = $request->input('price');
     $total = (int)$request->input('count') * (int)$request->input('price');
 
-    if (!inArray($items, $id)) {
+    if (!parent::inArray($items, $id)) {
       array_push($items, [
         'id' => $id,
         'count' => $count,

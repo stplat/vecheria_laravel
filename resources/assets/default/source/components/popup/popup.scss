@@ -77,6 +77,21 @@
 .popup__body {
   padding: 20px 35px 35px;
 
+  &.is-loaded {
+    position: relative;
+
+    &:before {
+      content: '';
+      background: rgba(255, 255, 255, .95) url(components/popup/preloader.svg) no-repeat 50% 50%;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      z-index: 11;
+    }
+  }
+
   &.is-success {
     background: $green-color;
     color: #FFFFFF;

@@ -16,6 +16,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (button)
       button.addEventListener('click', function (e) {
+        const buttonContainer = document.querySelector('.product__button');
+
+        buttonContainer.classList.add('is-deactive');
+        button.style.textTransform = 'none';
+        button.innerText = 'Отправка...';
+
         axios.post('/cart/addSession?id=' + id + '&price=' + price + '&count=' + count, {
           headers: {
             'Content-Type': 'application/json',
@@ -26,11 +32,16 @@ document.addEventListener('DOMContentLoaded', function () {
           const cart = document.querySelector('.header-cart__body span span');
           cart.innerText = res.data.cart_count;
 
-          document.querySelector('.product__button').append(alert);
           button.remove();
+          buttonContainer.classList.remove('is-deactive');
+          buttonContainer.append(alert);
 
-        }).catch(
-          error => console.log(error));
+        }).catch((error) => {
+          buttonContainer.classList.remove('is-deactive');
+          button.style.textTransform = 'uppercase';
+          button.innerText = 'В корзину';
+          console.log(error);
+        });
         e.preventDefault();
       });
   }

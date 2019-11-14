@@ -17,11 +17,17 @@ class PaymentController extends Controller {
   
   public function index() {
     $menu = $this->menu;
-    $cart_count = $this->cart_count;
     $keywords = 'православная, лавка, изделия, крестики, бухвицы, браслеты, ручная работа, освещенные';
     $description = 'Покупка недорогих освещенных православных ювелирных изделий ручной работы по низким ценам';
     $title = 'Интернет-магазин православных изделий "Вечерия"';
-    $callback = $this->callback;
+    $callback = Session::get('callback') ?: Session::get('callback');
+    $cart_count = 0;
+
+    if (is_array(Session::get('items'))) {
+      foreach (Session::get('items') as $category) {
+        $cart_count += $category['count'];
+      }
+    }
     
     return view('payment', compact('menu', 'keywords', 'description', 'title', 'cart_count', 'callback'));
   }

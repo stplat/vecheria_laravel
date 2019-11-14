@@ -8,7 +8,7 @@
     .catalog__content
       .catalog__top-panel
         .catalog__total
-          p показано товаров: {{$items_quantity}} из {{$items_quantity_all}} ед.
+          p показано товаров: {{$items->count()}} из {{$items->total()}} ед.
         .catalog__select
           select(name="per_page")
             option(value="24", selected="selected") показывать по 24

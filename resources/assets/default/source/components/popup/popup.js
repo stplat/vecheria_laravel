@@ -29,27 +29,11 @@ document.addEventListener('DOMContentLoaded', () => {
     callbackForm.addEventListener('submit', (e) => {
       let flag = false;
 
-      if (nameInput.value === '') {
-        if (nameInput.closest('.popup__input')) {
-          nameInput.closest('.popup__input').classList.add('is-invalid');
-          nameInput.closest('.popup__input').classList.remove('is-valid');
-          flag = false;
-        }
-      }
-
       if (nameInput.value !== '') {
         if (nameInput.closest('.popup__input')) {
           nameInput.closest('.popup__input').classList.remove('is-invalid');
           nameInput.closest('.popup__input').classList.add('is-valid');
           flag = true;
-        }
-      }
-
-      if (phoneInput.value === '' || phoneInput.value.indexOf('_') > 0) {
-        if (phoneInput.closest('.popup__input')) {
-          phoneInput.closest('.popup__input').classList.add('is-invalid');
-          phoneInput.closest('.popup__input').classList.remove('is-valid');
-          flag = false;
         }
       }
 
@@ -61,25 +45,53 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }
 
+      if (nameInput.value === '') {
+        if (nameInput.closest('.popup__input')) {
+          nameInput.closest('.popup__input').classList.add('is-invalid');
+          nameInput.closest('.popup__input').classList.remove('is-valid');
+          flag = false;
+        }
+      }
+
+      if (phoneInput.value === '' || phoneInput.value.indexOf('_') > 0) {
+        if (phoneInput.closest('.popup__input')) {
+          phoneInput.closest('.popup__input').classList.add('is-invalid');
+          phoneInput.closest('.popup__input').classList.remove('is-valid');
+          flag = false;
+        }
+      }
+
       if (flag) {
-        axios.post('/callback', {
+        const body = document.querySelector('.popup__body');
+        const data = JSON.stringify({
+          name: nameInput.value,
+          phone: phoneInput.value,
+        });
+
+        body.classList.add('is-loaded');
+
+        axios.post('/callback', data, {
           headers: {
             'Content-Type': 'application/json',
             'X-Requested-With': 'XMLHttpRequest',
             'X-CSRF-TOKEN': token.content,
           },
-        }).then(() => {
-          const body = document.querySelector('.popup__body');
+        }).then((res) => {
           const success = document.createElement('div');
+
+          console.log(res);
 
           success.class = 'popup__success';
           success.innerText = 'Заявка успешно отправлена!';
 
+          body.classList.remove('is-loaded');
           body.classList.add('is-success');
           body.innerHTML = '';
           body.append(success);
-        }).catch(
-          error => console.log(error));
+        }).catch((error) => {
+          body.classList.remove('is-loaded');
+          console.log(error);
+        });
       }
       e.preventDefault();
     });

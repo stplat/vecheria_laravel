@@ -37,18 +37,4 @@ Route::get('/callback', function () {
   abort('404');
 });
 
-Route::post('/callback', function () {
-  $to = 'st.platonov@gmail.com';
-  $subject = 'Новая заявка на покупку в один клик';
-  $message = 'hello';
-  $headers = 'From: vecheria.ru' . "\r\n" .
-    'Reply-To: info@vecheria.ru' . "\r\n" .
-    'X-Mailer: PHP/' . phpversion();
-  
-  mail($to, $subject, $message, $headers);
-  
-  Session::put('callback', 'sent');
-  
-  return Session::get('callback');
-});
-
+Route::post('/callback', 'CallbackController@index');
