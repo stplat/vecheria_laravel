@@ -44,14 +44,18 @@
   <div class="cart__aside">
     <div class="cart-nav">
       <ul class="cart-nav__list">
-        <li class="is-active">&Scy;&pcy;&icy;&scy;&ocy;&kcy; &pcy;&ocy;&kcy;&ucy;&pcy;&ocy;&kcy;</li>
-        <li>&Kcy;&ocy;&ncy;&tcy;&acy;&kcy;&tcy;&ncy;&ycy;&iecy; &dcy;&acy;&ncy;&ncy;&ycy;&iecy;</li>
-        <li>&Dcy;&ocy;&scy;&tcy;&acy;&vcy;&kcy;&acy; &icy; &ocy;&pcy;&lcy;&acy;&tcy;&acy;</li>
-        <li>&Scy;&vcy;&iecy;&dcy;&iecy;&ncy;&icy;&yacy; &ocy; &zcy;&acy;&kcy;&acy;&zcy;&iecy;</li>
+        <li class="is-active">Список покупок</li>
+        <li>Контактные данные</li>
+        <li>Доставка и оплата</li>
+        <li>Сведения о заказе</li>
       </ul>
+      <div class="cart-nav__sum"></div>
       <div class="cart-nav__panel">
-        <div class="cart-nav__button"><a class="button button--small button--red" href="">&Ocy;&fcy;&ocy;&rcy;&mcy;&icy;&tcy;&softcy; &zcy;&acy;&kcy;&acy;&zcy;</a></div>
-        <div class="cart-nav__clear"><a href="">&Ocy;&chcy;&icy;&scy;&tcy;&icy;&tcy;&softcy; &kcy;&ocy;&rcy;&zcy;&icy;&ncy;&ucy;</a></div>
+        <div class="cart-nav__total">
+          <p>25000</p>
+        </div>
+        <div class="cart-nav__button"><a class="button button--small button--red" href="">Оформить заказ</a></div>
+        <div class="cart-nav__clear"><a href="">Очистить корзину</a></div>
       </div>
     </div>
   </div>@endif
