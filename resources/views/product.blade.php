@@ -51,7 +51,7 @@
           <div class="product__button">@if (!$in_cart)<a class="button button--red" href="#">В корзину</a>@else
             <div class="product__alert">Товар в корзине</div>@endif
           </div>
-          <div class="product__buy"><a href="">Быстрая покупка</a></div>
+          <div class="product__buy"><span class="js-button-buy">Быстрая покупка</span></div>
         </div>
       </div>
     </div>
@@ -64,4 +64,39 @@
 </div>
     </div>
   </div>
+    <div class="popup js-popup-buy">
+      <div class="popup__container">
+        <div class="popup__header"><span class="popup__close"></span>
+          <div class="popup__title">Заявка на покупку</div>
+          <p class="popup__desc">Оставьте свои контактные данные и мы свяжемся с Вами, что бы оформить заказ!</p>
+        </div>@if ($buy == 'sent')
+        <div class="popup__body is-success">
+          <div class="popup__success">Заявка успешно отправлена!</div>
+        </div>@else
+        <div class="popup__body">
+          <form class="popup__form" id="buy">
+            <div class="popup__field">
+              <label for="name">Имя:</label>
+              <div class="popup__input">
+                <input id="name" name="name" placeholder="Иванов Иван Иванович">
+                <label for="name"></label>
+              </div>
+            </div>
+            <div class="popup__field">
+              <label for="phone">Телефон:</label>
+              <div class="popup__input">
+                <input type="tel" id="phone" name="phone" placeholder="Пример: 8 (495) 000-00-00">
+                <label class="phone" for="phone"></label>
+              </div>
+            </div>
+            <div class="popup__button">
+              <button class="button">Заказать</button>
+            </div>
+          </form>
+          <div class="popup__offer">
+            <p>Отправляя заявку, Вы соглашаетесь на обработку персональных данных</p>
+          </div>
+        </div>@endif
+      </div>
+    </div>
 </div>@endsection

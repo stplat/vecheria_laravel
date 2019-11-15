@@ -46,13 +46,14 @@
 .product__buy {
   padding: 10px 0 0;
 
-  a {
+  a, span {
     color: $text-color;
     border-bottom: 1px dotted $text-color-opacity;
     display: inline-block;
     transition: border-color .08s;
     font-size: 15px;
     padding: 0 0 2px 0;
+    cursor: pointer;
 
     .no-touch &:hover {
       border-color: transparent;

@@ -1,15 +1,34 @@
 import './product-image/product-image';
+import {sendForm, handlerPopup} from '../popup/popup';
 import axios from 'axios';
 
 document.addEventListener('DOMContentLoaded', function () {
   if (document.querySelector('.product')) {
     const product = document.querySelector('.product');
     const id = product.id;
+    const itemName = product.querySelector('.product__name h1').innerText;
     const price = product.querySelector('.product__price p').innerText;
     const count = 1;
     const button = product.querySelector('.button');
-    const token = document.querySelector('meta[name="csrf-token"]');
+    const token = document.querySelector('meta[name="csrf-token"]').content;
 
+    /*
+    *  Форма быстрой покупки*
+    * */
+    const buyForm = document.querySelector('#buy');
+    const other = JSON.stringify({
+      id: id,
+      itemName: itemName,
+      price: price
+    });
+
+    handlerPopup('js-button-buy', 'js-popup-buy');
+    sendForm(buyForm, '/buy', token, other);
+
+
+    /*
+    *  Добавление в корзину покупок
+    * */
     const alert = document.createElement('div');
     alert.className = 'product__alert';
     alert.innerText = 'Товар в корзине';
@@ -26,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
           headers: {
             'Content-Type': 'application/json',
             'X-Requested-With': 'XMLHttpRequest',
-            'X-CSRF-TOKEN': token.content,
+            'X-CSRF-TOKEN': token,
           },
         }).then(res => {
           const cart = document.querySelector('.header-cart__body span span');

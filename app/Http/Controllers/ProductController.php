@@ -44,6 +44,7 @@ class ProductController extends Controller {
       $description = 'Покупка недорогих освещенных православных ювелирных изделий ручной работы по низким ценам';
       $title = 'Интернет-магазин православных изделий "Вечерия"';
       $callback = Session::get('callback') ?: Session::get('callback');
+      $buy = Session::get('buy') ?: Session::get('buy');
       $cart_count = 0;
 
       $in_cart = false;
@@ -58,7 +59,7 @@ class ProductController extends Controller {
         }
       }
 
-      return view('product', compact('menu', 'items', 'subcategory', 'subcategory_plug', 'keywords', 'description', 'title', 'cart_count', 'in_cart', 'callback'));
+      return view('product', compact('menu', 'items', 'subcategory', 'subcategory_plug', 'keywords', 'description', 'title', 'cart_count', 'in_cart', 'callback', 'buy'));
     } else {
       abort('404');
     }

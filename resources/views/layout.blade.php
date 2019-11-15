@@ -30,9 +30,7 @@
   <div class="header-props__phone"><a href="tel:+74952039696">+7 (495) 203-96-96</a></div>
   <ul class="header-props__ul">
     <li>Пн-пт 10:00 - 18:00 (МСК)</li>
-    <li>
-      <div class="header-props__callback js-button-callback">Заказать обратный звонок</div>
-    </li>
+    <li><span class="header-props__callback js-button-callback">Заказать обратный звонок</span></li>
   </ul>
 </div>
         </div>
@@ -85,40 +83,40 @@
       </div>
     </div>
   </footer>
-<div class="popup js-popup-callback">
-  <div class="popup__container">
-    <div class="popup__header"><span class="popup__close"></span>
-      <div class="popup__title">Заявка на обратный звонок</div>
-      <p class="popup__desc">Оставьте свои контактные данные и мы свяжемся с Вами в самое ближайшее время!</p>
-    </div>@if ($callback == 'sent')
-    <div class="popup__body is-success">
-      <div class="popup__success">Заявка успешно отправлена!</div>
-    </div>@else
-    <div class="popup__body">
-      <form class="popup__form" id="callback">
-        <div class="popup__field">
-          <label for="name">Имя:</label>
-          <div class="popup__input">
-            <input id="name" name="name" placeholder="Иванов Иван Иванович">
-            <label for="name"></label>
+    <div class="popup js-popup-callback">
+      <div class="popup__container">
+        <div class="popup__header"><span class="popup__close"></span>
+          <div class="popup__title">Заявка на обратный звонок</div>
+          <p class="popup__desc">Оставьте свои контактные данные и мы свяжемся с Вами в самое ближайшее время!</p>
+        </div>@if ($callback == 'sent')
+        <div class="popup__body is-success">
+          <div class="popup__success">Заявка успешно отправлена!</div>
+        </div>@else
+        <div class="popup__body">
+          <form class="popup__form" id="callback">
+            <div class="popup__field">
+              <label for="name">Имя:</label>
+              <div class="popup__input">
+                <input id="name" name="name" placeholder="Иванов Иван Иванович">
+                <label for="name"></label>
+              </div>
+            </div>
+            <div class="popup__field">
+              <label for="phone">Телефон:</label>
+              <div class="popup__input">
+                <input type="tel" id="phone" name="phone" placeholder="Пример: 8 (495) 000-00-00">
+                <label class="phone" for="phone"></label>
+              </div>
+            </div>
+            <div class="popup__button">
+              <button class="button">Отправить заявку</button>
+            </div>
+          </form>
+          <div class="popup__offer">
+            <p>Отправляя заявку, Вы соглашаетесь на обработку персональных данных</p>
           </div>
-        </div>
-        <div class="popup__field">
-          <label for="phone">Телефон:</label>
-          <div class="popup__input">
-            <input type="tel" id="phone" name="phone" placeholder="Пример: 8 (495) 000-00-00">
-            <label class="phone" for="phone"></label>
-          </div>
-        </div>
-        <div class="popup__button">
-          <button class="button">Отправить заявку</button>
-        </div>
-      </form>
-      <div class="popup__offer">
-        <p>Отправляя заявку, Вы соглашаетесь на обработку персональных данных</p>
+        </div>@endif
       </div>
-    </div>@endif
-  </div>
-</div>
+    </div>
   <script src="/js/main.js" type="text/javascript"></script>
 </body>

@@ -38,3 +38,4 @@ Route::get('/callback', function () {
 });
 
 Route::post('/callback', 'CallbackController@index');
+Route::post('/buy', 'BuyController@index');

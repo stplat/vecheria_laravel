@@ -11,14 +11,18 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /*
-  *  Форма обратного звонка*
+  *  Форма обратного звонка и быстрой покупки*
   * */
   const callbackForm = document.querySelector('#callback');
-  const token = document.head.querySelector('meta[name="csrf-token"]');
+  const token = document.head.querySelector('meta[name="csrf-token"]').content;
 
-  if (callbackForm) {
-    const phoneInput = callbackForm.elements.phone;
-    const nameInput = callbackForm.elements.name;
+  sendForm(callbackForm, '/callback', token);
+});
+
+export function sendForm(form, url, token = null, other = null) {
+  if (form) {
+    const phoneInput = form.elements.phone;
+    const nameInput = form.elements.name;
     const maskPhone = new Inputmask('9 (999) 999-99-99', {
       showMaskOnHover: false,
       showMaskOnFocus: false,
@@ -26,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     maskPhone.mask(phoneInput);
 
-    callbackForm.addEventListener('submit', (e) => {
+    form.addEventListener('submit', (e) => {
       let flag = false;
 
       if (nameInput.value !== '') {
@@ -62,24 +66,24 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       if (flag) {
-        const body = document.querySelector('.popup__body');
+        const body = form.closest('.popup__body');
         const data = JSON.stringify({
           name: nameInput.value,
           phone: phoneInput.value,
+          other: other,
         });
 
         body.classList.add('is-loaded');
 
-        axios.post('/callback', data, {
+        axios.post(url, data, {
           headers: {
             'Content-Type': 'application/json',
             'X-Requested-With': 'XMLHttpRequest',
-            'X-CSRF-TOKEN': token.content,
+            'X-CSRF-TOKEN': token,
           },
         }).then((res) => {
-          const success = document.createElement('div');
-
           console.log(res);
+          const success = document.createElement('div');
 
           success.class = 'popup__success';
           success.innerText = 'Заявка успешно отправлена!';
@@ -96,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
     });
   }
-});
+}
 
 function raf(fn) {
   window.requestAnimationFrame(() => {
@@ -106,11 +110,11 @@ function raf(fn) {
   });
 }
 
-function handlerPopup(classButton, classPopup) {
+export function handlerPopup(classButton, classPopup) {
   const page = document.querySelector('body');
   const button = document.querySelector(`.${classButton}`);
   const popup = document.querySelector(`.${classPopup}`);
-  const close = document.querySelector('.popup__close');
+  const close = popup.querySelector('.popup__close');
 
   button.addEventListener('click', (e) => {
     popup.style.display = 'block';
