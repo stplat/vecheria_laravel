@@ -49,13 +49,11 @@
         <li>Доставка и оплата</li>
         <li>Сведения о заказе</li>
       </ul>
-      <div class="cart-nav__sum"></div>
       <div class="cart-nav__panel">
         <div class="cart-nav__total">
-          <p>25000</p>
+          <p>{{$cart_total}}</p>
         </div>
         <div class="cart-nav__button"><a class="button button--small button--red" href="">Оформить заказ</a></div>
-        <div class="cart-nav__clear"><a href="">Очистить корзину</a></div>
       </div>
     </div>
   </div>@endif

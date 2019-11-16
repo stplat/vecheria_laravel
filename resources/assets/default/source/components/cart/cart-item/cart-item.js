@@ -6,9 +6,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   selects.forEach((select) => {
     const option = select.querySelector('option[selected="selected"]');
+    const id = select.closest('.cart-item').id;
+
     select.value = option.value;
 
-    const id = select.closest('.cart-item').id;
+    /*
+    *  Выбор количества товаров
+    * */
 
     select.addEventListener('change', function () {
       const count = this.value;
@@ -20,11 +24,12 @@ document.addEventListener('DOMContentLoaded', () => {
           'X-CSRF-TOKEN': token.content,
         },
       }).then(res => {
-
         const cart = document.querySelector('.header-cart__body span span');
-        cart.innerText = res.data.cart_count;
-
         const cartItems = res.data.items;
+        const total = document.querySelector('.cart-nav__total p');
+
+        cart.innerText = res.data.cart_count;
+        total.innerText = res.data.cart_total;
 
         [...cartItems].forEach((item) => {
           if (item.id === id) {
@@ -35,6 +40,10 @@ document.addEventListener('DOMContentLoaded', () => {
         error => console.log(error));
     });
   });
+
+  /*
+  *  Удаление товара
+  * */
 
   const delButtons = document.querySelectorAll('.cart-item__remove');
 
@@ -50,9 +59,12 @@ document.addEventListener('DOMContentLoaded', () => {
         },
       }).then(res => {
         const cart = document.querySelector('.header-cart__body span span');
-        cart.innerText = res.data.cart_count;
+        const total = document.querySelector('.cart-nav__total p');
 
         this.closest('.cart-item').remove();
+
+        cart.innerText = res.data.cart_count;
+        total.innerText = res.data.cart_total;
 
         if (!document.querySelector('.cart-item')) {
           document.querySelector('.cart').innerHTML = '<div class="cart__empty">Ваша корзина покупок пуста.</div>';

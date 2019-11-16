@@ -18,6 +18,7 @@ class IndexController extends Controller {
    * @return \Illuminate\Http\Response
    */
   public function index() {
+    Session::forget('callback');
     $menu = $this->menu;
     $keywords = 'православная, лавка, изделия, крестики, бухвицы, браслеты, ручная работа, освещенные';
     $description = 'Покупка недорогих освещенных православных ювелирных изделий ручной работы по низким ценам';

@@ -87,7 +87,7 @@
       <div class="popup__container">
         <div class="popup__header"><span class="popup__close"></span>
           <div class="popup__title">Заявка на обратный звонок</div>
-          <p class="popup__desc">Оставьте свои контактные данные и мы свяжемся с Вами в самое ближайшее время!</p>
+          <p class="popup__desc">Оставьте свои контактные данные и мы свяжемся с Вами в ближайшее время!</p>
         </div>@if ($callback == 'sent')
         <div class="popup__body is-success">
           <div class="popup__success">Заявка успешно отправлена!</div>

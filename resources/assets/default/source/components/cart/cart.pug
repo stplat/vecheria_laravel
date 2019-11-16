@@ -11,13 +11,9 @@
         li Контактные данные
         li Доставка и оплата
         li Сведения о заказе
-      .cart-nav__sum
-        
       .cart-nav__panel
         .cart-nav__total
-          p 25000
+          p {{$cart_total}}
         .cart-nav__button
           a.button.button--small.button--red(href='') Оформить заказ
-        .cart-nav__clear
-          a(href='') Очистить корзину
   | @endif

@@ -21,6 +21,7 @@ class CartController extends Controller {
     $cart_count = 0;
     $id = [];
     $items = [];
+    
 
     if (is_array(Session::get('items'))) {
       foreach (Session::get('items') as $category) {
@@ -46,8 +47,14 @@ class CartController extends Controller {
         array_push($items, $item);
       }
     }
-
-    return view('cart', compact('menu', 'keywords', 'description', 'title', 'cart_count', 'items', 'callback'));
+  
+    $cart_total = 0;
+  
+    foreach (Session::get('items') as $item) {
+      $cart_total += $item['total'];
+    }
+    
+    return view('cart', compact('menu', 'keywords', 'description', 'title', 'cart_count', 'items', 'callback', 'cart_total'));
   }
 
   /**

@@ -66,7 +66,9 @@ export function sendForm(form, url, token = null, other = null) {
       }
 
       if (flag) {
-        const body = form.closest('.popup__body');
+        const popup = form.closest('.popup');
+        const body = popup.querySelector('.popup__body');
+        const desc = popup.querySelector('.popup__desc');
         const data = JSON.stringify({
           name: nameInput.value,
           phone: phoneInput.value,
@@ -82,11 +84,11 @@ export function sendForm(form, url, token = null, other = null) {
             'X-CSRF-TOKEN': token,
           },
         }).then((res) => {
-          console.log(res);
           const success = document.createElement('div');
 
           success.class = 'popup__success';
           success.innerText = 'Заявка успешно отправлена!';
+          desc.innerText = 'Мы получили Вашу заявку. Ожидайте звонка!';
 
           body.classList.remove('is-loaded');
           body.classList.add('is-success');
