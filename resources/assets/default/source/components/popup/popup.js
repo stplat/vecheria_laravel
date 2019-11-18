@@ -34,33 +34,33 @@ export function sendForm(form, url, token = null, other = null) {
       let flag = false;
 
       if (nameInput.value !== '') {
-        if (nameInput.closest('.popup__input')) {
-          nameInput.closest('.popup__input').classList.remove('is-invalid');
-          nameInput.closest('.popup__input').classList.add('is-valid');
+        if (nameInput) {
+          nameInput.classList.remove('is-invalid');
+          nameInput.classList.add('is-valid');
           flag = true;
         }
       }
 
       if (phoneInput.value !== '' && phoneInput.value.indexOf('_') < 0) {
-        if (phoneInput.closest('.popup__input')) {
-          phoneInput.closest('.popup__input').classList.remove('is-invalid');
-          phoneInput.closest('.popup__input').classList.add('is-valid');
+        if (phoneInput) {
+          phoneInput.classList.remove('is-invalid');
+          phoneInput.classList.add('is-valid');
           flag = true;
         }
       }
 
       if (nameInput.value === '') {
-        if (nameInput.closest('.popup__input')) {
-          nameInput.closest('.popup__input').classList.add('is-invalid');
-          nameInput.closest('.popup__input').classList.remove('is-valid');
+        if (nameInput) {
+          nameInput.classList.add('is-invalid');
+          nameInput.classList.remove('is-valid');
           flag = false;
         }
       }
 
       if (phoneInput.value === '' || phoneInput.value.indexOf('_') > 0) {
-        if (phoneInput.closest('.popup__input')) {
-          phoneInput.closest('.popup__input').classList.add('is-invalid');
-          phoneInput.closest('.popup__input').classList.remove('is-valid');
+        if (phoneInput) {
+          phoneInput.classList.add('is-invalid');
+          phoneInput.classList.remove('is-valid');
           flag = false;
         }
       }

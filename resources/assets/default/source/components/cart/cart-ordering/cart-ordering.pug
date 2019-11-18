@@ -1,0 +1,63 @@
+mixin cartStep_2()
+  .cart-ordering
+    .cart-ordering__title Оформление заказа
+    form.cart-ordering__form(id="ordering")
+      .cart-ordering__field
+        label(for="name") Контактное лицо
+        input(id="name", name="name", placeholder="Пример: Иванов Иван Иванович")
+        span Обязательное поле
+      .cart-ordering__field
+        label(for="phone") Телефон
+        input(id="phone", name="phone", placeholder="Пример: 8 (495) 000-00-00")
+        span Обязательное поле
+      .cart-ordering__field
+        div Способ доставки
+        ul
+          li.cart-ordering__radio
+            input(id="shipping_1", name="shipping", type="radio")
+            label(for="shipping_1") Курьерская доставка в пределах МКАД (300 руб.)
+          li.cart-ordering__radio
+            input(id="shipping_2", name="shipping", type="radio")
+            label(for="shipping_2") Курьерская доставка за МКАД (цена договорная)
+        span Обязательное поле
+      .cart-ordering__field
+        label(for="address") Адрес доставки
+        input(id="address", name="address", placeholder="Пример: г. Москва, ул. Советская д. 1, кв. 2")
+        span.empty
+      .cart-ordering__field
+        label(for="email") Электронная почта
+        input(id="email", name="email", placeholder="Пример: example@example.ru")
+        span.empty
+      .cart-ordering__field
+        label(for="email") Комментарий
+        textarea(id="comment", name="comment", placeholder="Пример: Во дворе злая собака!")
+        span.empty
+
+mixin cartStep_3()
+  .cart-ordering
+    .cart-ordering__title Информация о заказе
+    ul.cart-ordering__list
+      li
+        span Контактное лицо:
+        span Иванов Иван Иванович
+      li
+        span Телефон:
+        span 8 (915) 130 12 45
+      li
+        span Способ доставки:
+        span Курьерская доставка в пределах МКАД (300 руб.)
+      li
+        span Адрес доставки:
+        span не указано
+      li
+        span Электронная почта:
+        span не указано
+      li
+        span Комментарий:
+        span домофон 6595
+      li.is-important
+        span Стоимость изделий:
+        span 27300 руб.
+      li.is-important
+        span Общая стоимость покупки:
+        span 27600 руб.

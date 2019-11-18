@@ -53,8 +53,10 @@ class CartController extends Controller {
     foreach (Session::get('items') as $item) {
       $cart_total += $item['total'];
     }
+
+    $cart_step = 3;
     
-    return view('cart', compact('menu', 'keywords', 'description', 'title', 'cart_count', 'items', 'callback', 'cart_total'));
+    return view('cart', compact('menu', 'keywords', 'description', 'title', 'cart_count', 'items', 'callback', 'cart_total', 'cart_step'));
   }
 
   /**

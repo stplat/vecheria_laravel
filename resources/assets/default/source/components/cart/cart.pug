@@ -3,17 +3,25 @@
   .cart__empty Ваша корзина покупок пуста.
   | @else
   .cart__content
+    include ./cart-ordering/cart-ordering
+    | @if ($cart_step == 1)
     include ./cart-item/cart-item
+    | @elseif ($cart_step == 2)
+    +cartStep_2()
+    | @elseif ($cart_step == 3)
+    +cartStep_3()
+    | @endif
+
+
   .cart__aside
     .cart-nav
       ul.cart-nav__list
         li.is-active Список покупок
-        li Контактные данные
-        li Доставка и оплата
-        li Сведения о заказе
+        li Оформление заказа
+        li Информация о заказе
       .cart-nav__panel
         .cart-nav__total
           p {{$cart_total}}
         .cart-nav__button
-          a.button.button--small.button--red(href='') Оформить заказ
+          a.button.button--small.button--red(href='') Начать оформление
   | @endif

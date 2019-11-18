@@ -2,6 +2,7 @@
 @import '../_defaults/variables';
 @import '/cart-item/cart-item';
 @import '/cart-nav/cart-nav';
+@import '/cart-ordering/cart-ordering';
 
 .cart {
   display: flex;
@@ -20,6 +21,7 @@
 
 .cart__aside {
   width: 280px;
+  flex: 0 0 auto;
 }
 
 .cart__empty {

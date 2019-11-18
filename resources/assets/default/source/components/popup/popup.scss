@@ -128,30 +128,12 @@
 
 .popup__input {
   position: relative;
-  border: 1px solid #CCCCCC;
   border-radius: 4px;
-  overflow: hidden;
-  height: 40px;
+  //overflow: hidden;
   display: flex;
   align-items: center;
   background: transparent;
   transition: border-color 0.08s;
-
-  &.is-invalid {
-    border-color: $red-color;
-
-    & > label {
-      color: $red-color;
-    }
-  }
-
-  &.is-valid {
-    border-color: $green-color;
-
-    & > label {
-      color: $green-color;
-    }
-  }
 
   input {
     display: block;
@@ -161,17 +143,39 @@
     color: $text-color;
     padding: 10px 0 10px 44px;
     position: relative;
-    border: none;
+    border: 1px solid #CCCCCC;
     outline: none;
     background: #FFFFFF;
     font-weight: 300;
     border-radius: 4px;
     overflow: hidden;
+    height: 38px;
 
     &::placeholder {
       color: $text-color-opacity;
       opacity: 0.8;
       font-weight: 300;
+    }
+
+    &:focus {
+      border-color: $orange-color;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(202, 169, 113, 0.3)
+    }
+
+    &.is-invalid {
+      border-color: $red-color;
+
+      & + label {
+        color: $red-color;
+      }
+    }
+
+    &.is-valid {
+      border-color: $green-color;
+
+      & + label {
+        color: $green-color;
+      }
     }
   }
 
