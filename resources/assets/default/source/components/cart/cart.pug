@@ -6,13 +6,6 @@
     include ./cart-ordering/cart-ordering
     | @if ($cart_step == 1)
     include ./cart-item/cart-item
-    | @elseif ($cart_step == 2)
-    +cartStep_2()
-    | @elseif ($cart_step == 3)
-    +cartStep_3()
-    | @endif
-
-
   .cart__aside
     .cart-nav
       ul.cart-nav__list
@@ -24,4 +17,37 @@
           p {{$cart_total}}
         .cart-nav__button
           a.button.button--small.button--red(href='') Начать оформление
+    | @elseif ($cart_step == 2)
+    +cartStep_2()
+  .cart__aside
+    .cart-nav
+      ul.cart-nav__list
+        li Список покупок
+        li.is-active Оформление заказа
+        li Информация о заказе
+      .cart-nav__panel
+        .cart-nav__total
+          p {{$cart_total}}
+        .cart-nav__button
+          a.button.button--small.button--red(href='') Продолжить
+        .cart-nav__link
+          span Вернуться
+    | @elseif ($cart_step == 3)
+    +cartStep_3()
+  .cart__aside
+    .cart-nav
+      ul.cart-nav__list
+        li Список покупок
+        li Оформление заказа
+        li.is-active Информация о заказе
+      .cart-nav__panel
+        .cart-nav__total
+          p {{$cart_total}}
+        .cart-nav__button
+          a.button.button--small.button--red(href='') Оформить
+        .cart-nav__link
+          span Вернуться
+    | @endif
+
+
   | @endif

@@ -58,15 +58,16 @@
   overflow: hidden;
 }
 
-.cart-nav__clear {
+.cart-nav__link {
   text-align: center;
   padding: 7px 0 0 0;
 
-  a {
+  span {
     color: $text-color-opacity;
     border-bottom: 1px dashed $text-color-opacity;
     font-size: 15px;
     transition: border-color .08s;
+    cursor: pointer;
 
     .no-touch &:hover {
       border-color: transparent;

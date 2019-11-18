@@ -40,7 +40,22 @@
     <div class="cart-item__total">{{$item->total}}</div>
   </div><a class="cart-item__remove" href="" title="Удалить из корзины"></a>
 </div>@endforeach
-@elseif ($cart_step == 2)
+
+    </div>
+    <div class="cart__aside">
+      <div class="cart-nav">
+        <ul class="cart-nav__list">
+          <li class="is-active">Список покупок</li>
+          <li>Оформление заказа</li>
+          <li>Информация о заказе</li>
+        </ul>
+        <div class="cart-nav__panel">
+          <div class="cart-nav__total">
+            <p>{{$cart_total}}</p>
+          </div>
+          <div class="cart-nav__button"><a class="button button--small button--red" href="">Начать оформление</a></div>
+        </div>
+      </div>@elseif ($cart_step == 2)
             <div class="cart-ordering">
               <div class="cart-ordering__title">Оформление заказа</div>
               <form class="cart-ordering__form" id="ordering">
@@ -78,7 +93,23 @@
                   <textarea id="comment" name="comment" placeholder="Пример: Во дворе злая собака!"></textarea><span class="empty"></span>
                 </div>
               </form>
-            </div>@elseif ($cart_step == 3)
+            </div>
+    </div>
+    <div class="cart__aside">
+      <div class="cart-nav">
+        <ul class="cart-nav__list">
+          <li>Список покупок</li>
+          <li class="is-active">Оформление заказа</li>
+          <li>Информация о заказе</li>
+        </ul>
+        <div class="cart-nav__panel">
+          <div class="cart-nav__total">
+            <p>{{$cart_total}}</p>
+          </div>
+          <div class="cart-nav__button"><a class="button button--small button--red" href="">Продолжить</a></div>
+          <div class="cart-nav__link"><span>Вернуться</span></div>
+        </div>
+      </div>@elseif ($cart_step == 3)
             <div class="cart-ordering">
               <div class="cart-ordering__title">Информация о заказе</div>
               <ul class="cart-ordering__list">
@@ -91,22 +122,23 @@
                 <li class="is-important"><span>Стоимость изделий:</span><span>27300 руб.</span></li>
                 <li class="is-important"><span>Общая стоимость покупки:</span><span>27600 руб.</span></li>
               </ul>
-            </div>@endif
+            </div>
     </div>
     <div class="cart__aside">
       <div class="cart-nav">
         <ul class="cart-nav__list">
-          <li class="is-active">Список покупок</li>
+          <li>Список покупок</li>
           <li>Оформление заказа</li>
-          <li>Информация о заказе</li>
+          <li class="is-active">Информация о заказе</li>
         </ul>
         <div class="cart-nav__panel">
           <div class="cart-nav__total">
             <p>{{$cart_total}}</p>
           </div>
-          <div class="cart-nav__button"><a class="button button--small button--red" href="">Начать оформление</a></div>
+          <div class="cart-nav__button"><a class="button button--small button--red" href="">Оформить</a></div>
+          <div class="cart-nav__link"><span>Вернуться</span></div>
         </div>
-      </div>
+      </div>@endif
     </div>@endif
   </div>
 </div>@endsection
