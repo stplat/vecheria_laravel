@@ -21,6 +21,7 @@
   height: 20px;
   opacity: 0.4;
   transition: opacity 0.08s;
+  cursor: pointer;
 
   &:after {
     content: '\E808';

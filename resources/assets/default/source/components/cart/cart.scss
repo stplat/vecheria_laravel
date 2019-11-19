@@ -7,6 +7,10 @@
 .cart {
   display: flex;
   margin: 0 -7.5px;
+
+  .hidden {
+    display: none;
+  }
 }
 
 .cart__content,

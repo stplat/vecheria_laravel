@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
     /*
     *  Выбор количества товаров
     * */
-
     select.addEventListener('change', function () {
       const count = this.value;
 
@@ -44,7 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
   /*
   *  Удаление товара
   * */
-
   const delButtons = document.querySelectorAll('.cart-item__remove');
 
   delButtons.forEach((delButton) => {

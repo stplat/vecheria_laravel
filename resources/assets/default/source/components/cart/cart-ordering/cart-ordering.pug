@@ -1,5 +1,5 @@
-mixin cartStep_2()
-  .cart-ordering
+mixin cartStep_2(hidden)
+  .cart-ordering(class=hidden, data-container="2")
     .cart-ordering__title Оформление заказа
     form.cart-ordering__form(id="ordering")
       .cart-ordering__field
@@ -29,12 +29,12 @@ mixin cartStep_2()
         input(id="email", name="email", placeholder="Пример: example@example.ru")
         span.empty
       .cart-ordering__field
-        label(for="email") Комментарий
+        label(for="comment") Комментарий
         textarea(id="comment", name="comment", placeholder="Пример: Во дворе злая собака!")
         span.empty
 
-mixin cartStep_3()
-  .cart-ordering
+mixin cartStep_3(hidden)
+  .cart-ordering(class=hidden, data-container="3")
     .cart-ordering__title Информация о заказе
     ul.cart-ordering__list
       li

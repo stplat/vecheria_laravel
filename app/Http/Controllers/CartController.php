@@ -13,6 +13,7 @@ class CartController extends Controller {
    * @return \Illuminate\Http\Response
    */
   public function index() {
+    //Session::forget('cart_step');
     $menu = $this->menu;
     $keywords = 'православная, лавка, изделия, крестики, бухвицы, браслеты, ручная работа, освещенные';
     $description = 'Покупка недорогих освещенных православных ювелирных изделий ручной работы по низким ценам';
@@ -21,7 +22,7 @@ class CartController extends Controller {
     $cart_count = 0;
     $id = [];
     $items = [];
-    
+
 
     if (is_array(Session::get('items'))) {
       foreach (Session::get('items') as $category) {
@@ -47,15 +48,15 @@ class CartController extends Controller {
         array_push($items, $item);
       }
     }
-  
+
     $cart_total = 0;
-  
+
     foreach (Session::get('items') as $item) {
       $cart_total += $item['total'];
     }
 
-    $cart_step = 3;
-    
+    $cart_step = Session::get('cart_step') ?: 1;
+
     return view('cart', compact('menu', 'keywords', 'description', 'title', 'cart_count', 'items', 'callback', 'cart_total', 'cart_step'));
   }
 
@@ -149,5 +150,13 @@ class CartController extends Controller {
       ->select('items.*', 'categories.plug as subcategory_plug')
       ->whereIn('items.id', $id)
       ->get();
+  }
+
+  public function ordering(Request $request) {
+    $cart_step = $request->input('cart_step');
+
+    Session::put('cart_step', $cart_step);
+
+    return $cart_step;
   }
 }
