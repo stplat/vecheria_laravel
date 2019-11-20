@@ -51,9 +51,10 @@ class CartController extends Controller {
 
     $cart_total = 0;
 
-    foreach (Session::get('items') as $item) {
-      $cart_total += $item['total'];
-    }
+    if (Session::get('items'))
+      foreach (Session::get('items') as $item) {
+        $cart_total += $item['total'];
+      }
 
     $cart_step = Session::get('cart_step') ?: 1;
 

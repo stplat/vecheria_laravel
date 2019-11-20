@@ -74,3 +74,27 @@
     }
   }
 }
+
+.cart-nav__total {
+  p {
+    color: $text-color;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0 0 20px;
+
+    &:before {
+      content: 'Итого: ';
+      font-weight: 400;
+      font-size: 22px;
+      opacity: 0.5;
+      margin: 0 0 10px;
+    }
+
+    &:after {
+      content: ' руб.';
+      font-size: 15px;
+      font-weight: 400;
+    }
+  }
+}

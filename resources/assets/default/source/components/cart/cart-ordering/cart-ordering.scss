@@ -120,6 +120,24 @@
     &.empty {
       opacity: 0;
     }
+
+    &.is-invalid {
+      background-color: $red-color;
+      color: #FFFFFF;
+
+      &:before {
+        background-color: $red-color;
+      }
+    }
+
+    &.is-valid {
+      background-color: $green-color;
+      color: #FFFFFF;
+
+      &:before {
+        background-color: $green-color;
+      }
+    }
   }
 }
 
@@ -186,6 +204,14 @@
     & > span:nth-child(2) {
       font-weight: 300;
       display: inline-block;
+
+      &.is-price {
+        &:after {
+          content: ' руб.';
+          font-size: 15px;
+          font-weight: 400;
+        }
+      }
     }
 
     /* Последний элемент с итогами */

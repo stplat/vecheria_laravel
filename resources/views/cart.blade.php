@@ -88,11 +88,11 @@
                   <div>Способ доставки</div>
                   <ul>
                     <li class="cart-ordering__radio">
-                      <input id="shipping_1" name="shipping" type="radio">
+                      <input id="shipping_1" name="shipping" type="radio" value="Курьерская доставка в пределах МКАД (300 руб.)">
                       <label for="shipping_1">Курьерская доставка в пределах МКАД (300 руб.)</label>
                     </li>
                     <li class="cart-ordering__radio">
-                      <input id="shipping_2" name="shipping" type="radio">
+                      <input id="shipping_2" name="shipping" type="radio" value="Курьерская доставка за МКАД (цена договорная)">
                       <label for="shipping_2">Курьерская доставка за МКАД (цена договорная)</label>
                     </li>
                   </ul><span>Обязательное поле</span>
@@ -126,11 +126,11 @@
                   <div>Способ доставки</div>
                   <ul>
                     <li class="cart-ordering__radio">
-                      <input id="shipping_1" name="shipping" type="radio">
+                      <input id="shipping_1" name="shipping" type="radio" value="Курьерская доставка в пределах МКАД (300 руб.)">
                       <label for="shipping_1">Курьерская доставка в пределах МКАД (300 руб.)</label>
                     </li>
                     <li class="cart-ordering__radio">
-                      <input id="shipping_2" name="shipping" type="radio">
+                      <input id="shipping_2" name="shipping" type="radio" value="Курьерская доставка за МКАД (цена договорная)">
                       <label for="shipping_2">Курьерская доставка за МКАД (цена договорная)</label>
                     </li>
                   </ul><span>Обязательное поле</span>
@@ -153,27 +153,27 @@
             <div class="cart-ordering" data-container="3">
               <div class="cart-ordering__title">Информация о заказе</div>
               <ul class="cart-ordering__list">
-                <li><span>Контактное лицо:</span><span>Иванов Иван Иванович</span></li>
-                <li><span>Телефон:</span><span>8 (915) 130 12 45</span></li>
-                <li><span>Способ доставки:</span><span>Курьерская доставка в пределах МКАД (300 руб.)</span></li>
-                <li><span>Адрес доставки:</span><span>не указано</span></li>
-                <li><span>Электронная почта:</span><span>не указано</span></li>
-                <li><span>Комментарий:</span><span>домофон 6595</span></li>
-                <li class="is-important"><span>Стоимость изделий:</span><span>27300 руб.</span></li>
-                <li class="is-important"><span>Общая стоимость покупки:</span><span>27600 руб.</span></li>
+                <li><span>Контактное лицо:</span><span class="js-name"></span></li>
+                <li><span>Телефон:</span><span class="js-phone"></span></li>
+                <li><span>Способ доставки:</span><span class="js-shipping"></span></li>
+                <li><span>Адрес доставки:</span><span class="js-address">не указано</span></li>
+                <li><span>Электронная почта:</span><span class="js-email">не указано</span></li>
+                <li><span>Комментарий:</span><span class="js-comment">не указано</span></li>
+                <li class="is-important"><span>Стоимость изделий:</span><span class="is-price js-price">{{$cart_total}}</span></li>
+                <li class="is-important"><span>Общая стоимость покупки:</span><span class="is-price js-total-price">{{$cart_total}}</span></li>
               </ul>
             </div>@else
             <div class="cart-ordering hidden" data-container="3">
               <div class="cart-ordering__title">Информация о заказе</div>
               <ul class="cart-ordering__list">
-                <li><span>Контактное лицо:</span><span>Иванов Иван Иванович</span></li>
-                <li><span>Телефон:</span><span>8 (915) 130 12 45</span></li>
-                <li><span>Способ доставки:</span><span>Курьерская доставка в пределах МКАД (300 руб.)</span></li>
-                <li><span>Адрес доставки:</span><span>не указано</span></li>
-                <li><span>Электронная почта:</span><span>не указано</span></li>
-                <li><span>Комментарий:</span><span>домофон 6595</span></li>
-                <li class="is-important"><span>Стоимость изделий:</span><span>27300 руб.</span></li>
-                <li class="is-important"><span>Общая стоимость покупки:</span><span>27600 руб.</span></li>
+                <li><span>Контактное лицо:</span><span class="js-name"></span></li>
+                <li><span>Телефон:</span><span class="js-phone"></span></li>
+                <li><span>Способ доставки:</span><span class="js-shipping"></span></li>
+                <li><span>Адрес доставки:</span><span class="js-address">не указано</span></li>
+                <li><span>Электронная почта:</span><span class="js-email">не указано</span></li>
+                <li><span>Комментарий:</span><span class="js-comment">не указано</span></li>
+                <li class="is-important"><span>Стоимость изделий:</span><span class="is-price js-price">{{$cart_total}}</span></li>
+                <li class="is-important"><span>Общая стоимость покупки:</span><span class="is-price js-total-price">{{$cart_total}}</span></li>
               </ul>
             </div>@endif
     </div>
@@ -194,7 +194,7 @@
             <p>{{$cart_total}}</p>
           </div>@if ($cart_step == 1)
           <div class="cart-nav__button"><a class="button button--small button--red js-ordering-next" href="">Начать оформление</a></div>
-          <div class="cart-nav__link hidden"><span class="js-ordering-prev">Вернуться</span></div>@elseif ($cart_step == 2)
+          <div class="cart-nav__link"><span class="js-ordering-prev hidden">Вернуться</span></div>@elseif ($cart_step == 2)
           <div class="cart-nav__button"><a class="button button--small button--red js-ordering-next" href="">Продолжить</a></div>
           <div class="cart-nav__link"><span class="js-ordering-prev">Вернуться</span></div>@elseif ($cart_step == 3)
           <div class="cart-nav__button"><a class="button button--small button--red js-ordering-next" href="">Оформить</a></div>

@@ -50,8 +50,8 @@
         | @if ($cart_step == 1)
         .cart-nav__button
           a.button.button--small.button--red.js-ordering-next(href="") Начать оформление
-        .cart-nav__link.hidden
-          span.js-ordering-prev Вернуться
+        .cart-nav__link
+          span.js-ordering-prev.hidden Вернуться
         | @elseif ($cart_step == 2)
         .cart-nav__button
           a.button.button--small.button--red.js-ordering-next(href="") Продолжить
