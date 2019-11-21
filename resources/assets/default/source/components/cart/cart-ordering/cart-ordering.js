@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const address = form.address;
     const email = form.email;
     const comment = form.comment;
+    let orderFlag = false;
     let currentStep = Number(document.querySelector('.is-active[data-step]').dataset.step);
 
     maskPhone.mask(phone);
@@ -37,6 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     * */
     buttonPrev.addEventListener('click', (e) => {
       currentStep !== 1 ? currentStep = currentStep - 1 : currentStep = 1;
+      orderFlag = false;
       checkStep();
       e.preventDefault();
     });
@@ -122,6 +124,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function checkStep() {
 
+      if (orderFlag) {
+        const aside = document.querySelector('.cart__aside');
+        aside.classList.add('hidden');
+
+        const alert = document.createElement('div');
+        alert.className = 'cart-ordering__success';
+        alert.innerHTML = '<p> Ваш заказ успешно оформлен!<p> Благодарим Вас за покупку в нашем интернет-магазине.</p>';
+        container.prepend(alert);
+      }
+
       if (currentStep === 1) {
         buttonPrev.classList.add('hidden');
         buttonNext.innerText = 'Начать оформление';
@@ -152,16 +164,26 @@ document.addEventListener('DOMContentLoaded', () => {
           jsName.innerText = name.value;
           jsPhone.innerText = phone.value;
           [...shipping].forEach((radio) => {
-            radio.checked ? jsShipping.innerText = radio.value : '';
+            if (radio.checked) {
+              jsShipping.innerText = radio.value;
+              if (radio.id === 'shipping_1') {
+                jsTotalPrice.innerText = Number(jsPrice.innerText) + 300;
+                !jsTotalPrice.classList.contains('is-price') ? jsTotalPrice.classList.add('is-price') : '';
+              } else if (radio.id === 'shipping_2') {
+                jsTotalPrice.innerText = 'уточняйте у менеджера';
+                jsTotalPrice.classList.remove('is-price');
+              }
+            }
           });
           jsAddress.innerText = address.value ? address.value : 'не указано';
           jsEmail.innerText = email.value ? email.value : 'не указано';
           jsComment.innerText = comment.value ? comment.value : 'не указано';
+          orderFlag = true;
 
         } else {
           currentStep = currentStep - 1;
+          orderFlag = false;
         }
-
       }
 
       function handler() {
