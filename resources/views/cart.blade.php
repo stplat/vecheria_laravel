@@ -88,7 +88,7 @@
                   <div>Способ доставки</div>
                   <ul>
                     <li class="cart-ordering__radio">
-                      <input id="shipping_1" name="shipping" type="radio" value="Курьерская доставка в пределах МКАД (300 руб.)">
+                      <input id="shipping_1" name="shipping" type="radio" value="300">
                       <label for="shipping_1">Курьерская доставка в пределах МКАД (300 руб.)</label>
                     </li>
                     <li class="cart-ordering__radio">
@@ -103,7 +103,7 @@
                 </div>
                 <div class="cart-ordering__field">
                   <label for="email">Электронная почта</label>
-                  <input id="email" name="email" placeholder="Пример: example@example.ru"><span class="empty"></span>
+                  <input id="email" name="email" placeholder="Пример: example@example.ru"><span>Для отправки заказа</span>
                 </div>
                 <div class="cart-ordering__field">
                   <label for="comment">Комментарий</label>
@@ -126,7 +126,7 @@
                   <div>Способ доставки</div>
                   <ul>
                     <li class="cart-ordering__radio">
-                      <input id="shipping_1" name="shipping" type="radio" value="Курьерская доставка в пределах МКАД (300 руб.)">
+                      <input id="shipping_1" name="shipping" type="radio" value="300">
                       <label for="shipping_1">Курьерская доставка в пределах МКАД (300 руб.)</label>
                     </li>
                     <li class="cart-ordering__radio">
@@ -141,7 +141,7 @@
                 </div>
                 <div class="cart-ordering__field">
                   <label for="email">Электронная почта</label>
-                  <input id="email" name="email" placeholder="Пример: example@example.ru"><span class="empty"></span>
+                  <input id="email" name="email" placeholder="Пример: example@example.ru"><span>Для отправки заказа</span>
                 </div>
                 <div class="cart-ordering__field">
                   <label for="comment">Комментарий</label>

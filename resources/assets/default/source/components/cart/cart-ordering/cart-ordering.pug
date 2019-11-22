@@ -14,7 +14,7 @@ mixin cartStep_2(hidden)
         div Способ доставки
         ul
           li.cart-ordering__radio
-            input(id="shipping_1", name="shipping", type="radio", value="Курьерская доставка в пределах МКАД (300 руб.)")
+            input(id="shipping_1", name="shipping", type="radio", value="300")
             label(for="shipping_1") Курьерская доставка в пределах МКАД (300 руб.)
           li.cart-ordering__radio
             input(id="shipping_2", name="shipping", type="radio", value="Курьерская доставка за МКАД (цена договорная)")
@@ -27,7 +27,7 @@ mixin cartStep_2(hidden)
       .cart-ordering__field
         label(for="email") Электронная почта
         input(id="email", name="email", placeholder="Пример: example@example.ru")
-        span.empty
+        span Для отправки заказа
       .cart-ordering__field
         label(for="comment") Комментарий
         textarea(id="comment", name="comment", placeholder="Пример: Во дворе злая собака!")

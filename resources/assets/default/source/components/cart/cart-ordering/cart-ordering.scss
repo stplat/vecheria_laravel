@@ -7,6 +7,16 @@
   padding: 20px 30px;
   margin: 15px 0;
   border-radius: 4px;
+
+  & .green {
+    color: $green-text;
+    font-weight: 400;
+  }
+
+  & .red {
+    color: $red-color;
+    font-weight: 400;
+  }
 }
 
 .cart-ordering__title {
@@ -229,6 +239,7 @@
   padding: 20px 30px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
   border-radius: 4px;
+  margin: 15px 0;
 
   p:nth-child(1) {
     font-weight: 500;

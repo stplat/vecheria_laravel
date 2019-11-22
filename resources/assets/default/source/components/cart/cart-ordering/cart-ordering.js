@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const buttonPrev = document.querySelector('.js-ordering-prev');
     const token = document.querySelector('meta[name="csrf-token"]').content;
     const container = document.querySelector('.cart__content');
+    const total = document.querySelector('.cart-nav__total p');
     const cartContainers = document.querySelectorAll('[data-container]');
     const cartSteps = document.querySelectorAll('[data-step]');
     const form = document.querySelector('#ordering');
@@ -108,13 +109,19 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       if (email.value !== '' && email.value.match(/.+@.+\..+/i) === null) {
+        email.nextElementSibling.classList.add('is-invalid');
+        email.nextElementSibling.classList.remove('is-valid');
         email.classList.add('is-invalid');
         email.classList.remove('is-valid');
         flag = false;
       } else if (email.value !== '' && email.value.match(/.+@.+\..+/i) !== null) {
+        email.nextElementSibling.classList.remove('is-invalid');
+        email.nextElementSibling.classList.add('is-valid');
         email.classList.remove('is-invalid');
         email.classList.add('is-valid');
       } else if (email.value === '') {
+        email.nextElementSibling.classList.remove('is-invalid');
+        email.nextElementSibling.classList.remove('is-valid');
         email.classList.remove('is-invalid');
         email.classList.remove('is-valid');
       }
@@ -124,14 +131,45 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function checkStep() {
 
-      if (orderFlag) {
-        const aside = document.querySelector('.cart__aside');
-        aside.classList.add('hidden');
+      if (total.innerText >= 4000) {
+        document.querySelector('#shipping_1').nextElementSibling.innerHTML = 'Курьерская доставка в пределах МКАД <span class="green">(бесплатно)</span>';
+        document.querySelector('#shipping_1').value = 'Курьерская доставка в пределах МКАД (бесплатно)';
+      } else {
+        document.querySelector('#shipping_1').nextElementSibling.innerHTML = 'Курьерская доставка в пределах МКАД <span class="red">(300 руб.)</span>';
+        document.querySelector('#shipping_1').value = 'Курьерская доставка в пределах МКАД (300 руб.)';
+      }
 
-        const alert = document.createElement('div');
-        alert.className = 'cart-ordering__success';
-        alert.innerHTML = '<p> Ваш заказ успешно оформлен!<p> Благодарим Вас за покупку в нашем интернет-магазине.</p>';
-        container.prepend(alert);
+      if (orderFlag) {
+
+        const params = JSON.stringify({
+          name: form.name.value,
+          phone: form.phone.value,
+          shipping: form.shipping.value,
+          address: form.address.value,
+          email: form.email.value,
+          comment: form.comment.value,
+          price: document.querySelector('.js-price').innerText,
+          total: document.querySelector('.js-total-price').innerText,
+        });
+
+        axios.post('/ordering', params, {
+          headers: {
+            'Content-Type': 'application/json',
+            'X-Requested-With': 'XMLHttpRequest',
+            'X-CSRF-TOKEN': token,
+          },
+        }).then(res => {
+          console.log(res);
+          const aside = document.querySelector('.cart__aside');
+          const alert = document.createElement('div');
+          aside.classList.add('hidden');
+
+          alert.className = 'cart-ordering__success';
+          alert.innerHTML = '<p> Ваш заказ успешно оформлен!<p> Благодарим Вас за покупку в нашем интернет-магазине.</p>';
+          container.prepend(alert);
+        }).catch((error) => {
+          console.log(error);
+        });
       }
 
       if (currentStep === 1) {
@@ -165,13 +203,20 @@ document.addEventListener('DOMContentLoaded', () => {
           jsPhone.innerText = phone.value;
           [...shipping].forEach((radio) => {
             if (radio.checked) {
-              jsShipping.innerText = radio.value;
               if (radio.id === 'shipping_1') {
-                jsTotalPrice.innerText = Number(jsPrice.innerText) + 300;
+                if (total.innerText >= 4000) {
+                  jsTotalPrice.innerText = Number(jsPrice.innerText);
+                  jsShipping.innerHTML = 'Курьерская доставка в пределах МКАД <span class="green">(бесплатно)</span>';
+                } else {
+                  jsTotalPrice.innerText = Number(jsPrice.innerText) + 300;
+                  jsShipping.innerHTML = 'Курьерская доставка в пределах МКАД <span class="red">(300 руб.)</span>';
+                }
+
                 !jsTotalPrice.classList.contains('is-price') ? jsTotalPrice.classList.add('is-price') : '';
               } else if (radio.id === 'shipping_2') {
                 jsTotalPrice.innerText = 'уточняйте у менеджера';
                 jsTotalPrice.classList.remove('is-price');
+                jsShipping.innerHTML = 'Курьерская доставка за МКАД (цена договорная)';
               }
             }
           });

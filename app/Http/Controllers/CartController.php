@@ -154,10 +154,42 @@ class CartController extends Controller {
   }
 
   public function ordering(Request $request) {
-    $cart_step = $request->input('cart_step');
+    $name = $request->input('name');
+    $phone = $request->input('phone');
+    $shipping = $request->input('shipping');
+    $address = $request->input('address') ? $request->input('address') : 'не указано';
+    $email = $request->input('email') ? (string)$request->input('email') : 'не указано';
+    $comment = $request->input('comment') ? $request->input('comment') : 'не указано';
+    $price = $request->input('price');
+    $total = ($request->input('total') == 'уточняйте у менеджера') ? 'уточняйте у менеджера' : $request->input('total') . ' руб.';
 
-    Session::put('cart_step', $cart_step);
+    $to = "<info@vecheria.ru>, ";
+    if ($request->input('email')) {
+      $to .= "<" . $request->input('email') . ">";
+    }
 
-    return $cart_step;
+    $headers = "Content-type: text/html; charset=urf-8 \r\n";
+    $headers .= "From: <info@vecheria.ru>\r\n";
+    $headers .= "Reply-To: info@vecheria.ru\r\n";
+    $subject = 'Заказ на покупку ювелирного изделия. vecheria.ru';
+    $message = '              
+      <div class="cart-ordering">
+        <div class="cart-ordering__title" style="text-transform: uppercase;font-size: 18px;font-weight: 500;padding: 15px 0 10px;border-bottom: 1px solid #eaeaea;color:#414850;">Информация о заказе</div>
+        <ul class="cart-ordering__list" style="list-style-type: none;margin: 0;padding: 10px 0 0;">
+          <li style="margin: 5px 0;">Контактное лицо: <b>' . $name . '</b></li>
+          <li style="margin: 5px 0;">Телефон: <b>' . $phone . '</b></li>
+          <li style="margin: 5px 0;">Способ доставки:  <b>' . $shipping . '</b></li>
+          <li style="margin: 5px 0;">Адрес доставки: <b>' . $address . '</b></li>
+          <li style="margin: 5px 0;">Электронная почта: <b>' . $email . '</b></li>
+          <li style="margin: 5px 0;">Комментарий: <b>' . $comment . '</b></li>
+          <li style="margin: 5px 0;">Стоимость изделий: <b>' . $price . ' руб.</b></li>
+          <li style="margin: 5px 0;">Общая стоимость покупки: <b>' . $total . '</b></li>
+        </ul>
+      </div>      
+    ';
+
+    mail($to, $subject, $message, $headers);
+
+    Session::forget('items');
   }
 }
