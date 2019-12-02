@@ -5,11 +5,11 @@ mixin items(quantity)
     | @foreach ($items as $key => $item)
     .item(class="item--" + quantity)
       .item__sign
-        p {{$item->manufactured}}
+        p {{$item->manufacturer}}
       .item__article {{$item->article}}
       .item__image
         a(href!="/catalog/{{$item->subcategory_plug}}/{{$item->plug}}/")
-          img(src!="/images/items/{{$item->image_path}}",
+          img(src!="/images/items/{{$item->plug}}.jpg",
           alt!="{{$item->name}}",
           title!="{{$item->name}}")
       .item__name

@@ -69,10 +69,10 @@
                 <div class="item__container">@foreach ($items as $key => $item)
                   <div class="item item--3">
                     <div class="item__sign">
-                      <p>{{$item->manufactured}}</p>
+                      <p>{{$item->manufacturer}}</p>
                     </div>
                     <div class="item__article">{{$item->article}}</div>
-                    <div class="item__image"><a href="/catalog/{{$item->subcategory_plug}}/{{$item->plug}}/"><img src="/images/items/{{$item->image_path}}" alt="{{$item->name}}" title="{{$item->name}}"></a></div>
+                    <div class="item__image"><a href="/catalog/{{$item->subcategory_plug}}/{{$item->plug}}/"><img src="/images/items/{{$item->plug}}.jpg" alt="{{$item->name}}" title="{{$item->name}}"></a></div>
                     <div class="item__name"><a href="/catalog/{{$item->subcategory_plug}}/{{$item->plug}}/">{{$item->name}}</a></div>
                     <div class="item__price">
                       <p>{{$item->price}}</p>

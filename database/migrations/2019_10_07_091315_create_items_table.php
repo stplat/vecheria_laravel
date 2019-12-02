@@ -16,8 +16,11 @@ class CreateItemsTable extends Migration {
       $table->integer('subcategory_id');
       $table->text('name');
       $table->text('plug');
-      $table->text('manufactured');
+      $table->text('manufacturer');
       $table->text('article');
+      $table->text('meta_keywords');
+      $table->text('meta_description');
+      $table->text('meta_title');
       $table->text('available');
       $table->text('weight');
       $table->float('price');

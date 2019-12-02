@@ -1,10 +1,8 @@
 .product-image
   .product-image__showcase
-    img(src!="/images/items/{{$items->image_path}}")
-  //ul.product-image__preview
+    img(src!="/images/items/{{$items->image_path[0]}}")
+  ul.product-image__preview
+    | @foreach ($items->image_path as $image)
     li
-      img(src!="/images/items/angel_hranitely_golgofa_gospody_vsederghitely_tolgskaya_ikona_boghiey_materi_2.jpg")
-    li
-      img(src!="/images/items/angel_hranitely_golgofa_gospody_vsederghitely_tolgskaya_ikona_boghiey_materi_2.jpg")
-    li
-      img(src!="/images/items/chasy_dve_stihii_a1100301_5.jpg")
+      img(src!="/images/items/{{$image}}")
+    | @endforeach

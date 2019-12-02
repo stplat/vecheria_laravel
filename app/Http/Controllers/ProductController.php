@@ -40,12 +40,14 @@ class ProductController extends Controller {
       $subcategory = $items->subcategory;
 
       $menu = $this->menu;
-      $keywords = 'православная, лавка, изделия, крестики, бухвицы, браслеты, ручная работа, освещенные';
-      $description = 'Покупка недорогих освещенных православных ювелирных изделий ручной работы по низким ценам';
-      $title = 'Интернет-магазин православных изделий "Вечерия"';
+      $keywords = $items->meta_keywords;
+      $description = $items->meta_description;
+      $title = $items->meta_title;
       $callback = Session::get('callback') ?: Session::get('callback');
       $buy = Session::get('buy') ?: Session::get('buy');
       $cart_count = 0;
+
+      $items->image_path = explode(';', $items->image_path);
 
       $in_cart = false;
 

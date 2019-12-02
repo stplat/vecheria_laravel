@@ -11,10 +11,10 @@
         p {{$items->price}}
       .product__row
         ul.product__params
-          | @if ($items->manufactured)
+          | @if ($items->manufacturer)
           li
             span Производитель:
-            span {{$items->manufactured}}
+            span {{$items->manufacturer}}
           | @endif
           | @if ($items->weight)
           li

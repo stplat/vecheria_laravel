@@ -16,15 +16,10 @@
         <div class="product__article">{{$items->article}}</div>
         <div class="product__image">
 <div class="product-image">
-  <div class="product-image__showcase"><img src="/images/items/{{$items->image_path}}"></div>
-  <!--ul.product-image__preview
-  li
-    img(src!="/images/items/angel_hranitely_golgofa_gospody_vsederghitely_tolgskaya_ikona_boghiey_materi_2.jpg")
-  li
-    img(src!="/images/items/angel_hranitely_golgofa_gospody_vsederghitely_tolgskaya_ikona_boghiey_materi_2.jpg")
-  li
-    img(src!="/images/items/chasy_dve_stihii_a1100301_5.jpg")
-  -->
+  <div class="product-image__showcase"><img src="/images/items/{{$items->image_path[0]}}"></div>
+  <ul class="product-image__preview">@foreach ($items->image_path as $image)
+    <li><img src="/images/items/{{$image}}"></li>@endforeach
+  </ul>
 </div>
         </div>
       </div>
@@ -33,8 +28,8 @@
           <p>{{$items->price}}</p>
         </div>
         <div class="product__row">
-          <ul class="product__params">@if ($items->manufactured)
-            <li><span>Производитель:</span><span>{{$items->manufactured}}</span></li>@endif
+          <ul class="product__params">@if ($items->manufacturer)
+            <li><span>Производитель:</span><span>{{$items->manufacturer}}</span></li>@endif
             @if ($items->weight)
             <li><span>Средний вес:</span><span>{{$items->weight}}</span></li>@endif
             @if ($items->material)

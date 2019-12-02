@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
         items.forEach((el) => {
           item += `
             <div class="item item--3">
-              <div class="item__sign"><p>${el.manufactured}</p></div>
+              <div class="item__sign"><p>${el.manufacturer}</p></div>
               <div class="item__article">${el.article}</div>
               <div class="item__image"><a href="/catalog/${el.subcategory_plug}/${el.plug}"><img src="/images/items/${el.image_path}" alt="${el.name}" title="${el.name}"></a></div>
               <div class="item__name"><a href="/catalog/${el.subcategory_plug}/${el.plug}">${el.name}</a></div>
