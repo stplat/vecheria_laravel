@@ -33,9 +33,14 @@ document.addEventListener('DOMContentLoaded', function () {
     alert.className = 'product__alert';
     alert.innerText = 'Товар в корзине';
 
+    const anchor = document.createElement('a');
+    anchor.href = '/cart';
+    anchor.innerText = 'Перейти в корзину';
+
     if (button)
       button.addEventListener('click', function (e) {
         const buttonContainer = document.querySelector('.product__button');
+        const anchorContainer = document.querySelector('.product__buy');
 
         buttonContainer.classList.add('is-deactive');
         button.style.textTransform = 'none';
@@ -52,8 +57,10 @@ document.addEventListener('DOMContentLoaded', function () {
           cart.innerText = res.data.cart_count;
 
           button.remove();
+          anchorContainer.querySelector('span').remove();
           buttonContainer.classList.remove('is-deactive');
           buttonContainer.append(alert);
+          anchorContainer.append(anchor);
 
         }).catch((error) => {
           buttonContainer.classList.remove('is-deactive');

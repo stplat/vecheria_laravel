@@ -12,11 +12,22 @@
   background: #FFFFFF;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
   border-radius: 4px;
+
+  @media only screen and (max-width: 768px) {
+    flex-wrap: wrap;
+  }
 }
 
 .product__col {
-  flex: 0 0 310px;
+  flex: 0 0 300px;
   padding: 20px 30px;
+
+  @media only screen and (max-width: 768px) {
+    border-right: none;
+    padding: 20px 15px;
+    flex: 1 0 auto;
+    width: 100%;
+  }
 }
 
 .product__col--left {
@@ -58,6 +69,11 @@
     .no-touch &:hover {
       border-color: transparent;
     }
+  }
+
+  a {
+    color: $red-color;
+    border-bottom: 1px dotted $red-color-hover;
   }
 }
 
@@ -113,6 +129,10 @@
     display: flex;
     font-size: 14px;
     margin: 14px 0;
+
+    @media only screen and (max-width: 768px) {
+      font-size: 12px;
+    }
   }
 
   span {
@@ -163,6 +183,5 @@
       top: 0;
     }
   }
-
 
 }

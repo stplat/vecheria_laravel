@@ -4,9 +4,7 @@
 @import './input/input';
 @import './checkbox/checkbox';
 @import './select/select';
-
 @import '~normalize.css';
-
 
 /* Общие стили */
 * {
@@ -34,6 +32,13 @@ body {
   flex-direction: column;
   position: relative;
   height: 100%;
+  overflow-x: hidden;
+
+  &.is-popup {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+  }
 }
 
 a {
@@ -44,6 +49,13 @@ a {
   &:active, &:focus, &:hover {
     outline: none;
     text-decoration: none;
+  }
+
+  &[href^=tel] {
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    color: inherit;
   }
 }
 
@@ -61,6 +73,10 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media only screen and (max-width: 768px) {
+      flex-wrap: wrap;
+    }
   }
 }
 

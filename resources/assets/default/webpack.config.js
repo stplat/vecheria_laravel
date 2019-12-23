@@ -80,8 +80,6 @@ const config = merge([
   },
   images(),
   pug(),
-  lintJS({paths: PATHS.sources}),
-  lintCSS(),
   babel(),
 ]);
 
@@ -98,6 +96,8 @@ module.exports = function (env, argv) {
   if (argv.mode === 'development') {
     return merge([
       config,
+      lintJS({paths: PATHS.sources}),
+      lintCSS(),
       extractCSS(),
       sourceMap(),
     ]);

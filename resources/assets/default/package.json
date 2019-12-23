@@ -4,8 +4,8 @@
   "description": "scss, pug components",
   "main": "webpack.config.js",
   "scripts": {
-    "start": "webpack --mode development",
-    "build": "webpack --mode production",
+    "start": "webpack --mode=development",
+    "build": "webpack -p --mode=production",
     "test": "unecho \"Error: no test specified\" && exit 1"
   },
   "author": "",

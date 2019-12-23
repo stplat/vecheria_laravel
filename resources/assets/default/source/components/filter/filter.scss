@@ -9,6 +9,30 @@
   overflow: hidden;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
   background: #FFFFFF;
+
+  &.is-display {
+    display: block;
+  }
+
+  &.is-active {
+    opacity: 1;
+    right: 0;
+  }
+
+  @media only screen and (max-width: 768px) {
+    border-radius: 0;
+    position: fixed;
+    top: 47px;
+    width: 100%;
+    height: calc(100% - 47px);
+    margin: 0;
+    overflow-y: auto;
+    z-index: 100;
+    right: -100%;
+    display: none;
+    opacity: 0;
+    transition: right 0.20s, opacity 0.20s;
+  }
 }
 
 .filter__head {
@@ -17,11 +41,21 @@
   background: $orange-color;
   text-align: center;
   color: #FFFFFF;
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .filter__part {
   border: 1px solid #E6E6E6;
   border-top: none;
+
+  @media only screen and (max-width: 768px) {
+    /*&:nth-child(3) {
+      display: none;
+    }*/
+  }
 }
 
 .filter__title {
@@ -42,6 +76,7 @@
 
   &--sort:before {
     content: "\F160";
+    font-size: 12px;
   }
 }
 
@@ -52,7 +87,7 @@
     width: 100%;
     font-family: $font-family;
     color: #FFFFFF;
-    background-color: #73787F ;
+    background-color: #73787F;
     padding: 11px 0;
     font-size: 12px;
     transition: background-color 0.08s;

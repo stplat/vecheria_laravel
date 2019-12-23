@@ -60,7 +60,7 @@ class ProductController extends Controller {
           $in_cart = true;
         }
       }
-
+      
       return view('product', compact('menu', 'items', 'subcategory', 'subcategory_plug', 'keywords', 'description', 'title', 'cart_count', 'in_cart', 'callback', 'buy'));
     } else {
       abort('404');

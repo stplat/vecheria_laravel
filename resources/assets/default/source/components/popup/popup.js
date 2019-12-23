@@ -114,17 +114,19 @@ function raf(fn) {
 
 export function handlerPopup(classButton, classPopup) {
   const page = document.querySelector('body');
-  const button = document.querySelector(`.${classButton}`);
+  const buttons = document.querySelectorAll(`.${classButton}`);
   const popup = document.querySelector(`.${classPopup}`);
   const close = popup.querySelector('.popup__close');
 
-  button.addEventListener('click', (e) => {
-    popup.style.display = 'block';
-    page.style.overflow = 'hidden';
-    raf(() => {
-      popup.classList.add('is-active');
+  [...buttons].forEach((button) => {
+    button.addEventListener('click', (e) => {
+      popup.style.display = 'block';
+      page.style.overflow = 'hidden';
+      raf(() => {
+        popup.classList.add('is-active');
+      });
+      e.preventDefault();
     });
-    e.preventDefault();
   });
 
   popup.addEventListener('click', (e) => {

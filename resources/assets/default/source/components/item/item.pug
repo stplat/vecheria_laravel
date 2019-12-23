@@ -20,3 +20,24 @@ mixin items(quantity)
         +button('Подробнее', 'button--small', '/catalog/{{$item->subcategory_plug}}/{{$item->plug}}/')
     | @endforeach
 
+mixin itemsSlider()
+  .swiper-container.js-item-slider
+    .swiper-wrapper
+      | @foreach ($items as $key => $item)
+      .swiper-slide(style="padding: 0 5px 5px 0")
+        .item.item--for-slider
+          .item__sign
+            p {{$item->manufacturer}}
+          .item__article {{$item->article}}
+          .item__image
+            a(href!="/catalog/{{$item->subcategory_plug}}/{{$item->plug}}/")
+              img(src!="/images/items/{{$item->plug}}.jpg",
+              alt!="{{$item->name}}",
+              title!="{{$item->name}}")
+          .item__name
+            a(href!="/catalog/{{$item->subcategory_plug}}/{{$item->plug}}/") {{$item->name}}
+          .item__price
+            p {{$item->price}}
+          .item__button
+            +button('Подробнее', 'button--small', '/catalog/{{$item->subcategory_plug}}/{{$item->plug}}/')
+      | @endforeach

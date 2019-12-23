@@ -37,14 +37,16 @@
       .product__holy
         p Изделие освящено
       .product__row
+        include ../button/button
+        | @if (!$in_cart)
         .product__button
-          include ../button/button
-          | @if (!$in_cart)
           +button('В корзину', 'button--red', '#')
-          | @else
-          .product__alert Товар в корзине
-          | @endif
         .product__buy
           span.js-button-buy Быстрая покупка
+        | @else
+        .product__alert Товар в корзине
+        .product__buy
+          a(href="/cart") Перейти в корзину
+        | @endif
   .product__description
     include product-desc/product-desc

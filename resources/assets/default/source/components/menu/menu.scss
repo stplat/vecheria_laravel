@@ -3,6 +3,11 @@
 
 .menu__container {
   background: $orange-color;
+  display: block;
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .menu {

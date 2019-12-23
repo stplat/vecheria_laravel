@@ -21,11 +21,11 @@
 <ul class="filter-switch">
   <li class="filter-switch__btn">
     <input type="radio" id="price_asc" form="filter" name="orderby" value="asc" hidden checked>
-    <label for="price_asc">По цене ↓</label>
+    <label for="price_asc">По цене ↑</label>
   </li>
   <li class="filter-switch__btn">
     <input type="radio" id="price_desc" form="filter" name="orderby" value="desc" hidden>
-    <label for="price_desc">По цене ↑</label>
+    <label for="price_desc">По цене ↓</label>
   </li>
 </ul>
     </div>

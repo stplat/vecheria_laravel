@@ -42,11 +42,12 @@
         <div class="product__holy">
           <p>Изделие освящено</p>
         </div>
-        <div class="product__row">
-          <div class="product__button">@if (!$in_cart)<a class="button button--red" href="#">В корзину</a>@else
-            <div class="product__alert">Товар в корзине</div>@endif
+        <div class="product__row">@if (!$in_cart)
+          <div class="product__button"><a class="button button--red" href="#">В корзину</a>
           </div>
-          <div class="product__buy"><span class="js-button-buy">Быстрая покупка</span></div>
+          <div class="product__buy"><span class="js-button-buy">Быстрая покупка</span></div>@else
+          <div class="product__alert">Товар в корзине</div>
+          <div class="product__buy"><a href="/cart">Перейти в корзину</a></div>@endif
         </div>
       </div>
     </div>

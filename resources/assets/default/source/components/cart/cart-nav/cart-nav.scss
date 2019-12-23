@@ -1,6 +1,10 @@
 /* Переменные */
 @import '../../_defaults/variables';
 
+.cart-nav {
+  //width: 280px;
+}
+
 .cart-nav__list {
   list-style-type: none;
   background: #FFFFFF;
@@ -49,12 +53,16 @@
 }
 
 .cart-nav__panel {
-  margin: 15px 0 0 0;
   padding: 20px;
   background: #FFFFFF;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
   border-radius: 4px;
   overflow: hidden;
+  //width: 280px;
+
+  @media only screen and (max-width: 992px) {
+    //position: absolute;
+  }
 }
 
 .cart-nav__link {

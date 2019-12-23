@@ -1,0 +1,68 @@
+/* Переменные */
+@import '../../_defaults/variables';
+
+.header-filter {
+  display: none;
+  width: 34px;
+  height: 34px;
+  border-radius: 2px;
+  background: $orange-color-hover;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  @media only screen and (max-width: 768px) {
+    &.is-flex {
+      display: flex;
+    }
+  }
+
+  // Фильтр
+  &.is-active {
+    .header-filter__ico {
+      transform: rotate(-360deg);
+
+      &:before {
+        opacity: 0;
+        display: none;
+      }
+
+      &:after {
+        opacity: 1;
+        display: block;
+      }
+    }
+  }
+}
+
+// иконка фильтра
+.header-filter__ico {
+  transition: transform 0.25s;
+  transform: rotate(0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  font-size: 0;
+  font-style: normal;
+
+  &:before,
+  &:after {
+    font-family: $font-icons;
+    color: #FFF;
+    transition: opacity 0.05s;
+  }
+
+  &:before {
+    content: '\E803';
+    opacity: 1;
+    font-size: 20px;
+  }
+
+  &:after {
+    content: '\E81D';
+    opacity: 0;
+    display: none;
+    font-size: 18px;
+  }
+}

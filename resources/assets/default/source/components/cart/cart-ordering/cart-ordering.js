@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const buttonNext = document.querySelector('.js-ordering-next');
     const buttonPrev = document.querySelector('.js-ordering-prev');
     const token = document.querySelector('meta[name="csrf-token"]').content;
-    const container = document.querySelector('.cart__content');
+    const container = document.querySelector('.cart');
     const total = document.querySelector('.cart-nav__total p');
     const cartContainers = document.querySelectorAll('[data-container]');
     const cartSteps = document.querySelectorAll('[data-step]');
@@ -66,13 +66,17 @@ document.addEventListener('DOMContentLoaded', () => {
       let flag = true;
 
       if (!name.value) {
+        name.previousElementSibling.querySelector('span').classList.add('is-invalid');
         name.nextElementSibling.classList.add('is-invalid');
+        name.previousElementSibling.querySelector('span').classList.remove('is-valid');
         name.nextElementSibling.classList.remove('is-valid');
         name.classList.add('is-invalid');
         name.classList.remove('is-valid');
         flag = false;
       } else {
+        name.previousElementSibling.querySelector('span').classList.remove('is-invalid');
         name.nextElementSibling.classList.remove('is-invalid');
+        name.previousElementSibling.querySelector('span').classList.add('is-valid');
         name.nextElementSibling.classList.add('is-valid');
         name.classList.remove('is-invalid');
         name.classList.add('is-valid');
@@ -80,14 +84,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (phone.value === '' || phone.value.indexOf('_') > 0) {
         if (phone) {
+          phone.previousElementSibling.querySelector('span').classList.add('is-invalid');
           phone.nextElementSibling.classList.add('is-invalid');
+          phone.previousElementSibling.querySelector('span').classList.remove('is-valid');
           phone.nextElementSibling.classList.remove('is-valid');
           phone.classList.add('is-invalid');
           phone.classList.remove('is-valid');
           flag = false;
         }
       } else if (phone.value !== '' && phone.value.indexOf('_') < 0) {
+        phone.previousElementSibling.querySelector('span').classList.remove('is-invalid');
         phone.nextElementSibling.classList.remove('is-invalid');
+        phone.previousElementSibling.querySelector('span').classList.add('is-valid');
         phone.nextElementSibling.classList.add('is-valid');
         phone.classList.remove('is-invalid');
         phone.classList.add('is-valid');
@@ -100,27 +108,37 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 
       if (radioFlag) {
+        shipping[0].closest('ul').previousElementSibling.querySelector('span').classList.remove('is-invalid');
         shipping[0].closest('ul').nextElementSibling.classList.remove('is-invalid');
+        shipping[0].closest('ul').previousElementSibling.querySelector('span').classList.add('is-valid');
         shipping[0].closest('ul').nextElementSibling.classList.add('is-valid');
       } else {
+        shipping[0].closest('ul').previousElementSibling.querySelector('span').classList.add('is-invalid');
         shipping[0].closest('ul').nextElementSibling.classList.add('is-invalid');
+        shipping[0].closest('ul').previousElementSibling.querySelector('span').classList.remove('is-valid');
         shipping[0].closest('ul').nextElementSibling.classList.remove('is-valid');
         flag = false;
       }
 
       if (email.value !== '' && email.value.match(/.+@.+\..+/i) === null) {
+        email.previousElementSibling.querySelector('span').classList.add('is-invalid');
         email.nextElementSibling.classList.add('is-invalid');
+        email.previousElementSibling.querySelector('span').classList.remove('is-valid');
         email.nextElementSibling.classList.remove('is-valid');
         email.classList.add('is-invalid');
         email.classList.remove('is-valid');
         flag = false;
       } else if (email.value !== '' && email.value.match(/.+@.+\..+/i) !== null) {
+        email.previousElementSibling.querySelector('span').classList.remove('is-invalid');
         email.nextElementSibling.classList.remove('is-invalid');
+        email.previousElementSibling.querySelector('span').classList.add('is-valid');
         email.nextElementSibling.classList.add('is-valid');
         email.classList.remove('is-invalid');
         email.classList.add('is-valid');
       } else if (email.value === '') {
+        email.previousElementSibling.querySelector('span').classList.remove('is-invalid');
         email.nextElementSibling.classList.remove('is-invalid');
+        email.previousElementSibling.querySelector('span').classList.remove('is-valid');
         email.nextElementSibling.classList.remove('is-valid');
         email.classList.remove('is-invalid');
         email.classList.remove('is-valid');
@@ -132,11 +150,11 @@ document.addEventListener('DOMContentLoaded', () => {
     function checkStep() {
 
       if (total.innerText >= 4000) {
-        document.querySelector('#shipping_1').nextElementSibling.innerHTML = 'Курьерская доставка в пределах МКАД <span class="green">(бесплатно)</span>';
-        document.querySelector('#shipping_1').value = 'Курьерская доставка в пределах МКАД (бесплатно)';
+        document.querySelector('#shipping_1').nextElementSibling.innerHTML = 'в пределах МКАД <span class="green">(бесплатно)</span>';
+        document.querySelector('#shipping_1').value = 'доставка в пределах МКАД (бесплатно)';
       } else {
-        document.querySelector('#shipping_1').nextElementSibling.innerHTML = 'Курьерская доставка в пределах МКАД <span class="red">(300 руб.)</span>';
-        document.querySelector('#shipping_1').value = 'Курьерская доставка в пределах МКАД (300 руб.)';
+        document.querySelector('#shipping_1').nextElementSibling.innerHTML = 'в пределах МКАД <span class="red">(300 руб.)</span>';
+        document.querySelector('#shipping_1').value = 'доставка в пределах МКАД (300 руб.)';
       }
 
       if (orderFlag) {
@@ -160,9 +178,12 @@ document.addEventListener('DOMContentLoaded', () => {
           },
         }).then(res => {
           console.log(res);
-          const aside = document.querySelector('.cart__aside');
+          const col_1 = document.querySelectorAll('.cart__col')[1];
+          const col_2 = document.querySelectorAll('.cart__col')[2];
           const alert = document.createElement('div');
-          aside.classList.add('hidden');
+          col_1.classList.add('hidden');
+          col_2.classList.add('hidden');
+          container.style.display = 'block';
 
           alert.className = 'cart-ordering__success';
           alert.innerHTML = '<p> Ваш заказ успешно оформлен!<p> Благодарим Вас за покупку в нашем интернет-магазине.</p>';
@@ -206,17 +227,17 @@ document.addEventListener('DOMContentLoaded', () => {
               if (radio.id === 'shipping_1') {
                 if (total.innerText >= 4000) {
                   jsTotalPrice.innerText = Number(jsPrice.innerText);
-                  jsShipping.innerHTML = 'Курьерская доставка в пределах МКАД <span class="green">(бесплатно)</span>';
+                  jsShipping.innerHTML = 'в пределах МКАД <span class="green">(бесплатно)</span>';
                 } else {
                   jsTotalPrice.innerText = Number(jsPrice.innerText) + 300;
-                  jsShipping.innerHTML = 'Курьерская доставка в пределах МКАД <span class="red">(300 руб.)</span>';
+                  jsShipping.innerHTML = 'в пределах МКАД <span class="red">(300 руб.)</span>';
                 }
 
                 !jsTotalPrice.classList.contains('is-price') ? jsTotalPrice.classList.add('is-price') : '';
               } else if (radio.id === 'shipping_2') {
                 jsTotalPrice.innerText = 'уточняйте у менеджера';
                 jsTotalPrice.classList.remove('is-price');
-                jsShipping.innerHTML = 'Курьерская доставка за МКАД (цена договорная)';
+                jsShipping.innerHTML = 'доставка за МКАД (цена договорная)';
               }
             }
           });

@@ -61,6 +61,7 @@ class CatalogController extends Controller {
 
 
       } else {
+        
         return view('catalog', compact('menu', 'items', 'subcategory', 'keywords', 'description', 'title', 'cart_count', 'callback'));
       }
     } else {

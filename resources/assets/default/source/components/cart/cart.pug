@@ -2,9 +2,8 @@
   | @if ($cart_count == 0)
   .cart__empty Ваша корзина покупок пуста.
   | @else
-  .cart__content
+  .cart__col
     include ./cart-ordering/cart-ordering
-
     | @if ($cart_step == 1)
     .cart__items(data-container="1")
       include ./cart-item/cart-item
@@ -24,7 +23,7 @@
     | @else
     +cartStep_3('hidden')
     | @endif
-  .cart__aside
+  .cart__col
     .cart-nav
       ul.cart-nav__list
         | @if ($cart_step == 1)
@@ -44,24 +43,25 @@
         | @else
         li(data-step="3") Информация о заказе
         | @endif
-      .cart-nav__panel
-        .cart-nav__total
-          p {{$cart_total}}
-        | @if ($cart_step == 1)
-        .cart-nav__button
-          a.button.button--small.button--red.js-ordering-next(href="") Начать оформление
-        .cart-nav__link
-          span.js-ordering-prev.hidden Вернуться
-        | @elseif ($cart_step == 2)
-        .cart-nav__button
-          a.button.button--small.button--red.js-ordering-next(href="") Продолжить
-        .cart-nav__link
-          span.js-ordering-prev Вернуться
-        | @elseif ($cart_step == 3)
-        .cart-nav__button
-          a.button.button--small.button--red.js-ordering-next(href="") Оформить
-        .cart-nav__link
-          span.js-ordering-prev Вернуться
-        | @endif
+  .cart__col
+    .cart-nav__panel
+      .cart-nav__total
+        p {{$cart_total}}
+      | @if ($cart_step == 1)
+      .cart-nav__button
+        a.button.button--red.js-ordering-next(href="") Начать оформление
+      .cart-nav__link
+        span.js-ordering-prev.hidden Вернуться
+      | @elseif ($cart_step == 2)
+      .cart-nav__button
+        a.button.button--red.js-ordering-next(href="") Продолжить
+      .cart-nav__link
+        span.js-ordering-prev Вернуться
+      | @elseif ($cart_step == 3)
+      .cart-nav__button
+        a.button.button--red.js-ordering-next(href="") Оформить
+      .cart-nav__link
+        span.js-ordering-prev Вернуться
+      | @endif
 
   | @endif

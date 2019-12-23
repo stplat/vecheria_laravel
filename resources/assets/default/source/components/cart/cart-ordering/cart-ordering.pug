@@ -3,29 +3,29 @@ mixin cartStep_2(hidden)
     .cart-ordering__title Оформление заказа
     form.cart-ordering__form(id="ordering")
       .cart-ordering__field
-        label(for="name") Контактное лицо
+        label(for="name") ФИО <span>обязательное поле</span>
         input(id="name", name="name", placeholder="Пример: Иванов Иван Иванович")
         span Обязательное поле
       .cart-ordering__field
-        label(for="phone") Телефон
-        input(id="phone", name="phone", placeholder="Пример: 8 (495) 000-00-00")
+        label(for="phone") Телефон <span>обязательное поле</span>
+        input(id="phone", name="phone", type="tel", placeholder="Пример: 8 (495) 000-00-00")
         span Обязательное поле
       .cart-ordering__field
-        div Способ доставки
+        div Доставка <span>обязательное поле</span>
         ul
           li.cart-ordering__radio
             input(id="shipping_1", name="shipping", type="radio", value="300")
-            label(for="shipping_1") Курьерская доставка в пределах МКАД (300 руб.)
+            label(for="shipping_1") в пределах МКАД (300 руб.)
           li.cart-ordering__radio
-            input(id="shipping_2", name="shipping", type="radio", value="Курьерская доставка за МКАД (цена договорная)")
-            label(for="shipping_2") Курьерская доставка за МКАД (цена договорная)
+            input(id="shipping_2", name="shipping", type="radio", value="доставка за МКАД (цена договорная)")
+            label(for="shipping_2") за МКАД (цена договорная)
         span Обязательное поле
       .cart-ordering__field
-        label(for="address") Адрес доставки
+        label(for="address") Адрес
         input(id="address", name="address", placeholder="Пример: г. Москва, ул. Советская д. 1, кв. 2")
         span.empty
       .cart-ordering__field
-        label(for="email") Электронная почта
+        label(for="email") Email <span>для отправки заказа</span>
         input(id="email", name="email", placeholder="Пример: example@example.ru")
         span Для отправки заказа
       .cart-ordering__field

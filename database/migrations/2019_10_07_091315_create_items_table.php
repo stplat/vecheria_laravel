@@ -24,6 +24,8 @@ class CreateItemsTable extends Migration {
       $table->text('available');
       $table->text('weight');
       $table->float('price');
+      $table->text('dimension');
+      $table->text('comment');
       $table->text('material');
       $table->text('technic');
       $table->text('description');

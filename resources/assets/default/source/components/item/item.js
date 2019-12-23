@@ -1,3 +1,5 @@
+import Swiper from 'swiper';
+
 document.addEventListener('DOMContentLoaded', () => {
   let names = '';
 
@@ -16,4 +18,30 @@ document.addEventListener('DOMContentLoaded', () => {
       e.target.closest('div').style.overflow = 'hidden';
     });
   });
+
+  if (document.querySelectorAll('.js-item-slider').length) {
+    const swiperInstace_2 = new Swiper('.js-item-slider', {
+      spaceBetween: 15,
+      slidesPerView: 1,
+      breakpoints: {
+        993: {
+          spaceBetween: 15,
+          slidesPerView: 4
+        },
+        769: {
+          spaceBetween: 15,
+          slidesPerView: 3
+        },
+        481: {
+          spaceBetween: 10,
+          slidesPerView: 2
+        },
+      }
+
+    });
+  }
 });
+
+
+
+

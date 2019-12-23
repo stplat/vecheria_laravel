@@ -1,0 +1,70 @@
+/* Переменные */
+@import '../../_defaults/variables';
+
+.header-bar {
+  display: none;
+  border-radius: 2px;
+  cursor: pointer;
+
+  @media only screen and (max-width: 768px) {
+    display: block;
+  }
+
+  &.is-active + .header-nav {
+    display: flex;
+  }
+
+  // анимация гамбургера
+  &.is-active {
+    .header-bar__inner {
+      transform: translate3d(0, 8px, 0) rotate(45deg);
+
+      &:before {
+        opacity: 0;
+      }
+
+      &:after {
+        transform: translate3d(0, -16px, 0) rotate(-90deg);
+      }
+    }
+  }
+}
+
+// иконка гамбургера
+.header-bar__wrap {
+  position: relative;
+  //width: 24px;
+  height: 19px;
+  display: block;
+}
+
+.header-bar__inner {
+  top: 0;
+
+  &,
+  &:before,
+  &:after {
+    width: 28px;
+    height: 3px;
+    background: #FFF;
+    display: block;
+    border-radius: 4px;
+    position: relative;
+    transition: transform 0.25s;
+  }
+
+  &:before,
+  &:after {
+    content: '';
+  }
+
+  &:before {
+    top: 8px;
+    transition: opacity 0.05s;
+    opacity: 1;
+  }
+
+  &:after {
+    top: 13px;
+  }
+}

@@ -22,7 +22,8 @@
   list-style-type: none;
   display: flex;
   justify-content: center;
-  margin: 0 -5px;
+  margin: -5px;
+  flex-wrap: wrap;
 
   li {
     width: 90px;
@@ -33,7 +34,7 @@
     cursor: pointer;
     border: 1px solid #EAEAEA;
     padding: 5px;
-    margin: 0 5px;
+    margin: 5px;
     transition: border-color 0.08s;
     border-radius: 4px;
     overflow: hidden;

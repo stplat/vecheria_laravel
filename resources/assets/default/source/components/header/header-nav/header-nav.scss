@@ -4,6 +4,50 @@
 .header-nav {
   display: flex;
   margin: 0 -20px;
+
+  @media only screen and (max-width: 768px) {
+    flex-wrap: wrap;
+    align-content: flex-start;
+    position: fixed;
+    background: #D2B179;
+    z-index: 100;
+    width: 100%;
+    height: calc(100% - 47px);
+    left: -100%;
+    margin: 0;
+    top: 47px;
+    overflow-y: auto;
+    display: none;
+    opacity: 0;
+    transition: left 0.20s, opacity 0.20s;
+
+    &.is-display {
+      display: block;
+    }
+
+    &.is-active {
+      opacity: 1;
+      left: 0;
+    }
+  }
+}
+
+.header-nav__sub {
+  width: 100%;
+  display: none;
+  opacity: 0;
+  top: 100px;
+  transition: top 0.2s, opacity 0.2s;
+  position: relative;
+
+  &.is-display {
+    display: block;
+  }
+
+  &.is-active {
+    opacity: 1;
+    top: 0;
+  }
 }
 
 .header-nav__link {
@@ -11,8 +55,97 @@
   color: $text-color-opacity;
   margin: 0 20px;
   transition: color 0.05s;
+  position: relative;
+  cursor: pointer;
+
+  &:before,
+  &:after {
+    content: '';
+    font-family: $font-icons;
+    width: 11px;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+    font-size: 13px;
+  }
+
+  &:after {
+    right: 15px;
+    left: auto;
+    font-size: 16px;
+  }
 
   .no-touch &:hover {
     color: $orange-color-hover;
   }
+
+  &.header-nav__link--cat.is-active:after {
+    transform: translateY(-50%) rotate(-180deg);
+  }
+
+  &--cat {
+    display: none;
+    font-weight: bold;
+
+    &:after {
+      content: '\E807';
+      color: #FFFFFF;
+      transition: transform 0.15s;
+    }
+  }
+
+  &--cat:before {
+    content: '\E815';
+  }
+
+  &--home:before {
+    content: '\E812';
+  }
+
+  &--ship:before {
+    content: '\E813';
+    font-size: 12px;
+  }
+
+  &--pay:before {
+    content: '\E816';
+    font-size: 14px;
+  }
+
+  &--cont:before {
+    content: '\E806';
+    font-size: 14px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 14px 15px 14px 42px;
+    color: #FFFFFF;
+    border-top: 1px solid $orange-color-hover;
+    background: $orange-color;
+
+    &:before,
+    &:after {
+      display: block;
+    }
+
+    &:nth-last-child(2) {
+      border-bottom: 1px solid $orange-color-hover;
+    }
+
+    &--cat {
+      display: block;
+    }
+
+    .header-nav__sub > & {
+      border-top: none;
+      border-bottom: 1px solid $orange-color-hover;
+    }
+  }
 }
+
+

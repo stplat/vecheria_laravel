@@ -13,10 +13,16 @@
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
+  position: relative;
+
+  @media only screen and (max-width: 480px) {
+    padding: 30px 30px;
+  }
 }
 
 .slider__offer {
-
+  z-index: 10;
+  position: relative;
 }
 
 .slider__title {

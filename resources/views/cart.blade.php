@@ -13,11 +13,11 @@
     </div>
   <div class="cart">@if ($cart_count == 0)
     <div class="cart__empty">Ваша корзина покупок пуста.</div>@else
-    <div class="cart__content">@if ($cart_step == 1)
+    <div class="cart__col">@if ($cart_step == 1)
       <div class="cart__items" data-container="1">@foreach ($items as $key => $item)
 <div class="cart-item" id="{{$item->id}}">
   <div class="cart-item__col">
-    <div class="cart-item__image"><img src="/images/items/{{$item->image_path}}" alt="{{$item->name}}" title="{{$item->name}}"></div>
+    <div class="cart-item__image"><img src="/images/items/{{$item->plug}}.jpg" alt="{{$item->name}}" title="{{$item->name}}"></div>
   </div>
   <div class="cart-item__col">
     <div class="cart-item__title">Наименование:</div>
@@ -46,7 +46,7 @@
       <div class="cart__items hidden" data-container="1">@foreach ($items as $key => $item)
 <div class="cart-item" id="{{$item->id}}">
   <div class="cart-item__col">
-    <div class="cart-item__image"><img src="/images/items/{{$item->image_path}}" alt="{{$item->name}}" title="{{$item->name}}"></div>
+    <div class="cart-item__image"><img src="/images/items/{{$item->plug}}.jpg" alt="{{$item->name}}" title="{{$item->name}}"></div>
   </div>
   <div class="cart-item__col">
     <div class="cart-item__title">Наименование:</div>
@@ -77,32 +77,32 @@
               <div class="cart-ordering__title">Оформление заказа</div>
               <form class="cart-ordering__form" id="ordering">
                 <div class="cart-ordering__field">
-                  <label for="name">Контактное лицо</label>
+                  <label for="name">ФИО <span>обязательное поле</span></label>
                   <input id="name" name="name" placeholder="Пример: Иванов Иван Иванович"><span>Обязательное поле</span>
                 </div>
                 <div class="cart-ordering__field">
-                  <label for="phone">Телефон</label>
-                  <input id="phone" name="phone" placeholder="Пример: 8 (495) 000-00-00"><span>Обязательное поле</span>
+                  <label for="phone">Телефон <span>обязательное поле</span></label>
+                  <input id="phone" name="phone" type="tel" placeholder="Пример: 8 (495) 000-00-00"><span>Обязательное поле</span>
                 </div>
                 <div class="cart-ordering__field">
-                  <div>Способ доставки</div>
+                  <div>Доставка <span>обязательное поле</span></div>
                   <ul>
                     <li class="cart-ordering__radio">
                       <input id="shipping_1" name="shipping" type="radio" value="300">
-                      <label for="shipping_1">Курьерская доставка в пределах МКАД (300 руб.)</label>
+                      <label for="shipping_1">в пределах МКАД (300 руб.)</label>
                     </li>
                     <li class="cart-ordering__radio">
-                      <input id="shipping_2" name="shipping" type="radio" value="Курьерская доставка за МКАД (цена договорная)">
-                      <label for="shipping_2">Курьерская доставка за МКАД (цена договорная)</label>
+                      <input id="shipping_2" name="shipping" type="radio" value="доставка за МКАД (цена договорная)">
+                      <label for="shipping_2">за МКАД (цена договорная)</label>
                     </li>
                   </ul><span>Обязательное поле</span>
                 </div>
                 <div class="cart-ordering__field">
-                  <label for="address">Адрес доставки</label>
+                  <label for="address">Адрес</label>
                   <input id="address" name="address" placeholder="Пример: г. Москва, ул. Советская д. 1, кв. 2"><span class="empty"></span>
                 </div>
                 <div class="cart-ordering__field">
-                  <label for="email">Электронная почта</label>
+                  <label for="email">Email <span>для отправки заказа</span></label>
                   <input id="email" name="email" placeholder="Пример: example@example.ru"><span>Для отправки заказа</span>
                 </div>
                 <div class="cart-ordering__field">
@@ -115,32 +115,32 @@
               <div class="cart-ordering__title">Оформление заказа</div>
               <form class="cart-ordering__form" id="ordering">
                 <div class="cart-ordering__field">
-                  <label for="name">Контактное лицо</label>
+                  <label for="name">ФИО <span>обязательное поле</span></label>
                   <input id="name" name="name" placeholder="Пример: Иванов Иван Иванович"><span>Обязательное поле</span>
                 </div>
                 <div class="cart-ordering__field">
-                  <label for="phone">Телефон</label>
-                  <input id="phone" name="phone" placeholder="Пример: 8 (495) 000-00-00"><span>Обязательное поле</span>
+                  <label for="phone">Телефон <span>обязательное поле</span></label>
+                  <input id="phone" name="phone" type="tel" placeholder="Пример: 8 (495) 000-00-00"><span>Обязательное поле</span>
                 </div>
                 <div class="cart-ordering__field">
-                  <div>Способ доставки</div>
+                  <div>Доставка <span>обязательное поле</span></div>
                   <ul>
                     <li class="cart-ordering__radio">
                       <input id="shipping_1" name="shipping" type="radio" value="300">
-                      <label for="shipping_1">Курьерская доставка в пределах МКАД (300 руб.)</label>
+                      <label for="shipping_1">в пределах МКАД (300 руб.)</label>
                     </li>
                     <li class="cart-ordering__radio">
-                      <input id="shipping_2" name="shipping" type="radio" value="Курьерская доставка за МКАД (цена договорная)">
-                      <label for="shipping_2">Курьерская доставка за МКАД (цена договорная)</label>
+                      <input id="shipping_2" name="shipping" type="radio" value="доставка за МКАД (цена договорная)">
+                      <label for="shipping_2">за МКАД (цена договорная)</label>
                     </li>
                   </ul><span>Обязательное поле</span>
                 </div>
                 <div class="cart-ordering__field">
-                  <label for="address">Адрес доставки</label>
+                  <label for="address">Адрес</label>
                   <input id="address" name="address" placeholder="Пример: г. Москва, ул. Советская д. 1, кв. 2"><span class="empty"></span>
                 </div>
                 <div class="cart-ordering__field">
-                  <label for="email">Электронная почта</label>
+                  <label for="email">Email <span>для отправки заказа</span></label>
                   <input id="email" name="email" placeholder="Пример: example@example.ru"><span>Для отправки заказа</span>
                 </div>
                 <div class="cart-ordering__field">
@@ -177,7 +177,7 @@
               </ul>
             </div>@endif
     </div>
-    <div class="cart__aside">
+    <div class="cart__col">
       <div class="cart-nav">
         <ul class="cart-nav__list">@if ($cart_step == 1)
           <li class="is-active" data-step="1">Список покупок</li>@else
@@ -189,17 +189,19 @@
           <li class="is-active" data-step="3">Информация о заказе</li>@else
           <li data-step="3">Информация о заказе</li>@endif
         </ul>
-        <div class="cart-nav__panel">
-          <div class="cart-nav__total">
-            <p>{{$cart_total}}</p>
-          </div>@if ($cart_step == 1)
-          <div class="cart-nav__button"><a class="button button--small button--red js-ordering-next" href="">Начать оформление</a></div>
-          <div class="cart-nav__link"><span class="js-ordering-prev hidden">Вернуться</span></div>@elseif ($cart_step == 2)
-          <div class="cart-nav__button"><a class="button button--small button--red js-ordering-next" href="">Продолжить</a></div>
-          <div class="cart-nav__link"><span class="js-ordering-prev">Вернуться</span></div>@elseif ($cart_step == 3)
-          <div class="cart-nav__button"><a class="button button--small button--red js-ordering-next" href="">Оформить</a></div>
-          <div class="cart-nav__link"><span class="js-ordering-prev">Вернуться</span></div>@endif
-        </div>
+      </div>
+    </div>
+    <div class="cart__col">
+      <div class="cart-nav__panel">
+        <div class="cart-nav__total">
+          <p>{{$cart_total}}</p>
+        </div>@if ($cart_step == 1)
+        <div class="cart-nav__button"><a class="button button--red js-ordering-next" href="">Начать оформление</a></div>
+        <div class="cart-nav__link"><span class="js-ordering-prev hidden">Вернуться</span></div>@elseif ($cart_step == 2)
+        <div class="cart-nav__button"><a class="button button--red js-ordering-next" href="">Продолжить</a></div>
+        <div class="cart-nav__link"><span class="js-ordering-prev">Вернуться</span></div>@elseif ($cart_step == 3)
+        <div class="cart-nav__button"><a class="button button--red js-ordering-next" href="">Оформить</a></div>
+        <div class="cart-nav__link"><span class="js-ordering-prev">Вернуться</span></div>@endif
       </div>
     </div>@endif
   </div>

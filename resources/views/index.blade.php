@@ -27,20 +27,24 @@
         <p>Популярные изделия</p>
       </div>
     </div>
-    <div class="item__container">@foreach ($items as $key => $item)
-      <div class="item item--4">
-        <div class="item__sign">
-          <p>{{$item->manufacturer}}</p>
-        </div>
-        <div class="item__article">{{$item->article}}</div>
-        <div class="item__image"><a href="/catalog/{{$item->subcategory_plug}}/{{$item->plug}}/"><img src="/images/items/{{$item->plug}}.jpg" alt="{{$item->name}}" title="{{$item->name}}"></a></div>
-        <div class="item__name"><a href="/catalog/{{$item->subcategory_plug}}/{{$item->plug}}/">{{$item->name}}</a></div>
-        <div class="item__price">
-          <p>{{$item->price}}</p>
-        </div>
-        <div class="item__button"><a class="button button--small" href="/catalog/{{$item->subcategory_plug}}/{{$item->plug}}/">Подробнее</a>
-        </div>
-      </div>@endforeach
+    <div class="swiper-container js-item-slider">
+      <div class="swiper-wrapper">@foreach ($items as $key => $item)
+        <div class="swiper-slide" style="padding: 0 5px 5px 0">
+          <div class="item item--for-slider">
+            <div class="item__sign">
+              <p>{{$item->manufacturer}}</p>
+            </div>
+            <div class="item__article">{{$item->article}}</div>
+            <div class="item__image"><a href="/catalog/{{$item->subcategory_plug}}/{{$item->plug}}/"><img src="/images/items/{{$item->plug}}.jpg" alt="{{$item->name}}" title="{{$item->name}}"></a></div>
+            <div class="item__name"><a href="/catalog/{{$item->subcategory_plug}}/{{$item->plug}}/">{{$item->name}}</a></div>
+            <div class="item__price">
+              <p>{{$item->price}}</p>
+            </div>
+            <div class="item__button"><a class="button button--small" href="/catalog/{{$item->subcategory_plug}}/{{$item->plug}}/">Подробнее</a>
+            </div>
+          </div>
+        </div>@endforeach
+      </div>
     </div>
     <div class="title">
       <div class="title__wrap">

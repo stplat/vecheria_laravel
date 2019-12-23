@@ -9,3 +9,5 @@ import './components/catalog/catalog';
 import './components/product/product';
 import './components/cart/cart';
 import './components/popup/popup';
+import './components/header/header-bar/header-bar';
+import './components/header/header-filter/header-filter';

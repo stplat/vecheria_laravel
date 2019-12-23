@@ -2,12 +2,13 @@
 <html>
   <head></head>
   <meta charset="utf-8">
-  <meta name="viewport" content="initial-scale=1.0,width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="{{$description}}">
   <meta name="keywords" content="{{$keywords}}">
   <meta name="robots" content="">
   <meta name="csrf-token" content="{{csrf_token()}}">
   <meta name="yandex-verification" content="2ff68d0f217a770e">
+  <!--meta(name="format-detection", content="telephone=no")-->
   <link href="/css/style.css" rel="stylesheet">
   <title>{{$title}}</title>
 </html>
@@ -16,10 +17,25 @@
     <div class="header__cap">
       <div class="container container--flex">
         <div class="header__nav">
-<div class="header-nav"><a class="header-nav__link" href="/">Главная</a><a class="header-nav__link" href="/shipping">Доставка</a><a class="header-nav__link" href="/payment">Оплата</a><a class="header-nav__link" href="/contacts">Контакты</a></div>
+<div class="header-nav"><a class="header-nav__link header-nav__link--home" href="/">Главная</a><a class="header-nav__link header-nav__link--ship" href="/shipping">Доставка</a><a class="header-nav__link header-nav__link--pay" href="/payment">Оплата</a><a class="header-nav__link header-nav__link--cont" href="/contacts">Контакты</a><span class="header-nav__link header-nav__link--cat">Список категорий</span>
+  <div class="header-nav__sub">
+    @foreach ($menu as $menu_items)
+    @foreach ($menu_items['subcategory'] as $plug => $subcategory)<a class="header-nav__link" href="/catalog/{{$plug}}">{{$subcategory}}</a>@endforeach
+    @endforeach
+  </div>
+</div>
         </div>
-        <div class="header__search">
-          <div class="header-search"></div>
+        <div class="header__bar">
+<div class="header-bar">
+  <div class="header-bar__wrap">
+    <div class="header-bar__inner"></div>
+  </div>
+</div>
+        </div>
+        <div class="header__filter">
+<div class="header-filter">
+  <div class="header-filter__ico"></div>
+</div>
         </div>
       </div>
     </div>
@@ -29,7 +45,7 @@
 <div class="header-props">
   <div class="header-props__phone"><a href="tel:+74952039696">+7 (495) 203-96-96</a></div>
   <ul class="header-props__ul">
-    <li>Пн-пт 10:00 - 18:00 (МСК)</li>
+    <li>Пн-пт 10:00 - 19:00 (МСК)</li>
     <li><span class="header-props__callback js-button-callback">Заказать обратный звонок</span></li>
   </ul>
 </div>
@@ -79,7 +95,7 @@
     </div>
     <div class="footer__copyright">
       <div class="container">
-        <p>Интернет-магазин ювелирных изделий vecheria.ru. All rights reserved ©2018-2019г.</p>
+        <p>Интернет-магазин православных ювелирных изделий vecheria.ru. All rights reserved ©2018-2019г.</p>
       </div>
     </div>
   </footer>
