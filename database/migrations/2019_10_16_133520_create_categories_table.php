@@ -17,6 +17,9 @@ class CreateCategoriesTable extends Migration {
       $table->text('subcategory');
       $table->text('plug');
       $table->text('available');
+      $table->text('meta_keywords');
+      $table->text('meta_description');
+      $table->text('meta_title');
       $table->timestamps();
     });
   }

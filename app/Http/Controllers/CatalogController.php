@@ -34,12 +34,14 @@ class CatalogController extends Controller {
         ->orderBy('price', $sort)
         ->paginate($limit);
 
+      $categories_page = DB::table('categories')->where('plug', $category_plug)->get();
+
       $subcategory = $items->items()[0]->subcategory;
 
       $menu = $this->menu;
-      $keywords = 'православная, лавка, изделия, крестики, бухвицы, браслеты, ручная работа, освещенные';
-      $description = 'Покупка недорогих освещенных православных ювелирных изделий ручной работы по низким ценам';
-      $title = 'Интернет-магазин православных изделий "Вечерия"';
+      $keywords = $categories_page[0]->meta_keywords;
+      $description = $categories_page[0]->meta_description;
+      $title = $categories_page[0]->meta_title;
       $callback = Session::get('callback') ?: Session::get('callback');
       $cart_count = 0;
 
