@@ -2,13 +2,8 @@
 
 namespace App\Http\Controllers;
 
-
 use Session;
 use DB;
-
-
-//use App\Http\Controllers\Controller;
-
 
 class IndexController extends Controller {
   
