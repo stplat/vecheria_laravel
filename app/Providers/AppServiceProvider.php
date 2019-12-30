@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\URL;
+use Illuminate\Http\Request;
 
 class AppServiceProvider extends ServiceProvider {
   /**
@@ -13,7 +14,7 @@ class AppServiceProvider extends ServiceProvider {
    */
   public function boot() {
 
-      //URL::forceScheme('https');
+    //URL::forceScheme('https');
 
   }
 
@@ -23,6 +24,6 @@ class AppServiceProvider extends ServiceProvider {
    * @return void
    */
   public function register() {
-    //$this->app['request']->server->set('HTTPS', true);
+    //$request->server->set('HTTPS', true);
   }
 }

@@ -10,11 +10,11 @@ use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken as Middleware;
 class HttpsProtocol extends Middleware {
 
   public function handle($request, Closure $next) {
-    if (!$request->secure() && App::environment() == 'production') {
+    /*if (!$request->secure() && App::environment() == 'production') {
       return redirect()->secure($request->getRequestUri());
     }
 
-    /*if(config('app.env') == 'production'){
+    if(config('app.env') == 'production'){
 
       $host = $request->header('host');
       if (substr($host, 0, 4) != 'www.') {
@@ -29,23 +29,20 @@ class HttpsProtocol extends Middleware {
           return Redirect::to($request->path(),301);
         }
       }
-    }
+    }*/
 
     if (App::environment() === 'production') {
 
       $host = $request->header('host');
       if (substr($host, 0, 4) != 'www.') {
         if (!$request->secure()) {
-          //$request->headers->set('host', 'www.'.$host);
           return redirect()->secure($request->getRequestUri());
         }
       } else {
-        $url = substr($request->url(), 7);
-        if (!$request->secure()) {
-          //return redirect()->secure($request->getRequestUri());
-        }
+        $request->headers->set('host', 'vecheria.ru');
+        return redirect()->secure($request->getRequestUri());
       }
-    }*/
+    }
 
     return $next($request);
   }
