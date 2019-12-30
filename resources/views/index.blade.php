@@ -12,7 +12,7 @@
                 <p>Бусина в подарок</p>
               </div>
               <div class="slider__text">
-                <p>При покупке трёх правосланых бусин -<br><strong>четвертая</strong> в подарок</p>
+                <p>При покупке любых трёх правосланых бусин -<br><strong>четвертая</strong> в подарок</p>
               </div>
               <div class="slider__button"><a class="button button--pink" href="/catalog/pravoslavnye_businy">В каталог</a>
               </div>

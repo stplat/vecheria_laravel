@@ -27,7 +27,7 @@ if (document.querySelectorAll('.js-slider').length)
           spaceBetween: 10,
         },
       },
-      loop: true,
+      loop: false,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,

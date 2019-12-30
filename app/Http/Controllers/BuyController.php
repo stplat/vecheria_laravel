@@ -20,7 +20,9 @@ class BuyController {
     $other = $request->input('other');
     $subject = 'Быстрая покупка';
     $message = 'ФИО: ' . $name . ', Телефон: ' . $phone . ' Товар' . $other;
-    $headers = 'From: vecheria.ru' . "\r\n" . 'Reply-To: info@vecheria.ru' . "\r\n" . 'X-Mailer: PHP/' . phpversion();
+    $headers = "Content-type: text/html; charset=urf-8 \r\n";
+    $headers .= "From: <info@vecheria.ru>\r\n";
+    $headers .= "Reply-To: info@vecheria.ru\r\n";
     
     mail($to, $subject, $message, $headers);
     

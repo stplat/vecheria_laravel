@@ -49,6 +49,6 @@ Route::post('/callback', 'CallbackController@index');
 Route::post('/buy', 'BuyController@index');
 Route::post('/ordering', 'CartController@ordering');
 
-Route::get('/clear-view', function() {
+/*Route::get('/clear-view', function() {
   Artisan::call('view:clear');
-});
+});*/

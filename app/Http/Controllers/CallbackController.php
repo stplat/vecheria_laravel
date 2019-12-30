@@ -19,7 +19,9 @@ class CallbackController {
     $phone = $request->input('phone');
     $subject = 'Обратный звонок';
     $message = 'ФИО: ' . $name . ', Телефон: ' . $phone;
-    $headers = 'From: vecheria.ru' . "\r\n" . 'Reply-To: info@vecheria.ru' . "\r\n" . 'X-Mailer: PHP/' . phpversion();
+    $headers = "Content-type: text/html; charset=urf-8 \r\n";
+    $headers .= "From: <info@vecheria.ru>\r\n";
+    $headers .= "Reply-To: info@vecheria.ru\r\n";
 
     mail($to, $subject, $message, $headers);
 

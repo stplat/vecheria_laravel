@@ -18,8 +18,8 @@ class PaymentController extends Controller {
   public function index() {
     $menu = $this->menu;
     $keywords = 'православная, лавка, изделия, крестики, бухвицы, браслеты, ручная работа, освещенные';
-    $description = 'Покупка недорогих освещенных православных ювелирных изделий ручной работы по низким ценам';
-    $title = 'Интернет-магазин православных изделий "Вечерия"';
+    $description = 'Безналичный и наличный расчет';
+    $title = 'Способы оплаты в интернет-магазине православных изделий "Вечерия"';
     $callback = Session::get('callback') ?: Session::get('callback');
     $cart_count = 0;
 
