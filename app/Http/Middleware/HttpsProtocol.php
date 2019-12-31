@@ -34,7 +34,7 @@ class HttpsProtocol extends Middleware {
     if (App::environment() === 'production') {
 
       $host = $request->header('host');
-      if (substr($host, 0, 4) != 'www.') {
+      if (substr($host, 0, 4) !== 'www.') {
         if (!$request->secure()) {
           return redirect()->secure($request->getRequestUri());
         }
