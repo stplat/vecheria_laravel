@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /cart
+Disallow: /public
+Sitemap: https://vecheria.ru/sitemap.xml
