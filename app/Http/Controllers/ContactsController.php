@@ -28,7 +28,9 @@ class ContactsController extends Controller {
         $cart_count += $category['count'];
       }
     }
+
+    $canonical = $this->canonical;
     
-    return view('contacts', compact('menu', 'keywords', 'description', 'title', 'cart_count', 'callback'));
+    return view('contacts', compact('menu', 'keywords', 'description', 'title', 'cart_count', 'callback', 'canonical'));
   }
 }

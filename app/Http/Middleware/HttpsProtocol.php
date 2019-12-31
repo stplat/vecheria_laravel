@@ -31,7 +31,7 @@ class HttpsProtocol extends Middleware {
       }
     }*/
 
-    if (App::environment() === 'production') {
+    /*if (App::environment() === 'production') {
 
       $host = $request->header('host');
       if (substr($host, 0, 4) !== 'www.') {
@@ -39,10 +39,12 @@ class HttpsProtocol extends Middleware {
           return redirect()->secure($request->getRequestUri());
         }
       } else {
-        $request->headers->set('host', 'vecheria.ru');
-        return redirect()->secure($request->getRequestUri());
+        if (!$request->secure()) {
+          $request->headers->set('host', 'vecheria.ru');
+          return redirect()->secure($request->getRequestUri());
+        }
       }
-    }
+    }*/
 
     return $next($request);
   }

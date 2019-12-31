@@ -51,6 +51,8 @@ class ProductController extends Controller {
 
       $in_cart = false;
 
+      $canonical = $this->canonical;
+
       if (is_array(Session::get('items'))) {
         foreach (Session::get('items') as $item) {
           $cart_count += $item['count'];
@@ -61,7 +63,7 @@ class ProductController extends Controller {
         }
       }
       
-      return view('product', compact('menu', 'items', 'subcategory', 'subcategory_plug', 'keywords', 'description', 'title', 'cart_count', 'in_cart', 'callback', 'buy'));
+      return view('product', compact('menu', 'items', 'subcategory', 'subcategory_plug', 'keywords', 'description', 'title', 'cart_count', 'in_cart', 'callback', 'buy', 'canonical'));
     } else {
       abort('404');
     }

@@ -6,6 +6,7 @@ use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
+use Illuminate\Http\Request;
 
 use DB;
 use Session;
@@ -13,8 +14,9 @@ use Session;
 class Controller extends BaseController {
   public $menu;
   public $categoryQuery;
+  public $canonical;
   
-  public function __construct() {
+  public function __construct(Request $request) {
     $categories = DB::table('items')->join('categories', 'items.subcategory_id', '=', 'categories.id')
       ->select('*', 'categories.plug as subcategory_plug')->get();
   
@@ -40,6 +42,9 @@ class Controller extends BaseController {
   
     $this->categoryQuery = $categories;
     $this->menu = $menu;
+
+    $url_path = (string)$request->fullUrl();
+    $this->canonical = false;
   }
   
   public static function inArray($array, $needle) {

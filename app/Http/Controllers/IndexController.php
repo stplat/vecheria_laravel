@@ -30,7 +30,15 @@ class IndexController extends Controller {
       ->join('categories', 'items.subcategory_id', '=', 'categories.id')
       ->select('items.*', 'categories.plug as subcategory_plug', 'subcategory')
       ->inRandomOrder()->limit('4')->get();
+
+    $canonical = $this->canonical;
     
-    return view('index', compact('menu', 'items', 'keywords', 'description', 'title', 'cart_count', 'callback'));
+    return view('index', compact('menu', 'items', 'keywords', 'description', 'title', 'cart_count', 'callback', 'canonical'));
+  }
+
+  public function sitemap(\Request $request) {
+    return response()->view('sitemap', [
+
+    ])->header('Content-Type', 'text/xml');
   }
 }

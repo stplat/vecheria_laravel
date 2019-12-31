@@ -58,7 +58,9 @@ class CartController extends Controller {
 
     $cart_step = Session::get('cart_step') ?: 1;
 
-    return view('cart', compact('menu', 'keywords', 'description', 'title', 'cart_count', 'items', 'callback', 'cart_total', 'cart_step'));
+    $canonical = $this->canonical;
+
+    return view('cart', compact('menu', 'keywords', 'description', 'title', 'cart_count', 'items', 'callback', 'cart_total', 'cart_step', 'canonical'));
   }
 
   /**

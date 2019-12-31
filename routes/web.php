@@ -49,6 +49,8 @@ Route::post('/callback', 'CallbackController@index');
 Route::post('/buy', 'BuyController@index');
 Route::post('/ordering', 'CartController@ordering');
 
+Route::get('/sitemap.xml', 'IndexController@sitemap');
+
 /*Route::get('/clear-view', function() {
   Artisan::call('view:clear');
 });*/

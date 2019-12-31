@@ -29,6 +29,8 @@ class ShippingController extends Controller {
       }
     }
 
-    return view('shipping', compact('menu', 'keywords', 'description', 'title', 'cart_count', 'callback'));
+    $canonical = $this->canonical;
+
+    return view('shipping', compact('menu', 'keywords', 'description', 'title', 'cart_count', 'callback', 'canonical'));
   }
 }

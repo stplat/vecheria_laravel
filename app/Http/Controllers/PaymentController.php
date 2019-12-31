@@ -28,7 +28,9 @@ class PaymentController extends Controller {
         $cart_count += $category['count'];
       }
     }
-    
-    return view('payment', compact('menu', 'keywords', 'description', 'title', 'cart_count', 'callback'));
+
+    $canonical = $this->canonical;
+
+    return view('payment', compact('menu', 'keywords', 'description', 'title', 'cart_count', 'callback', 'canonical'));
   }
 }

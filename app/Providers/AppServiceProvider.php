@@ -14,6 +14,8 @@ class AppServiceProvider extends ServiceProvider {
    */
   public function boot() {
 
+    //URL::forceScheme('https');
+
   }
 
   /**
@@ -22,6 +24,6 @@ class AppServiceProvider extends ServiceProvider {
    * @return void
    */
   public function register() {
-
+    //$request->server->set('HTTPS', true);
   }
 }

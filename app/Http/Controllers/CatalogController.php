@@ -51,6 +51,9 @@ class CatalogController extends Controller {
         }
       }
 
+      $url_path = (string)$request->fullUrl();
+      $canonical = strpos($url_path, '?') !== false ? $request->Url() : false;
+
       if ($request->ajax()) {
         $html_paginate = str_replace('<ul class="pagination">', '', $items->render());
         $html_paginate = str_replace('</ul>', '', $html_paginate);
@@ -63,8 +66,7 @@ class CatalogController extends Controller {
 
 
       } else {
-        
-        return view('catalog', compact('menu', 'items', 'subcategory', 'keywords', 'description', 'title', 'cart_count', 'callback'));
+        return view('catalog', compact('menu', 'items', 'subcategory', 'keywords', 'description', 'title', 'cart_count', 'callback', 'canonical'));
       }
     } else {
       abort('404');
