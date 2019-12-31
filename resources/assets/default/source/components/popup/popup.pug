@@ -12,15 +12,15 @@ mixin callback ()
       .popup__body
         form.popup__form(id="callback")
           .popup__field
-            label(for="name") Имя:
+            label(for="callback-name") Имя:
             .popup__input
-              input(id="name", name="name", placeholder="Иванов Иван Иванович")
-              label(for="name")
+              input(id="callback-name", name="name", placeholder="Иванов Иван Иванович")
+              label(for="callback-name")
           .popup__field
-            label(for="phone") Телефон:
+            label(for="callback-phone") Телефон:
             .popup__input
-              input(type="tel", id="phone", name="phone", placeholder="Пример: 8 (495) 000-00-00")
-              label.phone(for="phone")
+              input(type="tel", id="callback-phone", name="phone", placeholder="Пример: 8 (495) 000-00-00")
+              label.phone(for="callback-phone")
           .popup__button
             button.button Отправить заявку
         .popup__offer

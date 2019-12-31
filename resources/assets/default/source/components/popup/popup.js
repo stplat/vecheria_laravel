@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 export function sendForm(form, url, token = null, other = null) {
   if (form) {
+
     const phoneInput = form.elements.phone;
     const nameInput = form.elements.name;
     const maskPhone = new Inputmask('9 (999) 999-99-99', {

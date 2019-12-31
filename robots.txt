@@ -1,4 +1,5 @@
 User-agent: *
+Host: https://vecheria.ru
+Sitemap: https://vecheria.ru/sitemap.xml
 Disallow: /cart
 Disallow: /public
-Sitemap: https://vecheria.ru/sitemap.xml

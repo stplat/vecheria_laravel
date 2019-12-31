@@ -1,8 +1,8 @@
 .product-image
   .product-image__showcase
-    img(src!="/images/items/{{$items->image_path[0]}}")
+    img(src!="/images/items/{{$items->image_path[0]}}", alt!="{{$items->name}}", title!="{{$items->name}}")
   ul.product-image__preview
     | @foreach ($items->image_path as $image)
     li
-      img(src!="/images/items/{{$image}}")
+      img(src!="/images/items/{{$image}}", alt!="{{$items->name}}", title!="{{$items->name}}")
     | @endforeach

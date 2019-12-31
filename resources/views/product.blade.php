@@ -16,9 +16,9 @@
         <div class="product__article">{{$items->article}}</div>
         <div class="product__image">
 <div class="product-image">
-  <div class="product-image__showcase"><img src="/images/items/{{$items->image_path[0]}}"></div>
+  <div class="product-image__showcase"><img src="/images/items/{{$items->image_path[0]}}" alt="{{$items->name}}" title="{{$items->name}}"></div>
   <ul class="product-image__preview">@foreach ($items->image_path as $image)
-    <li><img src="/images/items/{{$image}}"></li>@endforeach
+    <li><img src="/images/items/{{$image}}" alt="{{$items->name}}" title="{{$items->name}}"></li>@endforeach
   </ul>
 </div>
         </div>
@@ -56,7 +56,7 @@
   <ul class="product-desc__tab">
     <li>Описание</li>
   </ul>
-  <div class="product_desc__body"><noindex> <p> {{$items->description}}</p></noindex></div>
+  <div class="product_desc__body"><p><!--noindex-->{{$items->description}}<!--/noindex--></p></div>
 </div>
     </div>
   </div>
