@@ -7,7 +7,7 @@
     <meta name="keywords" content="{{$keywords}}">
     <meta name="robots" content="">
     <meta name="csrf-token" content="{{csrf_token()}}">
-    <meta name="yandex-verification" content="2ff68d0f217a770e">
+    <meta name="yandex-verification" content="da85a8cc7d3802f8">
     <!--meta(name="format-detection", content="telephone=no")-->
     <link href="/css/style.css" rel="stylesheet">
     <title>{{$title}}</title>@if ($canonical != false)
