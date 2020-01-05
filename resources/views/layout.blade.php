@@ -100,6 +100,29 @@
         </div>
       </div>
     </footer>
+    <script>
+      (function () {
+        window['yandexChatWidgetCallback'] = function () {
+          try {
+            window.yandexChatWidget = new Ya.ChatWidget({
+              guid: '11269400-b876-4363-895f-115590787b40',
+              buttonText: 'Напишите нам, мы в сети!',
+              title: 'Чат',
+              theme: 'light',
+              collapsedDesktop: 'hover',
+              collapsedTouch: 'always'
+            });
+          } catch (e) {
+          }
+        };
+        var n = document.getElementsByTagName('script')[0],
+          s = document.createElement('script');
+        s.async = true;
+        s.charset = 'UTF-8';
+        s.src = 'https://chat.s3.yandex.net/widget.js';
+        n.parentNode.insertBefore(s, n);
+      })();
+    </script>
         <div class="popup js-popup-callback">
           <div class="popup__container">
             <div class="popup__header"><span class="popup__close"></span>

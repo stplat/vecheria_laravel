@@ -12,6 +12,12 @@ class HttpsProtocol extends Middleware {
   public function handle($request, Closure $next) {
     if (App::environment() === 'production') {
       
+      $uri = $request->getRequestUri();
+      
+      if ($uri != '/' && $uri[strlen($uri) - 1] == '/') {
+        return redirect(substr($uri, 0, strlen($uri) - 1), 301);
+      }
+      
       $host = $request->header('host');
       if (substr($host, 0, 4) !== 'www.') {
         if (!$request->secure()) {

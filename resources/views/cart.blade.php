@@ -21,7 +21,7 @@
   </div>
   <div class="cart-item__col">
     <div class="cart-item__title">Наименование:</div>
-    <div class="cart-item__name"><a href="/catalog/{{$item->subcategory_plug}}/{{$item->plug}}/">{{$item->name}}</a></div>
+    <div class="cart-item__name"><a href="/catalog/{{$item->subcategory_plug}}/{{$item->plug}}">{{$item->name}}</a></div>
     <div class="cart-item__price">{{$item->price}}</div>
   </div>
   <div class="cart-item__col">
@@ -50,7 +50,7 @@
   </div>
   <div class="cart-item__col">
     <div class="cart-item__title">Наименование:</div>
-    <div class="cart-item__name"><a href="/catalog/{{$item->subcategory_plug}}/{{$item->plug}}/">{{$item->name}}</a></div>
+    <div class="cart-item__name"><a href="/catalog/{{$item->subcategory_plug}}/{{$item->plug}}">{{$item->name}}</a></div>
     <div class="cart-item__price">{{$item->price}}</div>
   </div>
   <div class="cart-item__col">

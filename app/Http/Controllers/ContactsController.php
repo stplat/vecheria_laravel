@@ -17,8 +17,8 @@ class ContactsController extends Controller {
   
   public function index() {
     $keywords = 'православная, лавка, изделия, крестики, бухвицы, браслеты, ручная работа, освещенные';
-    $description = 'Контактная информация об интернет-магазине православных изделий "Вечерия"';
-    $title = 'Контактная информация об интернет-магазине православных изделий "Вечерия"';
+    $description = '';
+    $title = 'Контакты';
     $callback = Session::get('callback') ?: Session::get('callback');
     $cart_count = 0;
 
