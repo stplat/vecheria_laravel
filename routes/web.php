@@ -53,6 +53,6 @@ Route::post('/ordering', 'CartController@ordering');
 
 Route::get('/sitemap.xml', 'IndexController@sitemap');
 
-/*Route::get('/clear-view', function() {
+Route::get('/clear-view', function() {
   Artisan::call('view:clear');
-});*/
+});

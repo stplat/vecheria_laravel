@@ -37,8 +37,7 @@ class CatalogController extends Controller {
       $categories_page = DB::table('categories')->where('plug', $category_plug)->get();
 
       $subcategory = $items->items()[0]->subcategory;
-
-      $menu = $this->menu;
+      
       $keywords = $categories_page[0]->meta_keywords;
       $description = $categories_page[0]->meta_description;
       $title = $categories_page[0]->meta_title;
@@ -66,7 +65,7 @@ class CatalogController extends Controller {
 
 
       } else {
-        return view('catalog', compact('menu', 'items', 'subcategory', 'keywords', 'description', 'title', 'cart_count', 'callback', 'canonical'));
+        return view('catalog', compact('items', 'subcategory', 'keywords', 'description', 'title', 'cart_count', 'callback', 'canonical'));
       }
     } else {
       abort('404');

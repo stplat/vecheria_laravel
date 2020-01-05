@@ -16,7 +16,6 @@ class ContactsController extends Controller {
    */
   
   public function index() {
-    $menu = $this->menu;
     $keywords = 'православная, лавка, изделия, крестики, бухвицы, браслеты, ручная работа, освещенные';
     $description = 'Контактная информация об интернет-магазине православных изделий "Вечерия"';
     $title = 'Контактная информация об интернет-магазине православных изделий "Вечерия"';
@@ -31,6 +30,6 @@ class ContactsController extends Controller {
 
     $canonical = $this->canonical;
     
-    return view('contacts', compact('menu', 'keywords', 'description', 'title', 'cart_count', 'callback', 'canonical'));
+    return view('contacts', compact('keywords', 'description', 'title', 'cart_count', 'callback', 'canonical'));
   }
 }

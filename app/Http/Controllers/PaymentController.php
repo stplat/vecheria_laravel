@@ -16,7 +16,6 @@ class PaymentController extends Controller {
    */
   
   public function index() {
-    $menu = $this->menu;
     $keywords = 'православная, лавка, изделия, крестики, бухвицы, браслеты, ручная работа, освещенные';
     $description = 'Безналичный и наличный расчет';
     $title = 'Способы оплаты в интернет-магазине православных изделий "Вечерия"';
@@ -31,6 +30,6 @@ class PaymentController extends Controller {
 
     $canonical = $this->canonical;
 
-    return view('payment', compact('menu', 'keywords', 'description', 'title', 'cart_count', 'callback', 'canonical'));
+    return view('payment', compact('keywords', 'description', 'title', 'cart_count', 'callback', 'canonical'));
   }
 }

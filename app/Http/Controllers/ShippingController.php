@@ -16,7 +16,6 @@ class ShippingController extends Controller {
    */
 
   public function index() {
-    $menu = $this->menu;
     $keywords = 'православная, лавка, изделия, крестики, бухвицы, браслеты, ручная работа, освещенные';
     $description = 'Курьерская доставка православных ювелирных изделий в Москве и МО';
     $title = 'Способы доставки в интернет-магазине православных изделий "Вечерия"';
@@ -31,6 +30,6 @@ class ShippingController extends Controller {
 
     $canonical = $this->canonical;
 
-    return view('shipping', compact('menu', 'keywords', 'description', 'title', 'cart_count', 'callback', 'canonical'));
+    return view('shipping', compact('keywords', 'description', 'title', 'cart_count', 'callback', 'canonical'));
   }
 }

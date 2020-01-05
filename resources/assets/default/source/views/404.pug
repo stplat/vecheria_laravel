@@ -1,0 +1,8 @@
+| @extends ('layout')
+| @section('content')
+.container
+  include ../components/breadcrumbs/breadcrumbs
+  +breadcrumbs('Ошибка 404: страница не найдена')
+  include ../components/error404/error404
+| @endsection
+

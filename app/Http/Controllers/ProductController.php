@@ -38,8 +38,7 @@ class ProductController extends Controller {
 
       $subcategory_plug = $items->subcategory_plug;
       $subcategory = $items->subcategory;
-
-      $menu = $this->menu;
+      
       $keywords = $items->meta_keywords;
       $description = $items->meta_description;
       $title = $items->meta_title;
@@ -63,7 +62,7 @@ class ProductController extends Controller {
         }
       }
       
-      return view('product', compact('menu', 'items', 'subcategory', 'subcategory_plug', 'keywords', 'description', 'title', 'cart_count', 'in_cart', 'callback', 'buy', 'canonical'));
+      return view('product', compact('items', 'subcategory', 'subcategory_plug', 'keywords', 'description', 'title', 'cart_count', 'in_cart', 'callback', 'buy', 'canonical'));
     } else {
       abort('404');
     }

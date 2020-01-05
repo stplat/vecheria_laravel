@@ -13,7 +13,6 @@ class IndexController extends Controller {
    * @return \Illuminate\Http\Response
    */
   public function index() {
-    $menu = $this->menu;
     $keywords = 'православная, лавка, изделия, крестики, бухвицы, браслеты, ручная работа, освещенные';
     $description = 'Покупка недорогих освещенных православных ювелирных изделий ручной работы по низким ценам';
     $title = 'Интернет-магазин православных изделий "Вечерия"';
@@ -33,7 +32,7 @@ class IndexController extends Controller {
 
     $canonical = $this->canonical;
     
-    return view('index', compact('menu', 'items', 'keywords', 'description', 'title', 'cart_count', 'callback', 'canonical'));
+    return view('index', compact('items', 'keywords', 'description', 'title', 'cart_count', 'callback', 'canonical'));
   }
 
   public function sitemap(\Request $request) {

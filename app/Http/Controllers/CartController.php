@@ -14,7 +14,6 @@ class CartController extends Controller {
    */
   public function index() {
     //Session::forget('cart_step');
-    $menu = $this->menu;
     $keywords = 'православная, лавка, изделия, крестики, бухвицы, браслеты, ручная работа, освещенные';
     $description = 'Покупка недорогих освещенных православных ювелирных изделий ручной работы по низким ценам';
     $title = 'Корзина покупок интернет-магазина православных изделий "Вечерия"';
@@ -60,7 +59,7 @@ class CartController extends Controller {
 
     $canonical = $this->canonical;
 
-    return view('cart', compact('menu', 'keywords', 'description', 'title', 'cart_count', 'items', 'callback', 'cart_total', 'cart_step', 'canonical'));
+    return view('cart', compact('keywords', 'description', 'title', 'cart_count', 'items', 'callback', 'cart_total', 'cart_step', 'canonical'));
   }
 
   /**

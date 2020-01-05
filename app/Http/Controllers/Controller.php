@@ -12,36 +12,14 @@ use DB;
 use Session;
 
 class Controller extends BaseController {
-  public $menu;
   public $categoryQuery;
   public $canonical;
   
   public function __construct(Request $request) {
     $categories = DB::table('items')->join('categories', 'items.subcategory_id', '=', 'categories.id')
       ->select('*', 'categories.plug as subcategory_plug')->get();
-  
-    $menu = [];
-    
-    foreach ($categories as $category) {
-      $menu_item['category'] = '';
-      $menu_item['subcategory'] = [];
       
-      if (!$this::inArray($menu, $category->category)) {
-        $menu_item['category'] = $category->category;
-        $menu_item['subcategory'][$category->plug] = $category->subcategory;
-        
-        array_push($menu, $menu_item);
-      } else {
-        foreach ($menu as $key => $value) {
-          if ($value['category'] == $category->category) {
-            $menu[$key]['subcategory'][$category->plug] = $category->subcategory;
-          }
-        }
-      }
-    }
-  
     $this->categoryQuery = $categories;
-    $this->menu = $menu;
 
     $url_path = (string)$request->fullUrl();
     $this->canonical = false;
