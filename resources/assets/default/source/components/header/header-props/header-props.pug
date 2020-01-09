@@ -1,7 +1,7 @@
 .header-props
   .header-props__phone
-    a(href="tel:+74952039696") +7 (495) 203-96-96
-  ul.header-props__ul
-    li Пн-пт 10:00 - 19:00 (МСК)
+    a(href="tel:+74952039696", itemprop="telephone") +7 (495) 203-96-96
+  ul.header-props__ul(itemprop="address", itemscope, itemtype="http://schema.org/PostalAddress")
+    li Пн-пт 10:00 - 19:00 (<span itemprop="addressLocality">Москва</span>)
     li
       span.header-props__callback.js-button-callback Заказать обратный звонок

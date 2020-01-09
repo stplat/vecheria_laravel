@@ -37,7 +37,7 @@ class CatalogController extends Controller {
       $categories_page = DB::table('categories')->where('plug', $category_plug)->get();
 
       $subcategory = $items->items()[0]->subcategory;
-      
+
       $keywords = $categories_page[0]->meta_keywords;
       $description = $categories_page[0]->meta_description;
       $title = $categories_page[0]->meta_title;

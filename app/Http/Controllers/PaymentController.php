@@ -14,7 +14,7 @@ class PaymentController extends Controller {
    *
    * @return \Illuminate\Http\Response
    */
-  
+
   public function index() {
     $keywords = 'православная, лавка, изделия, крестики, бухвицы, браслеты, ручная работа, освещенные';
     $description = 'Безналичный и наличный расчет';

@@ -14,7 +14,7 @@ class ContactsController extends Controller {
    *
    * @return \Illuminate\Http\Response
    */
-  
+
   public function index() {
     $keywords = 'православная, лавка, изделия, крестики, бухвицы, браслеты, ручная работа, освещенные';
     $description = '';
@@ -29,7 +29,7 @@ class ContactsController extends Controller {
     }
 
     $canonical = $this->canonical;
-    
+
     return view('contacts', compact('keywords', 'description', 'title', 'cart_count', 'callback', 'canonical'));
   }
 }
