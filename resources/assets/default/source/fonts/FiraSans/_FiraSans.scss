@@ -22,29 +22,30 @@
 
 @font-face {
   font-family: 'FiraSans';
-  font-weight: normal;
+  src: url('data:application/font-woff2;charset=utf-8;base64,' + $baseWOFF2) format('woff2');
+  font-weight: 400;
   font-style: normal;
-  src: url('data:application/font-ttf;charset=utf-8;base64,' + $baseTTF) format('truetype'), url('data:font/opentype;charset=utf-8;base64,' + $baseEOT), url('data:application/font-woff;charset=utf-8;base64,' + $baseWOFF) format('woff'), url('data:application/font-woff;charset=utf-8;base64,' + $baseWOFF2) format('woff2');
 }
 
-@font-face {
+/*@font-face {
   font-family: 'FiraSans';
+  src: url('data:application/font-woff2;charset=utf-8;base64,' + $baseWOFF2-bold) format('woff2');
   font-weight: 700;
   font-style: normal;
-  src: url('data:application/font-ttf;charset=utf-8;base64,' + $baseTTF-bold) format('truetype'), url('data:font/opentype;charset=utf-8;base64,' + $baseEOT-bold), url('data:application/font-woff;charset=utf-8;base64,' + $baseWOFF-bold) format('woff'), url('data:application/font-woff;charset=utf-8;base64,' + $baseWOFF2-bold) format('woff2');
-}
+}*/
 
+/*
 @font-face {
   font-family: 'FiraSans';
   font-weight: 500;
   font-style: normal;
-  src: url('data:application/font-ttf;charset=utf-8;base64,' + $baseTTF-medium) format('truetype'), url('data:font/opentype;charset=utf-8;base64,' + $baseEOT-medium), url('data:application/font-woff;charset=utf-8;base64,' + $baseWOFF-medium) format('woff'), url('data:application/font-woff;charset=utf-8;base64,' + $baseWOFF2-medium) format('woff2');
+  src: url('data:application/font-ttf;charset=utf-8;base64,' + $baseTTF-medium) format('truetype'), url('data:font/opentype;charset=utf-8;base64,' + $baseEOT-medium), url('data:application/font-woff;charset=utf-8;base64,' + $baseWOFF-medium) format('woff'), url('data:application/font-woff2;charset=utf-8;base64,' + $baseWOFF2-medium) format('woff2');
 }
 
 @font-face {
   font-family: 'FiraSans';
   font-weight: 300;
   font-style: normal;
-  src: url('data:application/font-ttf;charset=utf-8;base64,' + $baseTTF-light) format('truetype'), url('data:font/opentype;charset=utf-8;base64,' + $baseEOT-light), url('data:application/font-woff;charset=utf-8;base64,' + $baseWOFF-light) format('woff'), url('data:application/font-woff;charset=utf-8;base64,' + $baseWOFF2-light) format('woff2');
-}
+  src: url('data:application/font-ttf;charset=utf-8;base64,' + $baseTTF-light) format('truetype'), url('data:font/opentype;charset=utf-8;base64,' + $baseEOT-light), url('data:application/font-woff;charset=utf-8;base64,' + $baseWOFF-light) format('woff'), url('data:application/font-woff2;charset=utf-8;base64,' + $baseWOFF2-light) format('woff2');
+}*/
 
