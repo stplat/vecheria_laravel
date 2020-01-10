@@ -12,6 +12,14 @@ const images = require('./webpack_modules/images');
 const babel = require('./webpack_modules/babel');
 const favicon = require('./webpack_modules/favicon');
 
+/* Оптимизация изображений
+const ImageminPlugin = require("imagemin-webpack");
+const imageminGifsicle = require("imagemin-gifsicle");
+const imageminJpegtran = require("imagemin-jpegtran");
+const imageminOptipng = require("imagemin-optipng");
+const imageminSvgo = require("imagemin-svgo");*/
+
+
 const PATHS = {
   source: path.join(__dirname, 'source'),
   build: path.join(__dirname, '../../../public'),

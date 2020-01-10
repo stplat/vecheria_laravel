@@ -72,7 +72,7 @@
                       <p>{{$item->manufacturer}}</p>
                     </div>
                     <div class="item__article">{{$item->article}}</div>
-                    <div class="item__image"><a href="/catalog/{{$item->subcategory_plug}}/{{$item->plug}}"><img src="/images/items/{{$item->plug}}.jpg" alt="{{$item->name}}" title="{{$item->name}}"></a></div>
+                    <div class="item__image"><a href="/catalog/{{$item->subcategory_plug}}/{{$item->plug}}"><img src="/images/items/{{$item->plug}}.jpg" data-src="/images/items/{{$item->plug}}.jpg" alt="{{$item->name}}" title="{{$item->name}}"></a></div>
                     <div class="item__name"><a href="/catalog/{{$item->subcategory_plug}}/{{$item->plug}}">{{$item->name}}</a></div>
                     <div class="item__price">
                       <p>{{$item->price}}</p>

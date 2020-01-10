@@ -10,6 +10,7 @@ mixin items(quantity)
       .item__image
         a(href!="/catalog/{{$item->subcategory_plug}}/{{$item->plug}}")
           img(src!="/images/items/{{$item->plug}}.jpg",
+          data-src!="/images/items/{{$item->plug}}.jpg",
           alt!="{{$item->name}}",
           title!="{{$item->name}}")
       .item__name
@@ -32,6 +33,7 @@ mixin itemsSlider()
           .item__image
             a(href!="/catalog/{{$item->subcategory_plug}}/{{$item->plug}}")
               img(src!="/images/items/{{$item->plug}}.jpg",
+              data-src!="/images/items/{{$item->plug}}.jpg",
               alt!="{{$item->name}}",
               title!="{{$item->name}}")
           .item__name
