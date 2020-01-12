@@ -9,10 +9,12 @@ mixin items(quantity)
       .item__article {{$item->article}}
       .item__image
         a(href!="/catalog/{{$item->subcategory_plug}}/{{$item->plug}}")
-          img(src!="/images/items/{{$item->plug}}.jpg",
-          data-src!="/images/items/{{$item->plug}}.jpg",
-          alt!="{{$item->name}}",
-          title!="{{$item->name}}")
+          picture
+            source(srcset!="/images/items/{{$item->plug}}t.webp", type="image/webp")
+            img(src!="/images/items/{{$item->plug}}t.jpg",
+            data-src!="/images/items/{{$item->plug}}t.jpg",
+            alt!="{{$item->name}}",
+            title!="{{$item->name}}")
       .item__name
         a(href!="/catalog/{{$item->subcategory_plug}}/{{$item->plug}}") {{$item->name}}
       .item__price
@@ -32,10 +34,12 @@ mixin itemsSlider()
           .item__article {{$item->article}}
           .item__image
             a(href!="/catalog/{{$item->subcategory_plug}}/{{$item->plug}}")
-              img(src!="/images/items/{{$item->plug}}.jpg",
-              data-src!="/images/items/{{$item->plug}}.jpg",
-              alt!="{{$item->name}}",
-              title!="{{$item->name}}")
+              picture
+                source(srcset!="/images/items/{{$item->plug}}t.webp", type="image/webp")
+                img(src!="/images/items/{{$item->plug}}t.jpg",
+                data-src!="/images/items/{{$item->plug}}t.jpg",
+                alt!="{{$item->name}}",
+                title!="{{$item->name}}")
           .item__name
             a(href!="/catalog/{{$item->subcategory_plug}}/{{$item->plug}}") {{$item->name}}
           .item__price

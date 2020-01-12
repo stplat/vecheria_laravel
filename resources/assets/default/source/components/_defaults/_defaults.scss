@@ -6,10 +6,6 @@
 @import './select/select';
 @import '~normalize.css';
 
-/* Пользовательские Шрифты */
-@import '../../fonts/fontello/fontello';
-@import '../../fonts/FiraSans/FiraSans';
-
 /* Общие стили */
 * {
   vertical-align: baseline;
@@ -88,12 +84,12 @@ a {
   }
 }
 
-img {
+/*img, source {
   opacity: 1;
   transition: opacity 0.3s;
 }
 
-img[data-src] {
+img[data-src], source[data-src] {
   opacity: 0;
-}
+}*/
 
