@@ -74,7 +74,7 @@
                     <div class="item__article">{{$item->article}}</div>
                     <div class="item__image"><a href="/catalog/{{$item->subcategory_plug}}/{{$item->plug}}">
                         <picture>
-                          <source srcset="/images/items/{{$item->plug}}t.webp" type="image/webp"><img src="/images/items/{{$item->plug}}t.jpg" data-src="/images/items/{{$item->plug}}t.jpg" alt="{{$item->name}}" title="{{$item->name}}">
+                          <source srcset="/images/items/{{$item->plug}}t.webp" data-src="/images/items/{{$item->plug}}t.webp" type="image/webp"><img src="/images/items/{{$item->plug}}t.jpg" data-src="/images/items/{{$item->plug}}t.jpg" alt="{{$item->name}}" title="{{$item->name}}">
                         </picture></a></div>
                     <div class="item__name"><a href="/catalog/{{$item->subcategory_plug}}/{{$item->plug}}">{{$item->name}}</a></div>
                     <div class="item__price">

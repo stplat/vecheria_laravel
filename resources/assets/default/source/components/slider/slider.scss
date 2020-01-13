@@ -14,16 +14,6 @@
   align-items: center;
   position: relative;
 
-  .no-webp & {
-    background: url(components/slider/banner_1.png) no-repeat right, url(components/slider/banner_1-bg.png);
-    background-size: contain;
-  }
-
-  .webp & {
-    background: url(components/slider/banner_1.webp) no-repeat right, url(components/slider/banner_1-bg.webp);
-    background-size: contain;
-  }
-
   @media only screen and (max-width: 480px) {
     padding: 30px 30px;
   }

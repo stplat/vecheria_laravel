@@ -2,6 +2,7 @@ import './style.scss';
 
 /* Скрипты по умолчанию */
 import './components/_defaults/defaults';
+import './components/_defaults/modernizr';
 
 import './components/slider/slider';
 import './components/item/item';
