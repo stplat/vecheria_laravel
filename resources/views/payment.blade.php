@@ -8,7 +8,7 @@
     </ul>
     <div class="title">
       <div class="title__wrap">
-        <h1>Способы оплаты</h1>
+        <h1>Оплата</h1>
       </div>
     </div>
     <div class="text text--white-bg">

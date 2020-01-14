@@ -20,11 +20,11 @@
     flex-grow: 1;
     position: relative;
 
-    .no-touch &:hover > .menu__plug {
+    &:hover > .menu__plug {
       background-color: $orange-color-hover;
     }
 
-    .no-touch &:hover > .menu__submenu {
+    &:hover > .menu__submenu {
       display: block;
     }
 
