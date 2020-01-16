@@ -44,6 +44,10 @@
   box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
   padding: 30px;
   border-radius: 4px;
+
+  @media only screen and (max-width: 768px) {
+    padding: 20px;
+  }
 }
 
 .text__title {

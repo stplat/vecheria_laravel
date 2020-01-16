@@ -19,6 +19,7 @@
   li {
     flex-grow: 1;
     position: relative;
+    cursor: pointer;
 
     &:hover > .menu__plug {
       background-color: $orange-color-hover;
