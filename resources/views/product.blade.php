@@ -16,9 +16,17 @@
         <div class="product__article">{{$items->article}}</div>
         <div class="product__image">
 <div class="product-image">
-  <div class="product-image__showcase"><img src="/images/items/{{$items->image_path[0]}}" alt="{{$items->name}}" title="{{$items->name}}"></div>
+  <div class="product-image__showcase">
+    <picture>
+      <source srcset="/images/items/{{$items->image_path[0]}}.webp" data-src="/images/items/{{$items->image_path[0]}}" type="image/webp"><img src="/images/items/{{$items->image_path[0]}}.jpg" data-src="/images/items/{{$items->image_path[0]}}.jpg" alt="{{$items->name}}" title="{{$items->name}}">
+    </picture>
+  </div>
   <ul class="product-image__preview">@foreach ($items->image_path as $image)
-    <li><img src="/images/items/{{$image}}" alt="{{$items->name}}" title="{{$items->name}}"></li>@endforeach
+    <li>
+      <picture>
+        <source srcset="/images/items/{{$image}}.webp" data-src="/images/items/{{$image}}.webp" type="image/webp"><img src="/images/items/{{$image}}.jpg" data-src="/images/items/{{$image}}.jpg" alt="{{$items->name}}" title="{{$items->name}}">
+      </picture>
+    </li>@endforeach
   </ul>
 </div>
         </div>

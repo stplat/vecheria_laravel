@@ -12,9 +12,10 @@
   border: 1px dashed #EAEAEA;
   height: 380px;
 
-  img {
-    max-height: 100%;
+  picture, img {
+    height: 100%;
     max-width: 100%;
+    display: inline-block;
   }
 }
 
@@ -44,8 +45,9 @@
     }
   }
 
-  img {
-    max-height: 100%;
+  picture, img {
+    height: 100%;
     max-width: 100%;
+    display: inline-block;
   }
 }

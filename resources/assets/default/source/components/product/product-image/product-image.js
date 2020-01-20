@@ -16,6 +16,7 @@ $(document).ready(function () {
     [...perviewButton].forEach((button) => {
       button.addEventListener('click', function (e) {
         showcase.src = this.querySelector('img').src;
+        showcase.previousElementSibling.srcset = this.querySelector('img').src;
 
         if (!document.querySelector('.no-touch')) return;
         $(showcase).blowup({
