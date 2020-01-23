@@ -1,2535 +1,1263 @@
 <?php echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://vecheria.ru</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/shnurki_i_gaytany</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/moscheviki_i_skladni_na_sheyu</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_matrony</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_mihail_arhangel</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>1.00</priority>
   </url>
   <url>
     <loc>https://vecheria.ru/shipping</loc>
-    <lastmod>2019-12-31</lastmod>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://vecheria.ru/payment</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/cart</loc>
-    <lastmod>2019-12-31</lastmod>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://vecheria.ru/contacts</loc>
-    <lastmod>2019-12-31</lastmod>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-businy</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_ikona_boghiey_materi_neopalimaya_kupina_101254</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/businy-podveski</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_georgii_pobedonosec</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-natelnye-krestiki</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/golgofskie-krestiki</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/moscheviki_i_skladni_na_sheyu/moschevik_raspyatie_hristovo_s_predstoyaschimi_pokrov_presvyatoy_bogorodicy_08354</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-obrazki</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/moscheviki_i_skladni_na_sheyu/raspyatie_hristovo_s_predstoyaschimi_blgh_matrona_moskovskaya_08430</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-svyatykh</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/shnurki_i_gaytany/koghanyy_shnurok_s_perehodnikom_90014</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-mikhail-arkhangel</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/moscheviki_i_skladni_na_sheyu/gospody_vsederghitely_boghiya_matery_moschevik__104007</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-bozhey-materi</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/moscheviki_i_skladni_na_sheyu/moschevik_raspyatie_hristovo_s_predstoyaschimi_barskaya_ikona_boghiey_materi_08343</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-matrony</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/moscheviki_i_skladni_na_sheyu/gospody_vsederghitely_ikona_boghiey_materi_vsecarica_moschevik_08671</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-georgiy-pobedonosec</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/moscheviki_i_skladni_na_sheyu/gospody_vsederghitely_kazanskaya_ikona_boghiey_materi_svt_nikolay_chudotvorec_skladeny_104248</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-vladimirskoy-bozhey-materi</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_romashki_a025</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-kazanskoy-bozhey-materi</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_obrazki</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/moscheviki-i-skladni-na-sheyu</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/podveska_hrizma_vladimirskaya_ikona_boghiey_materi_svyatitely_nikolay_08466</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-braslety-na-ruku</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_matrony/blaghennaya_matrona_moskovskaya_08124s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/okhrannye-kolca</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/muchenica_paraskeva_pyatnica_08425</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/shnurki-i-gaytany</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-businy/busina-liliya-02.215</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/busini_podveski</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-natelnye-krestiki/raspyatie-khristovo-nikolay-chudotvorec-08246-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_kazanskoy_boghyey_materi</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-businy/busina-5226</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_matrony/blaghennaya_matrona_moskovskaya_08120s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-businy/busina-khrizma-molitva-da-voskresnet-bog-02.274</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/svyatitely_nikolay_obrazok_08018s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-businy/busina-procvetshiy-krest-15026</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_matrony/blaghennaya_matrona_moskovskaya_obrazok_08182</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-businy/spas-nerukotvornyy-18610</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/svyatitely_spiridon_trimifuntskiy_obrazok_08686</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-businy/busina-pticy-05019</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_almaznyy_rust_a063</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-businy/busina-rybki-05018</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_vladimirskoi_boghyey_materi</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-businy/busina-trilistnik-05247</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/ohrannye_kolyca</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-businy/busina-procvetshiy-krest-05026</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/svyataya_troica_obrazok_08215s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-businy/busina-procvetshiy-krest-5211</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/svyatye_petr_i_fevroniya_08364</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-businy/busina-kolokolchik-15022</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/svyataya_muchenica_vera_8044_anastasiya_08010</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-businy/busina-molitva-vo-imya-otca-02.273</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_mihail_arhangel/arhangel_mihail_obrazok_08229s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-businy/busina-molitva-vo-imya-otca-02.273r</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_matrony/blaghennaya_matrona_moskovskaya_obrazok_08124</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-businy/busina-procvetshie-serdca-a---023</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/prepodobnaya_angelina_serbskaya_08424</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-businy/busina-05009</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/moscheviki_i_skladni_na_sheyu/skladeny_psalom_90_104251</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-businy/busina-almaznyy-rust-a-063</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/prepodobnyy_sergiy_radoneghskiy_08383</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-businy/busina-blagodat-a-002</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/svyatitely_spiridon_trimifuntskiy_08386s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-businy/busina-vayi-a-029</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_matrony/blaghennaya_matrona_moskovskaya_08151s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-businy/busina-vizantiyskie-uzory-a-030</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_matrony/preobraghenie_svv_sergiy_radoneghskiy_aleksandr_svirskiy_kseniya_peterburgskaya_matrona_moskovskaya_obrazok_102053</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-businy/busina-zharpticy-a-018</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_matrony/blaghennaya_matrona_moskovskaya_obrazok_08151</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-businy/busina-zemlya-blagaya-a-007</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/svyatoy_blagovernyy_knyazy_aleksandr_nevskiy_08084</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-businy/busina-kannelyury-a-060</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/moscheviki_i_skladni_na_sheyu/vosymikonechnyy_krest_molitva_bogorodice_ikony_bl_matrony_i_bm_vzyskanie_pogibshih_08599</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-businy/busina-korzinka-a-010</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_matrony/blaghennaya_matrona_moskovskaya_08182s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-businy/busina-korzinochnoe-pletenie-a-064</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_braslety_na_ruku</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-businy/busina-krestocvet-a-012</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/golgofskie_krestiki</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-businy/busina-loza-a-011</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-businy/busina-molba-k-bozhiey-materi-a-017</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_matrony/svyataya_blaghennaya_matrona_moskovskaya_obrazok_102111</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/businy-podveski/podveskabusina-rybka-15005</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/moscheviki_i_skladni_na_sheyu/moschevik_gospody_vsederghitely_kazanskaya_ikona_boghiey_materi_05000</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/businy-podveski/podveskabusina-serafim-15015</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/moscheviki_i_skladni_na_sheyu/pravoslavnyy_krestenkolpion_valaamskaya_ikona_boghiey_materi_blaghennye_kseniya_peterburgskaya_i_matrona_moskovskaya_08494</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/businy-podveski/podveskabusina-trilistnik-05006-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/svyataya_velikomuchenica_varvara_8046_anastasiya_08009</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/businy-podveski/podveskabusina-serafim-05015</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/prepodobnyy_sergiy_radoneghskiy_08019s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/businy-podveski/podveskabusina-rybka-05005</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/velikomuchenik_panteleimon_celitely_08094s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/businy-podveski/podveskabusina-vifleemskaya-zvezda-05013</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/gospody_vsederghitely_obrazok_08205s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/businy-podveski/podveskabusina-trilistnik-05006</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_mihail_arhangel/arhangel_mihail_obrazok_08229</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/businy-podveski/podveskabusina-trilistnik-05007</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/velikomuchenik_panteleimon_celitely_obrazok_08213</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/businy-podveski/podveskabusina-rybka-15004</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/ikona_boghiey_materi_semistrelynaya_obrazok_08277</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/businy-podveski/podveskabusina-rybka-05004</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_georgii_pobedonosec/velikomuchenik_georgiy_pobedonosec_obrazok_08114</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-natelnye-krestiki/pravoslavnyy-krest-08153-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_georgii_pobedonosec/velikomuchenik_georgiy_pobedonosec_08057</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-natelnye-krestiki/raspyatie-khristovo-pravoslavnyy-krest-08286</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_georgii_pobedonosec/velikomuchenik_georgiy_pobedonosec_08357</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-natelnye-krestiki/raspyatie-khristovo-pravoslavnyy-krest-08153</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/ikona_boghiey_materi_semistrelynaya_svt_nikolay_chudotvorec_08109s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-natelnye-krestiki/pravoslavnyy-krest-08139-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/ikona_boghiey_materi_znamenie_obrazok_08257</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-natelnye-krestiki/raspyatie-khristovo-pravoslavnyy-krest-08155</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/ikona_boghiey_materi_neupivaemaya_chasha_08276s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-natelnye-krestiki/gospod-vsederzhitel-ikona-bozhiey-materi-08202-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_georgii_pobedonosec/velikomuchenik_georgiy_pobedonosec_obrazok_08145</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-natelnye-krestiki/raspyatie-khristovo-molitva-krestu-08367-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_procvetshiy_krest_15026</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-natelnye-krestiki/raspyatie-khristovo-prepodobnyy-serafim-sorovskiy-08267</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/feodorovskaya_ikona_boghiey_materi_obrazok_08275</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-natelnye-krestiki/raspyatie-khristovo-pravoslavnyy-krest-08091-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/tabynskaya_ikona_boghiey_materi_08385</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-natelnye-krestiki/raspyatie-khristovo-molitva-da-voskresnet-bog-08013</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/ikona_boghiey_materi_znamenie_obrazok_08174</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-natelnye-krestiki/raspyatie-khristovo-08078</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/ikona_boghyey_materi_troeruchica_08408s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-natelnye-krestiki/raspyatie-khristovo-arkhangel-mikhail-pravoslavnyy-08150</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/tihvinskaya_ikona_boghiey_materi_obrazok_08454</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-natelnye-krestiki/raspyatie-khristovo-valaamskaya-ikona-bozhiey-08007</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/ikona_boghiey_materi_znamenie_08334s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-natelnye-krestiki/raspyatie-khristovo-svyatitel-nikolay-08162-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_georgii_pobedonosec/velikomuchenik_georgiy_pobedonosec_obrazok_08092</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-natelnye-krestiki/procvetshiy-krest-pravoslavnyy-krest-08241</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/tihvinskaya_ikona_boghiey_materi_obrazok_08274</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-natelnye-krestiki/raspyatie-khristovo-08073</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/muchenik_trifon_08412</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-natelnye-krestiki/raspyatie-khristovo-molitva-da-voskresnet-08330-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix?page=2</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-natelnye-krestiki/raspyatie-khristovo-pokrov-presvyatoy-bogorodicy-08064</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix?page=3</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-natelnye-krestiki/raspyatie-khristovo-molitva-krestu-pravoslavnyy-08210</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/svyatoy_blagovernyy_knyazy_aleksandr_nevskiy_08084s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-natelnye-krestiki/raspyatie-khristovo-pokrov-presvyatoy-bogorodicy-08105</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/svyataya_blaghennaya_kseniya_peterburgskaya_08079</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-natelnye-krestiki/raspyatie-khristovo-prepodobnyy-serafim-sarovskiy-08165</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/svyatye_petr_i_fevroniya_08364s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-natelnye-krestiki/gospod-vsederzhitel-deisus-angel-khranitel-08099-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_matrony/blaghennaya_matrona_moskovskaya_08120</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-natelnye-krestiki/raspyatie-khristovo-08095</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_georgii_pobedonosec/velikomuchenik_georgiy_pobedonosec_obrazok_08357s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-natelnye-krestiki/raspyatie-khristovo-molitva-krestu-pravoslavnyy-08227</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/ikona_bogomateri_radosty_vseh_radostey_umilenie_serafimodiveevskoe_obrazok_08273</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/golgofskie-krestiki/golgofskiy-krest-08465</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_georgii_pobedonosec/velikomuchenik_georgiy_pobedonosec_06066</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/golgofskie-krestiki/golgofa-khrizma-krest-natelnyy-101.242</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_georgii_pobedonosec/velikomuchenik_georgiy_pobedonosec_obrazok_08092s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/golgofskie-krestiki/golgofskiy-krest-pravoslavnyy-krest-08152</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_horugvy_02263</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/golgofskie-krestiki/golgofskiy-krest-08052-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/ikona_boghiey_materi_neupivaemaya_chasha_08390</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/golgofskie-krestiki/golgofskiy-krest-molitva-da-voskresnet-bog-08089</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/smolenskaya_ikona_boghiey_materi_08449</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/golgofskie-krestiki/golgofskiy-krest-pravoslavnyy-krest-08115-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/ikona_boghiey_materi_mlekopitatelynica_08441</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/golgofskie-krestiki/golgofskiy-krest-08461</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_obrazki/angel_hranitely_08111</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/golgofskie-krestiki/golgofskiy-krest-08039</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi?page=3</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/golgofskie-krestiki/golgofskiy-krest-08052</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/ikona_boghiey_materi_dostoyno_esty_08368</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/golgofskie-krestiki/golgofskiy-krest-08115</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/feodorovskaya_ikona_boghiey_materi_08251s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/golgofskie-krestiki/golgofskiy-krest-krest-natelnyy-101.009</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/barskaya_ikona_boghiey_materi_08409</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-obrazki/angelochek-angelochek-serebro</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/ikona_boghiey_materi_umyagchenie_zlyh_serdec_semistrelynaya_08119s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-obrazki/angelkhranitel-obrazok-08236-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_molitva_vo_imya_otca_02273r</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-obrazki/-angelochek</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/ikona_boghiey_materi_umyagchenie_zlyh_serdec_semistrelynaya_08034s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-obrazki/angelkhranitel-obrazok-08250-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_procvetshiy_krest_05026</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-obrazki/angelkhranitel-obrazok-08298-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_obrazki/podveska_zapovedy_lyubvi_08502</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-obrazki/spas-nerukotvornyy-08143-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_blagodaty_a002</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-obrazki/podveska-zapoved-lyubvi-08502-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_molitva_vo_imya_otca_02273</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-obrazki/angel-khranitel-obrazok-08290</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_procvetshie_serdca_a__023</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-obrazki/angel-khranitel-obrazok-08298</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_obrazki/angelhranitely_obrazok_08298s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-obrazki/angel-khranitel-obrazok-08250</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/svyataya_ravnoapostolynaya_carica_elena_8035_anastasiya_08017</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-obrazki/angel-khranitel-obrazok-08300</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/svyatitely_nikolay_08065</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-obrazki/angel-khranitel-obrazok-08236</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/moscheviki_i_skladni_na_sheyu/raspyatie_hristovoenkolpion_deisus_angel_hranitely_08491</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-obrazki/spas-nerukovornyy-08026</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/svyatitely_nikolay_obrazok_08065s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-obrazki/angel-khranitel-obrazok-08082</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/moscheviki_i_skladni_na_sheyu/spas_nerukotvornyy_moschevik_104020</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-obrazki/angel-khranitel-08111</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_georgii_pobedonosec/velikomuchenik_georgiy_pobedonosec_obrazok_08145s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-obrazki/raspyatie-khristovodeisus-pravoslavnyy-krest-08172</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/ikona_boghiey_materi_neupivaemaya_chasha_obrazok_08276</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-obrazki/podveska-rybki-08452</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_georgii_pobedonosec/velikomuchenik_georgiy_pobedonosec_obrazok_08114s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-obrazki/angelkhranitel-obrazok-08240</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/prepodobnyy_serafim_sarovskiy_08230s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-obrazki/podveska-zapoved-lyubvi-08502</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/moscheviki_i_skladni_na_sheyu/angel_hranitely_golgofa_gospody_vsederghitely_tolgskaya_ikona_boghiey_materi_08303</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-obrazki/podveska-rybki-08448</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/ikona_bogomateri_radosty_vseh_radostey_umilenie_serafimodiveevskoe_08200s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-obrazki/raspyatie-khristovo-s-predstoyaschimi-molitva-08365</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/ikona_boghiey_materi_znamenie_obrazok_08278</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-svyatykh/svyatitel-nikolay-obrazok-08065-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/iverskaya_ikona_boghiey_materi_08410s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-svyatykh/svyatye-petr-i-fevroniya-08364-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/svyatoy_blagovernyy_knyazy_aleksandr_nevskiy_08295__s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-svyatykh/svyatoy-blagovernyy-knyaz-aleksandr-nevskiy-08084-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_vizantiyskie_uzory_a030</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-svyatykh/svyatitel-spiridon-trimifuntskiy-08386-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/busini_podveski/podveskabusina_rybka_15004</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-svyatykh/svyatoy-blagovernyy-knyaz-aleksandr-nevskiy-08295---s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/busini_podveski/podveskabusina_serafim_15015</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-svyatykh/prepodobnyy-sergiy-radonezhskiy-08019-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_obrazki/angel_hranitely_obrazok_08236</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-svyatykh/gospod-vsederzhitel-obrazok-08205-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_korzinochnoe_pletenie_a064</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-svyatykh/svyataya-velikomuchenica-varvara-8046-anastasiya-08.009</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy?page=7</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-svyatykh/svyataya-muchenica-vera-8044-anastasiya-08.010</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy?page=4</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-svyatykh/svyataya-ravnoapostolnaya-carica-elena-8035-08.017</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi?page=2</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-svyatykh/velikomuchenik-panteleimon-tselitel-08094-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/busini_podveski/podveskabusina_trilistnik_05007</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-svyatykh/svyatitel-nikolay-obrazok-08018-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_krestocvet_a012</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-svyatykh/svyatye-petr-i-fevroniya-08364</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_obrazki/angelhranitely_obrazok_08240</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-svyatykh/prepodobnyy-serafim-sarovskiy-08230-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_molyba_k_boghiey_materi_a017</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-svyatykh/svyatitel-nikolay-08065</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_obrazki/angel_hranitely_obrazok_08290</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-svyatykh/svyatitel-spiridon-trimifuntskiy-obrazok-08686</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/busini_podveski/podveskabusina_trilistnik_05006s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-svyatykh/svyataya-troica-obrazok-08215-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_obrazki/podveska_zapovedy_lyubvi_08502s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-svyatykh/velikomuchenik-panteleimon-tselitel-obrazok-08213</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_kolokolychik_15022</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-svyatykh/muchenik-trifon-08412</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_obrazki/angelochek_angelochek_serebro</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-svyatykh/prepodobnaya-angelina-serbskaya-08424</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_obrazki/raspyatie_hristovodeisus_pravoslavnyy_krest_08172</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-svyatykh/muchenica-paraskeva-pyatnica-08425</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_gharpticy_a018</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-svyatykh/svyatoy-blagovernyy-knyaz-aleksandr-nevskiy-08084</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_obrazki/angel_hranitely_obrazok_08298</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-svyatykh/svyataya-blazhennaya-kseniya-peterburgskaya-08079</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/ohrannye_kolyca/prebyvayuschiy_v_lyubvi_v_boge_prebyvaet_15006</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-svyatykh/prepodobnyy-sergiy-radonezhskiy-08383</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/ohrannye_kolyca/prebyvayuschiy_v_lyubvi_v_boge_prebyvaet_16006</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-mikhail-arkhangel/arkhangel-mikhail-obrazok-08229-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/busini_podveski/podveskabusina_rybka_15005</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-mikhail-arkhangel/arkhangel-mikhail-obrazok-08229</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_obrazki/angelhranitely_obrazok_08250s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-bozhey-materi/ikona-bozhiey-materi-neupivaemaya-chasha-08276-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_loza_a011</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-bozhey-materi/ikona-bozhey-materi-troeruchica-08408-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_obrazki/angelhranitely_obrazok_08236s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-bozhey-materi/iverskaya-ikona-bozhiey-materi-08410-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_rybki_05018</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-bozhey-materi/ikona-bozhiey-materi-umyagchenie-zlykh-serdec-08034-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/gospody_vsederghitely_ikona_boghiey_materi_umilenie_serafimodiveevskaya_08202s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-bozhey-materi/ikona-bozhiey-materi-semistrelnaya-svt-nikolay-08109-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_obrazki/spas_nerukotvornyy_08143s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-bozhey-materi/tikhvinskaya-ikona-bozhiey-materi-obrazok-08454</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_kazanskoy_boghyey_materi/kazanskaya_ikona_boghiey_materi_08038</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-bozhey-materi/ikona-bozhiey-materi-umyagchenie-zlykh-serdec-08119-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_kazanskoy_boghyey_materi/kazanskaya_ikona_boghiey_materi_08033</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-bozhey-materi/feodorovskaya-ikona-bozhiey-materi-08251-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_kazanskoy_boghyey_materi/kazanskaya_ikona_boghiey_materi_08086</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-bozhey-materi/ikona-bogomateri-radost-vsekh-radostey-umilenie-08200-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/spas_nerukotvornyy_18610</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-bozhey-materi/ikona-bozhiey-materi-znamenie-obrazok-08278</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_vayi_a029</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-bozhey-materi/ikona-bozhiey-materi-neupivaemaya-chasha-obrazok-08276</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/busini_podveski/podveskabusina_serafim_05015</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-bozhey-materi/feodorovskaya-ikona-bozhiey-materi-obrazok-08275</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_trilistnik_05247</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-bozhey-materi/ikona-bozhiey-materi-znamenie-obrazok-08257</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_zemlya_blagaya_a007</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-bozhey-materi/ikona-bozhiey-materi-dostoyno-est-08368</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_obrazki/podveska_rybki_08452</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-bozhey-materi/tikhvinskaya-ikona-bozhiey-materi-obrazok-08274</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_obrazki/raspyatie_hristovo_s_predstoyaschimi_molitva_da_voskresnet_bog_08365</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-bozhey-materi/ikona-bogomateri-radost-vsekh-radostey-umilenie-08273</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_obrazki/angel_hranitely_obrazok_08082</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-bozhey-materi/ikona-bozhiey-materi-semistrelnaya-obrazok-08277</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_obrazki/angel_hranitely_obrazok_08250</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-bozhey-materi/ikona-bozhiey-materi-neupivaemaya-chasha-08390</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/busini_podveski/podveskabusina_rybka_05004</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-bozhey-materi/smolenskaya-ikona-bozhiey-materi-08449</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/busini_podveski/podveskabusina_rybka_05005</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-bozhey-materi/ikona-bozhiey-materi-znamenie-08334-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_kannelyury_a060</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-bozhey-materi/tabynskaya-ikona-bozhiey-materi-08385</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_obrazki/spas_nerukovornyy_08026</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-bozhey-materi/barskaya-ikona-bozhiey-materi-08409</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy?page=5</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-bozhey-materi/ikona-bozhiey-materi-mlekopitatelnica-08441</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy?page=6</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-bozhey-materi/ikona-bozhiey-materi-znamenie-obrazok-08174</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy?page=2</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-matrony/blazhennaya-matrona-moskovskaya-08151-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_08095</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-matrony/blazhennaya-matrona-moskovskaya-08120-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_pravoslavnyy_krest_08286</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-matrony/blazhennaya-matrona-moskovskaya-08124-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_arhangel_mihail_pravoslavnyy_krest_08150</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-matrony/blazhennaya-matrona-moskovskaya-obrazok-08151</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_kazanskoy_boghyey_materi/kazanskaya_ikona_boghiey_materi_08344</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-matrony/blazhennaya-matrona-moskovskaya-08182-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_obrazki/_angelochek</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-matrony/svyataya-blazhennaya-matrona-moskovskaya-obrazok-102.111</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/busini_podveski/podveskabusina_trilistnik_05006</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-matrony/blazhennaya-matrona-moskovskaya-08120</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_procvetshiy_krest_5211</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-matrony/blazhennaya-matrona-moskovskaya-obrazok-08124</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_obrazki/podveska_rybki_08448</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-matrony/blazhennaya-matrona-moskovskaya-obrazok-08182</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/procvetshiy_krest_pravoslavnyy_krest_08241</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-matrony/preobrazhenie-svv-sergiy-radonezhskiy-aleksandr-102.053</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_braslety_na_ruku/koghanyy_braslet_pod_businy_09001</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-georgiy-pobedonosec/velikomuchenik-georgiy-pobedonosec-06.066</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_kazanskoy_boghyey_materi/kazanskaya_ikona_boghiey_materi_spas_nerukotvornyy_08314s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-georgiy-pobedonosec/velikomuchenik-georgiy-pobedonosec-obrazok-08357-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/ohrannye_kolyca/pticy_nebesnye_15002</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-georgiy-pobedonosec/velikomuchenik-georgiy-pobedonosec-obrazok-08092-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_obrazki/angel_hranitely_obrazok_08300</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-georgiy-pobedonosec/velikomuchenik-georgiy-pobedonosec-obrazok-08114-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_pravoslavnyy_krest_08155</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-georgiy-pobedonosec/velikomuchenik-georgiy-pobedonosec-obrazok-08145-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/busini_podveski/podveskabusina_vifleemskaya_zvezda_05013</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-georgiy-pobedonosec/velikomuchenik-georgiy-pobedonosec-08057</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_05009</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-georgiy-pobedonosec/velikomuchenik-georgiy-pobedonosec-08357</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_pticy_05019</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-georgiy-pobedonosec/velikomuchenik-georgiy-pobedonosec-obrazok-08092</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/golgofskie_krestiki/golgofa_hrizma_krest_natelynyy_101242</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-georgiy-pobedonosec/velikomuchenik-georgiy-pobedonosec-obrazok-08145</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_braslety_na_ruku/braslet_cepy_spasi_i_sohrani_1051001</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-georgiy-pobedonosec/velikomuchenik-georgiy-pobedonosec-obrazok-08114</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_molitva_da_voskresnet_bog_pravoslavnyy_krest_08330s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-vladimirskoy-bozhey-materi/vladimirskaya-ikona-bozhiey-materi-08325</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/golgofskie_krestiki/golgofskiy_krest_krest_natelynyy_101009</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-vladimirskoy-bozhey-materi/vladimirskaya-ikona-bozhiey-materi-obrazok-08294</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_braslety_na_ruku/reguliruemyy_koghanyy_braslet_dlya_busin_105035_bp</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-vladimirskoy-bozhey-materi/vladimirskaya-ikona-bozhiey-materi-08137-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/golgofskie_krestiki/golgofskiy_krest_pravoslavnyy_krest_08152</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-vladimirskoy-bozhey-materi/vladimirskaya-ikona-bozhiey-materi-obrazok-08245</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_vladimirskoi_boghyey_materi/vladimirskaya_ikona_boghiey_materi_08321</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-vladimirskoy-bozhey-materi/vladimirskaya-ikona-bozhiey-materi-obrazok-08224</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/golgofskie_krestiki/golgofskiy_krest_pravoslavnyy_krest_08115s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-vladimirskoy-bozhey-materi/vladimirskaya-ikona-bozhiey-materi-08321</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy?page=3</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-vladimirskoy-bozhey-materi/vladimirskaya-ikona-bozhiey-materi-08131</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_kazanskoy_boghyey_materi/svyatitely_nikolay_kazanskaya_ikona_boghiey_materi_08045</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-vladimirskoy-bozhey-materi/vladimirskaya-ikona-bozhiey-materi-obrazok-08127</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_vladimirskoi_boghyey_materi/vladimirskaya_ikona_boghiey_materi_obrazok_08127</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-vladimirskoy-bozhey-materi/vladimirskaya-ikona-bozhiey-materi-08406</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/ohrannye_kolyca/kolyco_ornament_iz_vodyanyh_liliy_molitva_prechistoy_boghiey_materi_04012</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-vladimirskoy-bozhey-materi/vladimirskaya-ikona-bozhiey-materi-08137</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/ohrannye_kolyca/pticy_nebesnye_16002</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-kazanskoy-bozhey-materi/kazanskaya-ikona-bozhiey-materi-08344-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/gospody_vsederghitely_deisus_angel_hranitely_08099s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-kazanskoy-bozhey-materi/kazanskaya-ikona-bozhiey-materi-08231-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_korzinka_a010</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-kazanskoy-bozhey-materi/svyatitel-nikolay-kazanskaya-ikona-bozhiey-materi-08045-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_kazanskoy_boghyey_materi/kazanskaya_ikona_boghiey_materi_08033s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-kazanskoy-bozhey-materi/kazanskaya-ikona-bozhiey-materi-08033-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_molitva_krestu_pravoslavnyy_krest_08227</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-kazanskoy-bozhey-materi/kazanskaya-ikona-bozhiey-materi-obrazok-08279</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_valaamskaya_ikona_boghiey_materi_08007</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-kazanskoy-bozhey-materi/kazanskaya-ikona-bozhiey-materi-spas-nerukotvornyy-08314-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_pokrov_presvyatoy_bogorodicy_08064</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-kazanskoy-bozhey-materi/gospod-vsederzhitel-kazanskaya-ikona-bozhiey-08044-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/golgofskie_krestiki/golgofskiy_krest_08052s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-kazanskoy-bozhey-materi/kazanskaya-ikona-bozhiey-materi-08216-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki?page=4</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-kazanskoy-bozhey-materi/kazanskaya-ikona-bozhiey-materi-08022-s</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/ohrannye_kolyca/rybki_hristovy_15005</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-kazanskoy-bozhey-materi/kazanskaya-ikona-bozhiey-materi-08038</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki?page=5</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-kazanskoy-bozhey-materi/kazanskaya-ikona-bozhiey-materi-08344</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_08078</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-kazanskoy-bozhey-materi/kazanskaya-ikona-bozhiey-materi-obrazok-08231</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_molitva_krestu_08367s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-kazanskoy-bozhey-materi/kazanskaya-ikona-bozhiey-materi-08030</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki?page=2</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-kazanskoy-bozhey-materi/kazanskaya-ikona-bozhiey-materi-08313</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy?page=8</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-kazanskoy-bozhey-materi/kazanskaya-ikona-bozhiey-materi-obrazok-08239</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/golgofskie_krestiki/golgofskiy_krest_08052</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-kazanskoy-bozhey-materi/kazanskaya-ikona-bozhiey-materi-08086</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_braslety_na_ruku/braslet_svyatye_mughi_19004</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-kazanskoy-bozhey-materi/kazanskaya-ikona-bozhiey-materi-08033</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/svyataya_muchenica_tatiana_tatyyana_06037</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-kazanskoy-bozhey-materi/kazanskaya-ikona-bozhiey-materi-08429</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_vladimirskoi_boghyey_materi/vladimirskaya_ikona_boghiey_materi_08406</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-kazanskoy-bozhey-materi/gospod-vsederzhitel-kazanskaya-ikona-bozhiey-08044</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_kazanskoy_boghyey_materi/kazanskaya_ikona_boghiey_materi_obrazok_08239</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-kazanskoy-bozhey-materi/kazanskaya-ikona-bozhiey-materi-obrazok-08216</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_braslety_na_ruku/braslet_svyatye_mughi_09004</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-kazanskoy-bozhey-materi/kazanskaya-ikona-bozhiey-materi-spas-nerukotvornyy-08314</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/svyataya_muchenica_lyudmila_06026</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-kazanskoy-bozhey-materi/svyatitel-nikolay-kazanskaya-ikona-bozhiey-materi-08045</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_kazanskoy_boghyey_materi/kazanskaya_ikona_boghiey_materi_08022s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/obrazki-kazanskoy-bozhey-materi/kazanskaya-ikona-bozhiey-materi-08022</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_kazanskoy_boghyey_materi/kazanskaya_ikona_boghiey_materi_obrazok_08279</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/moscheviki-i-skladni-na-sheyu/moschevik-raspyatie-khristovo-s-predstoyaschimi-08343</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_kazanskoy_boghyey_materi/kazanskaya_ikona_boghiey_materi_obrazok_08231</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/moscheviki-i-skladni-na-sheyu/raspyatie-khristovo-s-predstoyaschimi-blzh-08430</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_kazanskoy_boghyey_materi/gospody_vsederghitely_kazanskaya_ikona_boghiey_materi_08044s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/moscheviki-i-skladni-na-sheyu/moschevik-raspyatie-khristovo-s-predstoyaschimi-08354</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_braslety_na_ruku/reguliruemyy_koghanyy_braslet_dlya_busin_105035_b</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/moscheviki-i-skladni-na-sheyu/pravoslavnyy-krestenkolpion-valaamskaya-ikona-08494</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_braslety_na_ruku/svyatoy_georgiy_pobedonosec_psalom_90_ghivyy_v_pomoschi_09003</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/moscheviki-i-skladni-na-sheyu/gospod-vsederzhitel-ikona-bozhiey-materi-08671</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_pravoslavnyy_krest_08153</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/moscheviki-i-skladni-na-sheyu/moschevik-gospod-vsederzhitel-kazanskaya-05.000</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/svyataya_muchenica_dariya_daryya_06014</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/moscheviki-i-skladni-na-sheyu/raspyatie-khristovoenkolpion-deisus-angel-08491</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/svyatoy_blagovernyy_knyazy_aleksandr_nevskiy_08460</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/moscheviki-i-skladni-na-sheyu/gospod-vsederzhitel-kazanskaya-ikona-bozhiey-104.248</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_pokrov_presvyatoy_bogorodicy_08105</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/moscheviki-i-skladni-na-sheyu/spas-nerukotvornyy-moschevik-104.020</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_vladimirskoi_boghyey_materi/vladimirskaya_ikona_boghiey_materi_08131</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/moscheviki-i-skladni-na-sheyu/gospod-vsederzhitel-bozhiya-mater-moschevik-104.007</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/ohrannye_kolyca/vinogradnaya_loza_15004</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/moscheviki-i-skladni-na-sheyu/skladen-psalom-90-104.251</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/svyataya_ravnoapostolynaya_mariya_magdalina_06028</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/moscheviki-i-skladni-na-sheyu/angel-khranitel-golgofa-gospod-vsederzhitel-08303</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_braslety_na_ruku/braslet_svyatye_gheny_09005</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/moscheviki-i-skladni-na-sheyu/vosmikonechnyy-krest-molitva-bogorodice-ikony-08599</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/svyataya_troica_08103s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-braslety-na-ruku/reguliruemyy-kozhanyy-braslet-dlya-busin-105.035-b</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_kazanskoy_boghyey_materi/kazanskaya_ikona_boghiey_materi_08022</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-braslety-na-ruku/kozhanyy-braslet-pod-businy-09001</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_braslety_na_ruku/svyatoy_georgiy_pobedonosec_psalom_90_ghivyy_v_pomoschi_19003</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-braslety-na-ruku/reguliruemyy-kozhanyy-braslet-dlya-busin-105.035-bp</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/golgofskie_krestiki/golgofskiy_krest_08115</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-braslety-na-ruku/braslet-kozhanyy-shnur-spasi-i-sokhrani-105.100</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/svyatitely_ioann_zlatoust_08436</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-braslety-na-ruku/braslet-cep-spasi-i-sokhrani-105.100-1</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/velikomuchenik_panteleimon_celitely_08326</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-braslety-na-ruku/braslet-khrizma-molitva-da-voskresnet-bog-105.233</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_pravoslavnyy_krest_08091s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-braslety-na-ruku/svyatoy-georgiy-pobedonosec-psalom-90-zhivyy-19003</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/sv_nikolay_chudotvorec_chudo_o_treh_korabelyschikah_obrazok_102082</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-braslety-na-ruku/braslet-svyatye-zhyony-19005</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_vladimirskoi_boghyey_materi/vladimirskaya_ikona_boghiey_materi_08325</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-braslety-na-ruku/braslet-svyatye-muzhi-19004</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/golgofskie_krestiki/golgofskiy_krest_molitva_da_voskresnet_bog_08089</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-braslety-na-ruku/svyatoy-georgiy-pobedonosec-psalom-90-zhivyy-09003</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix?page=1</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-braslety-na-ruku/braslet-svyatye-zhyony-09005</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_braslety_na_ruku/braslet_svyatye_gheny_19005</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/pravoslavnye-braslety-na-ruku/braslet-svyatye-muzhi-09004</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/golgofskie_krestiki/golgofskiy_krest_08039</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/okhrannye-kolca/vinogradnaya-loza-16.004</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_prepodobnyy_serafim_sarovskiy_pravoslavnyy_krest_08165</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/okhrannye-kolca/prebyvayuschiy-v-lyubvi-v-boge-prebyvaet-16.006</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_08073</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/okhrannye-kolca/pticy-nebesnye-16.002</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/pravoslavnyy_krest_08139s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/okhrannye-kolca/rybki-khristovy-16.005</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_prepodobnyy_serafim_sorovskiy_pravoslavnyy_krest_08267</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/okhrannye-kolca/vinogradnaya-loza-15.004</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/pravoslavnyy_krest_08153s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/okhrannye-kolca/pticy-nebesnye-15.002</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/golgofskie_krestiki/golgofskiy_krest_08461</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/okhrannye-kolca/rybki-khristovy-15.005</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki?page=7</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/okhrannye-kolca/prebyvayuschiy-v-lyubvi-v-boge-prebyvaet-15.006</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki?page=3</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/okhrannye-kolca/kolco-ornament-iz-vodyanykh-liliy-molitva-04012</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://vecheria.ru/catalog/obrazki_kazanskoy_boghyey_materi/kazanskaya_ikona_boghiey_materi_08344s</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/golgofskie_krestiki/golgofskiy_krest_08465</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki?page=6</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_molitva_krestu_pravoslavnyy_krest_08210</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_vladimirskoi_boghyey_materi/vladimirskaya_ikona_boghiey_materi_obrazok_08224</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_vladimirskoi_boghyey_materi/vladimirskaya_ikona_boghiey_materi_08137</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_svyatitely_nikolay_08162s</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_molitva_da_voskresnet_bog_08013</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_kazanskoy_boghyey_materi/kazanskaya_ikona_boghiey_materi_obrazok_08216</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_kazanskoy_boghyey_materi/kazanskaya_ikona_boghiey_materi_08313</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_vladimirskoi_boghyey_materi/vladimirskaya_ikona_boghiey_materi_obrazok_08294</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_braslety_na_ruku/braslet_hrizma_molitva_da_voskresnet_bog_105233</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_braslety_na_ruku/braslet_koghanyy_shnur_spasi_i_sohrani_105100</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_kazanskoy_boghyey_materi/gospody_vsederghitely_kazanskaya_ikona_boghiey_materi_08044</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_kazanskoy_boghyey_materi/kazanskaya_ikona_boghiey_materi_08030</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_kazanskoy_boghyey_materi/kazanskaya_ikona_boghiey_materi_08231s</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_kazanskoy_boghyey_materi/svyatitely_nikolay_kazanskaya_ikona_boghiey_materi_08045s</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/serafim_sarovskiy_obrazok_08230</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_iisusova_molitva_02208_r</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/ikona_boghiey_materi_semistrelynaya_svt_nikolay_chudotvorec_08109</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_5226</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/svyatitely_spiridon_trimifuntskiy_08386</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/smolenskaya_ikona_boghiey_materi_obrazok_102083</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_kazanskoy_boghyey_materi/kazanskaya_ikona_boghiey_materi_08429</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/prepodobnyy_serafim_sarovskiy_08339s</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_kazanskoy_boghyey_materi/kazanskaya_ikona_boghiey_materi_08216s</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_yablochnyy_spas_02256</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_angel_hranitely_02106</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/ikona_boghiey_materi_znamenie_08338</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_5220</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/iverskaya_ikona_boghiey_materi_obrazok_102127</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/ikona_boghiey_materi_semistrelynaya_08034</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_trubyaschiy_angel_02251</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_svyatoy_cary_i_prorok_david_02119</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_spas_nerukotvornyy_02114</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_vladimirskoi_boghyey_materi/vladimirskaya_ikona_boghiey_materi_08137s</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/svyataya_troica_obrazok_08358s</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_kazanskoy_boghyey_materi/kazanskaya_ikona_boghiey_materi_spas_nerukotvornyy_08314</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/ohrannye_kolyca/vinogradnaya_loza_16004</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/ohrannye_kolyca/rybki_hristovy_16005</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/svyatitely_aleksey_6029_anastasiya_06052</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/spas_nerukotvornyy_obrazok_08143</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/svyatoy_blagovernyy_knyazy_aleksandr_nevskiy_obrazok_08295</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/gospody_vsederghitely_obrazok_08205</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_akvilegii_02233</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_vladimirskoi_boghyey_materi/vladimirskaya_ikona_boghiey_materi_obrazok_08245</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy?page=1</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/svyataya_troica_obrazok_08215</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/prepodobnaya_apollinariya_polina_08315</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/apostol_i_evangelist_mark_08418</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/svyataya_troica_obrazok_08140</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_molitva_o_blizkih_02210</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/svyataya_troica_08103</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_rybki_hristovy_02111</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/svyatoy_blagovernyy_knyazy_aleksandr_nevskiy_08093</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_molitva_optinskih_starcev_02225</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/svyataya_muchenica_nadeghda_06029</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/prepodobnyy_sergiy_radoneghskiy_08133</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/vizantiyskiy_krest_obrazok_08053</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_roghdestvenskaya_zvezda_02235</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_evangelisty_02230</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_blagodaty_02204_r</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_05017</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/prepodobnaya_mariya_egipetskaya_08420</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/svyatitely_nikolay_chudotvorec_obrazok_08291</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_svyataya_troica_02126</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/iverskaya_ikona_boghiey_materi_08410</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_blagodaty_02204</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_procvetshiy_krest_02107</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/ikona_boghiey_materi_sporuchnica_greshnyh_08530</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/ikona_boghiey_materi_otrada_i_uteshenie_08534</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_vera_02205_r</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/ikona_boghiey_materi_znamenie_obrazok_08261</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_nadeghda_02206_r</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_procvetshie_serdca_02203</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_molitva_o_blizkih_02210_r</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_molitva_optinskih_starcev_02225_r</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/tihvinskaya_ikona_boghiey_materi_obrazok_08254</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_ikona_boghiey_materi_semistrelynaya_02120</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_ikona_boghiey_materi_neupivaemaya_chasha_02244</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_pokrov_boghiey_materi_02124</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/svyatitely_nikolay_obrazok_08204</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_molitva_optinskih_starcev_5222</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/feodorovskaya_ikona_boghiey_materi_08397</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/ravnoapostolynyy_imperator_konstantin_08631</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_nadeghda_02206</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_rayskie_pticy_a004</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_lyubovy_02207_r</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_carskie_krugheva_a028chp</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_vinogradnaya_loza_02214</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_svyatitely_luka_arhiepiskop_krymskiy_02118</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/ikona_boghiey_materi_vzygranie_mladenca_08533</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_nezabudki_a035</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/tihvinskaya_ikona_boghiey_materi_08459</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_vera_02205</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_hvala_bogorodice_02247</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_pletenka_a006</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/ikona_boghiey_materi_semistrelynaya_08119</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/vizantiyskiy_krest_obrazok_08053s</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/feodorovskaya_ikona_boghiey_materi_obrazok_08251</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/ikona_boghiey_materi_sporuchnica_greshnyh_08537</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/svyatoy_apostol_i_evangelist_matfey_08426</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_iisusova_molitva_02208</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_trilistnik_a003chp</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/ikona_boghiey_materi_semistrelynaya_obrazok_08248</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_irisy_02229</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_gvozdiki_02234</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_obraz_presvyatoy_bogorodicy_neuvyadaemyy_cvet_02252</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_vladimirskaya_ikona_boghiey_materi_02108</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_lyubovy_02207</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/feodorovskaya_ikona_boghiey_materi_08264s</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_kazanskaya_ikona_boghiey_materi_02101</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_landyshi_02228</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_svyatitely_spiridon_trimifuntskiy_02112</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/ikona_boghiey_materi_otrada_i_uteshenie_08515</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/ikona_bogomateri_radosty_vseh_radostey_umilenie_serafimodiveevskoe_08200</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/ikona_boghiey_materi_semistrelynaya_102206</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/tihvinskaya_ikona_boghiey_materi_obrazok_08207</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/svyatoy_cary_i_prorok_david_psalmopevec_08422</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_bogorodica_devo_raduysya_02269</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_05012</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_pticy_schastyya_a034</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_procvetshiy_krest_a008</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/svyataya_troica_08358</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/svyatitely_nikolay_08018</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/prepodobnaya_apollinariya_obrazok_08178</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/prepodobnyy_serafim_sarovskiy_08339</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_shestikrylyy_serafim_05008s</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/ikona_boghiey_materi_otrada_i_uteshenie_08437</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_niva_a027</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_procvetshiy_krest_05020</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi?page=1</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/ikona_boghiey_materi_znamenie_08334</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/svyataya_ravnoapostolynaya_carica_elena_06017</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/velikomuchenik_panteleimon_celitely_08094</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/svyatitely_nikolay_chudotvorec_obrazok_08292</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_vifleemskaya_zvezda_02213</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_zapovedy_novuyu_dayu_vam_da_lyubite_drug_druga_02253</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_liliya_02215</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/svyatoy_blagovernyy_knyazy_aleksandr_nevskiy_obrazok_08289</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_svyatix/prepodobnyy_sergiy_radoneghskiy_08019</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_vizantiyskie_uzory_a030p</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_pokroviteli_predprinimatelystva_02271</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/obrazki_boghyey_materi/feodorovskaya_ikona_boghiey_materi_obrazok_08264</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_podveska_pchelka_114044</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_solnce_a037</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_spiraly_a009</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_deisus_02238_r</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_otche_nash_02237</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_vyyun_a014p</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_psalom_90_02281r</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_psalom_90_02281</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_shestikrylyy_serafim_02227</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_o_detyah_02270r</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_boghiya_matery_umilenie_02115</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_cvetenie_vechnoy_ghizni_05003</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_sila_kresta_02261_r</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_volna_a005p</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_carskie_krugheva_a028</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_o_zdravii_02245</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_prorok_iona_gospodi_spasi_dushi_nashi_02239</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_deisus_02238</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_polevye_cvety_a024</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_filigrany_a026</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_emalevye_kresty_a062</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_cvetenie_vechnoy_ghizni_05003s</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_hrizma_molitva_da_voskresnet_bog_02274</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_gaudeamus_pomoschy_v_uchebe_02246</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_o_zdravii_02245_r</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_vizantiya_a022</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_almaznyy_rust_a063p</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_vinogradnaya_loza_s_kamnyami_02214k</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_sila_kresta_02261</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_podveska_simvol_lyubvi_114048</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_simvol_semyi_lyubvi_i_vernosti_02212</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_molitva_o_detyah_05025</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_vozlyubi_blighnego_svoego_02255</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_triniti_02201_r</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/troica_boghiya_matery_znamenie_krest_natelynyy_101016</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/gospody_vsederghitely_deisus_angel_hranitely_08099</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/gospody_vsederghitely_tri_svyatitelya_08639s</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/gospody_vsederghitely_tabynskaya_ikona_boghiey_materi_08342</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/spas_nerukotvornyy_svyatitely_nikolay_chudotvorec_krest_natelynyy_101054</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/spas_v_silah_krest_natelynyy_101205</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_pravoslavnyy_krest_08068s</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/voskreseniekrest_natelynyy_101015</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/gospody_vsederghitely_ikona_boghiey_materi_troeruchica_krest_natelynyy_101204</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_svyatitely_nikolay_08340</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_serafim_a019chp</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_molitva_da_voskresnet_bog_08475</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_roza_a020chp</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_deisus_ikona_boghiey_materi_vsecarica_vmch_panteleimon_08302</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/gospody_vsederghitely_tri_svyatitelya_08353</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/gospody_vsederghitely_svyatoy_muchenik_trifon_krest_natelynyy_101087</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_angel_gospodeny_ioann_predtecha_101005</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/spas_nerukotvornyy_svyatitely_nikolay_arhangel_mihail_08050</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_s_predstoyaschimi_apostol_petr_ikona_boghiey_materi_znamenie_s_prorokami_08179s</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_svyataya_troica_svt_nikolay_chudotvorec_mch_trifon_tri_svyatitelya_ikona_boghiey_materi_tolgskaya_angel_hranitely_prp_sergiy_radoneghskiy_svt_spiridon_trimifunskiy_08596c</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_zemlya_blagaya_a007p</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_krestocvet_a012chp</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_08096</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_pravoslavnyy_krest_08070s</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_molitva_da_voskresnet_bog_08330</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_pravoslavnyy_krest_08101</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_semeynaya_05024</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_rayskie_pticy_a004chp</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_vayi_a029p</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_velikomuchenik_georgiy_pobedonosec_pravoslavnyy_krest_08232</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_vyyun_a014chp</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_triniti_02201</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_rayskie_pticy_02236</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_vinogradnaya_grozdy_02232</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_vera_nadeghda_lyubovy_i_maty_ih_sofiya_02254</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_bogorodica_devo_raduysya_02269r</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/nabor_busin_s_molitvoy_simvol_very_02249</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_trilistnik_a003p</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_o_detyah_02270</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_ray_05002</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_reshetka_a061</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/iisusova_molitva_pravoslavnyy_krest_08195</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_otche_nash_02237_r</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki?page=1</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_svyatye_petr_i_fevroniya_02218</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_pokrov_presvyatoy_bogorodicy_08011</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_s_ghemchugom_02209</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/imennaya_busina_svyatitely_nikolay_chudotvorec_02080_02117</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_velikomuchenik_celitely_panteleimon_02104</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_rybki_a032</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_podveska_goluby_114041</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_gvozdiki_boghiya_matery_umilenie_02223</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_molitva_o_detyah_15025</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_molyba_k_boghiey_materi_a017chp</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_serafim_a019</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_hrizma_molitva_da_voskresnet_bog_02274r</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_podveska_liliya_114043</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_svyatitely_nikolay_08282s</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_vinogradnaya_loza_05016</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_pticy_nebesnye_02202</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_vinogradnaya_loza_02214_r</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_svyatye_petr_i_fevroniya_02218_r</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_roza_a020</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_gaudeamus_pomoschy_v_uchebe_02246_r</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_roza_02231</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_carskie_krugheva_a028p</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_blagovest_02224_r</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_niva_a027p</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_s_predstoyaschimi_svyataya_troica_arhangel_mihail_sv_voiny_tihvinskaya_ikona_bm_08199s</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_kannelyury_a060p</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/spas_nerukotvornyy_angel_hranitelykrest_natelynyy_101017</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_molitva_da_voskresnet_bog_08104</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_nezabudki_a035p</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_molitva_da_voskresnet_bog_08090</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/gospody_vsederghitely_tabynskaya_ikona_boghiey_materi_08342s</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_pokroviteli_semyi_i_braka_02248</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/spas_nerukotvornyy_molitva_da_voskresnet_bog_08349</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_08091</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/businy_molitva_optinskih_starcev_02258</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_roza_a020p</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_rozovyy_sad_a013p</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_pletenka_a006p</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_svyataya_blaghennaya_matrona_moskovskaya_02102</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_procvetshiy_krest_a008p</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/vosymikonechnyy_krest_08037</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_deisus_vmch_georgiy_pobedonosec_08126</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_pravoslavnyy_krest_08139</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_molitva_da_voskresnet_bog_08366s</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/spas_nerukotvornyy_kazanskaya_ikona_boghiey_materi_08598</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/gospody_vsederghitely_tri_svyatitelya_08639</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_svyatitely_nikolay_08060</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_08067</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_s_molitvoy_da_voskresnet_bog_pravoslavnyy_krest_08218</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_arhangel_mihail_sv_ioann_zlatoust_i_vasiliy_velikiy_ikona_bm_znamenie_08375s</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_s_predstoyaschimi_svyataya_troica_arhangel_mihail_sv_voiny_tihvinskaya_ikona_boghiey_materi_08199</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_pravoslavnyy_krest_08212</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_deisus_ikona_boghiey_materi_umilenie_apostol_petr_svt_nikolay_chudotvorec_08288</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_svyatitely_nikolay_pravoslavnyy_krest_08282</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/gospody_vsederghitely_valaamskaya_ikona_boghiey_materi_arhangely_uriil_mihail_gavriil_rafail_08483</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_08069</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_pravoslavnyy_krest_08244</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_08058</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/spas_nerukotvornyy_svyatitely_nikolay_arhangel_mihail_08050s</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_08495</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_nikolay_chudotvorec_tri_svyatitelya_08222</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_s_predstoyaschimi_apostol_petr_ikona_boghiey_materi_znamenie_s_prorokami_08179</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/procvete_drevo_kresta_pravoslavnyy_krest_08186</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_s_predstoyaschimi_arhangel_mihail_08001s</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_pokrov_presvyatoy_bogorodicy_vmch_georgiy_pobedonosec_08144s</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_molitva_krestu_pravoslavnyy_krest_08283</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_s_predstoyaschimi_arhangel_mihail_08001</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/gospody_vsederghitely_ikona_boghiey_materi_umilenie_serafimodiveevskaya_08202</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_molitva_da_voskresnet_bog_pravoslavnyy_krest_08226</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_angel_hranitelykrest_natelynyy_101002</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/spas_nerukotvornyy_prp_serafim_sarovskiy_ikona_boghiey_materi_radosty_vseh_radostey_08110</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_pravoslavnyy_krest_08070</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_nikolay_chudotvorec_08246s</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/gospody_vsederghitely_ikona_boghiey_materi_umilenie_serafimodiveevskaya_08203</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/spas_nerukotvornyy_svyatitely_nikolay_chudotvorec_krest_natelynyy_301201</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/gospody_vsederghitely_tri_svyatitelya_08353s</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/gospody_vsederghitely_angel_hranitelykrest_natelynyy_101028</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_svyataya_troica_svt_nikolay_chudotvorec_mch_trifon_tri_svyatitelya_ikona_boghiey_materi_tolgskaya_angel_hranitely_prp_sergiy_radoneghskiy_svt_spiridon_trimifunskiy_08596</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_arhangel_mihail_kazanskaya_ikona_boghiey_materi_krest_natelynyy_101084</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_arhangel_mihail_svyataya_troica_sv_blgv_kn_aleksandr_nevskiy_08268</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_arhangel_mihail_krest_natelynyy_101004</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/gospody_vsederghitely_ikona_boghiey_materi_otrada_i_uteshenie_krest_natelynyy_101061</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/gospody_vsederghitely_pravoslavnyy_krest_08214</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/vosymikonechnyy_krest_molitva_da_voskresnet_bog_08041</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_molitva_krestu_pravoslavnyy_krest_08284</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_korzinka_a010chp</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_korzinochnoe_pletenie_a064chp</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_s_predstoyaschimi_angel_hranitely_kazanskaya_ikona_bm_svyatye_pokroviteli_semyi_08324s</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/krestmoschevik_raspyatie_hristovo_s_predstoyaschimi_blgh_matrona_moskovskaya_08430s</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_velikomuchenik_georgiy_kazanskaya_ikona_b_m_svyatye_boris_i_gleb_08477</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_ikona_boghiey_materi_derghavnaya_101227</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/spasi_i_sohrani_pravoslavnyy_krest_08164</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_molitva_otche_nash_pravoslavnyy_krest_08249</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/trilistnik_pravoslavnyy_krest_08177</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_blagovest_02224</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_nikolay_chudotvorec_tri_svyatitelya_08222s</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_arhangel_mihail_pravoslavnyy_krest_08097s</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_svyatitely_nikolay_08083</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/lilii_pravoslavnyy_krest_08161</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/gospody_vsederghitely_svyatoy_panteleimon_svyatitely_pravoslavnyy_krest_08280</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/procvete_drevo_kresta_pravoslavnyy_krest_08157</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_pokrov_presvyatoy_bogorodicy_08009</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_pokrov_presvyatoy_bogorodicy_08002</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_muchenik_nikita_besogon_08405</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_nikolay_chudotvorec_pravoslavnyy_krest_08246</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_s_predstoyaschimi_angel_hranitely_kazanskaya_ikona_boghiey_materi_svyatye_pokroviteli_semyi_08324</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_pokrov_presvyatoy_bogorodicy_vmch_georgiy_pobedonosec_08144</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_niva_a027chp</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_prepodobnyy_sergiy_radoneghskiy_08180</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/nabor_busin_s_molitvoy_psalom_90_02250</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_sv_carevich_dimitriy_uglichskiy_angel_hranitely_101070</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_spiraly_a009chp</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/gospody_vsederghitely_deisus_ikona_boghiey_materi_vzygranie_mladenca_08500</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_gharpticy_a018chp</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_pravoslavnyy_krest_08192</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_spiraly_a009p</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_zemlya_blagaya_a007chp</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_molitva_da_voskresnet_bog_08355</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_molitva_spasi_i_sohrani_101220</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_molitva_da_voskresnet_bog_pravoslavnyy_krest_08189</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_molitva_da_voskresnet_bog_08366</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_pokrov_presvyatoy_bogorodicy_shesty_svyatyh_08128</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/golgofa_molitva_101240</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/deisus_velikomuchenik_georgiy_svyatoy_blgn_knyazy_aleksandr_nevskiy_08396</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/iisus_hristos_cary_carey_ikona_boghiey_materi_derghavnaya_101261</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_svyatitely_nikolay_08060s</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_slezy_bogorodicy_02226</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/vosymikonechnyy_krest_pravoslavnyy_krest_08168</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_shestikrylyy_serafim_05008</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_deisus_spas_nerukotvornyy_molitvy_krestu_08233</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_procvetshie_serdca_02259</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_molitva_svyatoy_troice_a065chp</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_ikona_boghiey_materi_mlekopitatelynica_101213</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_pokrov_presvyatoy_bogorodicy_08123</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_arhangel_mihail_08097</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_bm_znamenie_svyatitely_nikolay_08350</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/chetyrehkonechnyy_krest_08597</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/pravoslavnyy_krest_08495s</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/pravoslavnyy_krest_08483s</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_kolokolychik_05022</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_deisus_spas_nerukotvornyy_pokrov_presvyatoy_bogorodicy_pravoslavnyy_krest_08266</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_arhangel_mihail_svyatiteli_ioann_zlatoust_i_vasiliy_velikiy_ikona_boghiey_materi_znamenie_08375</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/businy_molitva_k_svyatoy_blaghennoy_matrone_moskovskoy_02262</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_krest_hranitely_vsey_vselennoy_pravoslavnyy_krest_08194</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_krest_natelynyy_101010</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_rozovyy_sad_a013chp</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_medovyy_spas_02257</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/procvete_drevo_kresta_08407</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_pravoslavnyy_krest_08132</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_molitva_da_voskresnet_bog_08090s</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_businy/busina_korzinochnoe_pletenie_a064p</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_vladimirskaya_ikona_boghiey_materi_08156</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_pokrov_presvyatoy_bogorodicy_08008</loc>
-    <lastmod>2019-12-31</lastmod>
-  </url>
-  <url>
-    <loc>https://vecheria.ru/catalog/pravoslavnye_natelynye_krestiki/raspyatie_hristovo_deisus_spas_nerukotvornyy_molitvy_krestu_08233s</loc>
-    <lastmod>2019-12-31</lastmod>
+    <loc>https://vecheria.ru/catalog/shnurki-i-gaytany/kozhanyy-shnurok-s-perekhodnikom-90014</loc>
+    <lastmod>2020-01-23T07:45:08+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
 </urlset>
