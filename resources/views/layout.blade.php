@@ -165,11 +165,12 @@
         k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
       })
       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-      
       ym(47722900, "init", {
         clickmap: true,
         trackLinks: true,
-        accurateTrackBounce: true
+        accurateTrackBounce: true,
+        webvisor: true,
+        ecommerce: "dataLayer"
       });
     </script><!--/Yandex.Metrika counter -->
     <script>
