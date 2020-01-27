@@ -17,3 +17,7 @@
       include ../item/item
       +items('3')
       | {{$items->render()}}
+      | @if ($category_comment)
+      .catalog__comment
+        p {!! $category_comment !!}
+      | @endif

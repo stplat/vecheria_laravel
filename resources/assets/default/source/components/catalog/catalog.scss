@@ -156,5 +156,25 @@
     background-color: $orange-color;
     color: #FFFFFF;
   }
+}
 
+.catalog__comment {
+  margin: 30px 0 0;
+
+  p {
+    font-size: 15px;
+    color: $text-color-opacity;
+    font-weight: 300;
+    line-height: 22px;
+  }
+
+  a {
+    color: $orange-color-hover;
+    border-bottom: 1px solid $orange-color;
+    transition: border-color 0.05s;
+
+    .no-touch &:hover {
+      border-color: transparent;
+    }
+  }
 }

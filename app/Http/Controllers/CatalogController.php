@@ -30,13 +30,14 @@ class CatalogController extends Controller {
       $sort = $request->input('orderby') ? $request->input('orderby') : 'ASC';
 
       $items = DB::table('items')->join('categories', 'items.subcategory_id', '=', 'categories.id')
-        ->select('items.*', 'categories.plug as subcategory_plug', 'subcategory')->where('categories.plug', $category_plug)
+        ->select('items.*', 'categories.plug as subcategory_plug', 'subcategory', 'categories.comment')->where('categories.plug', $category_plug)
         ->orderBy('price', $sort)
         ->paginate($limit);
 
       $categories_page = DB::table('categories')->where('plug', $category_plug)->get();
 
       $subcategory = $items->items()[0]->subcategory;
+      $category_comment = $items->items()[0]->comment;
 
       $keywords = $categories_page[0]->meta_keywords;
       $description = $categories_page[0]->meta_description;
@@ -65,7 +66,7 @@ class CatalogController extends Controller {
 
 
       } else {
-        return view('catalog', compact('items', 'subcategory', 'keywords', 'description', 'title', 'cart_count', 'callback', 'canonical'));
+        return view('catalog', compact('items', 'subcategory', 'keywords', 'description', 'title', 'cart_count', 'callback', 'canonical', 'category_comment'));
       }
     } else {
       abort('404');

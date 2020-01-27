@@ -84,6 +84,10 @@
                     </div>
                   </div>@endforeach
                 </div>{{$items->render()}}
+        @if ($category_comment)
+        <div class="catalog__comment">
+          <p>{!! $category_comment !!}</p>
+        </div>@endif
       </div>
     </div>
   </div>

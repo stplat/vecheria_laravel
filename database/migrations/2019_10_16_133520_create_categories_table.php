@@ -20,6 +20,7 @@ class CreateCategoriesTable extends Migration {
       $table->text('meta_keywords');
       $table->text('meta_description');
       $table->text('meta_title');
+      $table->text('comment');
       $table->timestamps();
     });
   }
