@@ -80,7 +80,7 @@
       </div>
     </header>
 <div class="menu__container">
-  <div class="container">
+  <nav class="container">
     <ul class="menu">@foreach ($menu as $menu_items)
       <li><span class="menu__plug">{{$menu_items['category']}}</span>
         <ul class="menu__submenu">@foreach ($menu_items['subcategory'] as $plug => $subcategory)
@@ -88,7 +88,7 @@
         </ul>
       </li>@endforeach
     </ul>
-  </div>
+  </nav>
 </div>@yield ('content')
     <footer class="footer">
       <div class="footer__top">
