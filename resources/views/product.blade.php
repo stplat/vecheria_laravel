@@ -44,8 +44,11 @@
             <li><span>Материал:</span><span>{{$items->material}}</span></li>@endif
             @if ($items->technic)
             <li><span>Техника:</span><span>{{$items->technic}}</span></li>@endif
+            @if ($items->dimension)
+            <li><span>Размеры:</span><span>{{$items->dimension}}</span></li>@endif
             <li><span>Наличие:</span><span class="green">на складе</span></li>
           </ul>
+          <div class="product__comment">@if ($items->comment)<span>{{$items->comment}}</span>@endif</div>
         </div>
         <div class="product__holy">
           <p>Изделие освящено</p>
@@ -59,13 +62,13 @@
         </div>
       </div>
     </div>
-    <div class="product__description">
+    <div class="product__description">@if ($items->description)
 <div class="product-desc">
   <ul class="product-desc__tab">
     <li>Описание</li>
   </ul>
   <div class="product_desc__body"><p><!--noindex-->{{$items->description}}<!--/noindex--></p></div>
-</div>
+</div>@endif
     </div>
   </div>
     <div class="popup js-popup-buy">

@@ -31,9 +31,18 @@
             span Техника:
             span {{$items->technic}}
           | @endif
+          | @if ($items->dimension)
+          li
+            span Размеры:
+            span {{$items->dimension}}
+          | @endif
           li
             span Наличие:
             span.green на складе
+        .product__comment
+          | @if ($items->comment)
+          span {{$items->comment}}
+          | @endif
       .product__holy
         p Изделие освящено
       .product__row
