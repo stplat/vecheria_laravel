@@ -13,7 +13,24 @@
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700&amp;display=swap" rel="stylesheet">
     <title>{{$title}}</title>
   <link rel="apple-touch-icon" sizes="57x57" href="icons-d559c67f5b8efe9ac3b3ac5881dbf8f9/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="icons-d559c67f5b8efe9ac3b3ac5881dbf8f9/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="icons-d559c67f5b8efe9ac3b3ac5881dbf8f9/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="icons-d559c67f5b8efe9ac3b3ac5881dbf8f9/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="icons-d559c67f5b8efe9ac3b3ac5881dbf8f9/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="icons-d559c67f5b8efe9ac3b3ac5881dbf8f9/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="icons-d559c67f5b8efe9ac3b3ac5881dbf8f9/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="icons-d559c67f5b8efe9ac3b3ac5881dbf8f9/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="icons-d559c67f5b8efe9ac3b3ac5881dbf8f9/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="stack"><meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="stack"><link rel="icon" type="image/png" sizes="32x32" href="icons-d559c67f5b8efe9ac3b3ac5881dbf8f9/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="icons-d559c67f5b8efe9ac3b3ac5881dbf8f9/favicon-16x16.png"><link rel="shortcut icon" href="icons-d559c67f5b8efe9ac3b3ac5881dbf8f9/favicon.ico"></head>
-  <body>
+  <body><!-- Yandex.Metrika counter -->
+    <script>
+      (function (m, e, t, r, i, k, a) {
+        m[i] = m[i] || function () {
+          (m[i].a = m[i].a || []).push(arguments)
+        };
+        m[i].l = 1 * new Date();
+        k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+      })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+      ym(47722900, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+        ecommerce: "dataLayer"
+      });
+    </script><!--/Yandex.Metrika counter -->
     <style type="text/css">
       .no-webp .slider__content {
         background: url(/images/banner_1.png) no-repeat right, url(/images/banner_1-bg.png);
@@ -155,24 +172,7 @@
             </div>@endif
           </div>
         </div>
-    <script src="/js/main.js"></script><!-- Yandex.Metrika counter -->
-    <script>
-      (function (m, e, t, r, i, k, a) {
-        m[i] = m[i] || function () {
-          (m[i].a = m[i].a || []).push(arguments)
-        };
-        m[i].l = 1 * new Date();
-        k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
-      })
-      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-      ym(47722900, "init", {
-        clickmap: true,
-        trackLinks: true,
-        accurateTrackBounce: true,
-        webvisor: true,
-        ecommerce: "dataLayer"
-      });
-    </script><!--/Yandex.Metrika counter -->
+    <script src="/js/main.js"></script>
     <script>
       (function () {
         window['yandexChatWidgetCallback'] = function () {
