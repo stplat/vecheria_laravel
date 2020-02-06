@@ -90,17 +90,10 @@
           </div>
           <div class="header__logo"><span itemprop="name" hidden>«ВЕЧЕРИЯ»</span><a class="logo" href="/"><img src="/images/logo.svg" alt="Интернет-магазин ювелирных православных изделий" title="Интернет-магазин ювелирных православных изделий"></a>
             <div class="header__search">
-<div class="search">
-  <div class="search__select">
-    <select>
-      <option>В каталоге</option>
-    </select>
-  </div>
-  <div class="search__input">
-    <input placeholder="Поиск по названию или артикулу">
-  </div>
-  <div class="search__button"><a href=""></a></div>
-</div>
+<form class="header-search" method="GET" action="/search">
+  <input class="header-search__input" placeholder="Поиск по названию или артикулу" name="search">
+  <button class="header-search__button"></button>
+</form>
             </div>
           </div>
           <div class="header__cart">

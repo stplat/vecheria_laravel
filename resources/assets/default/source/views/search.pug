@@ -3,15 +3,17 @@
 .container
   include ../components/breadcrumbs/breadcrumbs
   +breadcrumbs('Поиск')
-  .catalog
-    .catalog__title По поисковому запросу:
-      h1 Добрый вечер
+  .catalog.js-search
+    .catalog__title
+      span Поисковый запрос -
+      h1 {{$search_str}}
     .catalog__container
       .catalog__content
         .catalog__top-panel
           .catalog__total
-            p Товары, соответствующие критериям поиска
+            p показано товаров: {{$items->count()}} из {{$items->total()}} ед.
         include ../components/item/item
+        +items('4')
 
 
 | @endsection

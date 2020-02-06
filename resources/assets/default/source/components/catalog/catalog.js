@@ -2,7 +2,7 @@ import axios from 'axios';
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  if (document.querySelector('.catalog') !== null) {
+  if (document.querySelector('.js-catalog') !== null) {
 
     const token = document.head.querySelector('meta[name="csrf-token"]');
     const subcategoryPath = document.querySelector('.filter-section__link.is-active').getAttribute('href');

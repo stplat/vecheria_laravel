@@ -6,7 +6,7 @@
       <li><a class="breadcrumb__link" href="/">Главная</a></li>
       <li>{{$subcategory}}</li>
     </ul>
-  <div class="catalog">
+  <div class="catalog js-catalog">
     <div class="catalog__title">
       <h1>{{$subcategory}}</h1>
     </div>

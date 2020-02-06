@@ -6,6 +6,11 @@
 }
 
 .catalog__title {
+
+  span {
+    font-weight: 300;
+  }
+
   h1 {
     color: $text-color-opacity;
     font-size: 18px;

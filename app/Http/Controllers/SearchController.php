@@ -15,10 +15,10 @@ class SearchController extends Controller {
    * @return \Illuminate\Http\Response
    */
 
-  public function index() {
-    $keywords = 'православная, лавка, изделия, крестики, бухвицы, браслеты, ручная работа, освещенные';
-    $description = 'Безналичный и наличный расчет';
-    $title = 'Способы оплаты в интернет-магазине православных изделий "Вечерия"';
+  public function index(Request $request) {
+    $keywords = '';
+    $description = 'Поиск товаров по артикулу или названию';
+    $title = 'Поиск товаров по артикулу или названию';
     $callback = Session::get('callback') ?: Session::get('callback');
     $cart_count = 0;
 
@@ -30,6 +30,24 @@ class SearchController extends Controller {
 
     $canonical = $this->canonical;
 
-    return view('search', compact('keywords', 'description', 'title', 'cart_count', 'callback', 'canonical'));
+    if ($request->input('search') !== '') {
+      $items = DB::table('items')->get();
+      $search_str = mb_strtolower((string)$request->input('search'));
+      $id = [];
+
+      foreach ($items as $value) {
+        $name = mb_strtolower((string)$value->name);
+
+        if (strpos($name, $search_str) !== false) {
+          array_push($id, $value->id);
+        }
+      }
+
+      $items = DB::table('items')->leftJoin('categories', 'items.subcategory_id', '=', 'categories.id')
+        ->select('items.*', 'categories.plug as subcategory_plug')->whereIn('items.id', $id)->paginate();
+
+      return view('search', compact('keywords', 'description', 'title', 'cart_count', 'callback', 'canonical', 'search_str', 'items'));
+    }
+
   }
 }
