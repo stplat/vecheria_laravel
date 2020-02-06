@@ -10,6 +10,7 @@
     color: $text-color-opacity;
     font-size: 18px;
     margin: 0 0 20px 0;
+    display: inline-block;
 
     @media only screen and (max-width: 768px) {
       margin: 0;

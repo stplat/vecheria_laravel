@@ -1,10 +1,6 @@
 /* Общие стили */
 @import 'components/_defaults/defaults';
 
-/* Пользовательские Шрифты */
-// @import 'fonts/fontello/fontello';
-// @import 'fonts/FiraSans/FiraSans';
-
 /* Компоненты */
 @import 'components/header/header';
 @import 'components/logo/logo';
@@ -23,6 +19,7 @@
 @import 'components/cart/cart';
 @import 'components/popup/popup';
 @import 'components/error404/error404';
+@import 'components/search/search';
 
 @import '~swiper/css/swiper.min.css';
 

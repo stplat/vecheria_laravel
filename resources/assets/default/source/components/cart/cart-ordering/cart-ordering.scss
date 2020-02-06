@@ -112,12 +112,6 @@
       font-weight: 300;
     }
 
-    &::placeholder {
-      color: $text-color-opacity;
-      opacity: 0.8;
-      font-weight: 300;
-    }
-
     @media only screen and (max-width: 768px) {
       width: 100%;
     }

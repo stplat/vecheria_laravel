@@ -1,0 +1,18 @@
+| @extends ('layout')
+| @section('content')
+.container
+  include ../components/breadcrumbs/breadcrumbs
+  +breadcrumbs('Поиск')
+  .catalog
+    .catalog__title По поисковому запросу:
+      h1 Добрый вечер
+    .catalog__container
+      .catalog__content
+        .catalog__top-panel
+          .catalog__total
+            p Товары, соответствующие критериям поиска
+        include ../components/item/item
+
+
+| @endsection
+

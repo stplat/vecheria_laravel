@@ -89,6 +89,11 @@ const config = merge([
         template: PATHS.source + '/views/404.pug',
         inject: false,
       }),
+      new HtmlWebpackPlugin({
+        filename: '../resources/views/search.blade.php',
+        template: PATHS.source + '/views/search.pug',
+        inject: false,
+      }),
     ],
   },
   images(),

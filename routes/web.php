@@ -22,6 +22,8 @@ Route::get('/contacts', 'ContactsController@index');
 
 Route::get('/cart', 'CartController@index');
 
+Route::get('/search', 'SearchController@index');
+
 Route::get('/cart/addSession', function () {
   abort('404');
 });
@@ -44,7 +46,6 @@ Route::get('/buy', function () {
 Route::get('/ordering', function () {
   abort('404');
 });
-
 
 
 Route::post('/callback', 'CallbackController@index');

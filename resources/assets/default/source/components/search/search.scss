@@ -1,0 +1,97 @@
+/* Переменные */
+@import '../_defaults/variables';
+
+.search {
+  display: inline-flex;
+  //box-shadow: 1px 1px 5px rgba(0,0,0,.3);
+}
+
+.search__select {
+  background: $orange-color;
+  position: relative;
+  border-radius: 4px 0 0 4px;
+
+  select {
+    appearance: none;
+    font-family: $font-family;
+    background-color: transparent;
+    color: #FFFFFF;
+    font-size: 15px;
+    padding: 8px 30px 8px 12px;
+    position: relative;
+    height: 34px;
+    cursor: pointer;
+  }
+
+  &:before {
+    content: '\E807';
+    font-family: $font-icons;
+    position: absolute;
+    color: #FFFFFF;
+    right: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 13px;
+  }
+}
+
+.search__input {
+
+  input {
+    height: 34px;
+    background: #FFFFFF;
+    font-size: 13px;
+    width: 250px;
+    padding: 0 0 0 15px;
+    font-family: $font-family;
+    color: $text-color;
+    border: 1px solid #CCCCCC;
+    outline: none;
+    font-weight: 300;
+    overflow: hidden;
+    resize: none;
+
+    &::placeholder {
+      color: $text-color-opacity;
+      opacity: 0.8;
+      font-weight: 300;
+    }
+
+    &:focus {
+      border-color: $orange-color;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(202, 169, 113, 0.3)
+    }
+  }
+}
+
+.search__button {
+  border-radius: 0 4px 4px 0;
+  overflow: hidden;
+
+  a {
+    background: $orange-color;
+    width: 34px;
+    height: 34px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.15s;
+
+    &:after {
+      content: '\E811';
+      font-family: $font-icons;
+      color: #FFFFFF;
+    }
+
+    .no-touch &:hover,
+    &:active,
+    &.is-active {
+      background-color: $orange-color-hover;
+    }
+
+    &:active,
+    &.is-active {
+      box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.25);
+    }
+  }
+}

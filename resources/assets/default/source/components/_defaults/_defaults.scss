@@ -67,6 +67,7 @@ a {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+  position: relative;
 
   body > & {
     flex-grow: 1;
@@ -83,13 +84,4 @@ a {
     }
   }
 }
-
-/*img, source {
-  opacity: 1;
-  transition: opacity 0.3s;
-}
-
-img[data-src], source[data-src] {
-  opacity: 0;
-}*/
 
