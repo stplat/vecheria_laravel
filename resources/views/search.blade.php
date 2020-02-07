@@ -11,10 +11,10 @@
       <h1>{{$search_str}}</h1>
     </div>
     <div class="catalog__container">
-      <div class="catalog__content">
+      <div class="catalog__content">@if ($items)
         <div class="catalog__top-panel">
           <div class="catalog__total">
-            <p>показано товаров: {{$items->count()}} из {{$items->total()}} ед.</p>
+            <p>найдено товаров: {{$items->count()}} из {{$items->total()}} ед.</p>
           </div>
         </div>
                 <div class="item__container">@foreach ($items as $key => $item)
@@ -34,7 +34,12 @@
                     <div class="item__button"><a class="button button--small" href="/catalog/{{$item->subcategory_plug}}/{{$item->plug}}">Подробнее</a>
                     </div>
                   </div>@endforeach
-                </div>
+                </div>@else
+        <div class="catalog__top-panel">
+          <div class="catalog__total">
+            <p>по данному запросу ничего не найдено</p>
+          </div>
+        </div>@endif
       </div>
     </div>
   </div>

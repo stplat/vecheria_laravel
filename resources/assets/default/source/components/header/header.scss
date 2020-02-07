@@ -45,6 +45,11 @@
   position: absolute;
   top: -68px;
   right: 15px;
+
+  @media only screen and (max-width: 768px) {
+    position: static;
+    padding: 10px 0 0;
+  }
 }
 
 .header__logo {

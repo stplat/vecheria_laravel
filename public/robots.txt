@@ -4,3 +4,5 @@ Sitemap: https://vecheria.ru/sitemap.xml
 Disallow: /cart
 Disallow: /catalog*?
 Disallow: /catalog*_
+Disallow: /search/
+Disallow: /search*?

@@ -10,8 +10,8 @@
   height: 34px;
   background: #FFFFFF;
   font-size: 13px;
-  width: 280px;
-  padding: 0 0 0 10px;
+  width: 250px;
+  text-indent: 10px;
   font-family: $font-family;
   color: $text-color;
   border: 1px solid #CCCCCC;
@@ -19,7 +19,11 @@
   font-weight: 300;
   overflow: hidden;
   resize: none;
+  border-radius: 0;
   border-radius: 4px;
+  appearance: none;
+  line-height: 34px;
+
 
   &::placeholder {
     color: $text-color-opacity;

@@ -91,7 +91,7 @@
           <div class="header__logo"><span itemprop="name" hidden>«ВЕЧЕРИЯ»</span><a class="logo" href="/"><img src="/images/logo.svg" alt="Интернет-магазин ювелирных православных изделий" title="Интернет-магазин ювелирных православных изделий"></a>
             <div class="header__search">
 <form class="header-search" method="GET" action="/search">
-  <input class="header-search__input" placeholder="Поиск по названию или артикулу" name="search">
+  <input class="header-search__input" type="search" placeholder="Поиск по названию или артикулу" name="search">
   <button class="header-search__button"></button>
 </form>
             </div>
