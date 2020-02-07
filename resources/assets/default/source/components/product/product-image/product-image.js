@@ -6,12 +6,13 @@ $(document).ready(function () {
     const preview = document.querySelector('.product-image__preview');
     const perviewButton = preview.querySelectorAll('li');
 
-    if (document.querySelectorAll('.no-touch').length) {
+    /*if (document.querySelectorAll('.no-touch').length) {
       $(showcase).blowup({
         "width": 270,
-        "height": 270
+        "height": 270,
+        "scale": 2,
       });
-    }
+    }*/
 
     [...perviewButton].forEach((button) => {
       button.addEventListener('click', function (e) {
@@ -19,10 +20,11 @@ $(document).ready(function () {
         showcase.previousElementSibling.srcset = this.querySelector('img').src;
 
         if (!document.querySelector('.no-touch')) return;
-        $(showcase).blowup({
+        /*$(showcase).blowup({
           "width": 270,
-          "height": 270
-        });
+          "height": 270,
+          "scale": 2,
+        });*/
         e.preventDefault();
       });
     });
