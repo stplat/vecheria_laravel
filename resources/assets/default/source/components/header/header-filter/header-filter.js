@@ -7,7 +7,7 @@ function raf(fn) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  if (document.querySelectorAll('.catalog').length) {
+  if (document.querySelectorAll('.js-catalog').length) {
     const page = document.querySelector('body');
     const button = document.querySelector('.header-filter');
     const filter = document.querySelector('.filter');
