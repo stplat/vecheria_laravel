@@ -47,14 +47,14 @@
             @if ($items->dimension)
             <li><span>Размеры:</span><span>{{$items->dimension}}</span></li>@endif
             <li><span>Наличие:</span><span class="green">на складе</span></li>
-          </ul>
-          <div class="product__comment">@if ($items->comment)<span>{{$items->comment}}</span>@endif</div>
+          </ul>@if ($items->comment)
+          <div class="product__comment">{!! $items->comment !!}</div>@endif
         </div>
         <div class="product__holy">
           <p>Изделие освящено</p>
         </div>
         <div class="product__row">@if (!$in_cart)
-          <div class="product__button"><a class="button button--red" href="#">В корзину</a>
+          <div class="product__button"><a class="button button--red" href="#" onclick="ym(&quot;47722900&quot;, &quot;reachGoal&quot;, &quot;CART&quot;); return true;">В корзину</a>
           </div>
           <div class="product__buy"><span class="js-button-buy">Быстрая покупка</span></div>@else
           <div class="product__alert">Товар в корзине</div>

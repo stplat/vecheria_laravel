@@ -12,12 +12,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 
   picture, img {
     max-height: 100%;
     max-width: 100%;
     display: inline-block;
-    //position: relative;
+
+  }
+
+  img {
+    position: relative;
   }
 }
 

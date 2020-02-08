@@ -39,17 +39,16 @@
           li
             span Наличие:
             span.green на складе
-        .product__comment
-          | @if ($items->comment)
-          span {{$items->comment}}
-          | @endif
+        | @if ($items->comment)
+        .product__comment {!! $items->comment !!}
+        | @endif
       .product__holy
         p Изделие освящено
       .product__row
         include ../button/button
         | @if (!$in_cart)
         .product__button
-          +button('В корзину', 'button--red', '#')
+          +button('В корзину', 'button--red', '#', 'ym("47722900", "reachGoal", "CART"); return true;')
         .product__buy
           span.js-button-buy Быстрая покупка
         | @else

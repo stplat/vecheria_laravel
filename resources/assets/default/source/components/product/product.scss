@@ -157,6 +157,16 @@
   color: $text-color-opacity;
   line-height: 18px;
   font-weight: 300;
+
+  & .red {
+    color: $red-color;
+    font-weight: 500;
+  }
+
+  & .green {
+    color: $green-text;
+    font-weight: 500;
+  }
 }
 
 .product__description {

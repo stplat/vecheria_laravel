@@ -29,12 +29,19 @@ document.addEventListener('DOMContentLoaded', () => {
           slidesPerView: 4
         },
         769: {
-          spaceBetween: 15,
+          spaceBetween: -50,
+          slidesOffsetAfter: -60,
           slidesPerView: 3
         },
-        481: {
-          spaceBetween: 10,
+        500: {
+          spaceBetween: -50,
+          slidesOffsetAfter: -60,
           slidesPerView: 2
+        },
+        0: {
+          spaceBetween: -50,
+          slidesOffsetAfter: -60,
+          slidesPerView: 1
         },
       }
 
