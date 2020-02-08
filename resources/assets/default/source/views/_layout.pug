@@ -14,7 +14,7 @@ html(lang="ru")
     title {{$title}}
   body
     <!-- Yandex.Metrika counter -->
-    //script.
+    script.
       (function (m, e, t, r, i, k, a) {
         m[i] = m[i] || function () {
           (m[i].a = m[i].a || []).push(arguments)
@@ -57,7 +57,7 @@ html(lang="ru")
     include ../components/popup/popup
     +callback()
     script(src=jsPath)
-    //script.
+    script.
       (function () {
         window['yandexChatWidgetCallback'] = function () {
           try {
