@@ -6,6 +6,7 @@
   span.header-nav__link.header-nav__link--cat Список категорий
   .header-nav__sub
     | @foreach ($menu as $menu_items)
+    .header-nav__group {{$menu_items['category']}}
     | @foreach ($menu_items['subcategory'] as $plug => $subcategory)
     a.header-nav__link(href="/catalog/{{$plug}}") {{$subcategory}}
     | @endforeach

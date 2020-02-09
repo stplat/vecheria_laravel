@@ -1,0 +1,37 @@
+/* Переменные */
+@import '../_defaults/variables';
+
+.up {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  right: 20px;
+  bottom: 100px;
+  background: #CCCCCC;
+  opacity: 0.9;
+  border-radius: 4px;
+  color: $text-color-opacity;
+  transition: color 0.08s, background-color 0.08s;
+  z-index: 999;
+  display: none;
+
+  &:after {
+    content: '\E809';
+    font-family: $font-icons;
+    font-size: 34px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+  }
+
+  .no-touch &:hover {
+    background-color: $orange-color;
+    color: #FFFFFF;
+  }
+
+  @media only screen and (max-width: 768px) {
+    right: 10px;
+    bottom: 80px;
+  }
+}

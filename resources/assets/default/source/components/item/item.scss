@@ -25,13 +25,13 @@
 
     @media only screen and (max-width: 768px) {
       & {
-        width: calc(100% / 2 - 15px)!important;
+        width: calc(100% / 2 - 15px) !important;
       }
     }
 
     @media only screen and (max-width: 480px) {
       & {
-        width: calc(100% / 1 - 15px)!important;
+        width: calc(100% / 1 - 15px) !important;
       }
     }
   }
@@ -44,7 +44,7 @@
 
     @media only screen and (max-width: 480px) {
       & {
-        width: calc(100% / 1 - 15px)!important;
+        width: calc(100% / 1 - 15px) !important;
       }
     }
   }
@@ -84,12 +84,12 @@
   &:after {
     content: "";
     width: 5px;
-    height: 4px;
+    height: 6px;
     display: inline-block;
     border-radius: 4px 8px 0 0;
     position: absolute;
-    right: -5px;
-    top: 1px;
+    right: -4px;
+    top: 0;
     background: #ac8b53;
   }
 }
@@ -148,6 +148,7 @@
 
 .item__price {
   text-align: center;
+  padding: 0 0 20px;
 
   p {
     font-size: 22px;
@@ -164,7 +165,7 @@
 
 .item__button {
   padding: 20px 0;
-  display: inline-block;
+  display: none;
   width: 150px;
 }
 
