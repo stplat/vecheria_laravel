@@ -1,14 +1,11 @@
 /* Переменные */
 @import '../_defaults/variables';
 @import './filter-switch/filter-switch';
-@import './filter-section/filter-section';
+@import './filter-box/filter-box';
+@import './filter-slide-box/filter-slide-box';
 
 .filter {
   font-size: 14px;
-  border-radius: 4px;
-  overflow: hidden;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
-  background: #FFFFFF;
 
   &.is-display {
     display: block;
@@ -27,11 +24,12 @@
     height: calc(100% - 47px);
     margin: 0;
     overflow-y: auto;
-    z-index: 100;
+    z-index: 1000;
     right: -100%;
     display: none;
     opacity: 0;
     transition: right 0.20s, opacity 0.20s;
+    background: #F9F9FA;
   }
 }
 

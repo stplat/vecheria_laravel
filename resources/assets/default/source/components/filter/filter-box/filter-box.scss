@@ -1,0 +1,22 @@
+/* Переменные */
+@import '../../_defaults/variables';
+
+.filter-box {
+  overflow: hidden;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+  background: #FFFFFF;
+  border-radius: 4px 4px;
+}
+
+.filter-box__head {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 15px 20px;
+  background: $blue-color;
+  font-size: 16px;
+
+}
+
+.filter-box__body {
+
+}

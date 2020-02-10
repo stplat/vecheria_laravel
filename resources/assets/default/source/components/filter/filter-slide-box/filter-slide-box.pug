@@ -1,0 +1,12 @@
+.filter-slide-box
+  | @foreach ($menu as $menu_items)
+  .filter-slide-box__head {{$menu_items['category']}}
+  .filter-slide-box__body
+    | @foreach ($menu_items['subcategory'] as $plug => $subcategory_name)
+    | @if ($subcategory_name == $subcategory)
+    a.filter-slide-box__link(href!="/catalog/{{$plug}}", class!="is-active") {{$subcategory_name}}
+    | @else
+    a.filter-slide-box__link(href!="/catalog/{{$plug}}") {{$subcategory_name}}
+    | @endif
+    | @endforeach
+  | @endforeach

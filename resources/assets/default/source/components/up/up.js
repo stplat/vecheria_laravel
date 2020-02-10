@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const up = document.querySelector('.up');
 
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 200) {
+    if ($(this).scrollTop() > 400) {
       $(up).fadeIn();
     } else {
       $(up).fadeOut();

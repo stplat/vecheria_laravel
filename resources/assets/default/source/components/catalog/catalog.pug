@@ -1,19 +1,25 @@
 .catalog.js-catalog
-  .catalog__title
-    h1 {{$subcategory}}
   .catalog__container
     .catalog__aside
       .catalog__filter
         include ../filter/filter
     .catalog__content
+      .catalog__title
+        h1 {{$subcategory}}
       .catalog__top-panel
-        .catalog__total
-          p показано товаров: {{$items->count()}} из {{$items->total()}} ед.
         .catalog__select
+          span На странице:
           select(name="per_page")
-            option(value="24", selected="selected") показывать по 24
-            option(value="36") показывать по 36
-            option(value="42") показывать по 42
+            option(value="24", selected="selected") 24 изделия
+            option(value="36") 36 изделия
+            option(value="42") 42 изделия
+        .catalog__select
+          span Сортировка:
+          select(name="orderby")
+            option(value="asc", selected="selected") по Увеличению цены
+            option(value="desc") по Уменьшению цены
+        .catalog__total Показано: <span>{{$items->count()}} изд.</span>
+
       include ../item/item
       +items('3')
       | {{$items->render()}}

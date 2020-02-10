@@ -12,13 +12,14 @@
   }
 
   h1 {
-    color: $text-color-opacity;
-    font-size: 18px;
-    margin: 0 0 20px 0;
+    color: $text-color;
+    font-size: 22px;
+    margin: 0 0 25px 0;
     display: inline-block;
+    font-weight: 500;
 
     @media only screen and (max-width: 768px) {
-      margin: 0;
+      margin: 0 0 15px;
     }
   }
 }
@@ -26,7 +27,7 @@
 .catalog__container {
   display: flex;
   height: 100%;
-  margin: 0 -7.5px;
+  margin: 0 -12.5px;
 
   @media only screen and (max-width: 768px) {
     flex-wrap: wrap;
@@ -36,13 +37,17 @@
 .catalog__aside,
 .catalog__content {
   flex-grow: 1;
-  margin: 0 7.5px;
+  margin: 0 12.5px;
 }
 
 .catalog__aside {
-  width: 280px;
+  width: 265px;
   flex-shrink: 0;
   flex-grow: 0;
+
+  @media only screen and (max-width: 992px) {
+    width: 180px;
+  }
 
   @media only screen and (max-width: 768px) {
     flex-grow: 1;
@@ -51,12 +56,11 @@
 }
 
 .catalog__top-panel {
-  height: 40px;
-  border-bottom: 1px solid rgba(102, 107, 114, .3);
+  border-bottom: 1px solid #EAEAEA;
   display: flex;
-  align-items: center;
-  margin: 0 0 15px;
-  justify-content: space-between;
+  align-items: flex-end;
+  margin: 0 0 10px;
+  padding: 0 0 5px;
 
   @media only screen and (max-width: 768px) {
     align-items: flex-start;
@@ -66,33 +70,55 @@
 }
 
 .catalog__total {
-  p {
-    color: $text-color-opacity;
-    font-size: 15px;
+  color: $text-color-opacity;
+  font-size: 13px;
+  font-weight: 300;
+  margin-left: auto;
+  white-space: nowrap;
+
+  span {
+    font-weight: 500;
   }
 
   @media only screen and (max-width: 768px) {
-    width: 100%;
-    padding: 3px 0 15px;
+
   }
 }
 
 .catalog__select {
+  color: $text-color;
+  position: relative;
+  margin: 0 20px 0 0;
+  display: flex;
+
+  span {
+    font-weight: 300;
+    font-size: 13px;
+    white-space: nowrap;
+
+    &:after {
+      content: '\E807';
+      font-family: $font-icons;
+      position: absolute;
+      right: 0;
+      z-index: 3;
+      top: 2px;
+      font-size: 11px;
+    }
+  }
 
   select {
     color: $text-color-opacity;
+    appearance: none;
+    background: transparent;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 0 3px 0 0;
     position: relative;
-    border: 1px solid rgba(102, 107, 114, .3);
-    padding: 5px 15px 5px 10px;
-    font-size: 15px;
-    cursor: pointer;
-    border-radius: 4px;
-    background-color: #FFFFFF;
-    overflow: hidden;
+    z-index: 5;
 
     @media only screen and (max-width: 768px) {
-      width: 100%;
-      font-size: 16px;
+
     }
   }
 
@@ -104,8 +130,7 @@
   }
 
   @media only screen and (max-width: 768px) {
-    width: 100%;
-    padding: 0 0 15px;
+
   }
 }
 

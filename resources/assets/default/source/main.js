@@ -13,4 +13,5 @@ import './components/popup/popup';
 import './components/header/header-bar/header-bar';
 import './components/header/header-filter/header-filter';
 import './components/header/header-search/header-search';
+import './components/filter/filter-slide-box/filter-slide-box';
 import './components/up/up';

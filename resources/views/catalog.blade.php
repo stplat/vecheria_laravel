@@ -7,64 +7,47 @@
       <li>{{$subcategory}}</li>
     </ul>
   <div class="catalog js-catalog">
-    <div class="catalog__title">
-      <h1>{{$subcategory}}</h1>
-    </div>
     <div class="catalog__container">
       <div class="catalog__aside">
         <div class="catalog__filter">
 <div class="filter">
-  <div class="filter__head">Фильтр и сортировка</div>
-  <div class="filter__part filter__part--sort">
-    <div class="filter__title filter__title--sort">Сортировка</div>
-    <div class="filter__switch">
-<ul class="filter-switch">
-  <li class="filter-switch__btn">
-    <input type="radio" id="price_asc" name="orderby" value="asc" hidden checked>
-    <label for="price_asc">По цене ↑</label>
-  </li>
-  <li class="filter-switch__btn">
-    <input type="radio" id="price_desc" name="orderby" value="desc" hidden>
-    <label for="price_desc">По цене ↓</label>
-  </li>
-</ul>
-    </div>
-  </div>
-  <div class="filter__part">
-    <div class="filter__title">Фильтр</div>
-    <div class="filter__section">
-<div class="filter-section">
-  <div class="filter-section">
-    <div class="filter-section__title">Категории</div>
-    <div class="filter-section__list">
-      @foreach ($menu as $menu_items)
-      @foreach ($menu_items['subcategory'] as $plug => $subcategory_name)
-      @if ($subcategory_name == $subcategory)<a class="filter-section__link is-active" href="/catalog/{{$plug}}">{{$subcategory_name}}</a>@else<a class="filter-section__link" href="/catalog/{{$plug}}">{{$subcategory_name}}</a>@endif
-      @endforeach
-      @endforeach
-    </div>
-  </div>
+<div class="filter-box">
+  <div class="filter-box__head">Тип изделия</div>
+  <div class="filter-box__body">
+    <div class="filter-box__slide-box">
+<div class="filter-slide-box">@foreach ($menu as $menu_items)
+  <div class="filter-slide-box__head">{{$menu_items['category']}}</div>
+  <div class="filter-slide-box__body">
+    @foreach ($menu_items['subcategory'] as $plug => $subcategory_name)
+    @if ($subcategory_name == $subcategory)<a class="filter-slide-box__link is-active" href="/catalog/{{$plug}}">{{$subcategory_name}}</a>@else<a class="filter-slide-box__link" href="/catalog/{{$plug}}">{{$subcategory_name}}</a>@endif
+    @endforeach
+  </div>@endforeach
 </div>
     </div>
   </div>
-  <div class="filter__reset">
-    <button>Сбросить фильтр и сортировку</button>
-  </div>
+</div>
 </div>
         </div>
       </div>
       <div class="catalog__content">
+        <div class="catalog__title">
+          <h1>{{$subcategory}}</h1>
+        </div>
         <div class="catalog__top-panel">
-          <div class="catalog__total">
-            <p>показано товаров: {{$items->count()}} из {{$items->total()}} ед.</p>
-          </div>
-          <div class="catalog__select">
+          <div class="catalog__select"><span>На странице:</span>
             <select name="per_page">
-              <option value="24" selected="selected">показывать по 24</option>
-              <option value="36">показывать по 36</option>
-              <option value="42">показывать по 42</option>
+              <option value="24" selected="selected">24 изделия</option>
+              <option value="36">36 изделия</option>
+              <option value="42">42 изделия</option>
             </select>
           </div>
+          <div class="catalog__select"><span>Сортировка:</span>
+            <select name="orderby">
+              <option value="asc" selected="selected">по Увеличению цены</option>
+              <option value="desc">по Уменьшению цены</option>
+            </select>
+          </div>
+          <div class="catalog__total">Показано: <span>{{$items->count()}} изд.</span></div>
         </div>
                 <div class="item__container">@foreach ($items as $key => $item)
                   <div class="item item--3">
