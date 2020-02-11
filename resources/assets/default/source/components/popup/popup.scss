@@ -96,6 +96,17 @@
       top: 0;
       z-index: 11;
     }
+
+    &:after {
+      content: 'Загружаю..';
+      position: fixed;
+      left: 50%;
+      top: 56%;
+      transform: translate(-50%, -50%);
+      z-index: 11;
+      color: $orange-color;
+      font-weight: 300;
+    }
   }
 
   &.is-success {

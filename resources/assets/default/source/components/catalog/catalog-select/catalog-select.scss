@@ -3,8 +3,6 @@
 
 .catalog-select {
   color: $text-color;
-  position: relative;
-  margin: 0 20px 0 0;
   display: inline-flex;
 
   span {
@@ -12,22 +10,23 @@
     font-size: 13px;
     white-space: nowrap;
 
-    &:after {
-      content: '\E807';
-      font-family: $font-icons;
-      position: absolute;
-      right: 0;
-      z-index: 3;
-      top: 1px;
-      font-size: 11px;
+    @media only screen and (max-width: 480px) {
+      display: none;
     }
   }
 
-  i {
-    font-style: normal;
+  select {
+    color: $text-color;
+    appearance: none;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0 10px 0 2px;
+    outline: 0;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='5' height='5' viewBox='0 0 8 8'%3E%3Cpath fill='%23000' fill-rule='evenodd' class='cls-1' d='M8,0L4.141,6.993,0.012,0.156Z'/%3E%3C/svg%3E%0A") right center no-repeat;
 
-    @media only screen and (max-width: 480px) {
-      display: none;
+    @media only screen and (max-width: 768px) {
+      //padding: 0 15px 0 2px;
     }
   }
 
@@ -42,26 +41,13 @@
     }
   }
 
-  select {
-    color: $text-color;
-    appearance: none;
-    background: transparent;
-    font-size: 13px;
-    font-weight: 500;
-    padding: 0 3px 0 0;
-    position: relative;
-    z-index: 5;
-    cursor: pointer;
-  }
-
   option {
     background-color: #FFFFFF;
     color: $text-color-opacity;
-    padding: 5px 0 5px 10px;
+    padding: 0 2px 1px;
     border: 1px solid transparent;
+    white-space: pre;
   }
 
-  @media only screen and (max-width: 768px) {
 
-  }
 }
