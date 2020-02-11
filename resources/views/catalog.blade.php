@@ -34,18 +34,22 @@
           <h1>{{$subcategory}}</h1>
         </div>
         <div class="catalog__top-panel">
-          <div class="catalog__select"><span>На странице:</span>
-            <select name="per_page">
-              <option value="24" selected="selected">24 изделия</option>
-              <option value="36">36 изделия</option>
-              <option value="42">42 изделия</option>
-            </select>
+          <div class="catalog__select">
+            <div class="catalog-select"><span><i>На странице:</i>
+                <select name="per_page">
+                  <optgroup label="На странице:"></optgroup>
+                  <option value="24" selected="selected">24 изделия</option>
+                  <option value="36">36 изделия</option>
+                  <option value="42">42 изделия</option>
+                </select></span></div>
           </div>
-          <div class="catalog__select"><span>Сортировка:</span>
-            <select name="orderby">
-              <option value="asc" selected="selected">по Увеличению цены</option>
-              <option value="desc">по Уменьшению цены</option>
-            </select>
+          <div class="catalog__select">
+            <div class="catalog-select"><span><i>Сортировка:</i>
+                <select name="orderby">
+                  <optgroup label="Сортировка:"></optgroup>
+                  <option value="asc" selected="selected">по Увеличению цены</option>
+                  <option value="desc">по Уменьшению цены</option>
+                </select></span></div>
           </div>
           <div class="catalog__total">Показано: <span>{{$items->count()}} изд.</span></div>
         </div>

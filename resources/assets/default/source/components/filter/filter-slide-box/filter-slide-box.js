@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  if (document.querySelectorAll('.filter-slide-box')) {
+  if (document.querySelector('.filter-slide-box') !== null) {
     const box = document.querySelectorAll('.filter-slide-box');
     const active = document.querySelector('.filter-slide-box__link.is-active');
 

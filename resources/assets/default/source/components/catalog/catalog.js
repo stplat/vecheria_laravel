@@ -4,12 +4,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (document.querySelector('.js-catalog') !== null) {
 
-    /*const token = document.head.querySelector('meta[name="csrf-token"]');
+    const token = document.head.querySelector('meta[name="csrf-token"]');
     const subcategoryPath = document.querySelector('.filter-slide-box__link.is-active').getAttribute('href');
     const subcategory = subcategoryPath.slice(subcategoryPath.lastIndexOf('/') + 1);
 
     const pageBtns = document.querySelectorAll('.pagination');
-    const perPageBtn = document.querySelector('.catalog__select select');
+    const perPageBtn = document.querySelector('.catalog-select select');
     const sort = document.querySelectorAll('[name="orderby"]');
 
     perPageBtn.value = '24';
@@ -36,6 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function axiosGetItems(page, perPage, sort) {
       const url = `/catalog/${subcategory}/?page=${page}&per_page=${perPage}&orderby=${sort}`;
+      document.querySelector('.js-catalog').classList.add('is-loaded');
 
       axios.get(url, {
         headers: {
@@ -65,11 +66,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         document.querySelector('.item__container').innerHTML = item;
-        document.querySelector('.catalog__total p').innerHTML = `показано товаров: ${itemsCount} из ${itemCountAll} ед.`;
+        document.querySelector('.catalog__total span').innerHTML = `${itemsCount} изд.`;
         document.querySelector('.pagination') ? document.querySelector('.pagination').innerHTML = pagination : '';
+        document.querySelector('.js-catalog').classList.remove('is-loaded');
 
-      }).catch(
-        error => console.log(error));
+      }).catch((error) => {
+        document.querySelector('.js-catalog').classList.remove('is-loaded');
+        console.log(error);
+      });
     }
 
     perPageBtn.addEventListener('change', function () {
@@ -81,15 +85,19 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.target.nodeName === 'A') {
           const page = e.target.href.slice(e.target.href.lastIndexOf('?page=') + 6);
           axiosGetItems(page, perPageCurrent(), sortCurrent());
+
+          $('html, body').animate({
+            scrollTop: Number($('.catalog__title').offset().top)
+          }, 600);
         }
         e.preventDefault();
       });
     });
 
     [...sort].forEach((el) => {
-      el.addEventListener('click', function (e) {
+      el.addEventListener('change', function (e) {
         axiosGetItems(pageCurrent(), perPageCurrent(), this.value);
       });
-    });*/
+    });
   }
 });

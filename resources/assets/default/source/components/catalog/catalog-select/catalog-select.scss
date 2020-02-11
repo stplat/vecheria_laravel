@@ -1,0 +1,67 @@
+/* Переменные */
+@import '../../_defaults/variables';
+
+.catalog-select {
+  color: $text-color;
+  position: relative;
+  margin: 0 20px 0 0;
+  display: inline-flex;
+
+  span {
+    font-weight: 300;
+    font-size: 13px;
+    white-space: nowrap;
+
+    &:after {
+      content: '\E807';
+      font-family: $font-icons;
+      position: absolute;
+      right: 0;
+      z-index: 3;
+      top: 1px;
+      font-size: 11px;
+    }
+  }
+
+  i {
+    font-style: normal;
+
+    @media only screen and (max-width: 480px) {
+      display: none;
+    }
+  }
+
+  optgroup {
+    appearance: none;
+    font-weight: 300;
+    font-style: normal;
+    display: none;
+
+    @media only screen and (max-width: 768px) {
+      display: block;
+    }
+  }
+
+  select {
+    color: $text-color;
+    appearance: none;
+    background: transparent;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 0 3px 0 0;
+    position: relative;
+    z-index: 5;
+    cursor: pointer;
+  }
+
+  option {
+    background-color: #FFFFFF;
+    color: $text-color-opacity;
+    padding: 5px 0 5px 10px;
+    border: 1px solid transparent;
+  }
+
+  @media only screen and (max-width: 768px) {
+
+  }
+}

@@ -1,8 +1,34 @@
 /* Переменные */
 @import '../_defaults/variables';
+@import './catalog-select/catalog-select';
 
 .catalog {
 
+  &.is-loaded {
+    position: relative;
+
+    &:before {
+      content: '';
+      background: rgba(255, 255, 255, .95) url(components/popup/preloader.svg) no-repeat 50% 50%;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      z-index: 11;
+    }
+
+    &:after {
+      content: 'Загружаю..';
+      position: fixed;
+      left: 50%;
+      top: 56%;
+      transform: translate(-50%, -50%);
+      z-index: 11;
+      color: $orange-color;
+      font-weight: 300;
+    }
+  }
 }
 
 .catalog__title {
@@ -19,7 +45,7 @@
     font-weight: 500;
 
     @media only screen and (max-width: 768px) {
-      margin: 0 0 15px;
+      margin: 0 0 3px;
     }
   }
 }
@@ -66,11 +92,12 @@
     align-items: flex-start;
     flex-wrap: wrap;
     height: auto;
+    justify-content: space-between;
   }
 }
 
 .catalog__total {
-  color: $text-color-opacity;
+  color: $text-color;
   font-size: 13px;
   font-weight: 300;
   margin-left: auto;
@@ -81,56 +108,18 @@
   }
 
   @media only screen and (max-width: 768px) {
-
+    margin: 0;
+    line-height: 23px;
+    order: 1;
+    width: 100%;
   }
 }
 
 .catalog__select {
-  color: $text-color;
-  position: relative;
-  margin: 0 20px 0 0;
-  display: flex;
-
-  span {
-    font-weight: 300;
-    font-size: 13px;
-    white-space: nowrap;
-
-    &:after {
-      content: '\E807';
-      font-family: $font-icons;
-      position: absolute;
-      right: 0;
-      z-index: 3;
-      top: 2px;
-      font-size: 11px;
-    }
-  }
-
-  select {
-    color: $text-color-opacity;
-    appearance: none;
-    background: transparent;
-    font-size: 13px;
-    font-weight: 500;
-    padding: 0 3px 0 0;
-    position: relative;
-    z-index: 5;
-
-    @media only screen and (max-width: 768px) {
-
-    }
-  }
-
-  option {
-    background-color: #FFFFFF;
-    color: $text-color-opacity;
-    padding: 5px 0 5px 10px;
-    border: 1px solid transparent;
-  }
 
   @media only screen and (max-width: 768px) {
-
+    order: 2;
+    margin: 10px 0 0;
   }
 }
 

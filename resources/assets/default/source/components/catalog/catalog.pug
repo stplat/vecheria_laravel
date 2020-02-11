@@ -8,16 +8,20 @@
         h1 {{$subcategory}}
       .catalog__top-panel
         .catalog__select
-          span На странице:
-          select(name="per_page")
-            option(value="24", selected="selected") 24 изделия
-            option(value="36") 36 изделия
-            option(value="42") 42 изделия
+          .catalog-select
+            span <i>На странице:</i>
+              select(name="per_page")
+                optgroup(label="На странице:")
+                option(value="24", selected="selected") 24 изделия
+                option(value="36") 36 изделия
+                option(value="42") 42 изделия
         .catalog__select
-          span Сортировка:
-          select(name="orderby")
-            option(value="asc", selected="selected") по Увеличению цены
-            option(value="desc") по Уменьшению цены
+          .catalog-select
+            span <i>Сортировка:</i>
+              select(name="orderby")
+                optgroup(label="Сортировка:")
+                option(value="asc", selected="selected") по Увеличению цены
+                option(value="desc") по Уменьшению цены
         .catalog__total Показано: <span>{{$items->count()}} изд.</span>
 
       include ../item/item
