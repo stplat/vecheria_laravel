@@ -1,4 +1,4 @@
-import 'blowup/lib/blowup';
+//import 'blowup/lib/blowup';
 
 $(document).ready(function () {
   if ($('.product-image__showcase img').length) {

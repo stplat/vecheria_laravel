@@ -11,6 +11,7 @@ const lintCSS = require('./webpack_modules/sass.lint');
 const images = require('./webpack_modules/images');
 const babel = require('./webpack_modules/babel');
 const favicon = require('./webpack_modules/favicon');
+const uglify = require('./webpack_modules/uglify');
 
 /* Оптимизация изображений
 const ImageminPlugin = require("imagemin-webpack");
@@ -109,6 +110,7 @@ module.exports = function (env, argv) {
       config,
       extractCSS(),
       favicon(),
+      uglify(),
     ]);
   }
   if (argv.mode === 'development') {
