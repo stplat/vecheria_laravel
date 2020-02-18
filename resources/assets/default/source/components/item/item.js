@@ -1,4 +1,4 @@
-import Swiper from 'swiper';
+import Swiper from 'swiper/js/swiper.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   let names = '';
