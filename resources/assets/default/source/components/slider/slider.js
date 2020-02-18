@@ -1,4 +1,4 @@
-import Swiper from 'swiper';
+import Swiper from 'swiper/js/swiper.js';
 
 if (document.querySelectorAll('.js-slider').length)
   document.addEventListener('DOMContentLoaded', () => {
