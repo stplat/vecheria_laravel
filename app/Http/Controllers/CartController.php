@@ -162,6 +162,7 @@ class CartController extends Controller {
     $email = $request->input('email') ? (string)$request->input('email') : 'не указано';
     $comment = $request->input('comment') ? $request->input('comment') : 'не указано';
     $price = $request->input('price');
+    $discount = $request->input('discount');
     $total = ($request->input('total') == 'уточняйте у менеджера') ? 'уточняйте у менеджера' : $request->input('total') . ' руб.';
 
     $to = "<info@vecheria.ru>, ";
@@ -184,6 +185,7 @@ class CartController extends Controller {
           <li style="margin: 5px 0;">Электронная почта: <b>' . $email . '</b></li>
           <li style="margin: 5px 0;">Комментарий: <b>' . $comment . '</b></li>
           <li style="margin: 5px 0;">Стоимость изделий: <b>' . $price . ' руб.</b></li>
+          <li style="margin: 5px 0;">Стоимость изделий: <b>' . $discount . ' руб.</b></li>
           <li style="margin: 5px 0;">Общая стоимость покупки: <b>' . $total . '</b></li>
         </ul>
       </div>      
@@ -192,5 +194,22 @@ class CartController extends Controller {
     mail($to, $subject, $message, $headers);
 
     Session::forget('items');
+  }
+
+  public function checkPromo(Request $request) {
+    $promo_code = $request->input('promo');
+    $query = DB::table('promo')->where('code', '=', $promo_code)->exists();
+
+    if ($query) {
+      $discount = DB::table('promo')->where('code', '=', $promo_code)->select('discount')->get()[0]->discount;
+
+      if ($request->ajax()) {
+        return response()->json([
+          'check' => true,
+          'discount' => $discount,
+        ]);
+      }
+    }
+
   }
 }

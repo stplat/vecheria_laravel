@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
 
 class DatabaseSeeder extends Seeder {
   /**
@@ -14,6 +15,11 @@ class DatabaseSeeder extends Seeder {
       'name' => '100',
       'email' => str_random(10) . '@gmail.com',
       'password' => bcrypt('secret'),
+    ]);
+
+    DB::table('promo')->insert([
+      'code' => Str::upper(Str::random(5, 'alpha')),
+      'discount' => '10',
     ]);
   }
 }

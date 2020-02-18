@@ -32,6 +32,10 @@ mixin cartStep_2(hidden)
         label(for="comment") Комментарий
         textarea(id="comment", name="comment", placeholder="Пример: Во дворе злая собака!")
         span.empty
+      .cart-ordering__field
+        label(for="promo") Промокод <span>для активации скидки</span>
+        input(id="promo", name="promo", placeholder="Пример: AB9DE")
+        span Для активации скидки
 
 mixin cartStep_3(hidden)
   .cart-ordering(class=hidden, data-container="3")
@@ -58,6 +62,9 @@ mixin cartStep_3(hidden)
       li.is-important
         span Стоимость изделий:
         span.is-price.js-price {{$cart_total}}
+      li.is-important
+        span Скидка по промокоду:
+        span.is-price.js-discount {{$cart_total}}
       li.is-important
         span Общая стоимость покупки:
         span.is-price.js-total-price {{$cart_total}}

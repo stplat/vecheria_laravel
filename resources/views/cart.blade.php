@@ -11,7 +11,7 @@
         <h1>Корзина покупок</h1>
       </div>
     </div>
-  <div class="cart">@if ($cart_count == 0)
+  <div class="cart js-cart">@if ($cart_count == 0)
     <div class="cart__empty">Ваша корзина покупок пуста.</div>@else
     <div class="cart__col">@if ($cart_step == 1)
       <div class="cart__items" data-container="1">@foreach ($items as $key => $item)
@@ -109,6 +109,10 @@
                   <label for="comment">Комментарий</label>
                   <textarea id="comment" name="comment" placeholder="Пример: Во дворе злая собака!"></textarea><span class="empty"></span>
                 </div>
+                <div class="cart-ordering__field">
+                  <label for="promo">Промокод <span>для активации скидки</span></label>
+                  <input id="promo" name="promo" placeholder="Пример: AB9DE"><span>Для активации скидки</span>
+                </div>
               </form>
             </div>@else
             <div class="cart-ordering hidden" data-container="2">
@@ -147,6 +151,10 @@
                   <label for="comment">Комментарий</label>
                   <textarea id="comment" name="comment" placeholder="Пример: Во дворе злая собака!"></textarea><span class="empty"></span>
                 </div>
+                <div class="cart-ordering__field">
+                  <label for="promo">Промокод <span>для активации скидки</span></label>
+                  <input id="promo" name="promo" placeholder="Пример: AB9DE"><span>Для активации скидки</span>
+                </div>
               </form>
             </div>@endif
       @if ($cart_step == 3)
@@ -160,6 +168,7 @@
                 <li><span>Электронная почта:</span><span class="js-email">не указано</span></li>
                 <li><span>Комментарий:</span><span class="js-comment">не указано</span></li>
                 <li class="is-important"><span>Стоимость изделий:</span><span class="is-price js-price">{{$cart_total}}</span></li>
+                <li class="is-important"><span>Скидка по промокоду:</span><span class="is-price js-discount">{{$cart_total}}</span></li>
                 <li class="is-important"><span>Общая стоимость покупки:</span><span class="is-price js-total-price">{{$cart_total}}</span></li>
               </ul>
             </div>@else
@@ -173,6 +182,7 @@
                 <li><span>Электронная почта:</span><span class="js-email">не указано</span></li>
                 <li><span>Комментарий:</span><span class="js-comment">не указано</span></li>
                 <li class="is-important"><span>Стоимость изделий:</span><span class="is-price js-price">{{$cart_total}}</span></li>
+                <li class="is-important"><span>Скидка по промокоду:</span><span class="is-price js-discount">{{$cart_total}}</span></li>
                 <li class="is-important"><span>Общая стоимость покупки:</span><span class="is-price js-total-price">{{$cart_total}}</span></li>
               </ul>
             </div>@endif

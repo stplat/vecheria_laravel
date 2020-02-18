@@ -21,10 +21,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const address = form.address;
     const email = form.email;
     const comment = form.comment;
+    const promo = form.promo;
+    promo.value = '';
+    let promoFlag = true;
+    let promoDiscount = '';
+    const maskPromo = new Inputmask('A|9A|9A|9A|9A|9', {
+      showMaskOnHover: false,
+      showMaskOnFocus: false,
+      placeholder: '',
+    });
     let orderFlag = false;
     let currentStep = Number(document.querySelector('.is-active[data-step]').dataset.step);
 
     maskPhone.mask(phone);
+    maskPromo.mask(promo);
     /*
    *  Продолжить оформление
    * */
@@ -44,23 +54,64 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
     });
 
-    function ajaxSend(currentStep) {
-      const params = JSON.stringify({
-        cart_step: currentStep,
-      });
+    promo.oninput = promo.onpaste = function () {
+      promoDiscount = 0;
 
-      axios.post('/ordering', params, {
-        headers: {
-          'Content-Type': 'application/json',
-          'X-Requested-With': 'XMLHttpRequest',
-          'X-CSRF-TOKEN': token,
-        },
-      }).then(res => {
-        checkStep();
-      }).catch((error) => {
-        console.log(error);
-      });
-    }
+      if (promo.value !== '' && promo.value.length !== 5) {
+        promo.previousElementSibling.querySelector('span').classList.add('is-invalid');
+        promo.nextElementSibling.classList.add('is-invalid');
+        promo.previousElementSibling.querySelector('span').classList.remove('is-valid');
+        promo.nextElementSibling.classList.remove('is-valid');
+        promo.classList.add('is-invalid');
+        promo.classList.remove('is-valid');
+        promoFlag = false;
+      } else if (promo.value.length === 5) {
+        document.querySelector('.js-cart').classList.add('is-loaded');
+
+        const params = JSON.stringify({
+          promo: promo.value,
+        });
+
+        axios.post('/checkPromo', params, {
+          headers: {
+            'Content-Type': 'application/json',
+            'X-Requested-With': 'XMLHttpRequest',
+            'X-CSRF-TOKEN': token,
+          },
+        }).then(res => {
+          if (res.data.check) {
+            promo.previousElementSibling.querySelector('span').classList.remove('is-invalid');
+            promo.nextElementSibling.classList.remove('is-invalid');
+            promo.previousElementSibling.querySelector('span').classList.add('is-valid');
+            promo.nextElementSibling.classList.add('is-valid');
+            promo.classList.remove('is-invalid');
+            promo.classList.add('is-valid');
+            promoFlag = true;
+            promoDiscount = res.data.discount;
+          } else {
+            promo.previousElementSibling.querySelector('span').classList.add('is-invalid');
+            promo.nextElementSibling.classList.add('is-invalid');
+            promo.previousElementSibling.querySelector('span').classList.remove('is-valid');
+            promo.nextElementSibling.classList.remove('is-valid');
+            promo.classList.add('is-invalid');
+            promo.classList.remove('is-valid');
+            promoFlag = false;
+          }
+          document.querySelector('.js-cart').classList.remove('is-loaded');
+        }).catch((error) => {
+          document.querySelector('.js-cart').classList.remove('is-loaded');
+          console.log(error);
+        });
+      } else if (promo.value === '') {
+        promo.previousElementSibling.querySelector('span').classList.remove('is-invalid');
+        promo.nextElementSibling.classList.remove('is-invalid');
+        promo.previousElementSibling.querySelector('span').classList.remove('is-valid');
+        promo.nextElementSibling.classList.remove('is-valid');
+        promo.classList.remove('is-invalid');
+        promo.classList.remove('is-valid');
+        promoFlag = true;
+      }
+    };
 
     function formValidate() {
       let flag = true;
@@ -144,6 +195,10 @@ document.addEventListener('DOMContentLoaded', () => {
         email.classList.remove('is-valid');
       }
 
+      if (!promoFlag) {
+        flag = false;
+      }
+
       return flag;
     }
 
@@ -166,9 +221,13 @@ document.addEventListener('DOMContentLoaded', () => {
           address: form.address.value,
           email: form.email.value,
           comment: form.comment.value,
+          promo: form.promo.value,
           price: document.querySelector('.js-price').innerText,
+          discount: document.querySelector('.js-discount').innerText,
           total: document.querySelector('.js-total-price').innerText,
         });
+
+        document.querySelector('.js-cart').classList.add('is-loaded');
 
         axios.post('/ordering', params, {
           headers: {
@@ -177,7 +236,6 @@ document.addEventListener('DOMContentLoaded', () => {
             'X-CSRF-TOKEN': token,
           },
         }).then(res => {
-          console.log(res);
           const col_1 = document.querySelectorAll('.cart__col')[1];
           const col_2 = document.querySelectorAll('.cart__col')[2];
           const alert = document.createElement('div');
@@ -188,8 +246,10 @@ document.addEventListener('DOMContentLoaded', () => {
           alert.className = 'cart-ordering__success';
           alert.innerHTML = '<p> Ваш заказ успешно оформлен!<p> Благодарим Вас за покупку в нашем интернет-магазине.</p>';
           container.prepend(alert);
+          document.querySelector('.js-cart').classList.remove('is-loaded');
         }).catch((error) => {
           console.log(error);
+          document.querySelector('.js-cart').classList.remove('is-loaded');
         });
       }
 
@@ -214,10 +274,12 @@ document.addEventListener('DOMContentLoaded', () => {
           const jsName = document.querySelector('.js-name');
           const jsPhone = document.querySelector('.js-phone');
           const jsShipping = document.querySelector('.js-shipping');
+          let jsShippingPrice = '';
           const jsAddress = document.querySelector('.js-address');
           const jsEmail = document.querySelector('.js-email');
           const jsComment = document.querySelector('.js-comment');
           const jsPrice = document.querySelector('.js-price');
+          const jsDiscount = document.querySelector('.js-discount');
           const jsTotalPrice = document.querySelector('.js-total-price');
 
           jsName.innerText = name.value;
@@ -226,24 +288,31 @@ document.addEventListener('DOMContentLoaded', () => {
             if (radio.checked) {
               if (radio.id === 'shipping_1') {
                 if (total.innerText >= 4000) {
-                  jsTotalPrice.innerText = Number(jsPrice.innerText);
                   jsShipping.innerHTML = 'в пределах МКАД <span class="green">(бесплатно)</span>';
+                  jsShippingPrice = 0;
                 } else {
-                  jsTotalPrice.innerText = Number(jsPrice.innerText) + 300;
+                  jsShippingPrice = 300;
                   jsShipping.innerHTML = 'в пределах МКАД <span class="red">(300 руб.)</span>';
                 }
-
                 !jsTotalPrice.classList.contains('is-price') ? jsTotalPrice.classList.add('is-price') : '';
               } else if (radio.id === 'shipping_2') {
-                jsTotalPrice.innerText = 'уточняйте у менеджера';
-                jsTotalPrice.classList.remove('is-price');
                 jsShipping.innerHTML = 'доставка за МКАД (цена договорная)';
               }
             }
           });
+
           jsAddress.innerText = address.value ? address.value : 'не указано';
           jsEmail.innerText = email.value ? email.value : 'не указано';
           jsComment.innerText = comment.value ? comment.value : 'не указано';
+          jsPrice.innerText = document.querySelector('.cart-nav__total').innerText;
+          jsDiscount.innerText = Math.ceil(Number(jsPrice.innerText) * promoDiscount / 100);
+          if (jsShippingPrice === '') {
+            jsTotalPrice.innerText = 'уточняйте у менеджера';
+            jsTotalPrice.classList.remove('is-price');
+          } else {
+            jsTotalPrice.innerText = Number(jsPrice.innerText) - Number(jsDiscount.innerText) + Number(jsShippingPrice);
+          }
+
           orderFlag = true;
 
         } else {

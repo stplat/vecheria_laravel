@@ -47,10 +47,16 @@ Route::get('/ordering', function () {
   abort('404');
 });
 
+Route::get('/checkPromo', function () {
+  abort('404');
+});
+
+
 
 Route::post('/callback', 'CallbackController@index');
 Route::post('/buy', 'BuyController@index');
 Route::post('/ordering', 'CartController@ordering');
+Route::post('/checkPromo', 'CartController@checkPromo');
 
 Route::get('/sitemap.xml', 'IndexController@sitemap');
 
