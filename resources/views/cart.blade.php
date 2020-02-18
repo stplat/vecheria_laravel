@@ -163,11 +163,11 @@
               <ul class="cart-ordering__list">
                 <li><span>Контактное лицо:</span><span class="js-name"></span></li>
                 <li><span>Телефон:</span><span class="js-phone"></span></li>
-                <li><span>Способ доставки:</span><span class="js-shipping"></span></li>
                 <li><span>Адрес доставки:</span><span class="js-address">не указано</span></li>
                 <li><span>Электронная почта:</span><span class="js-email">не указано</span></li>
                 <li><span>Комментарий:</span><span class="js-comment">не указано</span></li>
                 <li class="is-important"><span>Стоимость изделий:</span><span class="is-price js-price">{{$cart_total}}</span></li>
+                <li><span>Способ доставки:</span><span class="js-shipping"></span></li>
                 <li class="is-important"><span>Скидка по промокоду:</span><span class="is-price js-discount">{{$cart_total}}</span></li>
                 <li class="is-important"><span>Общая стоимость покупки:</span><span class="is-price js-total-price">{{$cart_total}}</span></li>
               </ul>
@@ -177,11 +177,11 @@
               <ul class="cart-ordering__list">
                 <li><span>Контактное лицо:</span><span class="js-name"></span></li>
                 <li><span>Телефон:</span><span class="js-phone"></span></li>
-                <li><span>Способ доставки:</span><span class="js-shipping"></span></li>
                 <li><span>Адрес доставки:</span><span class="js-address">не указано</span></li>
                 <li><span>Электронная почта:</span><span class="js-email">не указано</span></li>
                 <li><span>Комментарий:</span><span class="js-comment">не указано</span></li>
                 <li class="is-important"><span>Стоимость изделий:</span><span class="is-price js-price">{{$cart_total}}</span></li>
+                <li><span>Способ доставки:</span><span class="js-shipping"></span></li>
                 <li class="is-important"><span>Скидка по промокоду:</span><span class="is-price js-discount">{{$cart_total}}</span></li>
                 <li class="is-important"><span>Общая стоимость покупки:</span><span class="is-price js-total-price">{{$cart_total}}</span></li>
               </ul>

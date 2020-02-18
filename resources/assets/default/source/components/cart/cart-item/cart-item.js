@@ -26,9 +26,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const cart = document.querySelector('.header-cart__body span span');
         const cartItems = res.data.items;
         const total = document.querySelector('.cart-nav__total p');
+        const jsPrice = document.querySelector('.js-price');
 
         cart.innerText = res.data.cart_count;
         total.innerText = res.data.cart_total;
+        jsPrice.innerText = res.data.cart_total;
 
         [...cartItems].forEach((item) => {
           if (item.id === id) {

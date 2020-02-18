@@ -254,18 +254,21 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       if (currentStep === 1) {
+        total.style.display = 'block';
         buttonPrev.classList.add('hidden');
         buttonNext.innerText = 'Начать оформление';
         handler();
       }
 
       if (currentStep === 2) {
+        total.style.display = 'block';
         buttonPrev.classList.remove('hidden');
         buttonNext.innerText = 'Продолжить';
         handler();
       }
 
       if (currentStep === 3) {
+        total.style.display = 'none';
         if (formValidate()) {
           buttonPrev.classList.remove('hidden');
           buttonNext.innerText = 'Оформить';
@@ -304,7 +307,6 @@ document.addEventListener('DOMContentLoaded', () => {
           jsAddress.innerText = address.value ? address.value : 'не указано';
           jsEmail.innerText = email.value ? email.value : 'не указано';
           jsComment.innerText = comment.value ? comment.value : 'не указано';
-          jsPrice.innerText = document.querySelector('.cart-nav__total').innerText;
           jsDiscount.innerText = Math.ceil(Number(jsPrice.innerText) * promoDiscount / 100);
           if (jsShippingPrice === '') {
             jsTotalPrice.innerText = 'уточняйте у менеджера';

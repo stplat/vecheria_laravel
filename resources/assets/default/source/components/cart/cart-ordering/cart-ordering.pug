@@ -48,9 +48,6 @@ mixin cartStep_3(hidden)
         span Телефон:
         span.js-phone
       li
-        span Способ доставки:
-        span.js-shipping
-      li
         span Адрес доставки:
         span.js-address не указано
       li
@@ -62,6 +59,9 @@ mixin cartStep_3(hidden)
       li.is-important
         span Стоимость изделий:
         span.is-price.js-price {{$cart_total}}
+      li
+        span Способ доставки:
+        span.js-shipping
       li.is-important
         span Скидка по промокоду:
         span.is-price.js-discount {{$cart_total}}

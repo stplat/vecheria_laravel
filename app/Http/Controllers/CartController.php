@@ -21,21 +21,21 @@ class CartController extends Controller {
     $cart_count = 0;
     $id = [];
     $items = [];
-
-
+    
+    
     if (is_array(Session::get('items'))) {
       foreach (Session::get('items') as $category) {
         $cart_count += $category['count'];
       }
     }
-
+    
     if (is_array(Session::get('items'))) {
       foreach (Session::get('items') as $array) {
         array_push($id, $array['id']);
       }
-
+      
       $items_query = $this->show($id);
-
+      
       foreach ($items_query as $obj) {
         $item = $obj;
         foreach (Session::get('items') as $array) {
@@ -47,42 +47,42 @@ class CartController extends Controller {
         array_push($items, $item);
       }
     }
-
+    
     $cart_total = 0;
-
+    
     if (Session::get('items'))
       foreach (Session::get('items') as $item) {
         $cart_total += $item['total'];
       }
-
+    
     $cart_step = Session::get('cart_step') ?: 1;
-
+    
     $canonical = $this->canonical;
-
+    
     return view('cart', compact('keywords', 'description', 'title', 'cart_count', 'items', 'callback', 'cart_total', 'cart_step', 'canonical'));
   }
-
+  
   /**
    * Show the form for creating a new resource.
    *
    * @return \Illuminate\Http\Response
    */
   public function addSession(Request $request) {
-
+    
     //Session::forget('items');
-
+    
     $array = Session::get('items');
     $items = [];
-
+    
     if (!empty($array)) {
       $items = $array;
     }
-
+    
     $id = $request->input('id');
     $count = $request->input('count');
     $price = $request->input('price');
     $total = (int)$request->input('count') * (int)$request->input('price');
-
+    
     if (!parent::inArray($items, $id)) {
       array_push($items, [
         'id' => $id,
@@ -98,49 +98,49 @@ class CartController extends Controller {
         }
       }
     }
-
+    
     Session::put('items', $items);
-
+    
     $cart_count = 0;
     $cart_total = 0;
-
+    
     foreach (Session::get('items') as $item) {
       $cart_count += $item['count'];
     }
-
+    
     foreach (Session::get('items') as $item) {
       $cart_total += $item['total'];
     }
-
+    
     return compact('cart_count', 'cart_total', 'items');
   }
-
+  
   public function removeSession(Request $request) {
     $array = Session::get('items');
     $id = $request->input('id');
-
+    
     $items = array_filter($array, function ($i) use ($id) {
       return $i['id'] !== $id;
     });
-
+    
     $items = array_values($items);
-
+    
     Session::put('items', $items);
-
+    
     $cart_count = 0;
     $cart_total = 0;
-
+    
     foreach (Session::get('items') as $item) {
       $cart_count += $item['count'];
     }
-
+    
     foreach (Session::get('items') as $item) {
       $cart_total += $item['total'];
     }
-
+    
     return compact('cart_count', 'cart_total', 'items');
   }
-
+  
   /**
    * Display the specified resource.
    *
@@ -153,7 +153,7 @@ class CartController extends Controller {
       ->whereIn('items.id', $id)
       ->get();
   }
-
+  
   public function ordering(Request $request) {
     $name = $request->input('name');
     $phone = $request->input('phone');
@@ -162,14 +162,15 @@ class CartController extends Controller {
     $email = $request->input('email') ? (string)$request->input('email') : 'не указано';
     $comment = $request->input('comment') ? $request->input('comment') : 'не указано';
     $price = $request->input('price');
+    $promo = $request->input('promo');
     $discount = $request->input('discount');
     $total = ($request->input('total') == 'уточняйте у менеджера') ? 'уточняйте у менеджера' : $request->input('total') . ' руб.';
-
+    
     $to = "<info@vecheria.ru>, ";
     if ($request->input('email')) {
       $to .= "<" . $request->input('email') . ">";
     }
-
+    
     $headers = "Content-type: text/html; charset=urf-8 \r\n";
     $headers .= "From: <info@vecheria.ru>\r\n";
     $headers .= "Reply-To: info@vecheria.ru\r\n";
@@ -185,24 +186,24 @@ class CartController extends Controller {
           <li style="margin: 5px 0;">Электронная почта: <b>' . $email . '</b></li>
           <li style="margin: 5px 0;">Комментарий: <b>' . $comment . '</b></li>
           <li style="margin: 5px 0;">Стоимость изделий: <b>' . $price . ' руб.</b></li>
-          <li style="margin: 5px 0;">Стоимость изделий: <b>' . $discount . ' руб.</b></li>
+          <li style="margin: 5px 0;">Скидка по промокоду (' . $promo . '): <b>' . $discount . ' руб.</b></li>
           <li style="margin: 5px 0;">Общая стоимость покупки: <b>' . $total . '</b></li>
         </ul>
       </div>      
     ';
-
+    
     mail($to, $subject, $message, $headers);
-
+    
     Session::forget('items');
   }
-
+  
   public function checkPromo(Request $request) {
     $promo_code = $request->input('promo');
     $query = DB::table('promo')->where('code', '=', $promo_code)->exists();
-
+    
     if ($query) {
       $discount = DB::table('promo')->where('code', '=', $promo_code)->select('discount')->get()[0]->discount;
-
+      
       if ($request->ajax()) {
         return response()->json([
           'check' => true,
@@ -210,6 +211,6 @@ class CartController extends Controller {
         ]);
       }
     }
-
+    
   }
 }
