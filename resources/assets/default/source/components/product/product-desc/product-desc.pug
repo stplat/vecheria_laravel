@@ -2,6 +2,8 @@
 .product-desc
   ul.product-desc__tab
     li Описание
-  .product_desc__body
-    <p><!--noindex-->{{$items->description}}<!--/noindex--></p>
+  .product-desc__body
+    .product-desc__text
+      p
+        <!--noindex-->{!! $items->description !!}<!--/noindex-->
 | @endif
