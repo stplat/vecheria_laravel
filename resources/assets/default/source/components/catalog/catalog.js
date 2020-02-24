@@ -1,25 +1,57 @@
 import axios from 'axios';
 
+
 document.addEventListener('DOMContentLoaded', () => {
 
   if (document.querySelector('.js-catalog') !== null) {
     const token = document.head.querySelector('meta[name="csrf-token"]');
+    const container = document.querySelector('.item__container');
+    const pathCategory = document.querySelector('.filter-slide-box__link.is-active').getAttribute('href');
+    const slugCategory = pathCategory.slice(pathCategory.lastIndexOf('/') + 1);
 
-    axios.get('pravoslavnye-businy', {
-      headers: {
-        'Content-Type': 'application/json',
-        'X-Requested-With': 'XMLHttpRequest',
-        'X-CSRF-TOKEN': token.content
+    [...container.querySelectorAll('.item')].forEach((item, i) => {
+      if (i >= 24) {
+        item.style.display = 'none';
       }
-    }).then(res => {
-
-      console.log(res);
-
-
-    }).catch((error) => {
-      document.querySelector('.js-catalog').classList.remove('is-loaded');
-      console.log(error);
     });
+
+    function itemsMore(limit) {
+      axios.get(`${slugCategory}?limit=${limit}`, {
+        headers: {
+          'Content-Type': 'application/json',
+          'X-Requested-With': 'XMLHttpRequest',
+          'X-CSRF-TOKEN': token.content
+        }
+      }).then(res => {
+        console.log(res);
+        const items = res.data.items;
+
+        let item = '';
+
+        items.forEach((el) => {
+          item += `
+            <div class="item item--3">
+              <div class="item__sign"><p>${el.manufacturer}</p></div>
+              <div class="item__article">${el.article}</div>
+              <div class="item__image"><a href="/${el.slug}"><picture><source srcset="/images/items/${el.slug}-thumb.webp" type="image/webp"><img src="/images/items/${el.slug}-thumb.jpg" alt="${el.name}" title="${el.name}"></picture></a></div>
+              <div class="item__name"><a href="/${el.slug}">${el.name}</a></div>
+              <div class="item__price"><p>${el.price}</p></div>
+              <div class="item__button"><a class="button button--small" href="/${el.slug}">Подробнее</a>
+              </div>
+            </div>
+        `.replace(/ +/g, ' ').trim();
+        });
+
+        document.querySelector('.item__container').innerHTML = item;
+        document.querySelector('.js-catalog').classList.remove('is-loaded');
+
+
+      }).catch((error) => {
+        document.querySelector('.js-catalog').classList.remove('is-loaded');
+        console.log(error);
+      });
+    }
+
 
     /*const token = document.head.querySelector('meta[name="csrf-token"]');
     const subcategoryPath = document.querySelector('.filter-slide-box__link.is-active').getAttribute('href');
@@ -73,10 +105,10 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="item item--3">
               <div class="item__sign"><p>${el.manufacturer}</p></div>
               <div class="item__article">${el.article}</div>
-              <div class="item__image"><a href="/${el.subcategory_plug}/${el.plug}"><picture><source srcset="/images/items/${el.plug}-thumb.webp" type="image/webp"><img src="/images/items/${el.plug}-thumb.jpg" alt="${el.name}" title="${el.name}"></picture></a></div>
-              <div class="item__name"><a href="/${el.subcategory_plug}/${el.plug}">${el.name}</a></div>
+              <div class="item__image"><a href="/${el.subcategory_slug}/${el.slug}"><picture><source srcset="/images/items/${el.slug}-thumb.webp" type="image/webp"><img src="/images/items/${el.slug}-thumb.jpg" alt="${el.name}" title="${el.name}"></picture></a></div>
+              <div class="item__name"><a href="/${el.subcategory_slug}/${el.slug}">${el.name}</a></div>
               <div class="item__price"><p>${el.price}</p></div>
-              <div class="item__button"><a class="button button--small" href="/${el.subcategory_plug}/${el.plug}">Подробнее</a>
+              <div class="item__button"><a class="button button--small" href="/${el.subcategory_slug}/${el.slug}">Подробнее</a>
               </div>
             </div>
         `.replace(/ +/g, ' ').trim();

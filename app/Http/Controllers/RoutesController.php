@@ -39,16 +39,15 @@ class RoutesController extends Controller {
     $h1 = $category->name_2st;
     $description = $category->comment;
   
+    $limit = $request->input('limit');
+  
     $items = DB::table('product')->leftJoin('product_to_category', 'product.product_id', '=', 'product_to_category.product_id')
-      ->select('product.*')->where('product_to_category.category_id', $category->category_id)->groupBy('product.product_id')->get();
-    
-    /*echo '<pre>';
-    var_dump($items);
-    echo '<pre>';*/
+      ->select('product.*')->where('product_to_category.category_id', $category->category_id)->groupBy('product.product_id')->limit($limit)->get();
   
     if ($request->ajax()) {
-      echo 'asd';
-    
+      return response()->json([
+        'items' => $items,
+      ]);
     
     } else {
       return view('catalog', compact('meta_keywords', 'meta_description', 'title', 'h1', 'description', 'items'));

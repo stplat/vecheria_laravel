@@ -1,6 +1,23 @@
 import Swiper from 'swiper/js/swiper.js';
 
 document.addEventListener('DOMContentLoaded', () => {
+  if (document.querySelector('.item__container') !== null) {
+    const itemContainer = document.querySelector('.item__container');
+
+    itemContainer.addEventListener('mouseover', function (e) {
+      if (e.target.parentNode.classList.contains('item__name')) {
+        e.target.closest('div').style.overflow = 'visible';
+      }
+    });
+
+    itemContainer.addEventListener('mouseout', (e) => {
+      if (e.target.parentNode.classList.contains('item__name')) {
+        e.target.closest('div').style.overflow = 'hidden';
+      }
+    });
+  }
+
+
   let names = '';
 
   if (document.querySelectorAll('.item__name a').length) {
