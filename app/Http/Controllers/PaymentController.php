@@ -16,8 +16,8 @@ class PaymentController extends Controller {
    */
 
   public function index() {
-    $keywords = 'православная, лавка, изделия, крестики, бухвицы, браслеты, ручная работа, освещенные';
-    $description = 'Безналичный и наличный расчет';
+    $meta_keywords = 'православная, лавка, изделия, крестики, бухвицы, браслеты, ручная работа, освещенные';
+    $meta_description = 'Безналичный и наличный расчет';
     $title = 'Способы оплаты в интернет-магазине православных изделий "Вечерия"';
     $callback = Session::get('callback') ?: Session::get('callback');
     $cart_count = 0;
@@ -30,6 +30,6 @@ class PaymentController extends Controller {
 
     $canonical = $this->canonical;
 
-    return view('payment', compact('keywords', 'description', 'title', 'cart_count', 'callback', 'canonical'));
+    return view('payment', compact('meta_keywords', 'meta_description', 'title', 'cart_count', 'callback', 'canonical'));
   }
 }

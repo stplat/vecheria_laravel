@@ -16,8 +16,8 @@ class ContactsController extends Controller {
    */
 
   public function index() {
-    $keywords = 'православная, лавка, изделия, крестики, бухвицы, браслеты, ручная работа, освещенные';
-    $description = '';
+    $meta_keywords = 'православная, лавка, изделия, крестики, бухвицы, браслеты, ручная работа, освещенные';
+    $meta_description = '';
     $title = 'Контакты';
     $callback = Session::get('callback') ?: Session::get('callback');
     $cart_count = 0;
@@ -30,6 +30,6 @@ class ContactsController extends Controller {
 
     $canonical = $this->canonical;
 
-    return view('contacts', compact('keywords', 'description', 'title', 'cart_count', 'callback', 'canonical'));
+    return view('contacts', compact('meta_keywords', 'meta_description', 'title', 'cart_count', 'callback', 'canonical'));
   }
 }

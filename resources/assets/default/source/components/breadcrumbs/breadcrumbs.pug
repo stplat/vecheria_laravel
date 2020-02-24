@@ -1,10 +1,10 @@
 mixin breadcrumbs(current, link)
   ul.breadcrumb
     li
-      a.breadcrumb__link(href!="/") Главная
+      a.breadcrumb__link(href!="/") Православный магазин «ВЕЧЕРИЯ»
     if link
       li
-        a.breadcrumb__link(href!='/catalog/{{$subcategory_plug}}') !{current}
+        a.breadcrumb__link(href!='/{{$slug}}') !{current}
       li !{link}
     else
       li #{current}

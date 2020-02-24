@@ -16,8 +16,8 @@ class ShippingController extends Controller {
    */
 
   public function index() {
-    $keywords = 'православная, лавка, изделия, крестики, бухвицы, браслеты, ручная работа, освещенные';
-    $description = 'Курьерская доставка православных ювелирных изделий в Москве и МО';
+    $meta_keywords = 'православная, лавка, изделия, крестики, бухвицы, браслеты, ручная работа, освещенные';
+    $meta_description = 'Курьерская доставка православных ювелирных изделий в Москве и МО';
     $title = 'Способы доставки в интернет-магазине православных изделий "Вечерия"';
     $callback = Session::get('callback') ?: Session::get('callback');
     $cart_count = 0;
@@ -30,6 +30,6 @@ class ShippingController extends Controller {
 
     $canonical = $this->canonical;
 
-    return view('shipping', compact('keywords', 'description', 'title', 'cart_count', 'callback', 'canonical'));
+    return view('shipping', compact('meta_keywords', 'meta_description', 'title', 'cart_count', 'callback', 'canonical'));
   }
 }

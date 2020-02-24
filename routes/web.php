@@ -12,23 +12,20 @@
 */
 
 Route::get('/', 'IndexController@index');
-
-Route::get('/catalog/{category_plug}', 'CatalogController@index');
-Route::get('/catalog/{category_plug}/{item_plug}', 'ProductController@index');
-
 Route::get('/payment', 'PaymentController@index');
 Route::get('/shipping', 'ShippingController@index');
 Route::get('/contacts', 'ContactsController@index');
-
 Route::get('/cart', 'CartController@index');
-
 Route::get('/search', 'SearchController@index');
+
+Route::get('/{slug}', 'RoutesController@index');
+//Route::get('/{item_plug}', 'ProductController@index');
 
 Route::get('/cart/addSession', function () {
   abort('404');
 });
 
-Route::post('/cart/removeSession', function () {
+Route::get('/cart/removeSession', function () {
   abort('404');
 });
 

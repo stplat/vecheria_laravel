@@ -3,8 +3,8 @@
 @section('content')
 <div class="container">
     <ul class="breadcrumb">
-      <li><a class="breadcrumb__link" href="/">Главная</a></li>
-      <li><a class="breadcrumb__link" href="/catalog/{{$subcategory_plug}}">{{$subcategory}}</a></li>
+      <li><a class="breadcrumb__link" href="/">Православный магазин «ВЕЧЕРИЯ»</a></li>
+      <li><a class="breadcrumb__link" href="/{{$slug}}">{{$subcategory}}</a></li>
       <li>{{$items->name}}</li>
     </ul>
   <div class="product" id="{{$items->id}}">

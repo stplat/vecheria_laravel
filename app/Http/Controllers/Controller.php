@@ -16,7 +16,7 @@ class Controller extends BaseController {
   public $canonical;
   
   public function __construct(Request $request) {
-    $categories = DB::table('items')->join('categories', 'items.subcategory_id', '=', 'categories.id')
+    /*$categories = DB::table('items')->join('categories', 'items.subcategory_id', '=', 'categories.id')
       ->select('*', 'categories.plug as subcategory_plug')->get();
       
     $this->categoryQuery = $categories;
@@ -34,7 +34,7 @@ class Controller extends BaseController {
       }
     }
     
-    return $result;
+    return $result;*/
   }
   
   use AuthorizesRequests, DispatchesJobs, ValidatesRequests;

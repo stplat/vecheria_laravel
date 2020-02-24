@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <ul class="breadcrumb">
-      <li><a class="breadcrumb__link" href="/">Главная</a></li>
+      <li><a class="breadcrumb__link" href="/">Православный магазин «ВЕЧЕРИЯ»</a></li>
       <li>Поиск</li>
     </ul>
   <div class="catalog js-search">
@@ -23,15 +23,15 @@
                       <p>{{$item->manufacturer}}</p>
                     </div>
                     <div class="item__article">{{$item->article}}</div>
-                    <div class="item__image"><a href="/catalog/{{$item->subcategory_plug}}/{{$item->plug}}">
+                    <div class="item__image"><a href="/{{$item->slug}}">
                         <picture>
-                          <source srcset="/images/items/{{$item->plug}}-thumb.webp" data-src="/images/items/{{$item->plug}}-thumb.webp" type="image/webp"><img src="/images/items/{{$item->plug}}-thumb.jpg" data-src="/images/items/{{$item->plug}}-thumb.jpg" alt="{{$item->name}}" title="{{$item->name}}">
+                          <source srcset="/images/items/{{$item->slug}}-thumb.webp" data-src="/images/items/{{$item->slug}}-thumb.webp" type="image/webp"><img src="/images/items/{{$item->slug}}-thumb.jpg" data-src="/images/items/{{$item->slug}}-thumb.jpg" alt="{{$item->name}}" title="{{$item->name}}">
                         </picture></a></div>
-                    <div class="item__name"><a href="/catalog/{{$item->subcategory_plug}}/{{$item->plug}}">{{$item->name}}</a></div>
+                    <div class="item__name"><a href="/{{$item->slug}}">{{$item->name}}</a></div>
                     <div class="item__price">
                       <p>{{$item->price}}</p>
                     </div>
-                    <div class="item__button"><a class="button button--small" href="/catalog/{{$item->subcategory_plug}}/{{$item->plug}}">Подробнее</a>
+                    <div class="item__button"><a class="button button--small" href="/{{$item->slug}}">Подробнее</a>
                     </div>
                   </div>@endforeach
                 </div>@else

@@ -20,24 +20,26 @@ class AppServiceProvider extends ServiceProvider {
     $description = 'Покупка недорогих освещенных православных ювелирных изделий ручной работы по низким ценам';
     $title = 'Интернет-магазин православных изделий "Вечерия"';
 
-    $categories = DB::table('items')->join('categories', 'items.subcategory_id', '=', 'categories.id')
-      ->select('*', 'categories.plug as subcategory_plug')->get();
+    $category_list = DB::table('category')->leftJoin('product_to_category', 'category.category_id', '=', 'product_to_category.category_id')
+      ->select('category.name', 'category.name_2st', 'category.slug')
+      ->groupBy('category.category_id')->where('available', '1')
+      ->get();
 
     $menu = [];
 
-    foreach ($categories as $category) {
+    foreach ($category_list as $category) {
       $menu_item['category'] = '';
       $menu_item['subcategory'] = [];
 
-      if (!$this::inArray($menu, $category->category)) {
-        $menu_item['category'] = $category->category;
-        $menu_item['subcategory'][$category->plug] = $category->subcategory;
+      if (!$this::inArray($menu, $category->name)) {
+        $menu_item['category'] = $category->name;
+        $menu_item['subcategory'][$category->slug] = $category->name_2st;
 
         array_push($menu, $menu_item);
       } else {
         foreach ($menu as $key => $value) {
-          if ($value['category'] == $category->category) {
-            $menu[$key]['subcategory'][$category->plug] = $category->subcategory;
+          if ($value['category'] == $category->name) {
+            $menu[$key]['subcategory'][$category->slug] = $category->name_2st;
           }
         }
       }

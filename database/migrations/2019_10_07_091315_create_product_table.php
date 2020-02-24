@@ -4,18 +4,17 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateItemsTable extends Migration {
+class CreateProductTable extends Migration {
   /**
    * Run the migrations.
    *
    * @return void
    */
   public function up() {
-    Schema::create('items', function (Blueprint $table) {
-      $table->increments('id');
-      $table->integer('subcategory_id');
+    Schema::create('product', function (Blueprint $table) {
+      $table->increments('product_id');
       $table->text('name');
-      $table->text('plug');
+      $table->text('slug');
       $table->text('manufacturer');
       $table->text('article');
       $table->text('meta_keywords');

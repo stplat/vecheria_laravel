@@ -8,19 +8,19 @@ mixin items(quantity)
         p {{$item->manufacturer}}
       .item__article {{$item->article}}
       .item__image
-        a(href!="/catalog/{{$item->subcategory_plug}}/{{$item->plug}}")
+        a(href!="/{{$item->slug}}")
           picture
-            source(srcset!="/images/items/{{$item->plug}}-thumb.webp", data-src!="/images/items/{{$item->plug}}-thumb.webp", type="image/webp")
-            img(src!="/images/items/{{$item->plug}}-thumb.jpg",
-            data-src!="/images/items/{{$item->plug}}-thumb.jpg",
+            source(srcset!="/images/items/{{$item->slug}}-thumb.webp", data-src!="/images/items/{{$item->slug}}-thumb.webp", type="image/webp")
+            img(src!="/images/items/{{$item->slug}}-thumb.jpg",
+            data-src!="/images/items/{{$item->slug}}-thumb.jpg",
             alt!="{{$item->name}}",
             title!="{{$item->name}}")
       .item__name
-        a(href!="/catalog/{{$item->subcategory_plug}}/{{$item->plug}}") {{$item->name}}
+        a(href!="/{{$item->slug}}") {{$item->name}}
       .item__price
         p {{$item->price}}
       .item__button
-        +button('Подробнее', 'button--small', '/catalog/{{$item->subcategory_plug}}/{{$item->plug}}')
+        +button('Подробнее', 'button--small', '/{{$item->slug}}')
     | @endforeach
 
 mixin itemsSlider()
@@ -33,17 +33,17 @@ mixin itemsSlider()
             p {{$item->manufacturer}}
           .item__article {{$item->article}}
           .item__image
-            a(href!="/catalog/{{$item->subcategory_plug}}/{{$item->plug}}")
+            a(href!="/{{$item->slug}}")
               picture
-                source(srcset!="/images/items/{{$item->plug}}-thumb.webp", data-src!="/images/items/{{$item->plug}}-thumb.webp", type="image/webp")
-                img(src!="/images/items/{{$item->plug}}-thumb.jpg",
-                data-src!="/images/items/{{$item->plug}}-thumb.jpg",
+                source(srcset!="/images/items/{{$item->slug}}-thumb.webp", data-src!="/images/items/{{$item->slug}}-thumb.webp", type="image/webp")
+                img(src!="/images/items/{{$item->slug}}-thumb.jpg",
+                data-src!="/images/items/{{$item->slug}}-thumb.jpg",
                 alt!="{{$item->name}}",
                 title!="{{$item->name}}")
           .item__name
-            a(href!="/catalog/{{$item->subcategory_plug}}/{{$item->plug}}") {{$item->name}}
+            a(href!="/{{$item->slug}}") {{$item->name}}
           .item__price
             p {{$item->price}}
           .item__button
-            +button('Подробнее', 'button--small', '/catalog/{{$item->subcategory_plug}}/{{$item->plug}}')
+            +button('Подробнее', 'button--small', '/{{$item->slug}}')
       | @endforeach
