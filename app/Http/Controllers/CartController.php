@@ -164,7 +164,7 @@ class CartController extends Controller {
     $price = $request->input('price');
     $promo = $request->input('promo');
     $discount = $request->input('discount');
-    $total = ($request->input('total') == 'уточняйте у менеджера') ? 'уточняйте у менеджера' : $request->input('total') . ' руб.';
+    $total = (strpos($request->input('total'), 'доставка')) ? $request->input('total') : $request->input('total') . ' руб.';
     
     $to = "<info@vecheria.ru>, ";
     if ($request->input('email')) {

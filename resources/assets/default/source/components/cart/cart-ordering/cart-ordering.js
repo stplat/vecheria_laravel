@@ -268,8 +268,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       if (currentStep === 3) {
-        total.style.display = 'none';
         if (formValidate()) {
+          total.style.display = 'none';
           buttonPrev.classList.remove('hidden');
           buttonNext.innerText = 'Оформить';
           handler();
@@ -277,7 +277,7 @@ document.addEventListener('DOMContentLoaded', () => {
           const jsName = document.querySelector('.js-name');
           const jsPhone = document.querySelector('.js-phone');
           const jsShipping = document.querySelector('.js-shipping');
-          let jsShippingPrice = '';
+          const jsShippingPrice = document.querySelector('.js-shipping-price');
           const jsAddress = document.querySelector('.js-address');
           const jsEmail = document.querySelector('.js-email');
           const jsComment = document.querySelector('.js-comment');
@@ -292,14 +292,17 @@ document.addEventListener('DOMContentLoaded', () => {
               if (radio.id === 'shipping_1') {
                 if (total.innerText >= 4000) {
                   jsShipping.innerHTML = 'в пределах МКАД <span class="green">(бесплатно)</span>';
-                  jsShippingPrice = 0;
+                  jsShippingPrice.innerText = 0;
                 } else {
-                  jsShippingPrice = 300;
+                  jsShippingPrice.innerText = 300;
                   jsShipping.innerHTML = 'в пределах МКАД <span class="red">(300 руб.)</span>';
                 }
                 !jsTotalPrice.classList.contains('is-price') ? jsTotalPrice.classList.add('is-price') : '';
+                !jsShippingPrice.classList.contains('is-price') ? jsShippingPrice.classList.add('is-price') : '';
               } else if (radio.id === 'shipping_2') {
-                jsShipping.innerHTML = 'доставка за МКАД (цена договорная)';
+                jsShipping.innerHTML = 'доставка за МКАД';
+                jsShippingPrice.innerText = 'договорная';
+                jsShippingPrice.classList.remove('is-price');
               }
             }
           });
@@ -308,11 +311,11 @@ document.addEventListener('DOMContentLoaded', () => {
           jsEmail.innerText = email.value ? email.value : 'не указано';
           jsComment.innerText = comment.value ? comment.value : 'не указано';
           jsDiscount.innerText = Math.ceil(Number(jsPrice.innerText) * promoDiscount / 100);
-          if (jsShippingPrice === '') {
-            jsTotalPrice.innerText = 'уточняйте у менеджера';
+          if (jsShippingPrice.innerText === 'договорная') {
+            jsTotalPrice.innerText = Number(jsPrice.innerText) - Number(jsDiscount.innerText) + ' руб. + доставка';
             jsTotalPrice.classList.remove('is-price');
           } else {
-            jsTotalPrice.innerText = Number(jsPrice.innerText) - Number(jsDiscount.innerText) + Number(jsShippingPrice);
+            jsTotalPrice.innerText = Number(jsPrice.innerText) - Number(jsDiscount.innerText) + Number(jsShippingPrice.innerText);
           }
 
           orderFlag = true;

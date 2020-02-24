@@ -67,7 +67,11 @@
   <ul class="product-desc__tab">
     <li>Описание</li>
   </ul>
-  <div class="product_desc__body"><p><!--noindex-->{{$items->description}}<!--/noindex--></p></div>
+  <div class="product-desc__body">
+    <div class="product-desc__text">
+      <p><!--noindex-->{!! $items->description !!}<!--/noindex--></p>
+    </div>
+  </div>
 </div>@endif
     </div>
   </div>

@@ -35,17 +35,30 @@
   }
 }
 
-.product_desc__body {
+.product-desc__body {
   background: #FFFFFF;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
   border-radius: 4px;
   padding: 20px;
   position: relative;
+}
+
+.product-desc__text {
+  margin: -10px 0;
 
   p {
     color: $text-color;
     font-size: 14px;
     line-height: 22px;
     font-weight: 300;
+    margin: 10px 0;
+
+    strong {
+      font-weight: 500;
+    }
+  }
+
+  iframe {
+    width: 100%;
   }
 }
