@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <ul class="breadcrumb">
-      <li><a class="breadcrumb__link" href="/">Православный магазин «ВЕЧЕРИЯ»</a></li>
+      <li><a class="breadcrumb__link" href="/">Православный интернет-магазин «ВЕЧЕРИЯ»</a></li>
       <li>{{$h1}}</li>
     </ul>
   <div class="catalog js-catalog">
@@ -34,9 +34,10 @@
           <h1>{{$h1}}</h1>
         </div>
         <div class="catalog__top-panel">
+          <form id="sort" hidden></form>
           <div class="catalog__select">
             <div class="catalog-select"><span>На странице:</span>
-              <select name="per_page">
+              <select name="limit" form="sort">
                 <optgroup label="На странице:"></optgroup>
                 <option value="24" selected="selected">24 изделия</option>
                 <option value="36">36 изделия</option>
@@ -46,7 +47,7 @@
           </div>
           <div class="catalog__select">
             <div class="catalog-select"><span>Сортировка:</span>
-              <select name="orderby">
+              <select name="orderby" form="sort">
                 <optgroup label="Сортировка:"></optgroup>
                 <option value="asc" selected="selected">по Увеличению цены</option>
                 <option value="desc">по Уменьшению цены</option>
@@ -73,6 +74,7 @@
                     </div>
                   </div>@endforeach
                 </div>@if ($description)
+        <div class="catalog__more">Показать еще</div>
         <div class="catalog__comment">
           <p>{!! $description !!}</p>
         </div>@endif

@@ -16,8 +16,8 @@ class AppServiceProvider extends ServiceProvider {
    * @return void
    */
   public function boot() {
-    $keywords = 'православная, лавка, изделия, крестики, бухвицы, браслеты, ручная работа, освещенные';
-    $description = 'Покупка недорогих освещенных православных ювелирных изделий ручной работы по низким ценам';
+    $meta_keywords = 'православная, лавка, изделия, крестики, бухвицы, браслеты, ручная работа, освещенные';
+    $meta_description = 'Покупка недорогих освещенных православных ювелирных изделий ручной работы по низким ценам';
     $title = 'Интернет-магазин православных изделий "Вечерия"';
 
     $category_list = DB::table('category')->leftJoin('product_to_category', 'category.category_id', '=', 'product_to_category.category_id')
@@ -65,8 +65,8 @@ class AppServiceProvider extends ServiceProvider {
 
     view()->share([
       'menu' => $menu,
-      'keywords' => $keywords,
-      'description' => $description,
+      'keywords' => $meta_keywords,
+      'description' => $meta_description,
       'title' => $title,
       'canonical' => false,
     ]);

@@ -40,9 +40,11 @@ class RoutesController extends Controller {
     $description = $category->comment;
   
     $limit = $request->input('limit');
+    $order = $request->input('orderby') ?: 'asc';
   
     $items = DB::table('product')->leftJoin('product_to_category', 'product.product_id', '=', 'product_to_category.product_id')
-      ->select('product.*')->where('product_to_category.category_id', $category->category_id)->groupBy('product.product_id')->limit($limit)->get();
+      ->select('product.*')->where('product_to_category.category_id', $category->category_id)->groupBy('product.product_id')->limit($limit)
+      ->orderBy('price', $order)->get();
   
     if ($request->ajax()) {
       return response()->json([
@@ -52,12 +54,11 @@ class RoutesController extends Controller {
     } else {
       return view('catalog', compact('meta_keywords', 'meta_description', 'title', 'h1', 'description', 'items'));
     }
-    
-    
-    
   }
   
   public function product($query) {
     print_r($query);
+
+    return view('product', compact('items'));
   }
 }

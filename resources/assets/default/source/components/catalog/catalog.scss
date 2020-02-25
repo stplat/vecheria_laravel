@@ -198,3 +198,22 @@
     }
   }
 }
+
+.catalog__more {
+  width: 100%;
+  line-height: 42px;
+  color: $text-color;
+  border-radius: 4px;
+  text-align: center;
+  background: #FFFFFF;
+  margin: 15px 0 0;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 300;
+  transition: color 0.08s;
+
+  .no-touch &:hover {
+    color: $orange-color-hover;
+  }
+}

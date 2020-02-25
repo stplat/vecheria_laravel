@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <ul class="breadcrumb">
-      <li><a class="breadcrumb__link" href="/">Православный магазин «ВЕЧЕРИЯ»</a></li>
+      <li><a class="breadcrumb__link" href="/">Православный интернет-магазин «ВЕЧЕРИЯ»</a></li>
       <li>Поиск</li>
     </ul>
   <div class="catalog js-search">
