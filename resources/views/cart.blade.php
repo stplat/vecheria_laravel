@@ -15,13 +15,13 @@
     <div class="cart__empty">Ваша корзина покупок пуста.</div>@else
     <div class="cart__col">@if ($cart_step == 1)
       <div class="cart__items" data-container="1">@foreach ($items as $key => $item)
-<div class="cart-item" id="{{$item->id}}">
+<div class="cart-item" id="{{$item->product_id}}">
   <div class="cart-item__col">
-    <div class="cart-item__image"><img src="/images/items/{{$item->plug}}.jpg" alt="{{$item->name}}" title="{{$item->name}}"></div>
+    <div class="cart-item__image"><img src="/images/items/{{$item->slug}}.jpg" alt="{{$item->name}}" title="{{$item->name}}"></div>
   </div>
   <div class="cart-item__col">
     <div class="cart-item__title">Наименование:</div>
-    <div class="cart-item__name"><a href="/catalog/{{$item->subcategory_plug}}/{{$item->plug}}">{{$item->name}}</a></div>
+    <div class="cart-item__name"><a href="/catalog/{{$item->category_slug}}/{{$item->slug}}">{{$item->name}}</a></div>
     <div class="cart-item__price">{{$item->price}}</div>
   </div>
   <div class="cart-item__col">
@@ -44,13 +44,13 @@
 
       </div>@else
       <div class="cart__items hidden" data-container="1">@foreach ($items as $key => $item)
-<div class="cart-item" id="{{$item->id}}">
+<div class="cart-item" id="{{$item->product_id}}">
   <div class="cart-item__col">
-    <div class="cart-item__image"><img src="/images/items/{{$item->plug}}.jpg" alt="{{$item->name}}" title="{{$item->name}}"></div>
+    <div class="cart-item__image"><img src="/images/items/{{$item->slug}}.jpg" alt="{{$item->name}}" title="{{$item->name}}"></div>
   </div>
   <div class="cart-item__col">
     <div class="cart-item__title">Наименование:</div>
-    <div class="cart-item__name"><a href="/catalog/{{$item->subcategory_plug}}/{{$item->plug}}">{{$item->name}}</a></div>
+    <div class="cart-item__name"><a href="/catalog/{{$item->category_slug}}/{{$item->slug}}">{{$item->name}}</a></div>
     <div class="cart-item__price">{{$item->price}}</div>
   </div>
   <div class="cart-item__col">

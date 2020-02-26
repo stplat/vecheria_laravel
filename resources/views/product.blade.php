@@ -4,27 +4,27 @@
 <div class="container">
     <ul class="breadcrumb">
       <li><a class="breadcrumb__link" href="/">Православный интернет-магазин «ВЕЧЕРИЯ»</a></li>
-      <li><a class="breadcrumb__link" href="/{{$slug}}">{{$subcategory}}</a></li>
-      <li>{{$items->name}}</li>
+      <li><a class="breadcrumb__link" href="/catalog/{{$product->category_slug}}">{{$product->category}}</a></li>
+      <li>{{$product->category}}</li>
     </ul>
-  <div class="product" id="{{$items->id}}">
+  <div class="product" id="{{$product->product_id}}">
     <div class="product__wrapper">
       <div class="product__col product__col--left">
         <div class="product__name">
-          <h1>{{$items->name}}</h1>
+          <h1>{{$h1}}</h1>
         </div>
-        <div class="product__article">{{$items->article}}</div>
+        <div class="product__article">{{$product->article}}</div>
         <div class="product__image">
 <div class="product-image">
   <div class="product-image__showcase">
     <picture>
-      <source srcset="/images/items/{{$items->image_path[0]}}.webp" data-src="/images/items/{{$items->image_path[0]}}" type="image/webp"><img src="/images/items/{{$items->image_path[0]}}.jpg" data-src="/images/items/{{$items->image_path[0]}}.jpg" alt="{{$items->name}}" title="{{$items->name}}">
+      <source srcset="/images/items/{{$product->image_path[0]}}.webp" data-src="/images/items/{{$product->image_path[0]}}" type="image/webp"><img src="/images/items/{{$product->image_path[0]}}.jpg" data-src="/images/items/{{$product->image_path[0]}}.jpg" alt="{{$product->name}}" title="{{$product->name}}">
     </picture>
   </div>
-  <ul class="product-image__preview">@foreach ($items->image_path as $image)
+  <ul class="product-image__preview">@foreach ($product->image_path as $image)
     <li>
       <picture>
-        <source srcset="/images/items/{{$image}}.webp" data-src="/images/items/{{$image}}.webp" type="image/webp"><img src="/images/items/{{$image}}.jpg" data-src="/images/items/{{$image}}.jpg" alt="{{$items->name}}" title="{{$items->name}}">
+        <source srcset="/images/items/{{$image}}.webp" data-src="/images/items/{{$image}}.webp" type="image/webp"><img src="/images/items/{{$image}}.jpg" data-src="/images/items/{{$image}}.jpg" alt="{{$product->name}}" title="{{$product->name}}">
       </picture>
     </li>@endforeach
   </ul>
@@ -33,22 +33,22 @@
       </div>
       <div class="product__col">
         <div class="product__price">
-          <p>{{$items->price}}</p>
+          <p>{{$product->price}}</p>
         </div>
         <div class="product__row">
-          <ul class="product__params">@if ($items->manufacturer)
-            <li><span>Производитель:</span><span>{{$items->manufacturer}}</span></li>@endif
-            @if ($items->weight)
-            <li><span>Средний вес:</span><span>{{$items->weight}}</span></li>@endif
-            @if ($items->material)
-            <li><span>Материал:</span><span>{{$items->material}}</span></li>@endif
-            @if ($items->technic)
-            <li><span>Техника:</span><span>{{$items->technic}}</span></li>@endif
-            @if ($items->dimension)
-            <li><span>Размеры:</span><span>{{$items->dimension}}</span></li>@endif
+          <ul class="product__params">@if ($product->manufacturer)
+            <li><span>Производитель:</span><span>{{$product->manufacturer}}</span></li>@endif
+            @if ($product->weight)
+            <li><span>Средний вес:</span><span>{{$product->weight}}</span></li>@endif
+            @if ($product->material)
+            <li><span>Материал:</span><span>{{$product->material}}</span></li>@endif
+            @if ($product->technic)
+            <li><span>Техника:</span><span>{{$product->technic}}</span></li>@endif
+            @if ($product->dimension)
+            <li><span>Размеры:</span><span>{{$product->dimension}}</span></li>@endif
             <li><span>Наличие:</span><span class="green">на складе</span></li>
-          </ul>@if ($items->comment)
-          <div class="product__comment">{!! $items->comment !!}</div>@endif
+          </ul>@if ($product->comment)
+          <div class="product__comment">{!! $product->comment !!}</div>@endif
         </div>
         <div class="product__holy">
           <p>Изделие освящено</p>
@@ -62,14 +62,14 @@
         </div>
       </div>
     </div>
-    <div class="product__description">@if ($items->description)
+    <div class="product__description">@if ($product->description)
 <div class="product-desc">
   <ul class="product-desc__tab">
     <li>Описание</li>
   </ul>
   <div class="product-desc__body">
     <div class="product-desc__text">
-      <p><!--noindex-->{!! $items->description !!}<!--/noindex--></p>
+      <p><!--noindex-->{!! $product->description !!}<!--/noindex--></p>
     </div>
   </div>
 </div>@endif

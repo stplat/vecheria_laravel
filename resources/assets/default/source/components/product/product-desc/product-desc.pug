@@ -1,9 +1,9 @@
-| @if ($items->description)
+| @if ($product->description)
 .product-desc
   ul.product-desc__tab
     li Описание
   .product-desc__body
     .product-desc__text
       p
-        <!--noindex-->{!! $items->description !!}<!--/noindex-->
+        <!--noindex-->{!! $product->description !!}<!--/noindex-->
 | @endif

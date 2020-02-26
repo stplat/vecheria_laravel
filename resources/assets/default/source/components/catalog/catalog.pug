@@ -26,8 +26,10 @@
         .catalog__total Показано: <span>{{$items->count()}} изд.</span>
       include ../item/item
       +items('3')
-      | @if ($description)
+      | @if ($items->count() > 24)
       .catalog__more Показать еще
+      | @endif
+      | @if ($description)
       .catalog__comment
         p {!! $description !!}
       | @endif

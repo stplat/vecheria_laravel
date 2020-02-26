@@ -13,8 +13,88 @@ class ProductController extends Controller {
    * @return \Illuminate\Http\Response
    */
 
-  public function index($category_plug, $item_plug) {
-    global $flag;
+  public function index($category_slug, $product_slug, Request $request) {
+
+    $query = DB::table('category')->where('slug', $category_slug)->get();
+
+    if (count($query->toArray())) {
+      $query = DB::table('product')->where('slug', $product_slug)->get();
+
+      if (count($query->toArray())) {
+        $product = $query->toArray()[0];
+
+        $meta_keywords = $product->meta_keywords;
+        $meta_description = $product->meta_description;
+        $title = $product->meta_title;
+        $h1 = $product->name;
+        $description = $product->comment;
+
+        $product = DB::table('product')->leftJoin('product_to_category', 'product.product_id', '=', 'product_to_category.product_id')
+          ->select('product.*', 'category.name_2st as category', 'category.slug as category_slug')
+          ->leftJoin('category', 'product.category_id', '=', 'category.category_id')
+          ->where('product.product_id', $product->product_id)->groupBy('product.product_id')
+          ->get()[0];
+
+        $buy = Session::get('buy') ?: Session::get('buy');
+        $cart_count = 0;
+
+        $product->image_path = explode(';', $product->image_path);
+
+        $in_cart = false;
+
+        $canonical = $this->canonical;
+
+        if (is_array(Session::get('items'))) {
+          foreach (Session::get('items') as $item) {
+            $cart_count += $item['count'];
+          }
+
+          if (parent::inArray(Session::get('items'), $product->product_id)) {
+            $in_cart = true;
+          }
+        }
+
+        if ($request->ajax()) {
+          return response()->json([
+            'product' => $product,
+          ]);
+
+        } else {
+          return view('product', compact('meta_keywords', 'meta_description', 'title', 'h1', 'description', 'product', 'buy', 'in_cart'));
+        }
+      } else {
+        return abort('404');
+      }
+    }
+
+
+
+    /*if (count($query->toArray())) {
+      $category = $query->toArray()[0];
+
+      $meta_keywords = $category->meta_keywords;
+      $meta_description = $category->meta_description;
+      $title = $category->meta_title;
+      $h1 = $category->name_2st;
+      $description = $category->comment;
+
+      $items = DB::table('product')->leftJoin('product_to_category', 'product.product_id', '=', 'product_to_category.product_id')
+        ->select('product.*')->where('product_to_category.category_id', $category->category_id)->groupBy('product.product_id')
+        ->get();
+
+      if ($request->ajax()) {
+        return response()->json([
+          'items' => $items,
+        ]);
+
+      } else {
+        return view('product', compact('meta_keywords', 'meta_description', 'title', 'h1', 'description', 'items'));
+      }
+    } else {
+      return abort('404');
+    }
+
+    /*global $flag;
     $flag = false;
 
     foreach ($this->categoryQuery->toArray() as $category) {
@@ -65,7 +145,7 @@ class ProductController extends Controller {
       return view('product', compact('items', 'subcategory', 'subcategory_plug', 'keywords', 'description', 'title', 'cart_count', 'in_cart', 'callback', 'buy', 'canonical'));
     } else {
       abort('404');
-    }
+    }*/
 
   }
 }

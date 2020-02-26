@@ -1,46 +1,46 @@
-.product(id!="{{$items->id}}")
+.product(id!="{{$product->product_id}}")
   .product__wrapper
     .product__col.product__col--left
       .product__name
-        h1 {{$items->name}}
-      .product__article {{$items->article}}
+        h1 {{$h1}}
+      .product__article {{$product->article}}
       .product__image
         include product-image/product-image
     .product__col
       .product__price
-        p {{$items->price}}
+        p {{$product->price}}
       .product__row
         ul.product__params
-          | @if ($items->manufacturer)
+          | @if ($product->manufacturer)
           li
             span Производитель:
-            span {{$items->manufacturer}}
+            span {{$product->manufacturer}}
           | @endif
-          | @if ($items->weight)
+          | @if ($product->weight)
           li
             span Средний вес:
-            span {{$items->weight}}
+            span {{$product->weight}}
           | @endif
-          | @if ($items->material)
+          | @if ($product->material)
           li
             span Материал:
-            span {{$items->material}}
+            span {{$product->material}}
           | @endif
-          | @if ($items->technic)
+          | @if ($product->technic)
           li
             span Техника:
-            span {{$items->technic}}
+            span {{$product->technic}}
           | @endif
-          | @if ($items->dimension)
+          | @if ($product->dimension)
           li
             span Размеры:
-            span {{$items->dimension}}
+            span {{$product->dimension}}
           | @endif
           li
             span Наличие:
             span.green на складе
-        | @if ($items->comment)
-        .product__comment {!! $items->comment !!}
+        | @if ($product->comment)
+        .product__comment {!! $product->comment !!}
         | @endif
       .product__holy
         p Изделие освящено

@@ -8,7 +8,7 @@ mixin items(quantity)
         p {{$item->manufacturer}}
       .item__article {{$item->article}}
       .item__image
-        a(href!="/{{$item->slug}}")
+        a(href!="/catalog/{{$item->category_slug}}/{{$item->slug}}")
           picture
             source(srcset!="/images/items/{{$item->slug}}-thumb.webp", data-src!="/images/items/{{$item->slug}}-thumb.webp", type="image/webp")
             img(src!="/images/items/{{$item->slug}}-thumb.jpg",
@@ -16,11 +16,11 @@ mixin items(quantity)
             alt!="{{$item->name}}",
             title!="{{$item->name}}")
       .item__name
-        a(href!="/{{$item->slug}}") {{$item->name}}
+        a(href!="/catalog/{{$item->category_slug}}/{{$item->slug}}") {{$item->name}}
       .item__price
         p {{$item->price}}
       .item__button
-        +button('Подробнее', 'button--small', '/{{$item->slug}}')
+        +button('Подробнее', 'button--small', '/catalog/{{$item->category_slug}}/{{$item->slug}}')
     | @endforeach
 
 mixin itemsSlider()
@@ -33,7 +33,7 @@ mixin itemsSlider()
             p {{$item->manufacturer}}
           .item__article {{$item->article}}
           .item__image
-            a(href!="/{{$item->slug}}")
+            a(href!="/catalog/{{$item->category_slug}}/{{$item->slug}}")
               picture
                 source(srcset!="/images/items/{{$item->slug}}-thumb.webp", data-src!="/images/items/{{$item->slug}}-thumb.webp", type="image/webp")
                 img(src!="/images/items/{{$item->slug}}-thumb.jpg",
@@ -41,9 +41,9 @@ mixin itemsSlider()
                 alt!="{{$item->name}}",
                 title!="{{$item->name}}")
           .item__name
-            a(href!="/{{$item->slug}}") {{$item->name}}
+            a(href!="/catalog/{{$item->category_slug}}/{{$item->slug}}") {{$item->name}}
           .item__price
             p {{$item->price}}
           .item__button
-            +button('Подробнее', 'button--small', '/{{$item->slug}}')
+            +button('Подробнее', 'button--small', '/catalog/{{$item->category_slug}}/{{$item->slug}}')
       | @endforeach

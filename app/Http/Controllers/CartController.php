@@ -22,7 +22,6 @@ class CartController extends Controller {
     $id = [];
     $items = [];
     
-    
     if (is_array(Session::get('items'))) {
       foreach (Session::get('items') as $category) {
         $cart_count += $category['count'];
@@ -39,7 +38,7 @@ class CartController extends Controller {
       foreach ($items_query as $obj) {
         $item = $obj;
         foreach (Session::get('items') as $array) {
-          if ($array['id'] == $obj->id) {
+          if ($array['id'] == $obj->product_id) {
             $item->count = $array['count'];
             $item->total = $array['count'] * $obj->price;
           }
@@ -148,10 +147,9 @@ class CartController extends Controller {
    * @return \Illuminate\Http\Response
    */
   public function show(array $id) {
-    return DB::table('items')->join('categories', 'items.subcategory_id', '=', 'categories.id')
-      ->select('items.*', 'categories.plug as subcategory_plug')
-      ->whereIn('items.id', $id)
-      ->get();
+    return DB::table('product')->leftJoin('category', 'product.category_id', '=', 'category.category_id')
+      ->select('product.*', 'category.name_2st as category', 'category.slug as category_slug')->groupBy('product.product_id')
+      ->whereIn('product.product_id', $id)->get();
   }
   
   public function ordering(Request $request) {

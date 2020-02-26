@@ -1,18 +1,18 @@
 .product-image
   .product-image__showcase
     picture
-      source(srcset!="/images/items/{{$items->image_path[0]}}.webp", data-src!="/images/items/{{$items->image_path[0]}}", type="image/webp")
-      img(src!="/images/items/{{$items->image_path[0]}}.jpg",
-      data-src!="/images/items/{{$items->image_path[0]}}.jpg",
-      alt!="{{$items->name}}",
-      title!="{{$items->name}}")
+      source(srcset!="/images/items/{{$product->image_path[0]}}.webp", data-src!="/images/items/{{$product->image_path[0]}}", type="image/webp")
+      img(src!="/images/items/{{$product->image_path[0]}}.jpg",
+      data-src!="/images/items/{{$product->image_path[0]}}.jpg",
+      alt!="{{$product->name}}",
+      title!="{{$product->name}}")
   ul.product-image__preview
-    | @foreach ($items->image_path as $image)
+    | @foreach ($product->image_path as $image)
     li
       picture
         source(srcset!="/images/items/{{$image}}.webp", data-src!="/images/items/{{$image}}.webp", type="image/webp")
         img(src!="/images/items/{{$image}}.jpg",
         data-src!="/images/items/{{$image}}.jpg",
-        alt!="{{$items->name}}",
-        title!="{{$items->name}}")
+        alt!="{{$product->name}}",
+        title!="{{$product->name}}")
     | @endforeach

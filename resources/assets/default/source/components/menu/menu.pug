@@ -7,6 +7,6 @@
         ul.menu__submenu
           | @foreach ($menu_items['subcategory'] as $slug => $subcategory)
           li
-            a.menu__submenu-link(href="/{{$slug}}") {{$subcategory}}
+            a.menu__submenu-link(href="/catalog/{{$slug}}") {{$subcategory}}
           | @endforeach
       | @endforeach

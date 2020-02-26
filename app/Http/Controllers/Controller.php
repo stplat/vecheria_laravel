@@ -22,7 +22,7 @@ class Controller extends BaseController {
     $this->categoryQuery = $categories;
 
     $url_path = (string)$request->fullUrl();
-    $this->canonical = false;
+    $this->canonical = false;*/
   }
   
   public static function inArray($array, $needle) {
@@ -34,7 +34,7 @@ class Controller extends BaseController {
       }
     }
     
-    return $result;*/
+    return $result;
   }
   
   use AuthorizesRequests, DispatchesJobs, ValidatesRequests;

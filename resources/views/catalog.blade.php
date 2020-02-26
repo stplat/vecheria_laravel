@@ -62,19 +62,20 @@
                       <p>{{$item->manufacturer}}</p>
                     </div>
                     <div class="item__article">{{$item->article}}</div>
-                    <div class="item__image"><a href="/{{$item->slug}}">
+                    <div class="item__image"><a href="/catalog/{{$item->category_slug}}/{{$item->slug}}">
                         <picture>
                           <source srcset="/images/items/{{$item->slug}}-thumb.webp" data-src="/images/items/{{$item->slug}}-thumb.webp" type="image/webp"><img src="/images/items/{{$item->slug}}-thumb.jpg" data-src="/images/items/{{$item->slug}}-thumb.jpg" alt="{{$item->name}}" title="{{$item->name}}">
                         </picture></a></div>
-                    <div class="item__name"><a href="/{{$item->slug}}">{{$item->name}}</a></div>
+                    <div class="item__name"><a href="/catalog/{{$item->category_slug}}/{{$item->slug}}">{{$item->name}}</a></div>
                     <div class="item__price">
                       <p>{{$item->price}}</p>
                     </div>
-                    <div class="item__button"><a class="button button--small" href="/{{$item->slug}}">Подробнее</a>
+                    <div class="item__button"><a class="button button--small" href="/catalog/{{$item->category_slug}}/{{$item->slug}}">Подробнее</a>
                     </div>
                   </div>@endforeach
-                </div>@if ($description)
-        <div class="catalog__more">Показать еще</div>
+                </div>@if ($items->count() > 24)
+        <div class="catalog__more">Показать еще</div>@endif
+        @if ($description)
         <div class="catalog__comment">
           <p>{!! $description !!}</p>
         </div>@endif

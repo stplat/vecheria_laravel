@@ -18,8 +18,8 @@ Route::get('/contacts', 'ContactsController@index');
 Route::get('/cart', 'CartController@index');
 Route::get('/search', 'SearchController@index');
 
-Route::get('/{slug}', 'RoutesController@index');
-//Route::get('/{item_plug}', 'ProductController@index');
+Route::get('/catalog/{category_slug}', 'CatalogController@index');
+Route::get('/catalog/{category_slug}/{product_slug}', 'ProductController@index');
 
 Route::get('/cart/addSession', function () {
   abort('404');

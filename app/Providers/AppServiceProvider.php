@@ -65,8 +65,8 @@ class AppServiceProvider extends ServiceProvider {
 
     view()->share([
       'menu' => $menu,
-      'keywords' => $meta_keywords,
-      'description' => $meta_description,
+      'meta_keywords' => $meta_keywords,
+      'meta_description' => $meta_description,
       'title' => $title,
       'canonical' => false,
     ]);

@@ -1,11 +1,11 @@
-mixin breadcrumbs(current, link)
+mixin breadcrumbs(current, last, lastLink)
   ul.breadcrumb
     li
       a.breadcrumb__link(href!="/") Православный интернет-магазин «ВЕЧЕРИЯ»
-    if link
+    if last
       li
-        a.breadcrumb__link(href!='/{{$slug}}') !{current}
-      li !{link}
+        a.breadcrumb__link(href!='/catalog/' + lastLink) !{last}
+      li !{last}
     else
       li #{current}
 

@@ -3,6 +3,7 @@
 
 .text {
   position: relative;
+  font-weight: 300;
 
   div, p, h1, h2 {
     &:first-child {
@@ -33,6 +34,11 @@
     }
   }
 
+  strong {
+    font-weight: 400;
+    //color: $text-color-opacity;
+  }
+
   .red {
     color: $red-color;
     font-weight: 400;
@@ -54,10 +60,10 @@
   margin: 40px 0 0;
 
   h2 {
-    font-size: 18px;
+    font-size: 17px;
     text-transform: uppercase;
     color: $orange-color-hover;
-    font-weight: bolder;
+    font-weight: 500;
   }
 }
 

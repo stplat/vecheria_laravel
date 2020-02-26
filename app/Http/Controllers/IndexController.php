@@ -18,7 +18,8 @@ class IndexController extends Controller {
     $title = '«ВЕЧЕРИЯ» - интернет магазин православных изделий';
 
     $items = DB::table('product')->leftJoin('product_to_category', 'product.product_id', '=', 'product_to_category.product_id')
-      ->select('product.*')->inRandomOrder()->limit('4')->get();
+      ->select('product.*', 'category.name_2st as category', 'category.slug as category_slug')->inRandomOrder()->limit('4')
+      ->leftJoin('category', 'product.category_id', '=', 'category.category_id')->get();
     
     $canonical = $this->canonical;
     

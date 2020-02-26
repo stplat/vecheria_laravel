@@ -2,7 +2,7 @@
 | @section('content')
 .container
   include ../components/breadcrumbs/breadcrumbs
-  +breadcrumbs('{{$subcategory}}', '{{$items->name}}')
+  +breadcrumbs('{{$product->name}}', '{{$product->category}}', '{{$product->category_slug}}')
   include ../components/product/product
   include ../components/popup/popup
   +buy()

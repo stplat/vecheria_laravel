@@ -1,12 +1,12 @@
 | @foreach ($items as $key => $item)
-.cart-item(id!="{{$item->id}}")
+.cart-item(id!="{{$item->product_id}}")
   .cart-item__col
     .cart-item__image
-      img(src!="/images/items/{{$item->plug}}.jpg", alt!="{{$item->name}}", title!="{{$item->name}}")
+      img(src!="/images/items/{{$item->slug}}.jpg", alt!="{{$item->name}}", title!="{{$item->name}}")
   .cart-item__col
     .cart-item__title Наименование:
     .cart-item__name
-      a(href!="/catalog/{{$item->subcategory_plug}}/{{$item->plug}}") {{$item->name}}
+      a(href!="/catalog/{{$item->category_slug}}/{{$item->slug}}") {{$item->name}}
     .cart-item__price {{$item->price}}
   .cart-item__col
     .cart-item__title Количество:
