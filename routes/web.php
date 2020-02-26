@@ -28,7 +28,7 @@ Route::get('/cart/addSession', function () {
   abort('404');
 });
 
-Route::post('/cart/removeSession', function () {
+Route::get('/cart/removeSession', function () {
   abort('404');
 });
 
