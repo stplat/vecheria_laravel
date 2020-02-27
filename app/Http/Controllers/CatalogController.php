@@ -15,7 +15,7 @@ class CatalogController extends Controller {
 
   public function index($category_slug, Request $request) {
 
-    $query = DB::table('category')->where('slug', $category_slug)->get();
+    $query = DB::table('category')->where('slug', $category_slug)->where('available', '1')->get();
 
     if (count($query->toArray())) {
       $category = $query->toArray()[0];

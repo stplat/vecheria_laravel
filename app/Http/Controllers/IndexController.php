@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Session;
 use DB;
 
 class IndexController extends Controller {
@@ -27,9 +26,8 @@ class IndexController extends Controller {
   }
 
   public function sitemap(\Request $request) {
-    return response()->view('sitemap', [
-
-    ])->header('Content-Type', 'text/xml');
+    $items = 'asd';
+    return response()->view('sitemap', compact('items'))->header('Content-Type', 'text/xml');
   }
   
   public function route() {
