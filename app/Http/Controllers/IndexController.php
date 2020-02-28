@@ -26,8 +26,13 @@ class IndexController extends Controller {
   }
 
   public function sitemap(\Request $request) {
-    $items = 'asd';
-    return response()->view('sitemap', compact('items'))->header('Content-Type', 'text/xml');
+    $items = DB::table('product')->leftJoin('product_to_category', 'product.product_id', '=', 'product_to_category.product_id')
+      ->select('product.*', 'category.name_2st as category', 'category.slug as category_slug')->groupBy('product.product_id')
+      ->leftJoin('category', 'product.category_id', '=', 'category.category_id')->get();
+
+    $categories = DB::table('category')->where('available', '1')->get();
+
+    return response()->view('sitemap', compact('items', 'categories'))->header('Content-Type', 'text/xml');
   }
   
   public function route() {
