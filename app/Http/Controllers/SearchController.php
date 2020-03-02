@@ -19,14 +19,6 @@ class SearchController extends Controller {
     $keywords = '';
     $description = 'Поиск товаров по артикулу или названию';
     $title = 'Поиск товаров по артикулу или названию';
-    $callback = Session::get('callback') ?: Session::get('callback');
-    $cart_count = 0;
-
-    if (is_array(Session::get('items'))) {
-      foreach (Session::get('items') as $category) {
-        $cart_count += $category['count'];
-      }
-    }
 
     $canonical = $this->canonical;
 
@@ -34,7 +26,7 @@ class SearchController extends Controller {
     $items = false;
 
     if ($request->input('search')) {
-      $items = DB::table('items')->get();
+      $items = DB::table('product')->get();
       $search_str = mb_strtolower((string)$request->input('search'));
       $id = [];
 
@@ -43,14 +35,17 @@ class SearchController extends Controller {
         $article = mb_strtolower((string)$value->article);
 
         if (strpos($name, $search_str) !== false || strpos($article, $search_str) !== false) {
-          array_push($id, $value->id);
+          array_push($id, $value->product_id);
         }
       }
+      $items = DB::table('product')->select('product.*', 'category.name_2st as category', 'category.slug as category_slug')
+        ->leftJoin('category', 'product.category_id', '=', 'category.category_id')
+        ->whereIn('product.product_id', $id)->get();
 
-      $items = DB::table('items')->leftJoin('categories', 'items.subcategory_id', '=', 'categories.id')
-        ->select('items.*', 'categories.plug as subcategory_plug')->whereIn('items.id', $id)->paginate();
+      /*$items = DB::table('product')->leftJoin('categories', 'items.subcategory_id', '=', 'categories.id')
+        ->select('items.*', 'categories.plug as subcategory_plug')->whereIn('items.id', $id)->paginate();*/
     }
 
-    return view('search', compact('keywords', 'description', 'title', 'cart_count', 'callback', 'canonical', 'search_str', 'items'));
+    return view('search', compact('keywords', 'description', 'title', 'canonical', 'search_str', 'items'));
   }
 }

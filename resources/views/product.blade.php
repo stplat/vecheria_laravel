@@ -65,11 +65,31 @@
     <div class="product__description">@if ($product->description)
 <div class="product-desc">
   <ul class="product-desc__tab">
-    <li>Описание</li>
+    <li class="is-active">Описание</li>
+    <li>Видео</li>
+    <li>Доставка и оплата</li>
+    <li>Гарантия</li>
   </ul>
   <div class="product-desc__body">
-    <div class="product-desc__text">
-      <p><!--noindex-->{!! $product->description !!}<!--/noindex--></p>
+    <div class="product-desc__screen">
+      <div class="product-desc__text">
+        <p><!--noindex-->{!! $product->description !!}<!--/noindex--></p>
+      </div>
+    </div>
+    <div class="product-desc__screen">
+      <div class="product-desc__text">
+        <p><!--noindex-->{!! $product->description !!}<!--/noindex--></p>
+      </div>
+    </div>
+    <div class="product-desc__screen">
+      <div class="product-desc__text">
+        <p><!--noindex-->{!! $product->description !!}<!--/noindex--></p>
+      </div>
+    </div>
+    <div class="product-desc__screen">
+      <div class="product-desc__text">
+        <p><!--noindex-->{!! $product->description !!}<!--/noindex--></p>
+      </div>
     </div>
   </div>
 </div>@endif

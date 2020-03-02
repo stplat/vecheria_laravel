@@ -1,9 +1,25 @@
 | @if ($product->description)
 .product-desc
   ul.product-desc__tab
-    li Описание
+    li.is-active Описание
+    li Видео
+    li Доставка и оплата
+    li Гарантия
   .product-desc__body
-    .product-desc__text
-      p
-        <!--noindex-->{!! $product->description !!}<!--/noindex-->
+    .product-desc__screen
+      .product-desc__text
+        p
+          <!--noindex-->{!! $product->description !!}<!--/noindex-->
+    .product-desc__screen
+      .product-desc__text
+        p
+          <!--noindex-->{!! $product->description !!}<!--/noindex-->
+    .product-desc__screen
+      .product-desc__text
+        p
+          <!--noindex-->{!! $product->description !!}<!--/noindex-->
+    .product-desc__screen
+      .product-desc__text
+        p
+          <!--noindex-->{!! $product->description !!}<!--/noindex-->
 | @endif

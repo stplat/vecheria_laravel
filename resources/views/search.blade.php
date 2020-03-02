@@ -14,7 +14,7 @@
       <div class="catalog__content">@if ($items)
         <div class="catalog__top-panel">
           <div class="catalog__total">
-            <p>найдено товаров: {{$items->count()}} из {{$items->total()}} ед.</p>
+            <p>найдено товаров: {{$items->count()}} ед.</p>
           </div>
         </div>
                 <div class="item__container">@foreach ($items as $key => $item)

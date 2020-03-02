@@ -29,6 +29,7 @@ class CreateProductTable extends Migration {
       $table->text('material');
       $table->text('technic');
       $table->text('description');
+      $table->text('video');
       $table->text('image_path');
       $table->timestamps();
     });

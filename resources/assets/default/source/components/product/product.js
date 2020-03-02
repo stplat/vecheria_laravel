@@ -1,4 +1,5 @@
 import './product-image/product-image';
+import './product-desc/product-desc';
 import {sendForm, handlerPopup} from '../popup/popup';
 import axios from 'axios';
 

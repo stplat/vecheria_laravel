@@ -11,6 +11,43 @@
   position: relative;
 
   li {
+    cursor: pointer;
+    color: $text-color-opacity;
+    font-weight: normal;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+    position: relative;
+    border-bottom: 1px solid transparent;
+    padding: 12px 20px;
+    border-radius: 4px 4px 0 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0 3px 0 0;
+    background-color: #FDFDFD;
+    transition: background-color 0.08s, color 0.08s;
+
+    &:after {
+      background-color: transparent;
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      left: 0;
+      bottom: -2px;
+      z-index: 1;
+      transition: background-color 0.08s;
+    }
+
+    .no-touch &:hover {
+      background: #FFFFFF;
+      color: $text-color;
+
+      &:after {
+        background: #FFFFFF;
+      }
+    }
+  }
+
+  .is-active {
     background: #FFFFFF;
     color: $text-color;
     font-weight: normal;
@@ -22,7 +59,7 @@
     font-size: 14px;
     text-transform: uppercase;
 
-    &:before {
+    &:after {
       content: "";
       position: absolute;
       width: 100%;
@@ -30,7 +67,7 @@
       left: 0;
       bottom: -2px;
       background: #FFFFFF;
-      z-index: 3;
+      z-index: 1;
     }
   }
 }

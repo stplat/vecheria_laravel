@@ -12,7 +12,7 @@
         | @if ($items)
         .catalog__top-panel
           .catalog__total
-            p найдено товаров: {{$items->count()}} из {{$items->total()}} ед.
+            p найдено товаров: {{$items->count()}} ед.
         include ../components/item/item
         +items('4')
         | @else
