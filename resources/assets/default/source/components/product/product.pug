@@ -1,14 +1,18 @@
-.product(id!="{{$product->product_id}}")
+.product(id!="{{$product->product_id}}", itemscope, itemtype="http://schema.org/Product")
   .product__wrapper
     .product__col.product__col--left
       .product__name
-        h1 {{$h1}}
-      .product__article {{$product->article}}
+        h1(itemprop="name") {{$h1}}
+      .product__article(itemprop="model") {{$product->article}}
+      <meta itemprop="brand" content="{{$product->manufacturer}}">
+      <meta itemprop="description" content="{{strip_tags($product->description)}}">
       .product__image
         include product-image/product-image
-    .product__col
+    .product__col(itemprop="offers", itemscope, itemtype="http://schema.org/Offer")
       .product__price
-        p {{$product->price}}
+        p(itemprop="price") {{$product->price}}
+        <meta itemprop="priceCurrency" content="RUB">
+        <meta itemprop="priceValidUntil" content="2020-12-31T21:30">
       .product__row
         ul.product__params
           | @if ($product->manufacturer)
@@ -38,7 +42,7 @@
           | @endif
           li
             span Наличие:
-            span.green на складе
+            span.green(itemprop="availability", itemtype="http://schema.org/InStock") на складе
         | @if ($product->comment)
         .product__comment {!! $product->comment !!}
         | @endif

@@ -12,7 +12,8 @@ header.header(itemscope, itemtype="http://schema.org/Organization")
       .header__props
         include header-props/header-props
       .header__logo
-        <span itemprop="name" hidden>«ВЕЧЕРИЯ»</span>
+        <meta itemprop="name" content="ВЕЧЕРИЯ">
+        <meta itemprop="email" content="info@vecheria.ru">
         include ../logo/logo
         +logo()
         .header__search

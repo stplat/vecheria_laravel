@@ -101,7 +101,8 @@
   </ul>
 </div>
           </div>
-          <div class="header__logo"><span itemprop="name" hidden>«ВЕЧЕРИЯ»</span><a class="logo" href="/"><img src="/images/logo.svg" alt="Интернет-магазин ювелирных православных изделий" title="Интернет-магазин ювелирных православных изделий"></a>
+          <div class="header__logo"><meta itemprop="name" content="ВЕЧЕРИЯ">
+<meta itemprop="email" content="info@vecheria.ru"><a class="logo" href="/" itemprop="url"><img itemprop="logo" src="/images/logo.svg" alt="Интернет-магазин ювелирных православных изделий" title="Интернет-магазин ювелирных православных изделий"></a>
             <div class="header__search">
 <form class="header-search" method="GET" action="/search">
   <input class="header-search__input" type="search" placeholder="Поиск по названию или артикулу" name="search">
@@ -116,11 +117,11 @@
       </div>
     </header>
 <div class="menu__container">
-  <nav class="container">
+  <nav class="container" itemscope itemtype="http://schema.org/SiteNavigationElement">
     <ul class="menu">@foreach ($menu as $menu_items)
       <li><span class="menu__plug">{{$menu_items['category']}}</span>
         <ul class="menu__submenu">@foreach ($menu_items['subcategory'] as $slug => $subcategory)
-          <li><a class="menu__submenu-link" href="/catalog/{{$slug}}">{{$subcategory}}</a></li>@endforeach
+          <li><a class="menu__submenu-link" href="/catalog/{{$slug}}" itemprop="url">{{$subcategory}}</a></li>@endforeach
         </ul>
       </li>@endforeach
     </ul>

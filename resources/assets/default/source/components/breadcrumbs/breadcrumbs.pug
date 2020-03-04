@@ -1,10 +1,14 @@
 mixin breadcrumbs(current, last, lastLink)
-  ul.breadcrumb
-    li
-      a.breadcrumb__link(href!="/") Православный интернет-магазин «ВЕЧЕРИЯ»
+  ul.breadcrumb(itemscope, itemtype="http://schema.org/BreadcrumbList")
+    li(itemprop="itemListElement", itemscope, itemtype="http://schema.org/ListItem")
+      a.breadcrumb__link(href!="/", itemprop="item")
+        span(itemprop="name") Православный интернет-магазин «ВЕЧЕРИЯ»
+        <meta itemprop="position" content="1" />
     if last
-      li
-        a.breadcrumb__link(href!='/catalog/' + lastLink) !{last}
+      li(itemprop="itemListElement", itemscope, itemtype="http://schema.org/ListItem")
+        a.breadcrumb__link(href!='/catalog/' + lastLink, itemprop="item")
+          span(itemprop="name") !{last}
+          <meta itemprop="position" content="2" />
       li !{last}
     else
       li #{current}

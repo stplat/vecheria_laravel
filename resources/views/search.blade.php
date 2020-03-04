@@ -2,8 +2,8 @@
 @extends ('layout')
 @section('content')
 <div class="container">
-    <ul class="breadcrumb">
-      <li><a class="breadcrumb__link" href="/">Православный интернет-магазин «ВЕЧЕРИЯ»</a></li>
+    <ul class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
+      <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a class="breadcrumb__link" href="/" itemprop="item"><span itemprop="name">Православный интернет-магазин «ВЕЧЕРИЯ»</span><meta itemprop="position" content="1" /></a></li>
       <li>Поиск</li>
     </ul>
   <div class="catalog js-search">

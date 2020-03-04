@@ -2,23 +2,24 @@
 @extends ('layout')
 @section('content')
 <div class="container">
-    <ul class="breadcrumb">
-      <li><a class="breadcrumb__link" href="/">Православный интернет-магазин «ВЕЧЕРИЯ»</a></li>
-      <li><a class="breadcrumb__link" href="/catalog/{{$product->category_slug}}">{{$product->category}}</a></li>
+    <ul class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
+      <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a class="breadcrumb__link" href="/" itemprop="item"><span itemprop="name">Православный интернет-магазин «ВЕЧЕРИЯ»</span><meta itemprop="position" content="1" /></a></li>
+      <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a class="breadcrumb__link" href="/catalog/{{$product->category_slug}}" itemprop="item"><span itemprop="name">{{$product->category}}</span><meta itemprop="position" content="2" /></a></li>
       <li>{{$product->category}}</li>
     </ul>
-  <div class="product" id="{{$product->product_id}}">
+  <div class="product" id="{{$product->product_id}}" itemscope itemtype="http://schema.org/Product">
     <div class="product__wrapper">
       <div class="product__col product__col--left">
         <div class="product__name">
-          <h1>{{$h1}}</h1>
+          <h1 itemprop="name">{{$h1}}</h1>
         </div>
-        <div class="product__article">{{$product->article}}</div>
+        <div class="product__article" itemprop="model">{{$product->article}}</div><meta itemprop="brand" content="{{$product->manufacturer}}">
+<meta itemprop="description" content="{{strip_tags($product->description)}}">
         <div class="product__image">
 <div class="product-image">
   <div class="product-image__showcase">
     <picture>
-      <source srcset="/images/items/{{$product->image_path[0]}}.webp" data-src="/images/items/{{$product->image_path[0]}}" type="image/webp"><img src="/images/items/{{$product->image_path[0]}}.jpg" data-src="/images/items/{{$product->image_path[0]}}.jpg" alt="{{$product->name}}" title="{{$product->name}}">
+      <source srcset="/images/items/{{$product->image_path[0]}}.webp" data-src="/images/items/{{$product->image_path[0]}}" type="image/webp"><img src="/images/items/{{$product->image_path[0]}}.jpg" data-src="/images/items/{{$product->image_path[0]}}.jpg" alt="{{$product->name}}" title="{{$product->name}}" itemprop="image">
     </picture>
   </div>
   <ul class="product-image__preview">@foreach ($product->image_path as $image)
@@ -31,9 +32,10 @@
 </div>
         </div>
       </div>
-      <div class="product__col">
+      <div class="product__col" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
         <div class="product__price">
-          <p>{{$product->price}}</p>
+          <p itemprop="price">{{$product->price}}</p><meta itemprop="priceCurrency" content="RUB">
+<meta itemprop="priceValidUntil" content="2020-12-31T21:30">
         </div>
         <div class="product__row">
           <ul class="product__params">@if ($product->manufacturer)
@@ -46,7 +48,7 @@
             <li><span>Техника:</span><span>{{$product->technic}}</span></li>@endif
             @if ($product->dimension)
             <li><span>Размеры:</span><span>{{$product->dimension}}</span></li>@endif
-            <li><span>Наличие:</span><span class="green">на складе</span></li>
+            <li><span>Наличие:</span><span class="green" itemprop="availability" itemtype="http://schema.org/InStock">на складе</span></li>
           </ul>@if ($product->comment)
           <div class="product__comment">{!! $product->comment !!}</div>@endif
         </div>
