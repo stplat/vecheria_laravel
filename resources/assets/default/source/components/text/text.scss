@@ -23,6 +23,10 @@
     line-height: 24px;
   }
 
+  &.text--product p {
+    font-size: 15px;
+  }
+
   a {
     color: $orange-color-hover;
     border-bottom: 1px dotted $orange-color-hover;
@@ -70,4 +74,5 @@
 .text__signature {
   color: $orange-color-hover;
   text-align: right;
+  font-size: 15px;
 }

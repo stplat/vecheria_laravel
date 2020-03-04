@@ -1,25 +1,58 @@
-| @if ($product->description)
+include ../../../components/text/text
+mixin garantiya
+  .product-desc__text
+    p Мы работаем только с проверенными мастерскими, которые имеют разрешение на изготовление ювелирных изделий из драгоценных металлов.
+    p <strong>Каждое изделие<strong>:
+    ul
+      li Соответствуют требованиям отраслевых стандартов <a href="/images/ost-117-3-002-95.pdf" target="_blank" rel="nofollow">(ГОСТ/ОСТ)</a>.
+      li Имеет оттиск знака-именника предприятия-изготовителя, зарегистрированного в <a href="http://www.probpalata.ru/rgpp/" target="_blank" rel="nofollow">ГИПН РГПП</a>.
+      li Заклеймено в соответствии с <a href="https://base.garant.ru/71393504/" target="_blank" rel="nofollow">Правилами клеймения изделий из драгоценных металлов</a>.
+      li Иммет бирку с указанием металлов, вставок, веса и ОТК.
+
 .product-desc
   ul.product-desc__tab
-    li.is-active Описание
-    li Видео
-    li Доставка и оплата
-    li Гарантия
+    | @if ($product->description)
+    li.is-active(data-for=1) Описание
+    | @if ($product->video)
+    li(data-for=2) Видео
+    | @endif
+    li(data-for=3) Доставка и оплата
+    li(data-for=4) Гарантии
+    | @else
+    | @if ($product->video)
+    li.is-active(data-for=2) Видео
+    li(data-for=3) Доставка и оплата
+    li(data-for=4) Гарантии
+    | @else
+    li.is-active(data-for=3) Доставка и оплата
+    li(data-for=4) Гарантии
+    | @endif
+    | @endif
   .product-desc__body
-    .product-desc__screen
+    | @if ($product->description)
+    .product-desc__screen.is-active(data-id=1)
       .product-desc__text
         p
           <!--noindex-->{!! $product->description !!}<!--/noindex-->
-    .product-desc__screen
-      .product-desc__text
-        p
-          <!--noindex-->{!! $product->description !!}<!--/noindex-->
-    .product-desc__screen
-      .product-desc__text
-        p
-          <!--noindex-->{!! $product->description !!}<!--/noindex-->
-    .product-desc__screen
-      .product-desc__text
-        p
-          <!--noindex-->{!! $product->description !!}<!--/noindex-->
-| @endif
+    | @if ($product->video)
+    .product-desc__screen(data-id=2) {!! $product->video !!}
+    | @endif
+    .product-desc__screen(data-id=3)
+      +shipping_for_product
+    .product-desc__screen(data-id=4)
+      +garantiya
+    | @else
+    | @if ($product->video)
+    .product-desc__screen.is-active(data-id=2) {!! $product->video !!}
+    .product-desc__screen(data-id=3)
+      +shipping_for_product
+    .product-desc__screen(data-id=4)
+      +garantiya
+    | @else
+    .product-desc__screen.is-active(data-id=3)
+      +shipping_for_product
+    .product-desc__screen(data-id=4)
+      +garantiya
+    | @endif
+    | @endif
+
