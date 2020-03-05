@@ -1,4 +1,6 @@
-footer.footer
+footer.footer(itemscope, itemtype="http://schema.org/WPFooter")
+  <meta itemprop="copyrightYear" content="{{ date('Y') }}">
+  <meta itemprop="copyrightHolder" content="vecheria.ru">
   include ../up/up
   .footer__top
     .container.container--flex
@@ -26,4 +28,4 @@ footer.footer
           p Заказы через интернет – круглосуточно
   .footer__copyright
     .container
-      p Интернет-магазин православных ювелирных изделий vecheria.ru. All rights reserved ©2018-2020г.
+      p Интернет-магазин православных ювелирных изделий vecheria.ru. All rights reserved ©{{ date('Y') }}г.

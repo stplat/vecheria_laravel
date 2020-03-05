@@ -5,7 +5,7 @@
     <ul class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
       <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a class="breadcrumb__link" href="/" itemprop="item"><span itemprop="name">Православный интернет-магазин «ВЕЧЕРИЯ»</span><meta itemprop="position" content="1" /></a></li>
       <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a class="breadcrumb__link" href="/catalog/{{$product->category_slug}}" itemprop="item"><span itemprop="name">{{$product->category}}</span><meta itemprop="position" content="2" /></a></li>
-      <li>{{$product->category}}</li>
+      <li>{{$product->name}}</li>
     </ul>
   <div class="product" id="{{$product->product_id}}" itemscope itemtype="http://schema.org/Product">
     <div class="product__wrapper">
@@ -133,7 +133,7 @@
           <div class="product-desc__screen" data-id="4">
                   <div class="product-desc__text">
                     <p>Мы работаем только с проверенными мастерскими, которые имеют разрешение на изготовление ювелирных изделий из драгоценных металлов.</p>
-                    <p><strong>Каждое изделие<strong>:</p>
+                    <p><strong>Каждое изделие</strong>:</p>
                     <ul>
                       <li>Соответствуют требованиям отраслевых стандартов <a href="/images/ost-117-3-002-95.pdf" target="_blank" rel="nofollow">(ГОСТ/ОСТ)</a>.</li>
                       <li>Имеет оттиск знака-именника предприятия-изготовителя, зарегистрированного в <a href="http://www.probpalata.ru/rgpp/" target="_blank" rel="nofollow">ГИПН РГПП</a>.</li>
@@ -191,7 +191,7 @@
           <div class="product-desc__screen" data-id="4">
                   <div class="product-desc__text">
                     <p>Мы работаем только с проверенными мастерскими, которые имеют разрешение на изготовление ювелирных изделий из драгоценных металлов.</p>
-                    <p><strong>Каждое изделие<strong>:</p>
+                    <p><strong>Каждое изделие</strong>:</p>
                     <ul>
                       <li>Соответствуют требованиям отраслевых стандартов <a href="/images/ost-117-3-002-95.pdf" target="_blank" rel="nofollow">(ГОСТ/ОСТ)</a>.</li>
                       <li>Имеет оттиск знака-именника предприятия-изготовителя, зарегистрированного в <a href="http://www.probpalata.ru/rgpp/" target="_blank" rel="nofollow">ГИПН РГПП</a>.</li>
@@ -247,7 +247,7 @@
           <div class="product-desc__screen" data-id="4">
                   <div class="product-desc__text">
                     <p>Мы работаем только с проверенными мастерскими, которые имеют разрешение на изготовление ювелирных изделий из драгоценных металлов.</p>
-                    <p><strong>Каждое изделие<strong>:</p>
+                    <p><strong>Каждое изделие</strong>:</p>
                     <ul>
                       <li>Соответствуют требованиям отраслевых стандартов <a href="/images/ost-117-3-002-95.pdf" target="_blank" rel="nofollow">(ГОСТ/ОСТ)</a>.</li>
                       <li>Имеет оттиск знака-именника предприятия-изготовителя, зарегистрированного в <a href="http://www.probpalata.ru/rgpp/" target="_blank" rel="nofollow">ГИПН РГПП</a>.</li>

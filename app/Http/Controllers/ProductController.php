@@ -15,6 +15,8 @@ class ProductController extends Controller {
 
   public function index($category_slug, $product_slug, Request $request) {
 
+    $str = '<iframe width="560" height="315" src="https://www.youtube.com/embed/cUVk5VEN8Uc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+
     $query = DB::table('category')->where('slug', $category_slug)->get();
 
     if (count($query->toArray())) {

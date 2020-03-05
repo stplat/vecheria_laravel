@@ -127,7 +127,8 @@
     </ul>
   </nav>
 </div>@yield ('content')
-    <footer class="footer"><a class="up" href=""></a>
+    <footer class="footer" itemscope itemtype="http://schema.org/WPFooter"><meta itemprop="copyrightYear" content="{{ date('Y') }}">
+<meta itemprop="copyrightHolder" content="vecheria.ru"><a class="up" href=""></a>
       <div class="footer__top">
         <div class="container container--flex">
           <div class="footer__logo"><a class="logo" href="/"><img src="/images/logo-white.svg" alt="Интернет-магазин ювелирных православных изделий" title="Интернет-магазин ювелирных православных изделий"></a>
@@ -153,7 +154,7 @@
       </div>
       <div class="footer__copyright">
         <div class="container">
-          <p>Интернет-магазин православных ювелирных изделий vecheria.ru. All rights reserved ©2018-2020г.</p>
+          <p>Интернет-магазин православных ювелирных изделий vecheria.ru. All rights reserved ©{{ date('Y') }}г.</p>
         </div>
       </div>
     </footer>

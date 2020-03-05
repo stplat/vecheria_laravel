@@ -9,7 +9,7 @@ mixin breadcrumbs(current, last, lastLink)
         a.breadcrumb__link(href!='/catalog/' + lastLink, itemprop="item")
           span(itemprop="name") !{last}
           <meta itemprop="position" content="2" />
-      li !{last}
+      li !{current}
     else
       li #{current}
 
