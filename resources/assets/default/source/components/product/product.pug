@@ -62,3 +62,11 @@
         | @endif
   .product__description
     include product-desc/product-desc
+  include ../title/title
+  include ../item/item
+  | @if ($product->similar_product_id)
+  +title('h3', 'Похожие товары')
+  +similarProductSlider()
+  | @endif
+
+

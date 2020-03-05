@@ -31,6 +31,7 @@ class CreateProductTable extends Migration {
       $table->text('description');
       $table->text('video');
       $table->text('image_path');
+      $table->text('similar_product_id');
       $table->timestamps();
     });
   }

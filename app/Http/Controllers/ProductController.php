@@ -15,8 +15,6 @@ class ProductController extends Controller {
 
   public function index($category_slug, $product_slug, Request $request) {
 
-    $str = '<iframe width="560" height="315" src="https://www.youtube.com/embed/cUVk5VEN8Uc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
-
     $query = DB::table('category')->where('slug', $category_slug)->get();
 
     if (count($query->toArray())) {
@@ -36,6 +34,14 @@ class ProductController extends Controller {
           ->leftJoin('category', 'product.category_id', '=', 'category.category_id')
           ->where('product.product_id', $product->product_id)->groupBy('product.product_id')
           ->get()[0];
+
+        $similar_product_id = explode(';', $product->similar_product_id);
+
+        $similar_products = DB::table('product')->leftJoin('product_to_category', 'product.product_id', '=', 'product_to_category.product_id')
+          ->select('product.*', 'category.name_2st as category', 'category.slug as category_slug')
+          ->leftJoin('category', 'product.category_id', '=', 'category.category_id')
+          ->whereIn('product.product_id', $similar_product_id)->groupBy('product.product_id')
+          ->get();
 
         $buy = Session::get('buy') ?: Session::get('buy');
         $cart_count = 0;
@@ -62,13 +68,12 @@ class ProductController extends Controller {
           ]);
 
         } else {
-          return view('product', compact('meta_keywords', 'meta_description', 'title', 'h1', 'description', 'product', 'buy', 'in_cart'));
+          return view('product', compact('meta_keywords', 'meta_description', 'title', 'h1', 'description', 'product', 'similar_products', 'buy', 'in_cart'));
         }
       } else {
         return abort('404');
       }
     }
-
 
 
     /*if (count($query->toArray())) {
