@@ -1,24 +1,29 @@
 include ../button/button
 
 mixin items(quantity)
-  .item__container
+  .item__container(itemscope, itemtype="http://schema.org/ItemList")
     | @foreach ($items as $key => $item)
-    .item(class="item--" + quantity)
+    .item(class="item--" + quantity, itemscope, itemprop="itemListElement", itemtype="http://schema.org/Product")
       .item__sign
-        p {{$item->manufacturer}}
-      .item__article {{$item->article}}
+        p(itemprop="brand") {{$item->manufacturer}}
+      .item__article(itemprop="model") {{$item->article}}
       .item__image
-        a(href!="/catalog/{{$item->category_slug}}/{{$item->slug}}")
+        a(href!="/catalog/{{$item->category_slug}}/{{$item->slug}}", itemprop="url")
           picture
             source(srcset!="/images/items/{{$item->slug}}-thumb.webp", data-src!="/images/items/{{$item->slug}}-thumb.webp", type="image/webp")
             img(src!="/images/items/{{$item->slug}}-thumb.jpg",
             data-src!="/images/items/{{$item->slug}}-thumb.jpg",
             alt!="{{$item->name}}",
-            title!="{{$item->name}}")
+            title!="{{$item->name}}",
+            itemprop="image")
+            <meta itemprop="description" content="{{$item->name}}">
       .item__name
         a(href!="/catalog/{{$item->category_slug}}/{{$item->slug}}") {{$item->name}}
-      .item__price
-        p {{$item->price}}
+          span(itemprop="name") {{$item->name}}
+      .item__price(itemscope, itemprop="offers", itemtype="http://schema.org/Offer")
+        p(itemprop="price") {{$item->price}}
+        <meta itemprop="priceCurrency" content="RUB">
+        <meta itemprop="availability" href="http://schema.org/InStock" content="В наличии">
       .item__button
         +button('Подробнее', 'button--small', '/catalog/{{$item->category_slug}}/{{$item->slug}}')
     | @endforeach
@@ -31,7 +36,7 @@ mixin itemsSlider()
         .item.item--for-slider(itemscope, itemprop="itemListElement", itemtype="http://schema.org/Product")
           .item__sign
             p(itemprop="brand") {{$item->manufacturer}}
-          .item__article {{$item->article}}
+          .item__article(itemprop="model") {{$item->article}}
           .item__image
             a(href!="/catalog/{{$item->category_slug}}/{{$item->slug}}", itemprop="url")
               picture

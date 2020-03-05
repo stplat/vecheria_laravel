@@ -34,7 +34,7 @@
             <div class="item__sign">
               <p itemprop="brand">{{$item->manufacturer}}</p>
             </div>
-            <div class="item__article">{{$item->article}}</div>
+            <div class="item__article" itemprop="model">{{$item->article}}</div>
             <div class="item__image"><a href="/catalog/{{$item->category_slug}}/{{$item->slug}}" itemprop="url">
                 <picture>
                   <source srcset="/images/items/{{$item->slug}}-thumb.webp" data-src="/images/items/{{$item->slug}}-thumb.webp" type="image/webp"><img src="/images/items/{{$item->slug}}-thumb.jpg" data-src="/images/items/{{$item->slug}}-thumb.jpg" alt="{{$item->name}}" title="{{$item->name}}" itemprop="image"><meta itemprop="description" content="{{$item->name}}">
