@@ -100,6 +100,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
         document.querySelector('.item__container').innerHTML = item;
         document.querySelector('.js-catalog').classList.remove('is-loaded');
+
+        const itemsLimit = document.querySelector('.catalog__total span').innerText;
+
+        if (Number(itemsLimit.slice(0, -5)) === items.length) {
+          moreItems.style.display = 'none';
+        }
+
       }).catch((error) => {
         document.querySelector('.js-catalog').classList.remove('is-loaded');
         console.log(error);
