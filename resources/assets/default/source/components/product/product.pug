@@ -42,7 +42,7 @@
           | @endif
           li
             span Наличие:
-            span.green(itemprop="availability", itemtype="http://schema.org/InStock") на складе
+            span.green(itemprop="availability", content="http://schema.org/InStock") на складе
         | @if ($product->comment)
         .product__comment {!! $product->comment !!}
         | @endif

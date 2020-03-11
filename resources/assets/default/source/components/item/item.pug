@@ -23,7 +23,8 @@ mixin items(quantity)
       .item__price(itemscope, itemprop="offers", itemtype="http://schema.org/Offer")
         p(itemprop="price") {{$item->price}}
         <meta itemprop="priceCurrency" content="RUB">
-        <meta itemprop="availability" href="http://schema.org/InStock" content="В наличии">
+        <meta itemprop="availability" content="http://schema.org/InStock">
+        <link itemprop="url" href="{{ url('') }}/catalog/{{$item->category_slug}}/{{$item->slug}}" />
       .item__button
         +button('Подробнее', 'button--small', '/catalog/{{$item->category_slug}}/{{$item->slug}}')
     | @endforeach
@@ -53,7 +54,8 @@ mixin itemsSlider()
           .item__price(itemscope, itemprop="offers", itemtype="http://schema.org/Offer")
             p(itemprop="price") {{$item->price}}
             <meta itemprop="priceCurrency" content="RUB">
-            <meta itemprop="availability" href="http://schema.org/InStock" content="В наличии">
+            <meta itemprop="availability" content="http://schema.org/InStock">
+            <link itemprop="url" href="{{ url('') }}/catalog/{{$item->category_slug}}/{{$item->slug}}" />
           .item__button
             +button('Подробнее', 'button--small', '/catalog/{{$item->category_slug}}/{{$item->slug}}')
       | @endforeach
@@ -83,7 +85,8 @@ mixin similarProductSlider()
           .item__price(itemscope, itemprop="offers", itemtype="http://schema.org/Offer")
             p(itemprop="price") {{$item->price}}
             <meta itemprop="priceCurrency" content="RUB">
-            <meta itemprop="availability" href="http://schema.org/InStock" content="В наличии">
+            <meta itemprop="availability" content="http://schema.org/InStock">
+            <link itemprop="url" href="{{ url('') }}/catalog/{{$item->category_slug}}/{{$item->slug}}" />
           .item__button
             +button('Подробнее', 'button--small', '/catalog/{{$item->category_slug}}/{{$item->slug}}')
       | @endforeach

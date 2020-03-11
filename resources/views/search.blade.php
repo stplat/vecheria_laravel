@@ -30,7 +30,8 @@
                     <div class="item__name"><a href="/catalog/{{$item->category_slug}}/{{$item->slug}}"><span itemprop="name">{{$item->name}}</span></a></div>
                     <div class="item__price" itemscope itemprop="offers" itemtype="http://schema.org/Offer">
                       <p itemprop="price">{{$item->price}}</p><meta itemprop="priceCurrency" content="RUB">
-<meta itemprop="availability" href="http://schema.org/InStock" content="В наличии">
+<meta itemprop="availability" content="http://schema.org/InStock">
+<link itemprop="url" href="{{ url('') }}/catalog/{{$item->category_slug}}/{{$item->slug}}" />
                     </div>
                     <div class="item__button"><a class="button button--small" href="/catalog/{{$item->category_slug}}/{{$item->slug}}">Подробнее</a>
                     </div>

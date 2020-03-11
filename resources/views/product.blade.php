@@ -48,7 +48,7 @@
             <li><span>Техника:</span><span>{{$product->technic}}</span></li>@endif
             @if ($product->dimension)
             <li><span>Размеры:</span><span>{{$product->dimension}}</span></li>@endif
-            <li><span>Наличие:</span><span class="green" itemprop="availability" itemtype="http://schema.org/InStock">на складе</span></li>
+            <li><span>Наличие:</span><span class="green" itemprop="availability" content="http://schema.org/InStock">на складе</span></li>
           </ul>@if ($product->comment)
           <div class="product__comment">{!! $product->comment !!}</div>@endif
         </div>
@@ -280,7 +280,8 @@
                 <div class="item__name"><a href="/catalog/{{$item->category_slug}}/{{$item->slug}}"><span itemprop="name">{{$item->name}}</span></a></div>
                 <div class="item__price" itemscope itemprop="offers" itemtype="http://schema.org/Offer">
                   <p itemprop="price">{{$item->price}}</p><meta itemprop="priceCurrency" content="RUB">
-<meta itemprop="availability" href="http://schema.org/InStock" content="В наличии">
+<meta itemprop="availability" content="http://schema.org/InStock">
+<link itemprop="url" href="{{ url('') }}/catalog/{{$item->category_slug}}/{{$item->slug}}" />
                 </div>
                 <div class="item__button"><a class="button button--small" href="/catalog/{{$item->category_slug}}/{{$item->slug}}">Подробнее</a>
                 </div>
