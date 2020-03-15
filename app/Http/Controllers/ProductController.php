@@ -73,6 +73,8 @@ class ProductController extends Controller {
       } else {
         return abort('404');
       }
+    } else {
+      return abort('404');
     }
 
 
