@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (document.querySelector('.product')) {
     const product = document.querySelector('.product');
     const id = product.id;
+    const article = product.querySelector('.product__article').innerText;
     const itemName = product.querySelector('.product__name h1').innerText;
     const price = product.querySelector('.product__price p').innerText;
     const count = 1;
@@ -19,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const buyForm = document.querySelector('#buy');
     const other = JSON.stringify({
       id: id,
+      article: article,
       itemName: itemName,
       price: price
     });

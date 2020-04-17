@@ -159,6 +159,7 @@ class CartController extends Controller {
     $address = $request->input('address') ? $request->input('address') : 'не указано';
     $email = $request->input('email') ? (string)$request->input('email') : 'не указано';
     $comment = $request->input('comment') ? $request->input('comment') : 'не указано';
+    $items = $request->input('items');
     $price = $request->input('price');
     $promo = $request->input('promo');
     $discount = $request->input('discount');
@@ -183,6 +184,7 @@ class CartController extends Controller {
           <li style="margin: 5px 0;">Адрес доставки: <b>' . $address . '</b></li>
           <li style="margin: 5px 0;">Электронная почта: <b>' . $email . '</b></li>
           <li style="margin: 5px 0;">Комментарий: <b>' . $comment . '</b></li>
+          <li style="margin: 5px 0;">Изделие: <b>' . $items . '</b></li>
           <li style="margin: 5px 0;">Стоимость изделий: <b>' . $price . ' руб.</b></li>
           <li style="margin: 5px 0;">Скидка по промокоду (' . $promo . '): <b>' . $discount . ' руб.</b></li>
           <li style="margin: 5px 0;">Общая стоимость покупки: <b>' . $total . '</b></li>

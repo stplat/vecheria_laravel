@@ -15,7 +15,7 @@
     <div class="cart__empty">Ваша корзина покупок пуста.</div>@else
     <div class="cart__col">@if ($cart_step == 1)
       <div class="cart__items" data-container="1">@foreach ($items as $key => $item)
-<div class="cart-item" id="{{$item->product_id}}">
+<div class="cart-item" id="{{$item->product_id}}" data-article="{{$item->article}}">
   <div class="cart-item__col">
     <div class="cart-item__image"><img src="/images/items/{{$item->slug}}.jpg" alt="{{$item->name}}" title="{{$item->name}}"></div>
   </div>
@@ -44,7 +44,7 @@
 
       </div>@else
       <div class="cart__items hidden" data-container="1">@foreach ($items as $key => $item)
-<div class="cart-item" id="{{$item->product_id}}">
+<div class="cart-item" id="{{$item->product_id}}" data-article="{{$item->article}}">
   <div class="cart-item__col">
     <div class="cart-item__image"><img src="/images/items/{{$item->slug}}.jpg" alt="{{$item->name}}" title="{{$item->name}}"></div>
   </div>

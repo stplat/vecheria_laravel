@@ -213,6 +213,14 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       if (orderFlag) {
+        const itemsHTML = document.querySelectorAll('.cart-item');
+        let items = '';
+
+        [...itemsHTML].forEach(item => {
+          const article = item.dataset.article;
+          const anchor = item.querySelector('.cart-item__name').innerText;
+          items += '«' + anchor + '» - артикул: ' + article + ';<br/> ';
+        });
 
         const params = JSON.stringify({
           name: form.name.value,
@@ -222,6 +230,7 @@ document.addEventListener('DOMContentLoaded', () => {
           email: form.email.value,
           comment: form.comment.value,
           promo: form.promo.value,
+          items: items,
           price: document.querySelector('.js-price').innerText,
           discount: document.querySelector('.js-discount').innerText,
           total: document.querySelector('.js-total-price').innerText,

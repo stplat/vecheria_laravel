@@ -1,5 +1,5 @@
 | @foreach ($items as $key => $item)
-.cart-item(id!="{{$item->product_id}}")
+.cart-item(id!="{{$item->product_id}}", data-article!="{{$item->article}}")
   .cart-item__col
     .cart-item__image
       img(src!="/images/items/{{$item->slug}}.jpg", alt!="{{$item->name}}", title!="{{$item->name}}")

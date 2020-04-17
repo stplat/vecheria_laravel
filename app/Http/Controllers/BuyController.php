@@ -19,7 +19,7 @@ class BuyController {
     $phone = $request->input('phone');
     $other = $request->input('other');
     $subject = 'Быстрая покупка';
-    $message = 'ФИО: ' . $name . ', Телефон: ' . $phone . ' Товар' . $other;
+    $message = 'ФИО: ' . $name . ', Телефон: ' . $phone . ' Товар: ' . $other;
     $headers = "Content-type: text/html; charset=urf-8 \r\n";
     $headers .= "From: <info@vecheria.ru>\r\n";
     $headers .= "Reply-To: info@vecheria.ru\r\n";
