@@ -57,15 +57,17 @@ document.addEventListener('DOMContentLoaded', () => {
     * Определяем координаты item-container-а для скрола
     *
     * */
-    const moreItems = document.querySelector('.catalog__more');
-    let counter = Number(limit.value);
+    if (document.querySelectorAll('.catalog__more').length) {
+      const moreItems = document.querySelector('.catalog__more');
+      let counter = Number(limit.value);
 
-    moreItems.addEventListener('click', (e) => {
-      counter += Number(limit.value);
-      query = `${slugCategory}?limit=${counter}&orderby=${order.value}`;
-      getItems(query);
-      e.preventDefault();
-    });
+      moreItems.addEventListener('click', (e) => {
+        counter += Number(limit.value);
+        query = `${slugCategory}?limit=${counter}&orderby=${order.value}`;
+        getItems(query);
+        e.preventDefault();
+      });
+    }
 
     /*
     * Функция-обработчик для Ajax-запросов
