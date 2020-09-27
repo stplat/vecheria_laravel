@@ -6,14 +6,16 @@ use DB;
 use Illuminate\Http\Request;
 use Session;
 
-class ProductController extends Controller {
+class ProductController extends Controller
+{
   /**
    * Display a listing of the resource.
    *
    * @return \Illuminate\Http\Response
    */
 
-  public function index($category_slug, $product_slug, Request $request) {
+  public function index($category_slug, $product_slug, Request $request)
+  {
 
     $query = DB::table('category')->where('slug', $category_slug)->get();
 
@@ -47,7 +49,13 @@ class ProductController extends Controller {
         $cart_count = 0;
 
         $product->image_path = explode(';', $product->image_path);
-
+        $product->image_path = collect($product->image_path)->map(function ($item) {
+          return collect([
+            'name' => substr($item, 0, strripos($item, '.')),
+            'extension' => substr($item, strripos($item, '.') + 1, strlen($item)),
+          ]);
+        });
+//dd($product);
         $in_cart = false;
 
         $canonical = $this->canonical;
@@ -127,7 +135,7 @@ class ProductController extends Controller {
 
       $subcategory_plug = $items->subcategory_plug;
       $subcategory = $items->subcategory;
-      
+
       $keywords = $items->meta_keywords;
       $description = $items->meta_description;
       $title = $items->meta_title;
@@ -150,7 +158,7 @@ class ProductController extends Controller {
           $in_cart = true;
         }
       }
-      
+
       return view('product', compact('items', 'subcategory', 'subcategory_plug', 'keywords', 'description', 'title', 'cart_count', 'in_cart', 'callback', 'buy', 'canonical'));
     } else {
       abort('404');

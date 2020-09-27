@@ -19,7 +19,7 @@
 <div class="product-image">
   <div class="product-image__showcase">
     <picture>
-      <source srcset="/images/items/{{$product->image_path[0]}}.webp" data-src="/images/items/{{$product->image_path[0]}}" type="image/webp"><img src="/images/items/{{$product->image_path[0]}}.jpg" data-src="/images/items/{{$product->image_path[0]}}.jpg" alt="{{$product->name}}" title="{{$product->name}}" itemprop="image">
+      <source srcset="{{$product->image_path[0]['name']}}.webp" data-src="{{$product->image_path[0]}}" type="image/webp"><img src="/images/items/{{$product->image_path[0]}}.jpg" data-src="/images/items/{{$product->image_path[0]}}.jpg" alt="{{$product->name}}" title="{{$product->name}}" itemprop="image">
     </picture>
   </div>
   <ul class="product-image__preview">@foreach ($product->image_path as $image)
