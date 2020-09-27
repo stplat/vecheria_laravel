@@ -55,7 +55,7 @@ class ProductController extends Controller
             'extension' => substr($item, strripos($item, '.') + 1, strlen($item)),
           ]);
         });
-//dd($product);
+
         $in_cart = false;
 
         $canonical = $this->canonical;

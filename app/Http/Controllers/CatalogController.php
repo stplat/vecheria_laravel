@@ -33,6 +33,16 @@ class CatalogController extends Controller {
         ->select('product.*', 'category.name_2st as category', 'category.slug as category_slug')->where('product_to_category.category_id', $category->category_id)->groupBy('product.product_id')->limit($limit)
         ->orderBy('price', $order)->leftJoin('category', 'product.category_id', '=', 'category.category_id')->get();
 
+      $items = $items->map(function ($item) {
+        $item->image_path = collect(explode(';', $item->image_path))->map(function ($item) {
+          return collect([
+            'name' => substr($item, 0, strripos($item, '.')),
+            'extension' => substr($item, strripos($item, '.') + 1, strlen($item)),
+          ]);
+        });
+        return $item;
+      });
+
       if ($request->ajax()) {
         return response()->json([
           'items' => $items,

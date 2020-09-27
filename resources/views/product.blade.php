@@ -19,13 +19,13 @@
 <div class="product-image">
   <div class="product-image__showcase">
     <picture>
-      <source srcset="{{$product->image_path[0]['name']}}.webp" data-src="{{$product->image_path[0]}}" type="image/webp"><img src="/images/items/{{$product->image_path[0]}}.jpg" data-src="/images/items/{{$product->image_path[0]}}.jpg" alt="{{$product->name}}" title="{{$product->name}}" itemprop="image">
+      <source srcset="{{$product->image_path[0]['name']}}.webp" data-src="{{$product->image_path[0]['name']}}.webp" type="image/webp"><img src="{{$product->image_path[0]['name']}}.{{$product->image_path[0]['extension']}}" data-src="{{$product->image_path[0]['name']}}.{{$product->image_path[0]['extension']}}" alt="{{$product->name}}" title="{{$product->name}}" itemprop="image">
     </picture>
   </div>
   <ul class="product-image__preview">@foreach ($product->image_path as $image)
     <li>
       <picture>
-        <source srcset="/images/items/{{$image}}.webp" data-src="/images/items/{{$image}}.webp" type="image/webp"><img src="/images/items/{{$image}}.jpg" data-src="/images/items/{{$image}}.jpg" alt="{{$product->name}}" title="{{$product->name}}">
+        <source srcset="{{$image['name']}}.webp" data-src="{{$image['name']}}.webp" type="image/webp"><img src="{{$image['name']}}.{{$image['extension']}}" data-src="{{$image['name']}}.{{$image['extension']}}" alt="{{$product->name}}" title="{{$product->name}}">
       </picture>
     </li>@endforeach
   </ul>

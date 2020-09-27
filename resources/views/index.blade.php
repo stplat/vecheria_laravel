@@ -37,7 +37,7 @@
             <div class="item__article" itemprop="model">{{$item->article}}</div>
             <div class="item__image"><a href="/catalog/{{$item->category_slug}}/{{$item->slug}}" itemprop="url">
                 <picture>
-                  <source srcset="/images/items/{{$item->slug}}-thumb.webp" data-src="/images/items/{{$item->slug}}-thumb.webp" type="image/webp"><img src="/images/items/{{$item->slug}}-thumb.jpg" data-src="/images/items/{{$item->slug}}-thumb.jpg" alt="{{$item->name}}" title="{{$item->name}}" itemprop="image"><meta itemprop="description" content="{{$item->name}}">
+                  <source srcset="{{$item->image_path[0]['name']}}.webp" data-src="{{$item->image_path[0]['name']}}.webp" type="image/webp"><img src="{{$item->image_path[0]['name']}}.{{$item->image_path[0]['extension']}}" data-src="{{$item->image_path[0]['name']}}.{{$item->image_path[0]['extension']}}" alt="{{$item->name}}" title="{{$item->name}}" itemprop="image"><meta itemprop="description" content="{{$item->name}}">
                 </picture></a></div>
             <div class="item__name"><a href="/catalog/{{$item->category_slug}}/{{$item->slug}}"><span itemprop="name">{{$item->name}}</span></a></div>
             <div class="item__price" itemscope itemprop="offers" itemtype="http://schema.org/Offer">

@@ -11,15 +11,15 @@
 |
 */
 
-Route::get('/', 'IndexController@index');
-Route::get('/payment', 'PaymentController@index');
-Route::get('/shipping', 'ShippingController@index');
-Route::get('/contacts', 'ContactsController@index');
-Route::get('/cart', 'CartController@index');
-Route::get('/search', 'SearchController@index');
+Route::get('/', 'App\Http\Controllers\IndexController@index');
+Route::get('/payment', 'App\Http\Controllers\PaymentController@index');
+Route::get('/shipping', 'App\Http\Controllers\ShippingController@index');
+Route::get('/contacts', 'App\Http\Controllers\ContactsController@index');
+Route::get('/cart', 'App\Http\Controllers\CartController@index');
+Route::get('/search', 'App\Http\Controllers\SearchController@index');
 
-Route::get('/catalog/{category_slug}', 'CatalogController@index');
-Route::get('/catalog/{category_slug}/{product_slug}', 'ProductController@index');
+Route::get('/catalog/{category_slug}', 'App\Http\Controllers\CatalogController@index');
+Route::get('/catalog/{category_slug}/{product_slug}', 'App\Http\Controllers\ProductController@index');
 
 Route::get('/cart/addSession', function () {
   abort('404');
@@ -29,8 +29,8 @@ Route::get('/cart/removeSession', function () {
   abort('404');
 });
 
-Route::post('/cart/addSession', 'CartController@addSession');
-Route::post('/cart/removeSession', 'CartController@removeSession');
+Route::post('/cart/addSession', 'App\Http\Controllers\CartController@addSession');
+Route::post('/cart/removeSession', 'App\Http\Controllers\CartController@removeSession');
 
 Route::get('/callback', function () {
   abort('404');
@@ -49,14 +49,13 @@ Route::get('/checkPromo', function () {
 });
 
 
+Route::post('/callback', 'App\Http\Controllers\CallbackController@index');
+Route::post('/buy', 'App\Http\Controllers\BuyController@index');
+Route::post('/ordering', 'App\Http\Controllers\CartController@ordering');
+Route::post('/checkPromo', 'App\Http\Controllers\CartController@checkPromo');
 
-Route::post('/callback', 'CallbackController@index');
-Route::post('/buy', 'BuyController@index');
-Route::post('/ordering', 'CartController@ordering');
-Route::post('/checkPromo', 'CartController@checkPromo');
+Route::get('/sitemap.xml', 'App\Http\Controllers\IndexController@sitemap');
 
-Route::get('/sitemap.xml', 'IndexController@sitemap');
-
-Route::get('/clear-view', function() {
+Route::get('/clear-view', function () {
   Artisan::call('view:clear');
 });
