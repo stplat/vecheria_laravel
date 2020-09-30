@@ -59,3 +59,21 @@ Route::get('/sitemap.xml', 'App\Http\Controllers\IndexController@sitemap');
 Route::get('/clear-view', function () {
   Artisan::call('view:clear');
 });
+
+
+/* Админ-панель */
+Route::middleware('auth')->group(function () {
+
+  Route::get('/admin', 'App\Http\Controllers\Admin\IndexController@index')->name('admin');
+
+  Route::resource('/admin/products', 'App\Http\Controllers\Admin\ProductController', ['as' => 'admin'])
+    ->only('index', 'show', 'create', 'store', 'edit', 'destroy');
+  Route::post('/admin/products/update', 'App\Http\Controllers\Admin\ProductController@update')->name('admin.products.update');
+
+  /* Таблицы vue-table-2 (экспорт) */
+  Route::post('/table/export', 'App\Http\Controllers\TableController@export')->name('table-export');
+});
+
+Route::get('/admin/login', 'App\Http\Controllers\Auth\LoginController@showLoginForm')->name('login');
+Route::post('/admin/login', 'App\Http\Controllers\Auth\LoginController@login')->name('login');
+Route::post('/admin/logout', 'App\Http\Controllers\Auth\LoginController@logout')->name('logout');
