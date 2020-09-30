@@ -136,7 +136,7 @@
                     <p><strong>Каждое изделие</strong>:</p>
                     <ul>
                       <li>Соответствует требованиям отраслевых стандартов <a href="/images/ost-117-3-002-95.pdf" target="_blank" rel="nofollow">(ГОСТ/ОСТ)</a>.</li>
-                      <li>Имеет оттиск знака-именника предприятия-изготовителя, зарегистрированного в <a href="http://www.probpalata.ru/rgpp/" target="_blank" rel="nofollow">ГИПН РГПП</a>.</li>
+                      <li>Имеет оттиск знака-именника предприятия-изготовителя, зарегистрированного в <a href="http://probpalata.ru/index#birthdayRegistration" target="_blank" rel="nofollow">ГИПН РГПП</a>.</li>
                       <li>Заклеймено в соответствии с <a href="https://base.garant.ru/71393504/" target="_blank" rel="nofollow">Правилами клеймения изделий из драгоценных металлов</a>.</li>
                       <li>Иммет бирку с указанием металлов, вставок, веса и ОТК.</li>
                     </ul>
@@ -194,7 +194,7 @@
                     <p><strong>Каждое изделие</strong>:</p>
                     <ul>
                       <li>Соответствует требованиям отраслевых стандартов <a href="/images/ost-117-3-002-95.pdf" target="_blank" rel="nofollow">(ГОСТ/ОСТ)</a>.</li>
-                      <li>Имеет оттиск знака-именника предприятия-изготовителя, зарегистрированного в <a href="http://www.probpalata.ru/rgpp/" target="_blank" rel="nofollow">ГИПН РГПП</a>.</li>
+                      <li>Имеет оттиск знака-именника предприятия-изготовителя, зарегистрированного в <a href="http://probpalata.ru/index#birthdayRegistration" target="_blank" rel="nofollow">ГИПН РГПП</a>.</li>
                       <li>Заклеймено в соответствии с <a href="https://base.garant.ru/71393504/" target="_blank" rel="nofollow">Правилами клеймения изделий из драгоценных металлов</a>.</li>
                       <li>Иммет бирку с указанием металлов, вставок, веса и ОТК.</li>
                     </ul>
@@ -250,7 +250,7 @@
                     <p><strong>Каждое изделие</strong>:</p>
                     <ul>
                       <li>Соответствует требованиям отраслевых стандартов <a href="/images/ost-117-3-002-95.pdf" target="_blank" rel="nofollow">(ГОСТ/ОСТ)</a>.</li>
-                      <li>Имеет оттиск знака-именника предприятия-изготовителя, зарегистрированного в <a href="http://www.probpalata.ru/rgpp/" target="_blank" rel="nofollow">ГИПН РГПП</a>.</li>
+                      <li>Имеет оттиск знака-именника предприятия-изготовителя, зарегистрированного в <a href="http://probpalata.ru/index#birthdayRegistration" target="_blank" rel="nofollow">ГИПН РГПП</a>.</li>
                       <li>Заклеймено в соответствии с <a href="https://base.garant.ru/71393504/" target="_blank" rel="nofollow">Правилами клеймения изделий из драгоценных металлов</a>.</li>
                       <li>Иммет бирку с указанием металлов, вставок, веса и ОТК.</li>
                     </ul>
