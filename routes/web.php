@@ -10,6 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+use Illuminate\Support\Facades\Auth;
 
 Route::get('/', 'App\Http\Controllers\IndexController@index');
 Route::get('/payment', 'App\Http\Controllers\PaymentController@index');
@@ -77,3 +78,32 @@ Route::middleware('auth')->group(function () {
 Route::get('/admin/login', 'App\Http\Controllers\Auth\LoginController@showLoginForm')->name('login');
 Route::post('/admin/login', 'App\Http\Controllers\Auth\LoginController@login')->name('login');
 Route::post('/admin/logout', 'App\Http\Controllers\Auth\LoginController@logout')->name('logout');
+
+Route::get('/login', function () {
+  abort('404');
+});
+
+Route::get('/register', function () {
+  abort('404');
+});
+
+Route::get('/confirm', function () {
+  abort('404');
+});
+
+Route::get('/email', function () {
+  abort('404');
+});
+
+Route::get('/request', function () {
+  abort('404');
+});
+
+Route::get('/update', function () {
+  abort('404');
+});
+
+Route::get('/reset', function () {
+  abort('404');
+});
+
