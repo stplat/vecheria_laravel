@@ -42,6 +42,16 @@ class SearchController extends Controller {
         ->leftJoin('category', 'product.category_id', '=', 'category.category_id')
         ->whereIn('product.product_id', $id)->get();
 
+      $items = $items->map(function ($item) {
+        $item->image_path = collect(explode(';', $item->image_path))->map(function ($item) {
+          return collect([
+            'name' => substr($item, 0, strripos($item, '.')),
+            'extension' => substr($item, strripos($item, '.') + 1, strlen($item)),
+          ]);
+        });
+        return $item;
+      });
+
       /*$items = DB::table('product')->leftJoin('categories', 'items.subcategory_id', '=', 'categories.id')
         ->select('items.*', 'categories.plug as subcategory_plug')->whereIn('items.id', $id)->paginate();*/
     }
