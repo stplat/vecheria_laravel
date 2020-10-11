@@ -1,9 +1,9 @@
 .product-image
   .product-image__showcase
     picture
-      source(srcset!="{{$product->image_path[0]['name']}}.webp", data-src!="{{$product->image_path[0]['name']}}.webp", type="image/webp")
-      img(src!="{{$product->image_path[0]['name']}}.{{$product->image_path[0]['extension']}}",
-      data-src!="{{$product->image_path[0]['name']}}.{{$product->image_path[0]['extension']}}",
+      source(srcset!="{{$product->image_path[0]['name']}}-medium.webp", data-src!="{{$product->image_path[0]['name']}}-medium.webp", type="image/webp")
+      img(src!="{{$product->image_path[0]['name']}}-medium.{{$product->image_path[0]['extension']}}",
+      data-src!="{{$product->image_path[0]['name']}}-medium.{{$product->image_path[0]['extension']}}",
       alt!="{{$product->name}}",
       title!="{{$product->name}}",
       itemprop="image")
@@ -11,9 +11,9 @@
     | @foreach ($product->image_path as $image)
     li
       picture
-        source(srcset!="{{$image['name']}}.webp", data-src!="{{$image['name']}}.webp", type="image/webp")
-        img(src!="{{$image['name']}}.{{$image['extension']}}",
-        data-src!="{{$image['name']}}.{{$image['extension']}}",
+        source(srcset!="{{$image['name']}}-thumb.webp", data-src!="{{$image['name']}}-thumb.webp", type="image/webp")
+        img(src!="{{$image['name']}}-thumb.{{$image['extension']}}",
+        data-src!="{{$image['name']}}-thumb.{{$image['extension']}}",
         alt!="{{$product->name}}",
         title!="{{$product->name}}")
     | @endforeach

@@ -10,9 +10,9 @@ mixin items(quantity)
       .item__image
         a(href!="/catalog/{{$item->category_slug}}/{{$item->slug}}", itemprop="url")
           picture
-            source(srcset!="{{$item->image_path[0]['name']}}.webp", data-src!="{{$item->image_path[0]['name']}}.webp", type="image/webp")
-            img(src!="{{$item->image_path[0]['name']}}.{{$item->image_path[0]['extension']}}",
-              data-src!="{{$item->image_path[0]['name']}}.{{$item->image_path[0]['extension']}}",
+            source(srcset!="{{$item->image_path[0]['name']}}-small.webp", data-src!="{{$item->image_path[0]['name']}}-small.webp", type="image/webp")
+            img(src!="{{$item->image_path[0]['name']}}-small.{{$item->image_path[0]['extension']}}",
+              data-src!="{{$item->image_path[0]['name']}}-small.{{$item->image_path[0]['extension']}}",
               alt!="{{$item->name}}",
               title!="{{$item->name}}",
               itemprop="image")
@@ -41,9 +41,9 @@ mixin itemsSlider()
           .item__image
             a(href!="/catalog/{{$item->category_slug}}/{{$item->slug}}", itemprop="url")
               picture
-                source(srcset!="{{$item->image_path[0]['name']}}.webp", data-src!="{{$item->image_path[0]['name']}}.webp", type="image/webp")
-                img(src!="{{$item->image_path[0]['name']}}.{{$item->image_path[0]['extension']}}",
-                  data-src!="{{$item->image_path[0]['name']}}.{{$item->image_path[0]['extension']}}",
+                source(srcset!="{{$item->image_path[0]['name']}}-small.webp", data-src!="{{$item->image_path[0]['name']}}-small.webp", type="image/webp")
+                img(src!="{{$item->image_path[0]['name']}}-small.{{$item->image_path[0]['extension']}}",
+                  data-src!="{{$item->image_path[0]['name']}}-small.{{$item->image_path[0]['extension']}}",
                   alt!="{{$item->name}}",
                   title!="{{$item->name}}",
                   itemprop="image")
@@ -72,9 +72,9 @@ mixin similarProductSlider()
           .item__image
             a(href!="/catalog/{{$item->category_slug}}/{{$item->slug}}", itemprop="url")
               picture
-                source(srcset!="/images/items/{{$item->slug}}-thumb.webp", data-src!="/images/items/{{$item->slug}}-thumb.webp", type="image/webp")
-                img(src!="/images/items/{{$item->slug}}-thumb.jpg",
-                  data-src!="/images/items/{{$item->slug}}-thumb.jpg",
+                source(srcset!="/images/items/{{$item->slug}}-small.webp", data-src!="/images/items/{{$item->slug}}-thumb.webp", type="image/webp")
+                img(src!="/images/items/{{$item->slug}}-small.jpg",
+                  data-src!="/images/items/{{$item->slug}}-small.jpg",
                   alt!="{{$item->name}}",
                   title!="{{$item->name}}",
                   itemprop="image")

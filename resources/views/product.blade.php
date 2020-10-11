@@ -19,13 +19,13 @@
 <div class="product-image">
   <div class="product-image__showcase">
     <picture>
-      <source srcset="{{$product->image_path[0]['name']}}.webp" data-src="{{$product->image_path[0]['name']}}.webp" type="image/webp"><img src="{{$product->image_path[0]['name']}}.{{$product->image_path[0]['extension']}}" data-src="{{$product->image_path[0]['name']}}.{{$product->image_path[0]['extension']}}" alt="{{$product->name}}" title="{{$product->name}}" itemprop="image">
+      <source srcset="{{$product->image_path[0]['name']}}-medium.webp" data-src="{{$product->image_path[0]['name']}}-medium.webp" type="image/webp"><img src="{{$product->image_path[0]['name']}}-medium.{{$product->image_path[0]['extension']}}" data-src="{{$product->image_path[0]['name']}}-medium.{{$product->image_path[0]['extension']}}" alt="{{$product->name}}" title="{{$product->name}}" itemprop="image">
     </picture>
   </div>
   <ul class="product-image__preview">@foreach ($product->image_path as $image)
     <li>
       <picture>
-        <source srcset="{{$image['name']}}.webp" data-src="{{$image['name']}}.webp" type="image/webp"><img src="{{$image['name']}}.{{$image['extension']}}" data-src="{{$image['name']}}.{{$image['extension']}}" alt="{{$product->name}}" title="{{$product->name}}">
+        <source srcset="{{$image['name']}}-thumb.webp" data-src="{{$image['name']}}-thumb.webp" type="image/webp"><img src="{{$image['name']}}-thumb.{{$image['extension']}}" data-src="{{$image['name']}}-thumb.{{$image['extension']}}" alt="{{$product->name}}" title="{{$product->name}}">
       </picture>
     </li>@endforeach
   </ul>
@@ -275,7 +275,7 @@
                 <div class="item__article" itemprop="model">{{$item->article}}</div>
                 <div class="item__image"><a href="/catalog/{{$item->category_slug}}/{{$item->slug}}" itemprop="url">
                     <picture>
-                      <source srcset="/images/items/{{$item->slug}}-thumb.webp" data-src="/images/items/{{$item->slug}}-thumb.webp" type="image/webp"><img src="/images/items/{{$item->slug}}-thumb.jpg" data-src="/images/items/{{$item->slug}}-thumb.jpg" alt="{{$item->name}}" title="{{$item->name}}" itemprop="image"><meta itemprop="description" content="{{$item->name}}">
+                      <source srcset="/images/items/{{$item->slug}}-small.webp" data-src="/images/items/{{$item->slug}}-thumb.webp" type="image/webp"><img src="/images/items/{{$item->slug}}-small.jpg" data-src="/images/items/{{$item->slug}}-small.jpg" alt="{{$item->name}}" title="{{$item->name}}" itemprop="image"><meta itemprop="description" content="{{$item->name}}">
                     </picture></a></div>
                 <div class="item__name"><a href="/catalog/{{$item->category_slug}}/{{$item->slug}}"><span itemprop="name">{{$item->name}}</span></a></div>
                 <div class="item__price" itemscope itemprop="offers" itemtype="http://schema.org/Offer">
