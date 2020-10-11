@@ -132,7 +132,7 @@ class ProductController extends Controller
     $product->update([
       'name' => $request->input('name'),
       'slug' => $slug,
-      'category_id' => '1',
+      'category_id' => $request->input('categories')[0],
       'manufacturer' => $request->input('manufacturer'),
       'article' => $request->input('article'),
       'meta_keywords' => $request->input('meta_keywords'),
