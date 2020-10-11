@@ -70,14 +70,14 @@ class ProductController extends Controller
     $product->meta_description = $request->input('meta_description');
     $product->meta_title = $request->input('meta_title');
     $product->available = $request->input('available');
-    $product->weight = $request->input('weight');
+    $product->weight = $request->input('weight') ?? '';
     $product->price = $request->input('price');
-    $product->dimension = $request->input('dimension');
-    $product->comment = $request->input('comment');
-    $product->material = $request->input('material');
-    $product->technic = $request->input('technic');
-    $product->description = $request->input('description');
-    $product->video = $request->input('video');
+    $product->dimension = $request->input('dimension') ?? '';
+    $product->comment = $request->input('comment') ?? '';
+    $product->material = $request->input('material') ?? '';
+    $product->technic = $request->input('technic') ?? '';
+    $product->description = $request->input('description') ?? '';
+    $product->video = $request->input('video') ?? '';
     $product->image_path = $this->productService->storeImage($request->file('files'), $slug);
     $product->similar_product_id = $request->input('similar_product') ? implode(';', $request->input('similar_product')) : '';
 
@@ -143,10 +143,10 @@ class ProductController extends Controller
       'price' => $request->input('price'),
       'dimension' => $request->input('dimension') ?? '',
       'comment' => $request->input('comment') ?? '',
-      'material' => $request->input('material'),
-      'technic' => $request->input('technic'),
-      'description' => $request->input('description'),
-      'video' => $request->input('video'),
+      'material' => $request->input('material') ?? '',
+      'technic' => $request->input('technic') ?? '',
+      'description' => $request->input('description') ?? '',
+      'video' => $request->input('video') ?? '',
       'image_path' => $this->productService->updateImage($id, $files, $newImagePaths, $slug),
       'similar_product_id' => $request->input('similar_product') ? implode(';', $request->input('similar_product')) : '',
     ]);
