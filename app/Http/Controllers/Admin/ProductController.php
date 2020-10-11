@@ -63,7 +63,7 @@ class ProductController extends Controller
     $product = new Product;
     $product->name = $request->input('name');
     $product->slug = $slug;
-    $product->category_id = 1;
+    $product->category_id = $request->input('categories')[0];
     $product->manufacturer = $request->input('manufacturer');
     $product->article = $request->input('article');
     $product->meta_keywords = $request->input('meta_keywords');
