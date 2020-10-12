@@ -67,7 +67,7 @@
       <div class="header__cap">
         <div class="container container--flex">
           <div class="header__nav">
-<div class="header-nav"><a class="header-nav__link header-nav__link--home" href="/">Главная</a><span class="header-nav__link header-nav__link--cat">Список категорий</span>
+<div class="header-nav"><a class="header-nav__link header-nav__link--home" href="/">Главная</a><span class="header-nav__link header-nav__link--cat">Каталог</span>
   <div class="header-nav__sub">@foreach ($menu as $menu_items)
     <div class="header-nav__group">{{$menu_items['category']}}</div>@foreach ($menu_items['subcategory'] as $plug => $subcategory)<a class="header-nav__link" href="/catalog/{{$plug}}">{{$subcategory}}</a>@endforeach
     @endforeach

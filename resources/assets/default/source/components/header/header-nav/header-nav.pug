@@ -1,6 +1,6 @@
 .header-nav
   a.header-nav__link.header-nav__link--home(href="/") Главная
-  span.header-nav__link.header-nav__link--cat Список категорий
+  span.header-nav__link.header-nav__link--cat Каталог
   .header-nav__sub
     | @foreach ($menu as $menu_items)
     .header-nav__group {{$menu_items['category']}}
