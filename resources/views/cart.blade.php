@@ -107,7 +107,7 @@
                 </div>
                 <div class="cart-ordering__field">
                   <label for="comment">Комментарий</label>
-                  <textarea id="comment" name="comment" placeholder="Пример: Во дворе злая собака!"></textarea><span class="empty"></span>
+                  <textarea id="comment" name="comment" placeholder="Пример: 3й подъезд, вход со двора"></textarea><span class="empty"></span>
                 </div>
                 <div class="cart-ordering__field">
                   <label for="promo">Промокод <span>для активации скидки</span></label>
@@ -149,7 +149,7 @@
                 </div>
                 <div class="cart-ordering__field">
                   <label for="comment">Комментарий</label>
-                  <textarea id="comment" name="comment" placeholder="Пример: Во дворе злая собака!"></textarea><span class="empty"></span>
+                  <textarea id="comment" name="comment" placeholder="Пример: 3й подъезд, вход со двора"></textarea><span class="empty"></span>
                 </div>
                 <div class="cart-ordering__field">
                   <label for="promo">Промокод <span>для активации скидки</span></label>
