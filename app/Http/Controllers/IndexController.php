@@ -15,7 +15,6 @@ class IndexController extends Controller
    */
   public function index()
   {
-    dd(strlen('podveska-chudo-svyatitelya-spiridona-205'));
     $meta_keywords = 'православная, лавка, изделия, крестики, бухвицы, браслеты, ручная работа, освещенные';
     $meta_description = 'Покупка недорогих освещенных православных ювелирных изделий ручной работы. Большой выбор образков, крестиков и бусин. Звоните +7 (495) 203-96-96';
     $title = '«ВЕЧЕРИЯ» - интернет магазин православных изделий';
