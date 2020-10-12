@@ -17,7 +17,7 @@ class ProductController extends Controller
   public function index($category_slug, $product_slug, Request $request)
   {
 
-    $query = DB::table('category')->where('slug', $category_slug)->get();
+    $query = DB::table('category')->where('slug', $category_slug)->where('available', '1')->get();
 
     if (count($query->toArray())) {
       $query = DB::table('product')->where('slug', $product_slug)->get();
