@@ -113,7 +113,11 @@ class ProductService
 
       $newName = $count > 0 ? $name . '_' . ($count + 1) : $name;
 
-      if (in_array("/images/items/$newName.png", $newImagePaths ?: [])) {
+      $newImagePaths = collect($newImagePaths)->map(function ($item){
+        return substr($item, 0, strrpos($item, '.'));
+      })->toArray();
+
+      if (in_array("/images/items/$newName", $newImagePaths)) {
         $count++;
         return choiceImageName($name, $newImagePaths);
       } else {
