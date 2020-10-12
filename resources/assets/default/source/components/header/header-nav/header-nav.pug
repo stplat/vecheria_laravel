@@ -1,5 +1,6 @@
 .header-nav
   a.header-nav__link.header-nav__link--home(href="/") Главная
+  span.header-nav__link.header-nav__link--cat Список категорий
   .header-nav__sub
     | @foreach ($menu as $menu_items)
     .header-nav__group {{$menu_items['category']}}
@@ -10,4 +11,3 @@
   a.header-nav__link.header-nav__link--ship(href="/shipping") Доставка
   a.header-nav__link.header-nav__link--pay(href="/payment") Оплата
   a.header-nav__link.header-nav__link--cont(href="/contacts") Контакты
-  span.header-nav__link.header-nav__link--cat Список категорий

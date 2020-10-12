@@ -67,11 +67,11 @@
       <div class="header__cap">
         <div class="container container--flex">
           <div class="header__nav">
-<div class="header-nav"><a class="header-nav__link header-nav__link--home" href="/">Главная</a>
+<div class="header-nav"><a class="header-nav__link header-nav__link--home" href="/">Главная</a><span class="header-nav__link header-nav__link--cat">Список категорий</span>
   <div class="header-nav__sub">@foreach ($menu as $menu_items)
     <div class="header-nav__group">{{$menu_items['category']}}</div>@foreach ($menu_items['subcategory'] as $plug => $subcategory)<a class="header-nav__link" href="/catalog/{{$plug}}">{{$subcategory}}</a>@endforeach
     @endforeach
-  </div><a class="header-nav__link header-nav__link--ship" href="/shipping">Доставка</a><a class="header-nav__link header-nav__link--pay" href="/payment">Оплата</a><a class="header-nav__link header-nav__link--cont" href="/contacts">Контакты</a><span class="header-nav__link header-nav__link--cat">Список категорий</span>
+  </div><a class="header-nav__link header-nav__link--ship" href="/shipping">Доставка</a><a class="header-nav__link header-nav__link--pay" href="/payment">Оплата</a><a class="header-nav__link header-nav__link--cont" href="/contacts">Контакты</a>
 </div>
           </div>
           <div class="header__bar">
