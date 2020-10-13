@@ -71,14 +71,14 @@ mixin similarProductSlider()
           .item__article(itemprop="model") {{$item->article}}
           .item__image
             a(href!="/catalog/{{$item->category_slug}}/{{$item->slug}}", itemprop="url")
-            picture
-              source(srcset!="{{$item->image_path[0]['name']}}-small.webp", data-src!="{{$item->image_path[0]['name']}}-small.webp", type="image/webp")
-              img(src!="{{$item->image_path[0]['name']}}-small.{{$item->image_path[0]['extension']}}",
-                data-src!="{{$item->image_path[0]['name']}}-small.{{$item->image_path[0]['extension']}}",
-                alt!="{{$item->name}}",
-                title!="{{$item->name}}",
-                itemprop="image")
-              <meta itemprop="description" content="{{$item->name}}">
+              picture
+                source(srcset!="{{$item->image_path[0]['name']}}-small.webp", data-src!="{{$item->image_path[0]['name']}}-small.webp", type="image/webp")
+                img(src!="{{$item->image_path[0]['name']}}-small.{{$item->image_path[0]['extension']}}",
+                  data-src!="{{$item->image_path[0]['name']}}-small.{{$item->image_path[0]['extension']}}",
+                  alt!="{{$item->name}}",
+                  title!="{{$item->name}}",
+                  itemprop="image")
+                <meta itemprop="description" content="{{$item->name}}">
           .item__name
             a(href!="/catalog/{{$item->category_slug}}/{{$item->slug}}")
               span(itemprop="name") {{$item->name}}

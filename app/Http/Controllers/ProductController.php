@@ -45,6 +45,17 @@ class ProductController extends Controller
           ->whereIn('product.product_id', $similar_product_id)->groupBy('product.product_id')
           ->get();
 
+        $similar_products = $similar_products->map(function ($item) {
+          $item->image_path = explode(';', $item->image_path);
+          $item->image_path = collect($item->image_path)->map(function ($item) {
+            return collect([
+              'name' => substr($item, 0, strripos($item, '.')),
+              'extension' => substr($item, strripos($item, '.') + 1, strlen($item)),
+            ]);
+          });
+          return $item;
+        });
+
         $buy = Session::get('buy') ?: Session::get('buy');
         $cart_count = 0;
 

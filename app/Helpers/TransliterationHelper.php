@@ -17,7 +17,7 @@ function TransliterationHelper($name, $article)
   $article = str_replace($rus, $lat, $article);
 
   if (strlen($name) > 50) {
-    $pos = strpos($name, '-', '40');
+    $pos = strpos($name, '-', '30');
 
     if ($pos) {
       $name = substr($name, 0, $pos);
