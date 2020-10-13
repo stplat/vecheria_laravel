@@ -62,10 +62,10 @@ class ProductService
       if (!is_string($file)) {
         $temp = Storage::putFile('public/images/items', $file);
 
-        $this->resizeImage($temp, $new_name, 'medium', null, 380);
+        $this->resizeImage($temp, $new_name, 'original');
         $this->resizeImage($temp, $new_name, 'small', null, 120);
         $this->resizeImage($temp, $new_name, 'thumb', 78, 78);
-        $resultPath = $this->resizeImage($temp, $new_name);
+        $resultPath = $this->resizeImage($temp, $new_name, '', null, 380);
 
         Storage::delete($temp);
         array_push($path, $resultPath);
@@ -98,8 +98,8 @@ class ProductService
 
       Storage::delete('public' . $item);
       Storage::delete('public' . $name . '.webp');
-      Storage::delete('public' . $name . '-medium.' . $extension);
-      Storage::delete('public' . $name . '-medium.webp');
+      Storage::delete('public' . $name . '-original.' . $extension);
+      Storage::delete('public' . $name . '-original.webp');
       Storage::delete('public' . $name . '-small.' . $extension);
       Storage::delete('public' . $name . '-small.webp');
       Storage::delete('public' . $name . '-thumb.' . $extension);
@@ -113,7 +113,7 @@ class ProductService
 
       $newName = $count > 0 ? $name . '_' . ($count + 1) : $name;
 
-      $newImagePaths = collect($newImagePaths)->map(function ($item){
+      $newImagePaths = collect($newImagePaths)->map(function ($item) {
         return substr($item, 0, strrpos($item, '.'));
       })->toArray();
 
@@ -134,10 +134,10 @@ class ProductService
         if (!is_string($file)) {
           $temp = Storage::putFile('public/images/items', $file);
 
-          $this->resizeImage($temp, $newName, 'medium', null, 380);
+          $this->resizeImage($temp, $newName, 'original');
           $this->resizeImage($temp, $newName, 'small', null, 120);
           $this->resizeImage($temp, $newName, 'thumb', 78, 78);
-          $resultPath = $this->resizeImage($temp, $newName);
+          $resultPath = $this->resizeImage($temp, $newName, '', null, 380);
 
           Storage::delete($temp);
           array_push($newImagePaths, $resultPath);
@@ -146,6 +146,35 @@ class ProductService
     }
 
     return implode(';', $newImagePaths);
+  }
+
+  /**
+   * Изменяем фото и возвращаем названия
+   *
+   * @param $product_id int
+
+   * @return boolean
+   */
+  public function deleteImage($product_id)
+  {
+    $product = Product::where('product_id', $product_id)->get()->toArray();
+    $image_paths = explode(';',$product[0]['image_path'] ?? '');
+
+    collect($image_paths)->each(function ($item) {
+      $name = substr($item, 0, strrpos($item, '.'));
+      $extension = substr($item, strrpos($item, '.') + 1);
+
+      Storage::delete('public' . $item);
+      Storage::delete('public' . $name . '.webp');
+      Storage::delete('public' . $name . '-original.' . $extension);
+      Storage::delete('public' . $name . '-original.webp');
+      Storage::delete('public' . $name . '-small.' . $extension);
+      Storage::delete('public' . $name . '-small.webp');
+      Storage::delete('public' . $name . '-thumb.' . $extension);
+      Storage::delete('public' . $name . '-thumb.webp');
+    });
+
+    return $image_paths;
   }
 
   /**
