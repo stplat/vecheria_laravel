@@ -2,7 +2,7 @@
 .cart-item(id!="{{$item->product_id}}", data-article!="{{$item->article}}")
   .cart-item__col
     .cart-item__image
-      img(src!="/images/items/{{$item->slug}}.jpg", alt!="{{$item->name}}", title!="{{$item->name}}")
+      img(src!="{{$item->image_path[0]['name']}}-small.{{$item->image_path[0]['extension']}}", alt!="{{$item->name}}", title!="{{$item->name}}")
   .cart-item__col
     .cart-item__title Наименование:
     .cart-item__name

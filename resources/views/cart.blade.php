@@ -17,7 +17,7 @@
       <div class="cart__items" data-container="1">@foreach ($items as $key => $item)
 <div class="cart-item" id="{{$item->product_id}}" data-article="{{$item->article}}">
   <div class="cart-item__col">
-    <div class="cart-item__image"><img src="/images/items/{{$item->slug}}.jpg" alt="{{$item->name}}" title="{{$item->name}}"></div>
+    <div class="cart-item__image"><img src="{{$item->image_path[0]['name']}}-small.{{$item->image_path[0]['extension']}}" alt="{{$item->name}}" title="{{$item->name}}"></div>
   </div>
   <div class="cart-item__col">
     <div class="cart-item__title">Наименование:</div>
@@ -46,7 +46,7 @@
       <div class="cart__items hidden" data-container="1">@foreach ($items as $key => $item)
 <div class="cart-item" id="{{$item->product_id}}" data-article="{{$item->article}}">
   <div class="cart-item__col">
-    <div class="cart-item__image"><img src="/images/items/{{$item->slug}}.jpg" alt="{{$item->name}}" title="{{$item->name}}"></div>
+    <div class="cart-item__image"><img src="{{$item->image_path[0]['name']}}-small.{{$item->image_path[0]['extension']}}" alt="{{$item->name}}" title="{{$item->name}}"></div>
   </div>
   <div class="cart-item__col">
     <div class="cart-item__title">Наименование:</div>

@@ -6,13 +6,15 @@ use Illuminate\Http\Request;
 use DB;
 use Session;
 
-class CartController extends Controller {
+class CartController extends Controller
+{
   /**
    * Display a listing of the resource.
    *
    * @return \Illuminate\Http\Response
    */
-  public function index() {
+  public function index()
+  {
     //Session::forget('cart_step');
     $meta_keywords = 'православная, лавка, изделия, крестики, бухвицы, браслеты, ручная работа, освещенные';
     $meta_description = 'Покупка недорогих освещенных православных ювелирных изделий ручной работы по низким ценам';
@@ -21,20 +23,20 @@ class CartController extends Controller {
     $cart_count = 0;
     $id = [];
     $items = [];
-    
+
     if (is_array(Session::get('items'))) {
       foreach (Session::get('items') as $category) {
         $cart_count += $category['count'];
       }
     }
-    
+
     if (is_array(Session::get('items'))) {
       foreach (Session::get('items') as $array) {
         array_push($id, $array['id']);
       }
-      
+
       $items_query = $this->show($id);
-      
+
       foreach ($items_query as $obj) {
         $item = $obj;
         foreach (Session::get('items') as $array) {
@@ -46,42 +48,57 @@ class CartController extends Controller {
         array_push($items, $item);
       }
     }
-    
+
     $cart_total = 0;
-    
+
     if (Session::get('items'))
       foreach (Session::get('items') as $item) {
         $cart_total += $item['total'];
       }
-    
+
+    if (count($items)) {
+      $item = collect($items)->map(function ($item) {
+        $item->image_path = explode(';', $item->image_path);
+        $item->image_path = collect($item->image_path)->map(function ($item) {
+          return collect([
+            'name' => substr($item, 0, strripos($item, '.')),
+            'extension' => substr($item, strripos($item, '.') + 1, strlen($item)),
+          ]);
+        });
+        return $item;
+      });
+    }
+
+
     $cart_step = Session::get('cart_step') ?: 1;
-    
+
     $canonical = $this->canonical;
-    
+
     return view('cart', compact('meta_keywords', 'meta_description', 'title', 'cart_count', 'items', 'callback', 'cart_total', 'cart_step', 'canonical'));
   }
-  
+
   /**
    * Show the form for creating a new resource.
    *
    * @return \Illuminate\Http\Response
    */
-  public function addSession(Request $request) {
-    
+  public function addSession(Request $request)
+  {
+
     //Session::forget('items');
-    
+
     $array = Session::get('items');
     $items = [];
-    
+
     if (!empty($array)) {
       $items = $array;
     }
-    
+
     $id = $request->input('id');
     $count = $request->input('count');
     $price = $request->input('price');
     $total = (int)$request->input('count') * (int)$request->input('price');
-    
+
     if (!parent::inArray($items, $id)) {
       array_push($items, [
         'id' => $id,
@@ -97,62 +114,65 @@ class CartController extends Controller {
         }
       }
     }
-    
+
     Session::put('items', $items);
-    
+
     $cart_count = 0;
     $cart_total = 0;
-    
+
     foreach (Session::get('items') as $item) {
       $cart_count += $item['count'];
     }
-    
+
     foreach (Session::get('items') as $item) {
       $cart_total += $item['total'];
     }
-    
+
     return compact('cart_count', 'cart_total', 'items');
   }
-  
-  public function removeSession(Request $request) {
+
+  public function removeSession(Request $request)
+  {
     $array = Session::get('items');
     $id = $request->input('id');
-    
+
     $items = array_filter($array, function ($i) use ($id) {
       return $i['id'] !== $id;
     });
-    
+
     $items = array_values($items);
-    
+
     Session::put('items', $items);
-    
+
     $cart_count = 0;
     $cart_total = 0;
-    
+
     foreach (Session::get('items') as $item) {
       $cart_count += $item['count'];
     }
-    
+
     foreach (Session::get('items') as $item) {
       $cart_total += $item['total'];
     }
-    
+
     return compact('cart_count', 'cart_total', 'items');
   }
-  
+
   /**
    * Display the specified resource.
    *
-   * @param  int $id
+   * @param int $id
    * @return \Illuminate\Http\Response
    */
-  public function show(array $id) {
+  public function show(array $id)
+  {
     return DB::table('product')->leftJoin('category', 'product.category_id', '=', 'category.category_id')
       ->select('product.*', 'category.name_2st as category', 'category.slug as category_slug')->groupBy('product.product_id')
       ->whereIn('product.product_id', $id)->get();
   }
-  
-  public function ordering(Request $request) {
+
+  public function ordering(Request $request)
+  {
     $name = $request->input('name');
     $phone = $request->input('phone');
     $shipping = $request->input('shipping');
@@ -164,12 +184,12 @@ class CartController extends Controller {
     $promo = $request->input('promo');
     $discount = $request->input('discount');
     $total = (strpos($request->input('total'), 'доставка')) ? $request->input('total') : $request->input('total') . ' руб.';
-    
+
     $to = "<info@vecheria.ru>, ";
     if ($request->input('email')) {
       $to .= "<" . $request->input('email') . ">";
     }
-    
+
     $headers = "Content-type: text/html; charset=urf-8 \r\n";
     $headers .= "From: <info@vecheria.ru>\r\n";
     $headers .= "Reply-To: info@vecheria.ru\r\n";
@@ -191,19 +211,20 @@ class CartController extends Controller {
         </ul>
       </div>      
     ';
-    
+
     mail($to, $subject, $message, $headers);
-    
+
     Session::forget('items');
   }
-  
-  public function checkPromo(Request $request) {
+
+  public function checkPromo(Request $request)
+  {
     $promo_code = $request->input('promo');
     $query = DB::table('promo')->where('code', '=', $promo_code)->exists();
-    
+
     if ($query) {
       $discount = DB::table('promo')->where('code', '=', $promo_code)->select('discount')->get()[0]->discount;
-      
+
       if ($request->ajax()) {
         return response()->json([
           'check' => true,
@@ -211,6 +232,6 @@ class CartController extends Controller {
         ]);
       }
     }
-    
+
   }
 }
