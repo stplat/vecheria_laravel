@@ -131,7 +131,7 @@ class ProductController extends Controller
     $product = Product::find($id);
     $product->update([
       'name' => $request->input('name'),
-      'slug' => $slug,
+//      'slug' => $slug,
       'category_id' => $request->input('categories')[0],
       'manufacturer' => $request->input('manufacturer'),
       'article' => $request->input('article'),
