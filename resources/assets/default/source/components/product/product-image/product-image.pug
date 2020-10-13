@@ -1,9 +1,9 @@
 .product-image
   .product-image__showcase
     picture
-      source(srcset!="{{$product->image_path[0]['name']}}-medium.webp", data-src!="{{$product->image_path[0]['name']}}-medium.webp", type="image/webp")
-      img(src!="{{$product->image_path[0]['name']}}-medium.{{$product->image_path[0]['extension']}}",
-      data-src!="{{$product->image_path[0]['name']}}-medium.{{$product->image_path[0]['extension']}}",
+      source(srcset!="{{$product->image_path[0]['name']}}.webp", data-src!="{{$product->image_path[0]['name']}}.webp", type="image/webp")
+      img(src!="{{$product->image_path[0]['name']}}.{{$product->image_path[0]['extension']}}",
+      data-src!="{{$product->image_path[0]['name']}}.{{$product->image_path[0]['extension']}}",
       alt!="{{$product->name}}",
       title!="{{$product->name}}",
       itemprop="image")
