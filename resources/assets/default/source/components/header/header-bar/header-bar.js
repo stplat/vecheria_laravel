@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const subNavLinks = document.querySelectorAll('.header-nav__sub-link');
   const subNavGroups = document.querySelectorAll('.header-nav__group');
   const back = document.querySelector('.header-nav__link--back');
+  let init = false;
 
   button.addEventListener('click', function (e) {
     const flag = this.classList.contains('is-active');
@@ -26,10 +27,13 @@ document.addEventListener('DOMContentLoaded', () => {
       raf(() => {
         nav.classList.add('is-active');
 
-        [...subNavGroups].forEach(item => {
-          item.style.height = item.clientHeight + 'px';
-          item.classList.add('is-deactive');
-        })
+        if (!init) {
+          [...subNavGroups].forEach(item => {
+            item.style.height = item.clientHeight + 'px';
+            item.classList.add('is-deactive');
+          });
+          init = true;
+        }
       });
     } else {
       nav.classList.remove('is-active');
