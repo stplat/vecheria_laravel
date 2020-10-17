@@ -1,13 +1,17 @@
 .header-nav
-  a.header-nav__link.header-nav__link--home(href="/") Главная
-  span.header-nav__link.header-nav__link--cat Каталог
-  .header-nav__sub
-    | @foreach ($menu as $menu_items)
-    .header-nav__group {{$menu_items['category']}}
-    | @foreach ($menu_items['subcategory'] as $plug => $subcategory)
-    a.header-nav__link(href="/catalog/{{$plug}}") {{$subcategory}}
-    | @endforeach
-    | @endforeach
-  a.header-nav__link.header-nav__link--ship(href="/shipping") Доставка
-  a.header-nav__link.header-nav__link--pay(href="/payment") Оплата
-  a.header-nav__link.header-nav__link--cont(href="/contacts") Контакты
+  .header-nav__list
+    a.header-nav__link.header-nav__link--home(href="/") Главная
+    span.header-nav__link.header-nav__link--cat Каталог
+    a.header-nav__link.header-nav__link--ship(href="/shipping") Доставка
+    a.header-nav__link.header-nav__link--pay(href="/payment") Оплата
+    a.header-nav__link.header-nav__link--cont(href="/contacts") Контакты
+  .header-nav__col
+    .header-nav__sub
+      .header-nav__link.header-nav__link--back Назад
+      | @foreach ($menu as $menu_items)
+      .header-nav__sub-link {{$menu_items['category']}}
+      | @foreach ($menu_items['subcategory'] as $plug => $subcategory)
+      .header-nav__group
+        a.header-nav__link(href="/catalog/{{$plug}}") {{$subcategory}}
+      | @endforeach
+      | @endforeach

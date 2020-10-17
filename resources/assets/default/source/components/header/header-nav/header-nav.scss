@@ -1,22 +1,19 @@
 /* Переменные */
 @import '../../_defaults/variables';
 
+/* Навигационное меню сверху */
 .header-nav {
   display: flex;
-  margin: 0 -20px;
   align-items: center;
 
-
   @media only screen and (max-width: 768px) {
-    flex-wrap: wrap;
-    align-content: flex-start;
+    align-items: flex-start;
     position: fixed;
     background: #D2B179;
     z-index: 100;
-    width: 100%;
+    width: 200%;
     height: calc(100% - 47px);
     left: -100%;
-    margin: 0;
     top: 47px;
     overflow-y: auto;
     display: none;
@@ -24,35 +21,55 @@
     transition: left 0.20s, opacity 0.20s;
 
     &.is-display {
-      display: block;
+      display: flex;
     }
 
     &.is-active {
       opacity: 1;
       left: 0;
     }
+
+    &.is-sub {
+      left: -100%;
+    }
   }
+}
+
+.header-nav__list {
+  display: flex;
+  margin: 0 -20px;
+
+  @media only screen and (max-width: 768px) {
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+}
+
+.header-nav__col,
+.header-nav__list {
+  width: 100%;
 }
 
 .header-nav__sub {
   width: 100%;
   display: none;
   opacity: 0;
-  top: 100px;
-  transition: top 0.2s, opacity 0.2s;
+  left: 100%;
+  transition: opacity 0.2s;
   position: relative;
 
-  &.is-display {
+  @media only screen and (max-width: 768px) {
     display: block;
   }
 
   &.is-active {
     opacity: 1;
-    top: 0;
+    left: 0;
   }
 }
 
-.header-nav__group {
+.header-nav__sub-link {
   font-size: 14px;
   transition: color 0.05s;
   position: relative;
@@ -62,8 +79,20 @@
   padding: 14px 15px 14px 42px;
   color: #FFFFFF;
   border-bottom: 1px solid $orange-color-hover;
-  background: $orange-color-hover;
+  background: #C3A26A;
   font-weight: 500;
+  cursor: pointer;
+
+  &:before {
+    content: '\E815';
+    font-family: $font-icons;
+    width: 11px;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 13px;
+  }
 
   &:after {
     content: '\F004';
@@ -73,6 +102,46 @@
     transform: translateY(-50%);
     position: absolute;
     color: #FFFFFF;
+    transition: transform 0.2s;
+  }
+
+  &.is-active {
+    &:after {
+      transform: translateY(-50%) rotate(-180deg);
+    }
+  }
+}
+
+.header-nav__group {
+  display: none;
+  position: relative;
+  overflow: hidden;
+  transition: height 0.2s ease-in;
+
+  @media only screen and (max-width: 768px) {
+    display: block;
+  }
+
+  &.is-deactive {
+    height: 0!important;
+  }
+
+
+  & .header-nav__link:first-child {
+    border-top: transparent;
+  }
+}
+
+.header-nav__link--back {
+  border-bottom: 1px solid $orange-color-hover!important;
+  border-top: 1px solid $orange-color-hover!important;
+  background: $orange-color-hover!important;
+  font-weight: 500!important;
+
+  &:before {
+    content: '\21B0' !important;
+    font-family: $font-icons;
+    font-size: 18px!important;
   }
 }
 
@@ -107,16 +176,12 @@
     color: $orange-color-hover;
   }
 
-  &.header-nav__link--cat.is-active:after {
-    transform: translateY(-50%) rotate(-180deg);
-  }
-
   &--cat {
     display: none;
     font-weight: bold;
 
     &:after {
-      content: '\E807';
+      content: '\25B8';
       color: #FFFFFF;
       transition: transform 0.15s;
     }
@@ -140,9 +205,15 @@
     font-size: 14px;
   }
 
-  &--cont:before {
-    content: '\E806';
-    font-size: 14px;
+  &--cont {
+    &:before {
+      content: '\E806';
+      font-size: 14px;
+    }
+
+    @media only screen and (max-width: 768px) {
+      border-bottom: 1px solid #B5945C;
+    }
   }
 
   @media only screen and (max-width: 768px) {
@@ -169,3 +240,4 @@
     }
   }
 }
+

@@ -12,6 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const nav = document.querySelector('.header-nav');
   const subButton = document.querySelector('.header-nav__link--cat');
   const subNav = document.querySelector('.header-nav__sub');
+  const subNavLinks = document.querySelectorAll('.header-nav__sub-link');
+  const subNavGroups = document.querySelectorAll('.header-nav__group');
+  const back = document.querySelector('.header-nav__link--back');
 
   button.addEventListener('click', function (e) {
     const flag = this.classList.contains('is-active');
@@ -22,6 +25,11 @@ document.addEventListener('DOMContentLoaded', () => {
       page.style.overflow = 'hidden';
       raf(() => {
         nav.classList.add('is-active');
+
+        [...subNavGroups].forEach(item => {
+          item.style.height = item.clientHeight + 'px';
+          item.classList.add('is-deactive');
+        })
       });
     } else {
       nav.classList.remove('is-active');
@@ -76,12 +84,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  subButton.addEventListener('click', function (e) {
+  subButton.addEventListener('click', function(e) {
     const flag = this.classList.contains('is-active');
 
     if (!flag) {
       subButton.classList.add('is-active');
       subNav.classList.add('is-display');
+      nav.classList.add('is-sub');
       raf(() => {
         subNav.classList.add('is-active');
       });
@@ -90,12 +99,47 @@ document.addEventListener('DOMContentLoaded', () => {
       subNav.addEventListener('transitionend', () => {
         subNav.classList.remove('is-display');
         subButton.classList.remove('is-active');
-      }, {once: true});
+        nav.classList.remove('is-sub');
+      }, { once: true });
     }
 
     e.preventDefault();
     e.stopPropagation();
   });
 
+  back.addEventListener('click', function(e) {
+    nav.classList.remove('is-sub');
 
+    nav.addEventListener('transitionend', () => {
+      subNav.classList.remove('is-active');
+      subNav.classList.remove('is-display');
+      subButton.classList.remove('is-active');
+    }, { once: true });
+
+    e.preventDefault();
+  });
+
+  [...subNavLinks].forEach(subNavLink => {
+    subNavLink.addEventListener('click', function(e) {
+      const flag = this.classList.contains('is-active');
+      const subNavGroup = this.nextElementSibling;
+
+      if (!flag) {
+        subNavLink.classList.add('is-active');
+        subNavGroup.classList.add('is-display');
+        raf(() => {
+          subNavGroup.classList.remove('is-deactive');
+        });
+      } else {
+        subNavGroup.classList.add('is-deactive');
+        subNavGroup.addEventListener('transitionend', () => {
+          subNavGroup.classList.remove('is-display');
+          subNavLink.classList.remove('is-active');
+        }, { once: true });
+      }
+
+      e.preventDefault();
+      e.stopPropagation();
+    });
+  });
 });
