@@ -68,7 +68,7 @@ html(lang="ru")
     include ../components/popup/popup
     +callback()
     <!-- Yandex.Metrika counter -->
-    //-script.
+    script.
       (function (m, e, t, r, i, k, a) {
         m[i] = m[i] || function () {
           (m[i].a = m[i].a || []).push(arguments)
@@ -87,7 +87,7 @@ html(lang="ru")
       });
     <!-- /Yandex.Metrika counter -->
     script(src="{{ asset('js/main.js?=' . microtime(true)) }}")
-    //-script.
+    script.
       (function () {
         window['yandexChatWidgetCallback'] = function () {
           try {
