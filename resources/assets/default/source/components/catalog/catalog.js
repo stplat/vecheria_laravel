@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="item item--3">
               <div class="item__sign"><p>${el.manufacturer}</p></div>
               <div class="item__article">${el.article}</div>
-              <div class="item__image"><a href="/catalog/${el.category_slug}/${el.slug}"><picture><source srcset="/images/items/${el.slug}-thumb.webp" type="image/webp"><img src="/images/items/${el.slug}-thumb.jpg" alt="${el.name}" title="${el.name}"></picture></a></div>
+              <div class="item__image"><a href="/catalog/${el.category_slug}/${el.slug}"><picture><source srcset="${el.image_path[0]['name']}-small.webp" type="image/webp"><img src="${el.image_path[0]['name']}-small.${el.image_path[0]['extension']}" alt="${el.name}" title="${el.name}"></picture></a></div>
               <div class="item__name"><a href="/catalog/${el.category_slug}/${el.slug}">${el.name}</a></div>
               <div class="item__price"><p>${el.price}</p></div>
               <div class="item__button"><a class="button button--small" href="/catalog/${el.category_slug}/${el.slug}">Подробнее</a>
