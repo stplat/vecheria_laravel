@@ -172,6 +172,12 @@
     font-size: 16px;
   }
 
+  @media only screen and (max-width: 768px) {
+    &.is-active {
+      background: #b5945c;
+    }
+  }
+
   .no-touch &:hover {
     color: $orange-color-hover;
   }
