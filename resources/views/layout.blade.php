@@ -195,7 +195,47 @@
             </div>@endif
           </div>
         </div><!-- Yandex.Metrika counter -->
-<!-- /Yandex.Metrika counter -->
+    <script>
+      (function (m, e, t, r, i, k, a) {
+        m[i] = m[i] || function () {
+          (m[i].a = m[i].a || []).push(arguments)
+        };
+        m[i].l = 1 * new Date();
+        k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+      })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+      
+      ym(47722900, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+        ecommerce: "dataLayer"
+      });
+    </script><!-- /Yandex.Metrika counter -->
     <script src="{{ asset('js/main.js?=' . microtime(true)) }}"></script>
+    <script>
+      (function () {
+        window['yandexChatWidgetCallback'] = function () {
+          try {
+            window.yandexChatWidget = new Ya.ChatWidget({
+              guid: '11269400-b876-4363-895f-115590787b40',
+              buttonText: '',
+              title: 'Чат',
+              theme: 'dark',
+              collapsedDesktop: 'never',
+              collapsedTouch: 'never'
+            });
+          } catch (e) {
+          }
+        };
+        var n = document.getElementsByTagName('script')[0],
+          s = document.createElement('script');
+        s.async = true;
+        s.charset = 'UTF-8';
+        s.src = 'https://chat.s3.yandex.net/widget.js';
+        n.parentNode.insertBefore(s, n);
+      })();
+    </script>
   </body>
 </html>
