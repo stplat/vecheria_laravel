@@ -8,10 +8,10 @@
   .header-nav__col
     .header-nav__sub
       .header-nav__link.header-nav__link--back Назад
-    | @foreach ($menu as $menu_items)
-    .header-nav__sub-link {{$menu_items['category']}}
-    .header-nav__group
-      | @foreach ($menu_items['subcategory'] as $plug => $subcategory)
-      a.header-nav__link(href="/catalog/{{$plug}}") {{$subcategory}}
+      | @foreach ($menu as $menu_items)
+      .header-nav__sub-link {{$menu_items['category']}}
+      .header-nav__group
+        | @foreach ($menu_items['subcategory'] as $plug => $subcategory)
+        a.header-nav__link(href="/catalog/{{$plug}}") {{$subcategory}}
+        | @endforeach
       | @endforeach
-    | @endforeach

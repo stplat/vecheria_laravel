@@ -71,10 +71,10 @@
   <div class="header-nav__list"><a class="header-nav__link header-nav__link--home" href="/">Главная</a><span class="header-nav__link header-nav__link--cat">Каталог</span><a class="header-nav__link header-nav__link--ship" href="/shipping">Доставка</a><a class="header-nav__link header-nav__link--pay" href="/payment">Оплата</a><a class="header-nav__link header-nav__link--cont" href="/contacts">Контакты</a></div>
   <div class="header-nav__col">
     <div class="header-nav__sub">
-      <div class="header-nav__link header-nav__link--back">Назад</div>
-    </div>@foreach ($menu as $menu_items)
-    <div class="header-nav__sub-link">{{$menu_items['category']}}</div>
-    <div class="header-nav__group">@foreach ($menu_items['subcategory'] as $plug => $subcategory)<a class="header-nav__link" href="/catalog/{{$plug}}">{{$subcategory}}</a>@endforeach</div>@endforeach
+      <div class="header-nav__link header-nav__link--back">Назад</div>@foreach ($menu as $menu_items)
+      <div class="header-nav__sub-link">{{$menu_items['category']}}</div>
+      <div class="header-nav__group">@foreach ($menu_items['subcategory'] as $plug => $subcategory)<a class="header-nav__link" href="/catalog/{{$plug}}">{{$subcategory}}</a>@endforeach</div>@endforeach
+    </div>
   </div>
 </div>
           </div>
