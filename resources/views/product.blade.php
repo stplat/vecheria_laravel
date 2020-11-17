@@ -51,10 +51,10 @@
             <li><span>Наличие:</span><span class="green" itemprop="availability" content="http://schema.org/InStock">на складе</span></li>
           </ul>@if ($product->comment)
           <div class="product__comment">{!! $product->comment !!}</div>@endif
-        </div>
+        </div>@if ($product->manufacturer == 'Елизавета')
         <div class="product__holy">
           <p>Изделие освящено</p>
-        </div>
+        </div>@endif
         <div class="product__row">@if (!$in_cart)
           <div class="product__button"><a class="button button--red" href="#" onclick="ym(&quot;47722900&quot;, &quot;reachGoal&quot;, &quot;CART&quot;); return true;">В корзину</a>
           </div>

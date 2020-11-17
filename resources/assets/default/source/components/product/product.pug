@@ -46,8 +46,10 @@
         | @if ($product->comment)
         .product__comment {!! $product->comment !!}
         | @endif
+      | @if ($product->manufacturer == 'Елизавета')
       .product__holy
         p Изделие освящено
+      | @endif
       .product__row
         include ../button/button
         | @if (!$in_cart)
