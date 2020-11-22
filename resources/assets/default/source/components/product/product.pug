@@ -46,7 +46,7 @@
         | @if ($product->comment)
         .product__comment {!! $product->comment !!}
         | @endif
-      | @if ($product->manufacturer == 'Елизавета')
+      | @if ($product->manufacturer == 'Елизавета' || $product->manufacturer == 'Иордань')
       .product__holy
         p Изделие освящено
       | @endif

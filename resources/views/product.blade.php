@@ -51,7 +51,7 @@
             <li><span>Наличие:</span><span class="green" itemprop="availability" content="http://schema.org/InStock">на складе</span></li>
           </ul>@if ($product->comment)
           <div class="product__comment">{!! $product->comment !!}</div>@endif
-        </div>@if ($product->manufacturer == 'Елизавета')
+        </div>@if ($product->manufacturer == 'Елизавета' || $product->manufacturer == 'Иордань')
         <div class="product__holy">
           <p>Изделие освящено</p>
         </div>@endif
